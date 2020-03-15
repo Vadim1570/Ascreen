@@ -379,43 +379,43 @@ document.addEventListener('mousemove',function(e){
 
 			 else if ( header_inner == 4 && check == 1 ) {
 				div.style = 'top:' + ( posY - 400 ) + 'px; left: ' + ( posX - 200 ) + 'px;';
-			} else if ( header_inner == 12 && check ==1 ) {
+			} else if ( header_inner == 12 && check == 1 ) {
 				div.style = 'top:' + ( posY - 300 ) + 'px; left: ' + ( posX - 200 ) + 'px;';
-			} else if ( header_inner == 6 && check ==1 ) {
+			} else if ( header_inner == 6 && check == 1 ) {
 				div.style = 'top:' + ( posY - 300 ) + 'px; left: ' + ( posX -290 ) + 'px;';
-			} else if ( header_inner == 1 && check ==1 ) {
+			} else if ( header_inner == 1 && check == 1 ) {
 				div.style = 'top: 80px; left: ' + ( posX - 280) + 'px;';
-			} else if ( header_inner == 1 && check ==2 ) {
+			} else if ( header_inner == 1 && check == 2 ) {
 				div.style = 'top: 20%; left: 50%;';
-			} else if ( header_inner == 7 && check ==1 ) {
+			} else if ( header_inner == 7 && check == 1 ) {
 				div.style = 'top:' + ( posY - 500 ) + 'px; left: ' + ( posX -200 ) + 'px;';
-			} else if ( header_inner == 23 && check ==1 ) {
+			} else if ( header_inner == 23 && check == 1 ) {
 				div.style = 'top:' + ( posY - 650 ) + 'px; left: ' + ( posX -200 ) + 'px;';
-			} else if ( header_inner == 16 && check ==1 ) {
+			} else if ( header_inner == 16 && check == 1 ) {
 				div.style = 'top:300px; left:1300px;';
-			} else if ( header_inner == 20 && check ==1 ) {
+			} else if ( header_inner == 20 && check == 1 ) {
 				div.style = 'top:' + ( posY - 600 ) + 'px; left: ' + ( posX -200 ) + 'px;';
-			} else if ( header_inner == 17 && check ==1 ) {
+			} else if ( header_inner == 17 && check == 1 ) {
 				div.style = 'top:' + ( posY - 650 ) + 'px; left: ' + ( posX -200 ) + 'px;';
-			} else if ( header_inner == 24 && check ==1 ) {
+			} else if ( header_inner == 24 && check == 1 ) {
 				div.style = 'top:260px; left: 825px;';
-			} else if ( header_inner == 21 && check ==1 ) {
+			} else if ( header_inner == 21 && check == 1 ) {
 				div.style = 'top:' + ( posY - 600 ) + 'px; left: ' + ( posX -200 ) + 'px;';
-			} else if ( header_inner == 22 && check ==1 ) {
+			} else if ( header_inner == 22 && check == 1 ) {
 				div.style = 'top:' + ( posY - 650 ) + 'px; left: ' + ( posX -200 ) + 'px;';
-			} else if ( header_inner == 15 && check ==1 ) {
+			} else if ( header_inner == 15 && check == 1 ) {
 				div.style = 'top:' + ( posY - 300 ) + 'px; left: ' + ( posX -200 ) + 'px;';
-			} else if ( header_inner == 19 && check ==1 ) {
+			} else if ( header_inner == 19 && check == 1 ) {
 				div.style = 'top: 100px; left: 125px;';
-			} else if ( header_inner == 13 && check ==1 ) {
+			} else if ( header_inner == 13 && check == 1 ) {
 				div.style = 'top: 370px; left: 150px;';
 			} else if ( header_inner == 2 && check == 11 ) {
 				div.style = 'top: 60px; left: 180px;';
 			} else if ( header_inner == 2 && check == 12 ) {
 				div.style = 'top: 130px; left:1350px;';
-			} else if ( header_inner == 2 && check ==1 ) {
+			} else if ( header_inner == 2 && check == 1 ) {
 				div.style = 'top: 150px; left: 800px;';
-			} else if ( header_inner == 12 && check ==13 ) {
+			} else if ( header_inner == 12 && check == 13 ) {
 				div.style = 'top: 90px; left: 350px;';
 			} else if ( header_inner == 12 && check == 14 ) {
 				div.style = 'top: 100px; left: 1100px;';
