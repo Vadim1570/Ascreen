@@ -229,8 +229,10 @@ tab5.addEventListener('click',()=>{
 tab[4].style.display = 'block';
 btns_hide.style.display = 'none';
 
-for ( let btn of buttons ) {
-	btn.onclick = function() {
+for (let btn of buttons) {
+	btn.onclick = function () {
+
+		let sender = this.getAttribute('id');
 
 		// change main_info_btn attribute
 
@@ -248,23 +250,57 @@ for ( let btn of buttons ) {
 		}
 		this.classList.add('active');
 
-		let num = this.getAttribute('data-number');
+		//let num = this.getAttribute('data-number');
 
-		for ( let i = 0; i < tab.length; i++ ) {
-			tab[i].classList.add('hideTabs');
-		}
+		//for ( let i = 0; i < tab.length; i++ ) {
+		//	tab[i].classList.add('hideTabs');
+		//}
 
 		btns_hide.style.display = 'block';
 
-		// Плавно скрыть старый фон
-		setTimeout(function(){
+		// Плавно скрыть кнопки
+		setTimeout(function () {
 
-			for ( let i = 0; i < tab.length; i++ ) {
-				tab[i].classList.remove('hideTabs');
-				tab[i].style = 'opacity: 0; display: none;'
+			// Если нажали на кнопку Цельный Сургут, то скроем одни кнопки и отобразим другие
+			if (sender == 'surgut_celnyy') {
+				for (let i = 0; i < buttons.length; i++) {
+					let buttonId = buttons[i].getAttribute('id');
+					if (buttonId == 'surgut_VI_XVI' || buttonId == 'surgut_XVI_XIX' || buttonId == 'surgut_1_XX' || buttonId == 'surgut_2_XX' || buttonId == 'surgut_celnyy') {
+						buttons[i].style.display = 'none'
+					}
+					if (buttonId == 'surgut_person' || buttonId == 'surgut_1956_1979' || buttonId == 'surgut_1980_1991' || buttonId == 'surgut_1992_2020' || buttonId == 'back_surgut_VI_XVI') {
+						buttons[i].style.display = ''
+					}
+				}
+			}
+			// Если нажали на кнопку Назад, то скроем одни кнопки и отобразим другие
+			if (sender == 'back_surgut_VI_XVI') {
+				for (let i = 0; i < buttons.length; i++) {
+					let buttonId = buttons[i].getAttribute('id');
+					if (buttonId == 'surgut_VI_XVI' || buttonId == 'surgut_XVI_XIX' || buttonId == 'surgut_1_XX' || buttonId == 'surgut_2_XX' || buttonId == 'surgut_celnyy') {
+						buttons[i].style.display = ''
+					}
+					if (buttonId == 'surgut_person' || buttonId == 'surgut_1956_1979' || buttonId == 'surgut_1980_1991' || buttonId == 'surgut_1992_2020' || buttonId == 'back_surgut_VI_XVI') {
+						buttons[i].style.display = 'none'
+					}
+				}
 			}
 
-			tab[num].classList.add('showTabs');
+		}, 200)
+
+		// Плавно скрыть старый фон
+		setTimeout(function(){
+			for ( let i = 0; i < tab.length; i++ ) {
+				tab[i].classList.remove('hideTabs');
+				tab[i].style = 'opacity: 0; display: none;';
+
+
+				if (tab[i].classList.contains('ta_' + sender) ||
+					(sender == 'back_surgut_VI_XVI' && tab[i].classList.contains("ta_surgut_VI_XVI")) ||
+					(sender == 'surgut_celnyy' && tab[i].classList.contains("ta_surgut_1956_1979"))) {
+					tab[i].classList.add('showTabs');
+				}	
+			}
 
 			for (let i = 0; i < icons.length; i++ ) {
 					icons[i].style.opacity = '1';
@@ -274,13 +310,16 @@ for ( let btn of buttons ) {
 
 		// Плавно подгрузить новый фон
 		setTimeout(function(){
-			for ( let i = 0; i < tab.length; i++ ) {
-				tab[i].classList.remove('showTabs');
-				tab[num].style = 'opacity: 1; display: block;'
+			for (let i = 0; i < tab.length; i++) {
+				if (tab[i].classList.contains("showTabs")) {
+					tab[i].classList.remove('showTabs');
+					tab[i].style = 'opacity: 1; display: block;'
+				}
 			}
 
 			btns_hide.style.display = 'none';
-		},1000)
+		}, 1000)
+
 	}
 }
 
@@ -308,7 +347,7 @@ document.addEventListener('mousemove',function(e){
 				div.className = 'table_info';
 			} else if ( header_inner == 49 && check == '010101' ) {
 				div.className = 'table_info';
-			} else if (header_inner == 52 && check == '010101') {
+			} else if ((header_inner >= 52 || header_inner <= 57) && check == '010101') {
 				div.className = 'table_info';
 			} else {
 				div.className = 'table';
@@ -370,7 +409,7 @@ document.addEventListener('mousemove',function(e){
 				div.style = 'top: 8%; left: 550px;';
 			} else if ( header_inner == 49 && check == '010101' ) {
 				div.style = 'top: 8%; left: 550px;';
-			} else if (header_inner == 52 && check == '010101') {
+			} else if ((header_inner >= 52 || header_inner <= 57) && check == '010101') {
 				div.style = 'top: 8%; left: 550px;';
 			} else if ( header_inner == 7 && check == 0 ) {
 				div.style = 'top: 12%; left: 900px;';
@@ -649,7 +688,7 @@ document.addEventListener('mousemove',function(e){
 				close_btn.style = 'top:105%;left:50%';
 			} else if ( header_inner == 49 && check == '010101' ) {
 				close_btn.style = 'top:105%;left:50%';
-			} else if (header_inner == 52 && check == '010101') {
+			} else if ((header_inner >= 52 || header_inner <= 57) && check == '010101') {
 				close_btn.style = 'top:105%;left:50%';
 			} else {
 				close_btn.style = 'top:100%;left:50%';
@@ -667,7 +706,7 @@ document.addEventListener('mousemove',function(e){
 				header.className = 'inner_header_big';
 			} else if ( header_inner == 49 && check == '010101' ) {
 				header.className = 'inner_header_big';
-			} else if (header_inner == 52 && check == '010101') {
+			} else if ((header_inner >= 52 || header_inner <= 57) && check == '010101') {
 				header.className = 'inner_header_big';
 			} else {
 				header.className = 'inner_header';
@@ -755,7 +794,7 @@ document.addEventListener('mousemove',function(e){
 				inner_text.className = 'inner_text_big';
 			} else if ( header_inner == 49 && check == '010101' ) {
 				inner_text.className = 'inner_text_big';
-			} else if (header_inner == 52 && check == '010101') {
+			} else if ((header_inner >= 52 || header_inner <= 57) && check == '010101') {
 				inner_text.className = 'inner_text_big';
 			} else {
 				inner_text.className = 'inner_text';
@@ -918,7 +957,7 @@ document.addEventListener('mousemove',function(e){
 				div.appendChild(close_btn);
 				div.appendChild(header);
 			div.appendChild(inner_text);
-		} else if (header_inner == 52 && check == '010101') {
+		} else if ((header_inner >= 52 || header_inner <= 57) && check == '010101') {
 			div.classList.add('qwerty');
 			div.appendChild(close_btn);
 			div.appendChild(header);
