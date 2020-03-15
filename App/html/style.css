@@ -2655,8 +2655,24 @@ body {
 	/*border: 1px solid red;*/
 }
 
+/*#region Иконки Цельный Сургут*/
+.ss_1 {
+	position: absolute;
+	left: 46.2%;
+	top: 31.8%;
+	width: 99px;
+	height: 71px;
+	background-image: url(img/icons/инфра01.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	/*animation: golding 3s ease infinite;*/
+	opacity: 0;
+	/*cursor: none;*/
+	z-index: 1;
+	/*border: 1px solid red;*/
+}
 
-
+/*#endregion*/
 
 
 
