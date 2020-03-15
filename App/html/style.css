@@ -1,0 +1,3567 @@
+@font-face {
+	font-family: "IskraCYR-Bold";
+	src: url('fonts/IskraCYR-Bold.otf');
+}
+
+@font-face {
+	font-family: "IskraCYR-Medium";
+	src: url('fonts/IskraCYR-Medium.otf');
+}
+
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	overflow: hidden;
+	user-select: none;
+	/*cursor: none;*/
+	width: 1920px;
+	height: 1200px;
+	/*border: 1px solid red;*/
+	background: black;
+}
+
+.greyBg {
+	display: none;
+	opacity: 0;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background: rgb(0,0,0, 0.4);
+	width: 100%;
+	height: 100%;
+	z-index: 3;
+}
+
+.greyActive{
+	display: block;
+	animation: showBg .5s ease forwards;
+}
+
+.icon {
+	opacity: 0;
+	display: none;
+	transition: opacity .5s ease;
+}
+
+@keyframes showBg {
+	0%{
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+.greyHide {
+	animation: hideBg .5s ease forwards;
+}
+
+@keyframes hideBg {
+	0%{
+		opacity: 1;
+	}
+
+	100% {
+		opacity: 0;
+	}
+}
+
+.inactive {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #000;
+	z-index: 4;
+}
+
+
+
+.frame {
+	position: relative;
+	width: 1920px;
+	height: 1200px;
+	/*width: 1793.2px;
+	height: 1114.24px;*/
+	background-size: 100%;
+	/*margin-left: 77.7px;
+	margin-top: 53.66px;
+	margin-right: 49.1px;
+	margin-bottom: 32.1px;*/
+}
+
+.frameAround {
+	z-index: 10;
+}
+
+.topFrame {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 54px;
+	background: #000;
+	z-index: 999;
+}
+
+.leftFrame {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 78px;
+	height: 100%;
+	background: #000;
+	z-index: 999;
+}
+
+.bottomFrame {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 88px;
+	background: #000;
+	z-index: 999;
+}
+
+.rightFrame {
+	position: absolute;
+	right: 0;
+	top: 0;
+	height: 100%;
+	width: 649px;
+	background: #000;
+	z-index: 999;
+}
+
+.ta_1 {
+	opacity: 0;
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-image: url(img/ROMAN_01.png);
+	background-size: 100% 100%;
+	transition: opacity .5s ease;
+}
+.ta_2 {
+	opacity: 0;
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-image: url(img/ROMAN_02.png);
+	background-size: 100% 100%;
+	transition: opacity .5s ease;
+}
+.ta_3 {
+	opacity: 0;
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-image: url(img/ROMAN_03.png);
+	background-size: 100% 100%;
+	transition: opacity .5s ease;
+}
+.ta_4 {
+	opacity: 0;
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-image: url(img/ROMAN_04.png);
+	background-size: 100% 100%;
+	transition: opacity .5s ease;
+}
+
+.showTabs {
+	display: block !important;
+	animation: showTabs .5s ease forwards;
+}
+
+@keyframes showTabs {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+.hideTabs {
+	animation: hideTabs .5s ease forwards;
+}
+
+@keyframes hideTabs {
+	0% {
+		opacity: 1;
+	}
+
+	100% {
+		opacity: 0;
+	}
+}
+
+.changeSlide {
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	/*background: #fff;*/
+	background-image: url(img/map-01.png);
+	background-size: 100% 100%;
+	z-index: -1;
+}
+
+.ta_5 {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: black;
+	transition: opacity .5s ease;
+	z-index: 5;
+	opacity: 1;
+}
+
+.ta_5_show {
+	animation: tabFiveShow 1s ease forwards;
+}
+
+@keyframes tabFiveShow {
+	0% {
+		opacity: 1;
+	}
+
+	100% {
+		opacity: 0;
+	}
+}
+
+.fade_in {
+	animation: fade_in 1s ease forwards;
+}
+
+@keyframes fade_in {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+.fade_out {
+	animation: fade_out 1s ease forwards;
+}
+
+@keyframes fade_out {
+	0% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+
+.buttons {
+	position: absolute;
+	bottom: 30px;
+	left: 50%;
+	width: 48%;
+	height: 100px;
+	transform: translate(-50%);
+	display: flex;
+	justify-content: space-around;
+	font-family: IskraCYR-Bold;
+	font-size: 17px;
+	text-align: center;
+	z-index: 2;
+	/*cursor: none;*/
+}
+
+.buttons p {
+	padding-bottom: 10px;
+}
+
+.btn {
+	width: 200px;
+	height: 100px;
+	background: url(img/CHUMP.png) no-repeat;
+	background-size: 190px 90px;
+	color: #555657;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.btn_2 {
+	width: 200px;
+	height: 100px;
+	background: url(img/BUNGALO.png) no-repeat;
+	background-size: 190px 90px;
+	color: #555657;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.line_under {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	width: 80%;
+	height: 50px;
+	background: url(img/dots.png) no-repeat center center;
+	background-size: 90%;
+	z-index: -1;
+}
+
+.btn_1_i {
+	/*display: none !important;*/
+	position: absolute;
+	top: 89%;
+	left: 20%;
+	background-color: transparent;
+	background-image: url(img/question.png);
+	width: 85px;
+	height: 85px;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	color: #555657;
+	font-family: IskraCYR-Bold;
+	font-size: 30px;
+	display: flex;
+	text-align: center;
+	line-height: 80px;
+	outline: none;
+	border: none;
+	z-index: 0;
+	/*cursor: none;*/
+}
+
+.btn_info_main {
+	position: absolute;
+	bottom: 41px;
+	left: 380px;
+	background-color: transparent;
+	background-image: url(img/question.png);
+	width: 85px;
+	height: 85px;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	z-index: 2;
+}
+
+.active {
+	width: 200px;
+	height: 100px;
+	background: url(img/vqr4.png) no-repeat;
+	background-size: 190px 90px;
+	color: #D6D0C7;
+	text-shadow: 0px 1.5px 0px #555657;
+}
+
+
+.i_1 {
+	position: absolute;
+	top: 389px;
+	left: 52px;
+	width: 96px;
+	height: 98px;
+	background-image: url(img/icons/всадник_рамка.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	animation: golding 3s ease infinite;
+	opacity: 0;
+	z-index: 1;
+}
+
+.i_2 {
+	position: absolute;
+	right: 129px;
+	top: 50.4%;
+	width: 114px;
+	height: 86px;
+	background-image: url(img/icons/Лебедь_рамка.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	animation: golding 3s ease infinite;
+	opacity: 0;
+	z-index: 1;
+	/*border: 1px solid red;*/
+}
+
+.i_2_1 {
+	position: absolute;
+	left: 21.34%;
+	top: 17.4%;
+	width: 114px;
+	height: 86px;
+	background-image: url(img/icons/Лебедь_рамка_право.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	animation: golding 3s ease infinite;
+	opacity: 0;
+	z-index: 1;
+	/*border: 1px solid red;*/
+}
+
+.i_3 {
+	position: absolute;
+	left: 448px;
+	top: 35.4%;
+	width: 96px;
+	height: 98px;
+	background-image: url(img/icons/чум_рамка.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	animation: golding 3s ease infinite;
+	opacity: 0;
+	/*cursor: none;*/
+	z-index: 1;
+}
+
+.i_3_1 {
+	position: absolute;
+	left: 118px;
+	top: 5.8%;
+	width: 94px;
+	height: 98px;
+	background-image: url(img/icons/чум_рамка.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	animation: golding 3s ease infinite;
+	opacity: 0;
+	/*cursor: none;*/
+	z-index: 1;
+	/*border: 1px solid red;*/
+}
+
+.i_3_2 {
+	position: absolute;
+	left: 1460px;
+	top: 85%;
+	width: 92px;
+	height: 82px;
+	background-image: url(img/icons/чум_рамка.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	animation: golding 3s ease infinite;
+	opacity: 0;
+	/*cursor: none;*/
+	z-index: 1;
+	/*border: 1px solid red;*/
+}
+
+.i_3_3 {
+	position: absolute;
+	left: 51.3%;
+	top: 23.5%;
+	width: 95px;
+	height: 98px;
+	background-image: url(img/icons/чум_рамка.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	animation: golding 3s ease infinite;
+	opacity: 0;
+	/*cursor: none;*/
+	z-index: 1;
+	/*border: 1px solid red;*/
+}
+
+@keyframes golding {
+	0%,100% {
+		opacity: 0;
+	}
+	50% {
+		opacity: 1;
+	}
+}
+
+.i_4 {
+	position: absolute;
+	left: 756px;
+	top: 35.1%;
+	width: 74px;
+	height: 74px;
+	background-image: url(img/icons/утка_подвеска_рамка.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	animation: golding 3s ease infinite;
+	opacity: 0;
+	/*cursor: none;*/
+	z-index: 1;
+}
+
+.i_5 {
+	position: absolute;
+	left: 594px;
+	top: 52.4%;
+	width: 61px;
+	height: 61px;
+	background-image: url(img/icons/Трясогузка_рамка.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	animation: golding 3s ease infinite;
+	opacity: 0;
+	/*cursor: none;*/
+	z-index: 1;
+}
+
+.i_5_1 {
+	position: absolute;
+	left: 81.2%;
+	top: 25.3%;
+	width: 60px;
+	height: 53px;
+	background-image: url(img/icons/Трясогузка_рамка_лево.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	animation: golding 3s ease infinite;
+	opacity: 0;
+	/*cursor: none;*/
+	z-index: 1;
+	/*border: 1px solid red;*/
+}
+
+.i_6 {
+	position: absolute;
+	left: 67.1%;
+	top: 35.5%;
+	width: 69px;
+	height: 65px;
+	background-image: url(img/icons/утка_рамка_лево.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	animation: golding 3s ease infinite;
+	opacity: 0;
+	/*cursor: none;*/
+	z-index: 1;
+	/*border: 1px solid red;*/
+}
+
+.i_6_1 {
+	position: absolute;
+	left: 7.8%;
+	top: 72.1%;
+	width: 65px;
+	height: 61px;
+	background-image: url(img/icons/утка_рамка.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	animation: golding 3s ease infinite;
+	opacity: 0;
+	/*cursor: none;*/
+	z-index: 1;
+	/*border: 1px solid red;*/
+}
+
+.i_7 {
+	position: absolute;
+	right: 5.7%;
+	top: 27.5%;
+	width: 74px;
+	height: 80px;
+	background-image: url(img/icons/Лабаз_рамка.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	animation: golding 3s ease infinite;
+	opacity: 0;
+	/*cursor: none;*/
+	z-index: 1;
+	/*border: 1px solid red;*/
+}
+
+.i_7_1 {
+	position: absolute;
+	top: 13.6%;
+	left: 33.55%;
+	width: 74px;
+	height: 74px;
+	background-image: url(img/icons/Лабаз_рамка.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	animation: golding 3s ease infinite;
+	opacity: 0;
+	/*cursor: none;*/
+	z-index: 1;
+	/*border: 1px solid red;*/
+}
+
+.i_7_2 {
+	position: absolute;
+	top: 79.5%;
+	left: 43%;
+	width: 74px;
+	height: 74px;
+	background-image: url(img/icons/Лабаз_рамка.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	animation: golding 3s ease infinite;
+	opacity: 0;
+	/*cursor: none;*/
+	z-index: 1;
+	/*border: 1px solid red;*/
+}
+
+.i_8 {
+	position: absolute;
+	left: 57.2%;
+	top: 49.5%;
+	width: 94px;
+	height: 33px;
+	background-image: url(img/icons/рыба_3_рамка.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	animation: golding 3s ease infinite;
+	opacity: 0;
+	/*cursor: none;*/
+	z-index: 1;
+	/*border: 1px solid red;*/
+}
+
+.i_9 {
+	position: absolute;
+	left: 75%;
+	top: 49.5%;
+	width: 45px;
+	height: 86px;
+	background-image: url(img/icons/подвеска_человекчек_рамка.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	animation: golding 3s ease infinite;
+	opacity: 0;
+	/*cursor: none;*/
+	z-index: 1;
+	/*border: 1px solid red;*/
+}
+
+.i_10 {
+	position: absolute;
+	left: 45.4%;
+	top: 59.7%;
+	width: 81px;
+	height: 71px;
+	background-image: url(img/icons/вороны_рамка.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	animation: golding 3s ease infinite;
+	opacity: 0;
+	/*cursor: none;*/
+	z-index: 1;
+	/*border: 1px solid red;*/
+}
+
+.i_11 {
+	position: absolute;
+	left: 53.2%;
+	top: 56.1%;
+	width: 243px;
+	height: 163px;
+	background-image: url(img/icons/арена_рамка.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	animation: golding 3s ease infinite;
+	opacity: 0;
+	/*cursor: none;*/
+	z-index: 1;
+	/*border: 1px solid red;*/
+}
+
+.i_12 {
+	position: absolute;
+	left: 25.6%;
+	top: 66.8%;
+	width: 99px;
+	height: 35px;
+	background-image: url(img/icons/Рыба1_рамка.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	animation: golding 3s ease infinite;
+	opacity: 0;
+	/*cursor: none;*/
+	z-index: 1;
+	/*border: 1px solid red;*/
+}
+
+.i_13 {
+	position: absolute;
+	bottom: 4.7%;
+	left: 5.95%;
+	width: 89px;
+	height: 86px;
+	background-image: url(img/icons/Олень_рамка_лево.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	animation: golding 3s ease infinite;
+	opacity: 0;
+	/*cursor: none;*/
+	z-index: 1;
+	/*border: 1px solid red;*/
+}
+
+.i_13_1 {
+	position: absolute;
+	top: 8.5%;
+	left: 86.6%;
+	width: 88px;
+	height: 98px;
+	background-image: url(img/icons/Олень_рамка.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	animation: golding 3s ease infinite;
+	opacity: 0;
+	/*cursor: none;*/
+	z-index: 1;
+	/*border: 1px solid red;*/
+}
+
+.i_13_2 {
+	position: absolute;
+	top: 41%;
+	left: 15.2%;
+	width: 86px;
+	height: 100px;
+	background-image: url(img/icons/Олень_рамка.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	animation: golding 3s ease infinite;
+	opacity: 0;
+	/*cursor: none;*/
+	z-index: 1;
+	/*border: 1px solid red;*/
+}
+
+.i_14 {
+	position: absolute;
+	bottom: 12.8%;
+	left: 24.3%;
+	width: 115px;
+	height: 28px;
+	background-image: url(img/icons/Рыба_2_рамка.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	animation: golding 3s ease infinite;
+	opacity: 0;
+	/*cursor: none;*/
+	z-index: 1;
+	/*border: 1px solid red;*/
+}
+
+.i_15 {
+	position: absolute;
+	bottom: 13.1%;
+	left: 61.9%;
+	width: 63px;
+	height: 88px;
+	background-image: url(img/icons/сова_рамка.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	animation: golding 3s ease infinite;
+	opacity: 0;
+	/*cursor: none;*/
+	z-index: 1;
+	/*border: 1px solid red;*/
+}
+
+.i_16 {
+	position: absolute;
+	bottom: 21.9%;
+	right: 17.4%;
+	width: 107px;
+	height: 25px;
+	background-image: url(img/icons/лодка_рамка.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	animation: golding 3s ease infinite;
+	opacity: 0;
+	/*cursor: none;*/
+	z-index: 1;
+	/*border: 1px solid red;*/
+}
+
+.i_16_1 {
+	position: absolute;
+	bottom: 82.5%;
+	left: 44.95%;
+	width: 104px;
+	height: 25px;
+	background-image: url(img/icons/лодка_рамка.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	animation: golding 3s ease infinite;
+	opacity: 0;
+	/*cursor: none;*/
+	z-index: 1;
+	/*border: 1px solid red;*/
+}
+
+.i_17 {
+	position: absolute;
+	bottom: 2%;
+	right: 3.3%;
+	width: 101px;
+	height: 59px;
+	background-image: url(img/icons/Медведь_рамка.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	animation: golding 3s ease infinite;
+	opacity: 0;
+	/*cursor: none;*/
+	z-index: 1;
+	/*border: 1px solid red;*/
+}
+
+.i_17_1 {
+	position: absolute;
+	right: 29%;
+	top: 14.9%;
+	width: 100px;
+	height:58px;
+	background-image: url(img/icons/Медведь_рамка.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	animation: golding 3s ease infinite;
+	opacity: 0;
+	/*cursor: none;*/
+	z-index: 1;
+	/*border: 1px solid red;*/
+}
+
+.table {
+	position: absolute;
+	width: 400px;
+	height: 750px;
+	background-image: url(img/newTableLowArrow.png);
+	background-position: center;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	z-index: 3;
+}
+
+.table_info {
+	position: absolute;
+	width: 900px;
+	height: 850px;
+	background-image: url(img/newInfoBlock.png);
+	background-position: center;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	z-index: 3;
+}
+
+.table_in {
+	animation: table_in .5s ease forwards;
+}
+
+.table_out {
+	animation: table_out .5s ease forwards;
+}
+
+@keyframes table_in {
+	0% {
+		opacity: 0;
+		transform: translateY(0px);
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(20px);
+	}
+}
+
+@keyframes table_out {
+	0% {
+		opacity: 1;
+		transform: translateY(20px);
+	}
+	100% {
+		opacity: 0;
+		transform: translateY(0px);
+	}
+}
+
+.close_btn {
+	position: absolute;
+	width: 85px;
+	height: 85px;
+	background-image: url(img/newClose.png);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	z-index: 1;
+	transform: translate(-50%, -120%);
+	/*cursor: none;*/
+}
+
+.inner_header {
+	position: absolute;
+	top: 15%;
+	left: 50%;
+	transform: translate(-50%, -10%);
+	width: 80%;
+	height: 50px;
+	text-align: center;
+	font-size: 40px;
+	color: #5C6D3A;
+	/*text-shadow: -0.5px 2px 0px #2B311C;*/
+	font-family: IskraCYR-Bold;
+}
+
+.inner_header_big {
+	position: absolute;
+	top: 12.5%;
+	left: 50%;
+	transform: translate(-50%, -10%);
+	width: 80%;
+	height: 50px;
+	text-align: center;
+	font-size: 40px;
+	color: #5C6D3A;
+	/*text-shadow: -0.5px 2px 0px #2B311C;*/
+	font-family: IskraCYR-Bold;
+}
+
+.inner_text {
+	position: absolute;
+	top: 180px;
+	left: 50%;
+	transform: translate(-49%);
+	width: 70%;
+	height: 230px;
+	font-family: IskraCYR-Medium;
+	color: #2B311C;
+	overflow: auto;
+}
+
+.inner_text::-webkit-scrollbar {
+	width: 0px;
+	background-color:transparent;
+}
+
+/*.inner_text::-webkit-scrollbar-thumb {
+	background-image: url(img/scroll.png);
+	background-position: center;
+	height: 20px;
+	background-size: auto 100%;
+	background-repeat: no-repeat;
+}*/
+
+.inner_text_big {
+	position: absolute;
+	top: 180px;
+	left: 50%;
+	transform: translate(-49%);
+	width: 70%;
+	height: 570px;
+	font-family: IskraCYR-Medium;
+	color: #2B311C;
+	overflow: auto;
+	font-size: 20px;
+}
+
+.inner_text_big::-webkit-scrollbar {
+	width: 0px;
+	background-color:transparent;
+}
+
+/*.inner_text_big::-webkit-scrollbar-thumb {
+	background-image: url(img/scroll.png);
+	background-position: center;
+	height: 20px;
+	background-size: auto 100%;
+	background-repeat: no-repeat;
+}*/
+
+.inner_image {
+	position: absolute;
+	bottom: 127px;
+	left: calc(50% + 1px);
+	transform: translate(-49%);
+	width: 60%;
+	height: 160px;
+	background-repeat: no-repeat;
+	border-radius: 8px;
+	/*overflow: hidden;*/
+	display: flex;
+}
+
+.inner_image img {
+	width: 100%;
+	border-radius: 8px;
+}
+
+.swap {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background:white;
+	z-index: 2;
+	opacity: 0;
+}
+
+.swap_inactive {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background:white;
+	z-index: 2;
+	opacity: 0;
+}
+
+
+
+.light {
+	animation: light 1s ease;
+}
+
+@keyframes light {
+	0%,100% {
+		opacity: 0;
+	}
+	50% {
+		opacity: 1;
+	}
+}
+
+.p_1 {
+	position: absolute;
+	top: 25.3%;
+	left: 52.5%;
+	width: 97px;
+	height: 87px;
+	background-image: url(img/icons/чум_рамка.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	animation: golding 3s ease infinite;
+	opacity: 0;
+	/*cursor: none;*/
+	z-index: 1;
+	/*border: 1px solid red;*/
+}
+
+.p_1_1 {
+	position: absolute;
+	top: 39.4%;
+	left: 76.4%;
+	width: 94px;
+	height: 86px;
+	background-image: url(img/icons/чум_рамка.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	animation: golding 3s ease infinite;
+	opacity: 0;
+	/*cursor: none;*/
+	z-index: 1;
+	/*border: 1px solid red;*/
+}
+
+.p_1_2 {
+	position: absolute;
+	top: 5.8%;
+	left: 7.5%;
+	width: 95px;
+	height: 86px;
+	background-image: url(img/icons/чум_рамка.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	animation: golding 3s ease infinite;
+	opacity: 0;
+	/*cursor: none;*/
+	z-index: 1;
+	/*border: 1px solid red;*/
+}
+
+.p_2 {
+	position: absolute;
+	top: 36.65%;
+	left: 64.85%;
+	width: 62px;
+	height: 53px;
+	background-image: url(img/icons/Трясогузка_рамка.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	animation: golding 3s ease infinite;
+	opacity: 0;
+	/*cursor: none;*/
+	z-index: 1;
+	/*border: 1px solid red;*/
+}
+
+.p_3 {
+	position: absolute;
+	bottom: 14.8%;
+	left: 45%;
+	width: 96px;
+	height: 70px;
+	background-image: url(img/icons/лиса_рамка.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	animation: golding 3s ease infinite;
+	opacity: 0;
+	/*cursor: none;*/
+	z-index: 1;
+	/*border: 1px solid red;*/
+}
+
+.p_3_1 {
+	position: absolute;
+	top: 17%;
+	left: 58.5%;
+	width: 96px;
+	height: 70px;
+	background-image: url(img/icons/лиса_рамка.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	animation: golding 3s ease infinite;
+	opacity: 0;
+	/*cursor: none;*/
+	z-index: 1;
+	/*border: 1px solid red;*/
+}
+
+.p_4 {
+	position: absolute;
+	top: 21.9%;
+	left: 68.7%;
+	width: 88px;
+	height: 90px;
+	background-image: url(img/icons/Олень_рамка.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	animation: golding 3s ease infinite;
+	opacity: 0;
+	/*cursor: none;*/
+	z-index: 1;
+	/*border: 1px solid red;*/
+}
+
+.p_4_1 {
+	position: absolute;
+	top: 13%;
+	left: 25.95%;
+	width: 87px;
+	height: 90px;
+	background-image: url(img/icons/Олень_рамка.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	animation: golding 3s ease infinite;
+	opacity: 0;
+	/*cursor: none;*/
+	z-index: 1;
+	/*border: 1px solid red;*/
+}
+
+.p_5 {
+	position: absolute;
+	bottom: 42.3%;
+	left: 21.35%;
+	width: 74px;
+	height: 50px;
+	background-image: url(img/icons/куница_рамка.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	animation: golding 3s ease infinite;
+	opacity: 0;
+	/*cursor: none;*/
+	z-index: 1;
+	/*border: 1px solid red;*/
+}
+
+.p_5_1 {
+	position: absolute;
+	top: 17.4%;
+	right: 13.1%;
+	width: 75px;
+	height: 50px;
+	background-image: url(img/icons/куница_рамка.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	animation: golding 3s ease infinite;
+	opacity: 0;
+	/*cursor: none;*/
+	z-index: 1;
+	/*border: 1px solid red;*/
+}
+
+.p_6 {
+	position: absolute;
+	top: 26.6%;
+	right: 5.15%;
+	width: 93px;
+	height: 100px;
+	background-image: url(img/icons/Лабаз_рамка.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	animation: golding 3s ease infinite;
+	opacity: 0;
+	/*cursor: none;*/
+	z-index: 1;
+	/*border: 1px solid red;*/
+}
+
+.p_6_1 {
+	position: absolute;
+	top: 16.8%;
+	left: 36.2%;
+	width: 93px;
+	height: 93px;
+	background-image: url(img/icons/Лабаз_рамка.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	animation: golding 3s ease infinite;
+	opacity: 0;
+	/*cursor: none;*/
+	z-index: 1;
+	/*border: 1px solid red;*/
+}
+
+.p_6_2 {
+	position: absolute;
+	top: 55.4%;
+	left: 3.2%;
+	width: 92px;
+	height: 100px;
+	background-image: url(img/icons/Лабаз_рамка.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	animation: golding 3s ease infinite;
+	opacity: 0;
+	/*cursor: none;*/
+	z-index: 1;
+	/*border: 1px solid red;*/
+}
+
+.p_7 {
+	position: absolute;
+	top: 30.2%;
+	left: 3.05%;
+	width: 83px;
+	height: 120px;
+	background-image: url(img/icons/стрелец1_рамка.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	animation: golding 3s ease infinite;
+	opacity: 0;
+	/*cursor: none;*/
+	z-index: 1;
+	/*border: 1px solid red;*/
+}
+
+.p_7_1 {
+	position: absolute;
+	top: 74.2%;
+	left: 91.9%;
+	width: 84px;
+	height: 118px;
+	background-image: url(img/icons/стрелец1_рамка.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	animation: golding 3s ease infinite;
+	opacity: 0;
+	/*cursor: none;*/
+	z-index: 1;
+	/*border: 1px solid red;*/
+}
+
+.p_7_2 {
+	position: absolute;
+	top: 58.6%;
+	left: 53.2%;
+	width: 82px;
+	height: 115px;
+	background-image: url(img/icons/стрелец1_рамка.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	animation: golding 3s ease infinite;
+	opacity: 0;
+	/*cursor: none;*/
+	z-index: 1;
+	/*border: 1px solid red;*/
+}
+
+.p_8 {
+	position: absolute;
+	top: 36%;
+	left: 15.8%;
+	width: 68px;
+	height: 62px;
+	background-image: url(img/icons/утка_рамка_лево.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	animation: golding 3s ease infinite;
+	opacity: 0;
+	/*cursor: none;*/
+	z-index: 1;
+	/*border: 1px solid red;*/
+}
+
+.p_9 {
+	position: absolute;
+	bottom: 60.7%;
+	left: 29.2%;
+	width: 107px;
+	height: 25px;
+	background-image: url(img/icons/лодка_рамка.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	animation: golding 3s ease infinite;
+	opacity: 0;
+	/*cursor: none;*/
+	z-index: 1;
+	/*border: 1px solid red;*/
+}
+
+.p_9_1 {
+	position: absolute;
+	bottom: 47.5%;
+	left: 57%;
+	width: 107px;
+	height: 25px;
+	background-image: url(img/icons/лодка_рамка.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	animation: golding 3s ease infinite;
+	opacity: 0;
+	/*cursor: none;*/
+	z-index: 1;
+	/*border: 1px solid red;*/
+}
+
+.p_9_2 {
+	position: absolute;
+	bottom: 4.8%;
+	left: 14.45%;
+	width: 105px;
+	height: 20px;
+	background-image: url(img/icons/лодка_рамка.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	animation: golding 3s ease infinite;
+	opacity: 0;
+	/*cursor: none;*/
+	z-index: 1;
+	/*border: 1px solid red;*/
+}
+
+.p_10 {
+	position: absolute;
+	top: 44%;
+	left: 41.85%;
+	width: 97px;
+	height: 36px;
+	background-image: url(img/icons/Рыба1_рамка.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	animation: golding 3s ease infinite;
+	opacity: 0;
+	/*cursor: none;*/
+	z-index: 1;
+	/*border: 1px solid red;*/
+}
+
+.p_11 {
+	position: absolute;
+	top: 55.9%;
+	left: 75.3%;
+	width: 92px;
+	height: 33px;
+	background-image: url(img/icons/рыба_3_рамка.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	animation: golding 3s ease infinite;
+	opacity: 0;
+	/*cursor: none;*/
+	z-index: 1;
+	/*border: 1px solid red;*/
+}
+
+.p_12 {
+	position: absolute;
+	top: 50.4%;
+	right: 6.7%;
+	width: 115px;
+	height: 86px;
+	background-image: url(img/icons/Лебедь_рамка.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	animation: golding 3s ease infinite;
+	opacity: 0;
+	/*cursor: none;*/
+	z-index: 1;
+	/*border: 1px solid red;*/
+}
+
+.p_13 {
+	position: absolute;
+	bottom: 31.6%;
+	left: 27.6%;
+	width: 122px;
+	height: 110px;
+	background-image: url(img/icons/корабль1_рамка.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	animation: golding 3s ease infinite;
+	opacity: 0;
+	/*cursor: none;*/
+	z-index: 1;
+	/*border: 1px solid red;*/
+}
+
+.p_14 {
+	position: absolute;
+	top: 56.7%;
+	left: 56.3%;
+	width: 226px;
+	height: 155px;
+	background-image: url(img/icons/церковь_3_рамка.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	animation: golding 3s ease infinite;
+	opacity: 0;
+	/*cursor: none;*/
+	z-index: 1;
+	/*border: 1px solid red;*/
+}
+
+.p_15 {
+	position: absolute;
+	bottom: 13.2%;
+	left: 24.4%;
+	width: 113px;
+	height: 23px;
+	background-image: url(img/icons/Рыба_2_рамка.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	animation: golding 3s ease infinite;
+	opacity: 0;
+	/*cursor: none;*/
+	z-index: 1;
+	/*border: 1px solid red;*/
+}
+
+.p_16 {
+	position: absolute;
+	bottom: 15.5%;
+	left: 58.9%;
+	width: 159px;
+	height: 120px;
+	background-image: url(img/icons/Церковь1_рамка.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	animation: golding 3s ease infinite;
+	opacity: 0;
+	/*cursor: none;*/
+	z-index: 1;
+	/*border: 1px solid red;*/
+}
+
+.p_16_2 {
+	position: absolute;
+	bottom: 27.4%;
+	left: 19.25%;
+	width: 160px;
+	height: 120px;
+	background-image: url(img/icons/Церковь1_рамка.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	animation: golding 3s ease infinite;
+	opacity: 0;
+	/*cursor: none;*/
+	z-index: 1;
+	/*border: 1px solid red;*/
+}
+
+.p_16_1 {
+	position: absolute;
+	bottom: 9.6%;
+	left: 86.7%;
+	width: 159px;
+	height: 120px;
+	background-image: url(img/icons/Церковь1_рамка.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	animation: golding 3s ease infinite;
+	opacity: 0;
+	/*cursor: none;*/
+	z-index: 1;
+	/*border: 1px solid red;*/
+}
+
+.p_17 {
+	position: absolute;
+	right: 13.8%;
+	bottom: 19.9%;
+	width: 191px;
+	height: 55px;
+	background-image: url(img/icons/лодяра_рамка.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	animation: golding 3s ease infinite;
+	opacity: 0;
+	/*cursor: none;*/
+	z-index: 1;
+	/*border: 1px solid red;*/
+}
+
+.p_18 {
+	position: absolute;
+	right: 18.2%;
+	bottom: 8.8%;
+	width: 96px;
+	height: 56px;
+	background-image: url(img/icons/Медведь_рамка.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	animation: golding 3s ease infinite;
+	opacity: 0;
+	/*cursor: none;*/
+	z-index: 1;
+	/*border: 1px solid red;*/
+}
+
+.p_19 {
+	position: absolute;
+	bottom: 14.9%;
+	left: 52.8%;
+	width: 74px;
+	height: 96px;
+	background-image: url(img/icons/ярмарка_рамка.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	animation: golding 3s ease infinite;
+	opacity: 0;
+	/*cursor: none;*/
+	z-index: 1;
+	/*border: 1px solid red;*/
+}
+
+
+
+
+
+
+
+.t_1 {
+	position: absolute;
+	left: 25%;
+	top: 15.8%;
+	width: 88px;
+	height: 98px;
+	background-image: url(img/icons/Олень_рамка.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	animation: golding 3s ease infinite;
+	opacity: 0;
+	/*cursor: none;*/
+	/*border: 1px solid red;*/
+	z-index: 1;
+}
+
+.t_1_1 {
+	position: absolute;
+	left: 56.1%;
+	top: 33.9%;
+	width: 88px;
+	height: 98px;
+	background-image: url(img/icons/Олень_рамка.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	animation: golding 3s ease infinite;
+	opacity: 0;
+	/*cursor: none;*/
+	/*border: 1px solid red;*/
+	z-index: 1;
+}
+
+.t_2 {
+	position: absolute;
+	left: 93.05%;
+	top: 59.9%;
+	width: 97px;
+	height: 60px;
+	background-image: url(img/icons/Медведь_рамка.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	animation: golding 3s ease infinite;
+	opacity: 0;
+	/*cursor: none;*/
+	z-index: 1;
+	/*border: 1px solid red;*/
+}
+
+.t_2_1 {
+	position: absolute;
+	left: 12.9%;
+	top: 25.5%;
+	width: 96px;
+	height: 60px;
+	background-image: url(img/icons/Медведь_рамка.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	animation: golding 3s ease infinite;
+	opacity: 0;
+	/*cursor: none;*/
+	z-index: 1;
+	/*border: 1px solid red;*/
+}
+
+.t_3 {
+	position: absolute;
+	left: 39.4%;
+	top: 22.5%;
+	width: 106px;
+	height: 25px;
+	background-image: url(img/icons/лодка_рамка.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	animation: golding 3s ease infinite;
+	opacity: 0;
+	/*cursor: none;*/
+	z-index: 1;
+	/*border: 1px solid red;*/р
+}
+
+.t_3_1 {
+	position: absolute;
+	left: 81.4%;
+	top: 51.3%;
+	width: 105px;
+	height: 25px;
+	background-image: url(img/icons/лодка_рамка.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	animation: golding 3s ease infinite;
+	opacity: 0;
+	/*cursor: none;*/
+	z-index: 1;
+	/*border: 1px solid red;*/
+}
+
+.t_4 {
+	position: absolute;
+	left: 74.1%;
+	top: 56.4%;
+	width: 115px;
+	height: 86px;
+	background-image: url(img/icons/Лебедь_рамка_право.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	animation: golding 3s ease infinite;
+	opacity: 0;
+	/*cursor: none;*/
+	z-index: 1;
+	/*border: 1px solid red;*/
+}
+
+.t_5 {
+	position: absolute;
+	left: 70.9%;
+	top: 18.2%;
+	width: 75px;
+	height: 50px;
+	background-image: url(img/icons/куница_рамка.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	animation: golding 3s ease infinite;
+	opacity: 0;
+	/*cursor: none;*/
+	z-index: 1;
+	/*border: 1px solid red;*/
+}
+
+.t_6 {	
+	position: absolute;
+	left: 20.7%;
+	top: 36.1%;
+	width: 148px;
+	height: 81px;
+	background-image: url(img/icons/Красный_чум_рамка.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	animation: golding 3s ease infinite;
+	opacity: 0;
+	/*cursor: none;*/
+	z-index: 1;
+	/*border: 1px solid red;*/
+}
+
+.t_6_1 {	
+	position: absolute;
+	left: 49.9%;
+	top: 18.7%;
+	width: 147px;
+	height: 80px;
+	background-image: url(img/icons/Красный_чум_рамка.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	animation: golding 3s ease infinite;
+	opacity: 0;
+	/*cursor: none;*/
+	z-index: 1;
+	/*border: 1px solid red;*/
+}
+
+.t_6_2 {	
+	position: absolute;
+	left: 83.1%;
+	top: 6.9%;
+	width: 147px;
+	height: 80px;
+	background-image: url(img/icons/Красный_чум_рамка.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	animation: golding 3s ease infinite;
+	opacity: 0;
+	/*cursor: none;*/
+	z-index: 1;
+	/*border: 1px solid red;*/
+}
+
+.t_7 {
+	position: absolute;
+	left: 81.9%;
+	top: 28.2%;
+	width: 64px;
+	height: 53px;
+	background-image: url(img/icons/Трясогузка_рамка.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	animation: golding 3s ease infinite;
+	opacity: 0;
+	/*cursor: none;*/
+	z-index: 1;
+	/*border: 1px solid red;*/
+}
+
+.t_8 {
+	position: absolute;
+	left: 3.3%;
+	top: 42.4%;
+	width: 92px;
+	height: 33px;
+	background-image: url(img/icons/рыба_3_рамка.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	animation: golding 3s ease infinite;
+	opacity: 0;
+	/*cursor: none;*/
+	z-index: 1;
+	/*border: 1px solid red;*/
+}
+
+.t_9 {
+	position: absolute;
+	left: 17.2%;
+	top: 49.9%;
+	width: 66px;
+	height: 65px;
+	background-image: url(img/icons/утка_рамка_лево.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	animation: golding 3s ease infinite;
+	opacity: 0;
+	/*cursor: none;*/
+	z-index: 1;
+	/*border: 1px solid red;*/
+}
+
+.t_10 {
+	position: absolute;
+	left: 41.8%;
+	top: 45.4%;
+	width: 96px;
+	height: 35px;
+	background-image: url(img/icons/Рыба1_рамка.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	animation: golding 3s ease infinite;
+	opacity: 0;
+	/*cursor: none;*/
+	z-index: 1;
+	/*border: 1px solid red;*/
+}
+
+.t_11 {
+	position: absolute;
+	left: 90.3%;
+	top: 49.7%;
+	width: 94px;
+	height: 95px;
+	background-image: url(img/icons/Лабаз_рамка.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	animation: golding 3s ease infinite;
+	opacity: 0;
+	/*cursor: none;*/
+	z-index: 1;
+	/*border: 1px solid red;*/
+}
+
+.t_11_1 {
+	position: absolute;
+	left: 3.2%;
+	top: 7.9%;
+	width: 92px;
+	height: 95px;
+	background-image: url(img/icons/Лабаз_рамка.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	animation: golding 3s ease infinite;
+	opacity: 0;
+	/*cursor: none;*/
+	z-index: 1;
+	/*border: 1px solid red;*/
+}
+
+.t_12 {
+	position: absolute;
+	left: 4.3%;
+	top: 85.3%;
+	width: 97px;
+	height: 70px;
+	background-image: url(img/icons/лиса_рамка.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	animation: golding 3s ease infinite;
+	opacity: 0;
+	/*cursor: none;*/
+	z-index: 1;
+	/*border: 1px solid red;*/
+}
+
+.t_12_1 {
+	position: absolute;
+	left: 67.2%;
+	top: 31.8%;
+	width: 99px;
+	height: 71px;
+	background-image: url(img/icons/лиса_рамка.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	animation: golding 3s ease infinite;
+	opacity: 0;
+	/*cursor: none;*/
+	z-index: 1;
+	/*border: 1px solid red;*/
+}
+
+.t_13 {
+	position: absolute;
+	left: 24.4%;
+	top: 84.9%;
+	width: 115px;
+	height: 28px;
+	background-image: url(img/icons/Рыба_2_рамка.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	animation: golding 3s ease infinite;
+	opacity: 0;
+	/*cursor: none;*/
+	z-index: 1;
+	/*border: 1px solid red;*/
+}
+
+.t_14 {
+	position: absolute;
+	left: 25.1%;
+	top: 62.5%;
+	width: 400px;
+	height: 94px;
+	background-image: url(img/icons/Пароход_рамка.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	animation: golding 3s ease infinite;
+	opacity: 0;
+	/*cursor: none;*/
+	z-index: 1;
+	/*border: 1px solid red;*/
+}
+
+.t_15 {
+	position: absolute;
+	left: 38.6%;
+	top: 80.2%;
+	width: 160px;
+	height: 70px;
+	background-image: url(img/icons/Самолет_рамка.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	animation: golding 3s ease infinite;
+	opacity: 0;
+	/*cursor: none;*/
+	z-index: 1;
+	/*border: 1px solid red;*/
+}
+
+.t_16 {
+	position: absolute;
+	left: 45.8%;
+	top: 64.3%;
+	width: 156px;
+	height: 121px;
+	background-image: url(img/icons/Церковь_рамка.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	animation: golding 3s ease infinite;
+	opacity: 0;
+	/*cursor: none;*/
+	z-index: 1;
+	/*border: 1px solid red;*/
+}
+
+.t_17 {
+	position: absolute;
+	left: 59%;
+	top: 74.8%;
+	width: 157px;
+	height: 120px;
+	background-image: url(img/icons/Церковь_рамка.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	animation: golding 3s ease infinite;
+	opacity: 0;
+	/*cursor: none;*/
+	z-index: 1;
+	/*border: 1px solid red;*/
+}
+
+.t_17_1 {
+	position: absolute;
+	bottom: 9.5%;
+	left: 86.7%;
+	width: 158px;
+	height: 118px;
+	background-image: url(img/icons/Церковь_рамка.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	animation: golding 3s ease infinite;
+	opacity: 0;
+	/*cursor: none;*/
+	z-index: 1;
+	/*border: 1px solid red;*/
+}
+
+.t_17_2 {
+	position: absolute;
+	bottom: 27.1%;
+	left: 19.25%;
+	width: 158px;
+	height: 120px;
+	background-image: url(img/icons/Церковь_рамка.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	animation: golding 3s ease infinite;
+	opacity: 0;
+	/*cursor: none;*/
+	z-index: 1;
+	/*border: 1px solid red;*/
+}
+
+.t_18 {
+	position: absolute;
+	left: 61.75%;
+	top: 65.5%;
+	width: 74px;
+	height: 96px;
+	background-image: url(img/icons/ярмарка_рамка.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	animation: golding 3s ease infinite;
+	opacity: 0;
+	/*cursor: none;*/
+	z-index: 1;
+	/*border: 1px solid red;*/
+}
+
+.t_19 {
+	position: absolute;
+	left: 50.45%;
+	top: 54.1%;
+	width: 256px;
+	height: 182px;
+	background-image: url(img/icons/большая_церковь_рамка.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	animation: golding 3s ease infinite;
+	opacity: 0;
+	/*cursor: none;*/
+	z-index: 1;
+	/*border: 1px solid red;*/
+}
+
+.t_20{
+	position: absolute;
+	left: 70.4%;
+	top: 74.1%;
+	width: 341px;
+	height: 65px;
+	background-image: url(img/icons/траулер_рамка.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	animation: golding 3s ease infinite;
+	opacity: 0;
+	/*cursor: none;*/
+	z-index: 1;
+	/*border: 1px solid red;*/
+}
+
+.t_21 {
+	position: absolute;
+	left: 52.8%;
+	top: 77.1%;
+	width: 74px;
+	height: 84px;
+	background-image: url(img/icons/ярмарка_рамка.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	animation: golding 3s ease infinite;
+	opacity: 0;
+	/*cursor: none;*/
+	z-index: 1;
+	/*border: 1px solid red;*/
+}
+
+
+
+
+
+
+
+.n_1 {
+	position: absolute;
+	top: 29.4%;
+	left: 45.5%;
+	width: 97px;
+	height: 98px;
+	background-image: url(img/icons/чум_рамка.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	animation: golding 3s ease infinite;
+	opacity: 0;
+	/*cursor: none;*/
+	z-index: 1;
+	/*border: 1px solid red;*/
+}
+
+.n_1_1 {
+	position: absolute;
+	top: 10%;
+	left: 17.25%;
+	width: 98px;
+	height: 98px;
+	background-image: url(img/icons/чум_рамка.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	animation: golding 3s ease infinite;
+	opacity: 0;
+	/*cursor: none;*/
+	z-index: 1;
+	/*border: 1px solid red;*/
+}
+
+.n_2 {
+	position: absolute;
+	top: 23.2%;
+	left: 26.6%;
+	width: 76px;
+	height: 70px;
+	background-image: url(img/icons/Ильич_рамка.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	animation: golding 3s ease infinite;
+	opacity: 0;
+	/*cursor: none;*/
+	z-index: 1;
+	/*border: 1px solid red;*/
+}
+
+.n_3 {
+	position: absolute;
+	top: 46.7%;
+	left: 2%;
+	width: 106px;
+	height: 25px;
+	background-image: url(img/icons/лодка_рамка.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	animation: golding 3s ease infinite;
+	opacity: 0;
+	/*cursor: none;*/
+	z-index: 1;
+	/*border: 1px solid red;*/
+}
+
+.n_4 {
+	position: absolute;
+	top: 15.95%;
+	left: 53.35%;
+	width: 79px;
+	height: 163px;
+	background-image: url(img/icons/ЛЭП_рамка.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	animation: golding 3s ease infinite;
+	opacity: 0;
+	/*cursor: none;*/
+	z-index: 1;
+	/*border: 1px solid red;*/
+}
+
+.n_4_1 {
+	position: absolute;
+	top: 5.3%;
+	left: 48.3%;
+	width: 79px;
+	height: 163px;
+	background-image: url(img/icons/ЛЭП_рамка_безЛица.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	animation: golding 3s ease infinite;
+	opacity: 0;
+	/*cursor: none;*/
+	z-index: 1;
+	/*border: 1px solid red;*/
+}
+
+.n_5 {
+	position: absolute;
+	top: 35.8%;
+	left: 60.7%;
+	width: 99px;
+	height: 70px;
+	background-image: url(img/icons/лиса_рамка.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	animation: golding 3s ease infinite;
+	opacity: 0;
+	/*cursor: none;*/
+	z-index: 1;
+	/*border: 1px solid red;*/
+}
+
+.n_6 {
+	position: absolute;
+	top: 17%;
+	left: 74.45%;
+	width: 75px;
+	height: 70px;
+	background-image: url(img/icons/Ильич_рамка.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	animation: golding 3s ease infinite;
+	opacity: 0;
+	/*cursor: none;*/
+	z-index: 1;
+	/*border: 1px solid red;*/
+}
+
+.n_7 {
+	position: absolute;
+	top: 87.3%;
+	left: 80.3%;
+	width: 61px;
+	height: 53px;
+	background-image: url(img/icons/Трясогузка_рамка.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	animation: golding 3s ease infinite;
+	opacity: 0;
+	/*cursor: none;*/
+	z-index: 1;
+	/*border: 1px solid red;*/
+}
+
+.n_8 {
+	position: absolute;
+	top: 19.2%;
+	left: 83.15%;
+	height: 179px;
+	width: 27px;
+	background-image: url(img/icons/факел_рамка.png);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	animation: golding 3s ease infinite;
+	opacity: 1;
+	/*cursor: none;*/
+	z-index: 1;
+}
+
+.n_8_1 {
+	position: absolute;
+	top: 8.4%;
+	left: 35.15%;
+	height: 159px;
+	width: 23px;
+	background-image: url(img/icons/факел_рамка.png);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	animation: golding 3s ease infinite;
+	/*opacity: 1;*/
+	/*cursor: none;*/
+	z-index: 1;
+	/*border: 1px solid red;*/
+}
+
+.n_9 {
+	position: absolute;
+	top: 31.2%;
+	left: 11.9%;
+	width: 63px;
+	height: 136px;
+	background-image: url(img/icons/Нефтяная_вышка_рамка.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	animation: golding 3s ease infinite;
+	opacity: 0;
+	/*cursor: none;*/
+	z-index: 1;
+	/*border: 1px solid red;*/
+}
+
+.n_9_1 {
+	position: absolute;
+	top: 20%;
+	left: 66.75%;
+	width: 59px;
+	height: 129px;
+	background-image: url(img/icons/Нефтяная_вышка_рамка.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	animation: golding 3s ease infinite;
+	opacity: 0;
+	/*cursor: none;*/
+	z-index: 1;
+	/*border: 1px solid red;*/
+}
+
+.n_9_2 {
+	position: absolute;
+	top: 72.6%;
+	left: 34%;
+	width: 58px;
+	height: 124px;
+	background-image: url(img/icons/Нефтяная_вышка_рамка.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	animation: golding 3s ease infinite;
+	opacity: 0;
+	/*cursor: none;*/
+	z-index: 1;
+	/*border: 1px solid red;*/
+}
+
+.n_10 {
+	position: absolute;
+	top: 34%;
+	left: 33.2%;
+	width: 96px;
+	height: 60px;
+	background-image: url(img/icons/Медведь_рамка.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	animation: golding 3s ease infinite;
+	opacity: 0;
+	/*cursor: none;*/
+	z-index: 1;
+	/*border: 1px solid red;*/
+}
+
+.n_11 {
+	position: absolute;
+	top: 44.4%;
+	left: 53.6%;
+	width: 94px;
+	height: 33px;
+	background-image: url(img/icons/рыба_3_рамка.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	animation: golding 3s ease infinite;
+	opacity: 0;
+	/*cursor: none;*/
+	z-index: 1;
+	/*border: 1px solid red;*/
+}
+
+.n_12 {
+	position: absolute;
+	top: 37.2%;
+	left: 71.25%;
+	width: 87px;
+	height: 99px;
+	background-image: url(img/icons/Олень_рамка.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	animation: golding 3s ease infinite;
+	opacity: 0;
+	/*cursor: none;*/
+	z-index: 1;
+	/*border: 1px solid red;*/
+}
+
+.n_12_1 {
+	position: absolute;
+	top: 29.5%;
+	left: 18.3%;
+	width: 89px;
+	height: 98px;
+	background-image: url(img/icons/Олень_рамка.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	animation: golding 3s ease infinite;
+	opacity: 0;
+	/*cursor: none;*/
+	z-index: 1;
+	/*border: 1px solid red;*/
+}
+
+.n_13 {
+	position: absolute;
+	top: 37.1%;
+	left: 90.2%;
+	width: 93px;
+	height: 92px;
+	background-image: url(img/icons/Лабаз_рамка.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	animation: golding 3s ease infinite;
+	opacity: 0;
+	/*cursor: none;*/
+	z-index: 1;
+	/*border: 1px solid red;*/
+}
+
+.n_13_1 {
+	position: absolute;
+	top: 88.1%;
+	left: 10.4%;
+	width: 93px;
+	height: 92px;
+	background-image: url(img/icons/Лабаз_рамка.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	animation: golding 3s ease infinite;
+	opacity: 0;
+	/*cursor: none;*/
+	z-index: 1;
+	/*border: 1px solid red;*/
+}
+
+.n_14 {
+	position: absolute;
+	top: 53.3%;
+	left: 12.5%;
+	width: 97px;
+	height: 35px;
+	background-image: url(img/icons/Рыба1_рамка.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	animation: golding 3s ease infinite;
+	opacity: 0;
+	/*cursor: none;*/
+	z-index: 1;
+	/*border: 1px solid red;*/
+}
+
+.n_15 {
+	position: absolute;
+	top: 44%;
+	left: 28.1%;
+	width: 118px;
+	height: 141px;
+	background-image: url(img/icons/Нефтекачалка_рамка.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	animation: golding 3s ease infinite;
+	opacity: 0;
+	/*cursor: none;*/
+	z-index: 1;
+	/*border: 1px solid red;*/
+}
+
+.n_15_1 {
+	position: absolute;
+	top: 75.5%;
+	left: 52.2%;
+	width: 117px;
+	height: 144px;
+	background-image: url(img/icons/Нефтекачалка_рамка.png);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	animation: golding 3s ease infinite;
+	opacity: 0;
+	/*cursor: none;*/
+	z-index: 1;
+	/*border: 1px solid red;*/
+}
+
+.n_15_2 {
+	position: absolute;
+	top: 48.4%;
+	left: 87.4%;
+	width: 120px;
+	height: 144px;
+	background-image: url(img/icons/Нефтекачалка_рамка.png);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	animation: golding 3s ease infinite;
+	opacity: 0;
+	/*cursor: none;*/
+	z-index: 1;
+	/*border: 1px solid red;*/
+}
+
+.n_15_3 {
+	position: absolute;
+	top: 19.5%;
+	left: 89%;
+	width: 110px;
+	height: 140px;
+	background-image: url(img/icons/Нефтекачалка_рамка.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	animation: golding 3s ease infinite;
+	opacity: 0;
+	/*cursor: none;*/
+	z-index: 1;
+	/*border: 1px solid red;*/
+}
+
+.n_15_4 {
+	position: absolute;
+	top: 64.2%;
+	left: 20.8%;
+	width: 109px;
+	height: 130px;
+	background-image: url(img/icons/Нефтекачалка_рамка.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	animation: golding 3s ease infinite;
+	opacity: 0;
+	/*cursor: none;*/
+	z-index: 1;
+	/*border: 1px solid red;*/
+}
+
+.n_16 {
+	position: absolute;
+	top: 64.8%;
+	left: 50.5%;
+	width: 210px;
+	height: 134px;
+	background-image: url(img/icons/Мост_рамка.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	animation: golding 3s ease infinite;
+	opacity: 0;
+	/*cursor: none;*/
+	z-index: 1;
+	/*border: 1px solid red;*/
+}
+
+.n_17 {
+	position: absolute;
+	top: 52.3%;
+	left: 55.9%;
+	width: 97.5px;
+	height: 127px;
+	background-image: url(img/icons/монумент_рамка_1.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	animation: golding 3s ease infinite;
+	opacity: 0;
+	/*cursor: none;*/
+	z-index: 1;
+	/*border: 1px solid red;*/
+}
+
+.n_18 {
+	position: absolute;
+	top: 65.5%;
+	left: 58.7%;
+	width: 221px;
+	height: 68px;
+	background-image: url(img/icons/заво_рамка_1.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	animation: golding 3s ease infinite;
+	opacity: 0;
+	/*cursor: none;*/
+	z-index: 1;
+	/*border: 1px solid red;*/
+}
+
+.n_19 {
+	position: absolute;
+	top: 59.8%;
+	left: 82.35%;
+	width: 75px;
+	height: 222px;
+	background-image: url(img/icons/Покорителям_рамка.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	animation: golding 3s ease infinite;
+	opacity: 0;
+	/*cursor: none;*/
+	z-index: 1;
+	/*border: 1px solid red;*/
+}
+
+.n_20 {
+	position: absolute;
+	top: 72%;
+	left: 94.1%;
+	width: 114px;
+	height: 86px;
+	background-image: url(img/icons/Лебедь_рамка.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	animation: golding 3s ease infinite;
+	opacity: 0;
+	/*cursor: none;*/
+	z-index: 1;
+	/*border: 1px solid red;*/	
+}
+
+.n_21 {
+	position: absolute;
+	top: 72.1%;
+	left: 7.75%;
+	width: 68px;
+	height: 53px;
+	background-image: url(img/icons/утка_рамка.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	animation: golding 3s ease infinite;
+	opacity: 0;
+	/*cursor: none;*/
+	z-index: 1;
+	/*border: 1px solid red;*/
+}
+
+.n_22 {
+	position: absolute;
+	top: 86.1%;
+	left: 6.95%;
+	width: 76px;
+	height: 66px;
+	background-image: url(img/icons/Ильич_рамка.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	animation: golding 3s ease infinite;
+	opacity: 0;
+	/*cursor: none;*/
+	z-index: 1;
+	/*border: 1px solid red;*/
+}
+
+.n_23 {
+	position: absolute;
+	top: 80%;
+	left: 24.4%;
+	width: 115px;
+	height: 29px;
+	background-image: url(img/icons/Рыба_2_рамка.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	animation: golding 3s ease infinite;
+	opacity: 0;
+	/*cursor: none;*/
+	z-index: 1;
+	/*border: 1px solid red;*/
+}
+
+.n_24 {
+	position: absolute;
+	top: 80.2%;
+	left: 41%;
+	width: 77px;
+	height: 70px;
+	background-image: url(img/icons/Ильич_рамка.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	animation: golding 3s ease infinite;
+	opacity: 0;
+	/*cursor: none;*/
+	z-index: 1;
+	/*border: 1px solid red;*/
+}
+
+.n_25 {
+	position: absolute;
+	top: 82.3%;
+	left: 60%;
+	width: 74px;
+	height: 50px;
+	background-image: url(img/icons/куница_рамка.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	animation: golding 3s ease infinite;
+	opacity: 0;
+	/*cursor: none;*/
+	z-index: 1;
+	/*border: 1px solid red;*/
+} 
+
+.n_26 {
+	position: absolute;
+	top: 62.3%;
+	left: 46.8%;
+	width: 63px;
+	height: 136px;
+	background-image: url(img/icons/Нефтяная_вышка_рамка.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	animation: golding 3s ease infinite;
+	opacity: 0;
+	/*cursor: none;*/
+	z-index: 1;
+	/*border: 1px solid red;*/
+}
+
+
+
+
+
+
+.tree_one {
+	position: absolute;
+	top: 20%;
+	left: 15%;
+	width: 50px;
+	height: 100px;
+}
+
+.bottom_tree {
+	position: absolute;
+	top: 60px;
+	left: 1px;
+	width: 47px;
+	height: 40px;
+	background-image: url(img/tree_leg.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	transform-origin: 50% 100%;
+	transform: rotate(-3deg);
+	animation: bottom_tree 7s ease-in-out infinite;
+	/*border:1px solid red;*/
+}
+
+@keyframes bottom_tree {
+	0%,100% {
+		transform: rotate(-3deg);
+	}
+	50% {
+		transform: rotate(3deg);
+	}
+}
+
+.mid_tree {
+	position: absolute;
+	top: 45px;
+	left: 3px;
+	width: 100%;
+	height: 85px;
+	background-image: url(img/tree_second.png);
+	background-size: 90%;
+	background-repeat: no-repeat;
+	transform-origin: 50% 100%;
+	transform: rotate(-2deg);
+	animation: mid_tree 7s ease-in-out infinite;
+}
+
+@keyframes mid_tree {
+	0%,100% {
+		transform: rotate(-2deg);
+	}
+	50% {
+		transform: rotate(2deg);
+	}
+}
+
+.top_tree {
+	position: absolute;
+	top: 30px;
+	left: 8px;
+	width: 100%;
+	height: 85px;
+	background-image: url(img/tree_top.png);
+	background-size: 60%;
+	background-repeat: no-repeat;
+	transform-origin: 50% 100%;
+	transform: rotate(-3deg);
+	animation: top_tree 7s ease-in-out infinite;
+}
+
+@keyframes top_tree {
+	0%,100% {
+		transform: rotate(-3deg);
+	}
+	50% {
+		transform: rotate(3deg);
+	}
+}
+
+.tree_1 {
+	position: absolute;
+	top: 15%;
+	left: 15%;
+}
+
+.tree_2 {
+	position: absolute;
+	top: 18%;
+	left: 10%;
+}
+
+.tree_3 {
+	position: absolute;
+	top: 15%;
+	left: 6%;
+}
+
+.tree_4 {
+	position: absolute;
+	top: -1%;
+	left: 4.5%;
+}
+
+.tree_5 {
+	position: absolute;
+	top: 0%;
+	left: 15%;
+}
+
+.tree_6 {
+	position: absolute;
+	top: 5%;
+	left: 17%;
+}
+
+.tree_7 {
+	position: absolute;
+	top: -2.5%;
+	left: 21.5%;
+}
+
+.tree_8 {
+	position: absolute;
+	top: 40%;
+	left: 8%;
+}
+
+.tree_9 {
+	position: absolute;
+	top: 36%;
+	left: 13%;
+}
+
+.tree_10 {
+	position: absolute;
+	top: 61.5%;
+	left: 16.5%;
+}
+
+.tree_11 {
+	position: absolute;
+	top: 57%;
+	left: 14.5%;
+}
+
+.tree_12 {
+	position: absolute;
+	top: 52%;
+	left: 13.5%;
+}
+
+.tree_13 {
+	position: absolute;
+	top: 14%;
+	left: 93%;
+}
+
+.tree_14 {
+	position: absolute;
+	top: 6%;
+	left: 91%;
+}
+
+.tree_15 {
+	position: absolute;
+	top: 9.5%;
+	left: 95%;
+}
+
+.tree_16 {
+	position: absolute;
+	top: 30%;
+	left: 94%;
+}
+
+.tree_17 {
+	position: absolute;
+	top: 43%;
+	left: 95%;
+}
+
+.tree_18 {
+	position: absolute;
+	top: 45%;
+	left: 96%;
+}
+
+.block_fish {
+	position: absolute;
+	top: 30%;
+	left: 10%;
+	/*background: black;*/
+	width: 60px;
+	height: 50px;
+	overflow: hidden;
+}
+
+.fish {
+	position: absolute;
+	top: 50px;
+	left: 0;
+	width: 15px;
+	height: 15px;
+	background-image: url(img/fish.png);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	transform: rotate(0deg);
+	transform-origin: 170%;
+
+}
+
+.fish_jump {
+	animation: fish 1s cubic-bezier(0.16, 0.67, 0.88, 0.38);
+}
+
+@keyframes fish {
+	0% {
+		transform: rotate(0deg);
+	}
+
+	100% {
+		transform: rotate(180deg);
+	}
+}
+
+.f_1 {
+	position: absolute;
+	top: 41.2%;
+	left: 3%;
+	transform: rotate(60deg);
+}
+
+.f_2 {
+	position: absolute;
+	top: 56.2%;
+	left: 12%;
+	transform: rotate(41deg);
+}
+
+.f_3 {
+	position: absolute;
+	top: 62.5%;
+	left: 26.5%;
+}
+
+.f_4 {
+	position: absolute;
+	top: 88.2%;
+	left: 16.3%;
+	transform: rotate(-55deg);
+}
+
+.f_5 {
+	position: absolute;
+	top: 64%;
+	left: 40%;
+}
+
+.f_6 {
+	position: absolute;
+	top: 71%;
+	left: 45%;
+	transform: rotate(30deg);
+}
+
+.f_7 {
+	position: absolute;
+	top: 75%;
+	left: 57.2%;
+	transform: rotate(70deg);
+}
+
+.f_8 {
+	position: absolute;
+	top: 65.4%;
+	left: 50.5%;
+}
+
+.f_9 {
+	position: absolute;
+	top: 71.5%;
+	left: 74.3%;
+	transform: rotate(-30deg);
+}
+
+.f_10 {
+	position: absolute;
+	top: 79.1%;
+	left: 88.2%;
+	transform: rotate(25deg);
+}
+
+.f_11 {
+	position: absolute;
+	top: 44.9%;
+	left: 83.4%;
+	transform: rotate(-35deg);
+}
+
+.f_12 {
+	position: absolute;
+	top: 55.2%;
+	left: 69.1%;
+	transform: rotate(-35deg);
+}
+
+.f_13 {
+	position: absolute;
+	top: 34.8%;
+	left: 52.7%;
+	transform: rotate(62deg);
+}
+
+.f_14 {
+	position: absolute;
+	top: 34.6%;
+	left: 26.9%;
+	transform: rotate(50deg);
+}
+
+.f_15 {
+	position: absolute;
+	top: 13%;
+	left: 46%;
+	transform: rotate(-60deg);
+	/*z-index: 2;*/
+}
+
+.fan_1_pos1 {
+	position: absolute;
+	top: 70.1%;
+	left: 20.1%;
+}
+
+.fan_1_pos2 {
+	position: absolute;
+	top: 68.6%;
+	left: 88.6%;
+	transform: rotate(-25deg);
+}
+
+.fan_2_pos1 {
+	top: 44.5%;
+	left: 6%;
+	transform: rotate(75deg);
+}
+
+.fan_2_pos2 {
+	top: 53.5%;
+	left: 35%;
+	transform: rotate(10deg);
+}
+
+.fan_2_pos3 {
+	position: absolute;
+	top: 50.5%;
+	left: 44.9%;
+	transform: rotate(75deg);
+}
+
+.fan_2_pos4 {
+	position: absolute;
+	top: 28.5%;
+	left: 42.3%;
+	transform: rotate(75deg);
+}
+
+.fan_2_pos5 {
+	position: absolute;
+	top: 68.5%;
+	left: 88.1%;
+	transform: rotate(-30deg);
+}
+
+.fan_3_pos1 {
+	position: absolute;
+	top: 36%;
+	left: 43.2%;
+	transform: rotate(70deg);
+}
+
+.tree_t2 {
+	width: 30px;
+	height:60px;
+	background-image: url(img/tree_2.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	animation: tree_wind 5s ease-in-out infinite;
+	transform-origin: 50% 100%;
+	transform: rotate(3deg);
+}
+
+@keyframes tree_wind {
+	0%,100%{
+		transform: rotate(3deg);
+	}
+	50%{
+		transform: rotate(-3deg);
+	}
+}
+
+.tree_t2_pos1 {
+	position: absolute;
+	top: 75%;
+	left: 40%;
+}
+
+.tree_t2_pos2 {
+	position: absolute;
+	top: 80%;
+	left: 38%;
+}
+
+.tree_t2_pos3 {
+	position: absolute;
+	top: 75%;
+	left: 50%;
+}
+
+.tree_t2_pos4 {
+	position: absolute;
+	top: 80%;
+	left: 51%;
+}
+
+.tree_t2_pos5 {
+	position: absolute;
+	top: 75%;
+	left: 30%;
+}
+
+.tree_t2_pos6 {
+	position: absolute;
+	top: 76%;
+	left: 52.5%;
+}
+
+.tree_t2_pos7 {
+	position: absolute;
+	top: 82%;
+	left: 54%;
+} 
+
+.tree_t2_pos8 {
+	position: absolute;
+	top: 82%;
+	left: 49%;
+} 
+
+.tree_t2_pos9 {
+	position: absolute;
+	top: 23%;
+	left: 87%;
+}
+
+.tree_t2_pos10 {
+	position: absolute;
+	top: 24%;
+	left: 89%;
+}
+
+.tree_t2_pos11 {
+	position: absolute;
+	top: 22%;
+	left: 90.5%;
+}
+
+.tree_t2_pos12 {
+	position: absolute;
+	top: 71%;
+	left: 86.8%;
+}
+
+.tree_t2_pos13 {
+	position: absolute;
+	top: 72%;
+	left: 91%;
+}
+
+.tree_t2_pos14 {
+	position: absolute;
+	top: 65%;
+	left: 93%;
+}
+
+.tree_t2_pos15 {
+	position: absolute;
+	top: 62%;
+	left: 98%;
+}
+
+.tree_t2_pos16 {
+	position: absolute;
+	top: 75%;
+	left: 96%;
+}
+
+.tree_t2_pos3_1 {
+	position: absolute;
+	top: 93%;
+	left: 85%;
+}
+
+.tree_t2_pos4_1 {
+	position: absolute;
+	top: 94%;
+	left: 87%;
+}
+
+.tree_t2_pos6_1 {
+	position: absolute;
+	top: 92%;
+	left: 89%;
+}
+
+.tree_t2_pos7_1 {
+	position: absolute;
+	top: 86%;
+	left: 7%;
+}
+
+.tree_t2_pos8_1 {
+	position: absolute;
+	top: 87.5%;
+	left: 9%;
+}
+
+.tree_t2_pos10_1 {
+	position: absolute;
+	top: 60%;
+	left: 82%;
+}
+
+.tree_t2_pos1_2 {
+	position: absolute;
+	top: 80%;
+	left: 32%;
+}
+
+.tree_t2_pos2_2 {
+	position: absolute;
+	top: 74%;
+	left: 35%;
+}
+
+.tree_t2_pos7_2 {
+	position: absolute;
+	top: 58%;
+	left: 85%;
+}
+
+.tree_t2_pos8_2 {
+	position: absolute;
+	top: 58%;
+	left: 80%;
+}
+
+.tree_t2_pos1_3 {
+	position: absolute;
+	top: 70%;
+	left: 37%;
+}
+
+.tree_t2_pos2_3 {
+	position: absolute;
+	top: 72%;
+	left: 39%;
+}
+
+.tree_t2_pos7_3 {
+	position: absolute;
+	top: 78%;
+	left: 74%;
+}
+
+.tree_t2_pos9_3 {
+	position: absolute;
+	top: 80%;
+	left: 76%;
+}
+
+.tree_t2_pos10_3 {
+	position: absolute;
+	top: 5%;
+	left: 60%;
+}
+
+.tree_t2_pos11_3 {
+	position: absolute;
+	top: 3%;
+	left: 65%;
+}
+
+.tree_t2_pos16_3 {
+	position: absolute;
+	top: 60%;
+	left: 78%;
+}
+
+.tree_9_1 {
+	position: absolute;
+	top: 55%;
+	left: 5%;
+}
+
+.tree_12_1 {
+	position: absolute;
+	top: 33%;
+	left: 25%;
+	z-index: 2;
+}
+
+.tree_14_1 {
+	position: absolute;
+	top: 33%;
+	left: 5%;
+}
+
+.clouds {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	/*background: orangered;*/
+	border: 1px solid red;
+}
+
+.cloud_1 {
+	position: absolute;
+	width: 200px;
+	height: 200px;
+	background-image: url(img/cloud_1.png);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	z-index: 0;
+	animation: clouds 90s linear infinite;
+	/*border: 1px solid red;*/
+}
+
+.cloud_2 {
+	position: absolute;
+	width: 200px;
+	height: 200px;
+	background-image: url(img/cloud_2.png);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	z-index: 0;
+	animation: clouds 90s linear infinite;
+}
+
+.cloud_3 {
+	position: absolute;
+	width: 200px;
+	height: 200px;
+	background-image: url(img/cloud_3.png);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	z-index: 0;
+	animation: clouds 90s linear infinite;
+}
+
+.cloud_4 {
+	position: absolute;
+	width: 200px;
+	height: 200px;
+	background-image: url(img/cloud_4.png);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	z-index: 0;
+	animation: clouds 90s linear infinite;
+}
+
+.cloud_5 {
+	position: absolute;
+	width: 200px;
+	height: 200px;
+	background-image: url(img/cloud_5.png);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	z-index: 0;
+	animation: clouds 90s linear infinite;
+}
+
+.cloud_6 {
+	position: absolute;
+	width: 200px;
+	height: 200px;
+	background-image: url(img/cloud_6.png);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	z-index: 0;
+	animation: clouds 90s linear infinite;
+}
+
+.cloud_7 {
+	position: absolute;
+	width: 200px;
+	height: 200px;
+	background-image: url(img/cloud_7.png);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	z-index: 0;
+	animation: clouds 90s linear infinite;
+}
+
+@keyframes clouds {
+	0% {
+		opacity: 0;
+		transform: translateX(-100px);
+	}
+
+	10% {
+		opacity: 1;
+	}
+	/*5% {
+		opacity: 1;
+		transform: translateX(5%);
+	}*/
+	90% {
+		opacity: 1;
+		/*transform: translateX(1800px);*/
+	}
+	100%{
+		opacity: 0;
+		transform: translateX(2000px);
+	}
+}
+
+.btns_hide {
+	position: absolute;
+	bottom: 35px;
+	left: 320px;
+	width: 1200px;
+	height: 100px;
+	background: transparent;
+	z-index: 10;
+}
+
+.hideCursor {
+	cursor: none !important;
+}
+
+.n_4_pos1 {
+	top: 21.85% !important;
+	left: 6.2% !important;
+}
+
+.n_4_pos2 {
+	top: 50.5% !important;
+	left: 74.9% !important;
+}
+
+.n_4_pos3 {
+	top: 52.5% !important;
+	left: 39.44% !important;
+}
+
+.objectImages {
+	position: absolute;
+	display: flex;
+	flex-direction: row;
+	height: 100%;
+	left: 0;
+	transition: all 1s ease;
+}
+
+.objectImages img {
+	border-radius: 8px;
+	width: 245px;
+}
+
+.flexGroup {
+	position: absolute;
+	bottom: 127px;
+	left: calc(50% + 1px);
+	transform: translate(-49%);
+	/*width: 60%;*/
+	width: 245px;
+	height: 160px;
+	background-repeat: no-repeat;
+	border-radius: 8px;
+	overflow: hidden;
+}
+
+.blockSlide {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.left {
+	position: absolute;
+	width: 50%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	cursor: pointer;
+	/*background: rgba(0,0,0, 0.3);*/
+	z-index: 2;
+}
+
+.right {
+	position: absolute;
+	width: 50%;
+	height: 100%;
+	top: 0;
+	right: 0;
+	cursor: pointer;
+	/*background: rgba(255,255,255, 0.3);*/
+	z-index: 2;
+}
+
+.arrowLeft {
+	position: absolute;
+	top: 50%;
+	left: 5px;
+	transform: translateY(-50%);
+	width: 12px;
+	height: 12px;
+	background-image: url('./img/newArrowLeftStroke1.png');
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: 100%;
+	z-index: 2;
+}
+
+.arrowRight {
+	position: absolute;
+	top: 50%;
+	right: 5px;
+	transform: translateY(-50%);
+	width: 12px;
+	height: 12px;
+	background-image: url('./img/newArrowRightStroke1.png');
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: 100%;
+	z-index: 2;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
