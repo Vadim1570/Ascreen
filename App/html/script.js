@@ -16,10 +16,10 @@ let tab5 = document.querySelector('.ta_5');
 let main_btns = document.querySelectorAll('.btn_1_i');
 let greyBg = document.querySelector('.greyBg');
 
-body.addEventListener('contextmenu',function(e){
-	e.preventDefault();
-	return false;
-});
+//body.addEventListener('contextmenu',function(e){
+//	e.preventDefault();
+//	return false;
+//});
 
 // hide and show cursor
 	
