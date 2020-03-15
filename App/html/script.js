@@ -256,6 +256,7 @@ for ( let btn of buttons ) {
 
 		btns_hide.style.display = 'block';
 
+		// Плавно скрыть старый фон
 		setTimeout(function(){
 
 			for ( let i = 0; i < tab.length; i++ ) {
@@ -271,6 +272,7 @@ for ( let btn of buttons ) {
 			
 		},500)
 
+		// Плавно подгрузить новый фон
 		setTimeout(function(){
 			for ( let i = 0; i < tab.length; i++ ) {
 				tab[i].classList.remove('showTabs');
@@ -305,6 +307,8 @@ document.addEventListener('mousemove',function(e){
 			} else if ( header_inner == 48 && check == '010101' ) {
 				div.className = 'table_info';
 			} else if ( header_inner == 49 && check == '010101' ) {
+				div.className = 'table_info';
+			} else if (header_inner == 52 && check == '010101') {
 				div.className = 'table_info';
 			} else {
 				div.className = 'table';
@@ -365,6 +369,8 @@ document.addEventListener('mousemove',function(e){
 			} else if ( header_inner == 48 && check == '010101' ) {
 				div.style = 'top: 8%; left: 550px;';
 			} else if ( header_inner == 49 && check == '010101' ) {
+				div.style = 'top: 8%; left: 550px;';
+			} else if (header_inner == 52 && check == '010101') {
 				div.style = 'top: 8%; left: 550px;';
 			} else if ( header_inner == 7 && check == 0 ) {
 				div.style = 'top: 12%; left: 900px;';
@@ -643,6 +649,8 @@ document.addEventListener('mousemove',function(e){
 				close_btn.style = 'top:105%;left:50%';
 			} else if ( header_inner == 49 && check == '010101' ) {
 				close_btn.style = 'top:105%;left:50%';
+			} else if (header_inner == 52 && check == '010101') {
+				close_btn.style = 'top:105%;left:50%';
 			} else {
 				close_btn.style = 'top:100%;left:50%';
 			}
@@ -658,6 +666,8 @@ document.addEventListener('mousemove',function(e){
 			} else if ( header_inner == 48 && check == '010101' ) {
 				header.className = 'inner_header_big';
 			} else if ( header_inner == 49 && check == '010101' ) {
+				header.className = 'inner_header_big';
+			} else if (header_inner == 52 && check == '010101') {
 				header.className = 'inner_header_big';
 			} else {
 				header.className = 'inner_header';
@@ -744,6 +754,8 @@ document.addEventListener('mousemove',function(e){
 			} else if ( header_inner == 48 && check == '010101' ) {
 				inner_text.className = 'inner_text_big';
 			} else if ( header_inner == 49 && check == '010101' ) {
+				inner_text.className = 'inner_text_big';
+			} else if (header_inner == 52 && check == '010101') {
 				inner_text.className = 'inner_text_big';
 			} else {
 				inner_text.className = 'inner_text';
@@ -905,7 +917,12 @@ document.addEventListener('mousemove',function(e){
 				div.classList.add('qwerty');
 				div.appendChild(close_btn);
 				div.appendChild(header);
-				div.appendChild(inner_text);
+			div.appendChild(inner_text);
+		} else if (header_inner == 52 && check == '010101') {
+			div.classList.add('qwerty');
+			div.appendChild(close_btn);
+			div.appendChild(header);
+			div.appendChild(inner_text);
 		} else {
 			div.classList.add('qwerty');
 			div.appendChild(close_btn);
