@@ -1,4 +1,6 @@
-let buttons = document.querySelectorAll('.buttons div');
+
+let buttons = document.querySelectorAll('.surgut_menu_btn');
+//let buttons = document.querySelectorAll('.buttons div');
 let now = document.querySelectorAll('.tab');
 let tab = document.querySelectorAll('.tab');
 let icons = document.querySelectorAll('.icon');
@@ -261,27 +263,105 @@ for (let btn of buttons) {
 		// Плавно скрыть кнопки
 		setTimeout(function () {
 
+			// Если нажали на кнопки VI_XVI,XVI_XIX,1_XX то скроем кнопку Цельный Сургут
+			if (sender == 'surgut_VI_XVI' || sender == 'surgut_XVI_XIX' || sender == 'surgut_1_XX' ) {
+				for (let i = 0; i < buttons.length; i++) {
+					let buttonId = buttons[i].getAttribute('id');
+					if (buttonId == 'surgut_celnyy') {
+						buttons[i].style.display = 'none'
+					}
+				}
+			}
+			// Если нажали на кнопку 2_XX то отобразим кнопку Цельный Сургут
+			if (sender == 'surgut_2_XX') {
+				for (let i = 0; i < buttons.length; i++) {
+					let buttonId = buttons[i].getAttribute('id');
+					if (buttonId == 'surgut_celnyy') {
+						buttons[i].style.display = ''
+					}
+				}
+			}
+
 			// Если нажали на кнопку Цельный Сургут, то скроем одни кнопки и отобразим другие
 			if (sender == 'surgut_celnyy') {
 				for (let i = 0; i < buttons.length; i++) {
 					let buttonId = buttons[i].getAttribute('id');
-					if (buttonId == 'surgut_VI_XVI' || buttonId == 'surgut_XVI_XIX' || buttonId == 'surgut_1_XX' || buttonId == 'surgut_2_XX' || buttonId == 'surgut_celnyy') {
+					if (buttonId == 'surgut_VI_XVI' || buttonId == 'surgut_XVI_XIX' || buttonId == 'surgut_1_XX' || buttonId == 'surgut_2_XX' || buttonId == 'surgut_celnyy' || buttonId == 'btn_info_main') {
 						buttons[i].style.display = 'none'
 					}
-					if (buttonId == 'surgut_person' || buttonId == 'surgut_1956_1979' || buttonId == 'surgut_1980_1991' || buttonId == 'surgut_1992_2020' || buttonId == 'back_surgut_VI_XVI') {
+					if (buttonId == 'surgut_1956_1979' || buttonId == 'surgut_1980_1991' || buttonId == 'surgut_1992_2020' || buttonId == 'back_surgut_2_XX') {
 						buttons[i].style.display = ''
 					}
 				}
 			}
 			// Если нажали на кнопку Назад, то скроем одни кнопки и отобразим другие
-			if (sender == 'back_surgut_VI_XVI') {
+			if (sender == 'back_surgut_2_XX') {
 				for (let i = 0; i < buttons.length; i++) {
 					let buttonId = buttons[i].getAttribute('id');
 					if (buttonId == 'surgut_VI_XVI' || buttonId == 'surgut_XVI_XIX' || buttonId == 'surgut_1_XX' || buttonId == 'surgut_2_XX' || buttonId == 'surgut_celnyy') {
 						buttons[i].style.display = ''
 					}
-					if (buttonId == 'surgut_person' || buttonId == 'surgut_1956_1979' || buttonId == 'surgut_1980_1991' || buttonId == 'surgut_1992_2020' || buttonId == 'back_surgut_VI_XVI') {
+					if (buttonId == 'btn_info_main') {
+						buttons[i].style.display = 'block'
+					}
+					if (buttonId == 'surgut_1956_1979' || buttonId == 'surgut_1980_1991' || buttonId == 'surgut_1992_2020' || buttonId == 'back_surgut_2_XX') {
 						buttons[i].style.display = 'none'
+					}
+				}
+			}
+
+			//Отбразить кнопку Персоналии выбранного периода 1956_1979
+			if (sender == 'surgut_1956_1979') {
+				for (let i = 0; i < buttons.length; i++) {
+					let buttonId = buttons[i].getAttribute('id');
+					if (buttonId == 'surgut_person_1956_1979') {
+						buttons[i].style.display = ''
+					}
+					if (buttonId == 'surgut_person_1980_1991' || buttonId == 'surgut_person_1992_2020') {
+						buttons[i].style.display = 'none'
+					}
+				}
+			}
+			//Отбразить кнопку Персоналии выбранного периода 1980_1991
+			if (sender == 'surgut_1980_1991') {
+				for (let i = 0; i < buttons.length; i++) {
+					let buttonId = buttons[i].getAttribute('id');
+					if (buttonId == 'surgut_person_1980_1991') {
+						buttons[i].style.display = ''
+					}
+					if (buttonId == 'surgut_person_1956_1979' || buttonId == 'surgut_person_1992_2020') {
+						buttons[i].style.display = 'none'
+					}
+				}
+			}
+			//Отбразить кнопку Персоналии выбранного периода 1992_2020
+			if (sender == 'surgut_1992_2020') {
+				for (let i = 0; i < buttons.length; i++) {
+					let buttonId = buttons[i].getAttribute('id');
+					if (buttonId == 'surgut_person_1992_2020') {
+						buttons[i].style.display = ''
+					}
+					if (buttonId == 'surgut_person_1956_1979' || buttonId == 'surgut_person_1980_1991') {
+						buttons[i].style.display = 'none'
+					}
+				}
+			}
+
+			//Нажали кнопку Персоналии
+			if (sender == 'surgut_person_1956_1979' || sender == 'surgut_person_1980_1991' || sender == 'surgut_person_1992_2020') {
+				for (let i = 0; i < buttons.length; i++) {
+					let buttonId = buttons[i].getAttribute('id');
+					if (buttonId == 'surgut_person_1956_1979' || buttonId == 'surgut_person_1980_1991' || buttonId == 'surgut_person_1992_2020' ||
+						buttonId == 'surgut_1956_1979' || buttonId == 'surgut_1980_1991' || buttonId == 'surgut_1992_2020' ||
+						buttonId == 'back_surgut_2_XX'
+					) {
+						buttons[i].style.display = 'none'
+					}
+
+					if ((sender == 'surgut_person_1956_1979' && buttonId == 'back_surgut_1956_1979') ||
+						(sender == 'surgut_person_1980_1991' && buttonId == 'back_surgut_1980_1991') ||
+						(sender == 'surgut_person_1992_2020' && buttonId == 'back_surgut_1992_2020')) {
+						buttons[i].style.display = ''
 					}
 				}
 			}
@@ -296,8 +376,12 @@ for (let btn of buttons) {
 
 
 				if (tab[i].classList.contains('ta_' + sender) ||
-					(sender == 'back_surgut_VI_XVI' && tab[i].classList.contains("ta_surgut_VI_XVI")) ||
-					(sender == 'surgut_celnyy' && tab[i].classList.contains("ta_surgut_1956_1979"))) {
+					(sender == 'back_surgut_2_XX' && tab[i].classList.contains("ta_surgut_2_XX")) ||
+					(sender == 'surgut_celnyy' && tab[i].classList.contains("ta_surgut_1956_1979")) ||
+					(sender == 'back_surgut_1956_1979' && tab[i].classList.contains("ta_surgut_1956_1979")) ||
+					(sender == 'back_surgut_1980_1991' && tab[i].classList.contains("ta_surgut_1980_1991")) ||
+					(sender == 'back_surgut_1992_2020' && tab[i].classList.contains("ta_surgut_1992_2020"))
+				) {
 					tab[i].classList.add('showTabs');
 				}	
 			}
@@ -347,7 +431,7 @@ document.addEventListener('mousemove',function(e){
 				div.className = 'table_info';
 			} else if ( header_inner == 49 && check == '010101' ) {
 				div.className = 'table_info';
-			} else if ((header_inner >= 52 || header_inner <= 57) && check == '010101') {
+			} else if ((header_inner >= 52 || header_inner <= 59) && check == '010101') {
 				div.className = 'table_info';
 			} else {
 				div.className = 'table';
@@ -409,7 +493,7 @@ document.addEventListener('mousemove',function(e){
 				div.style = 'top: 8%; left: 550px;';
 			} else if ( header_inner == 49 && check == '010101' ) {
 				div.style = 'top: 8%; left: 550px;';
-			} else if ((header_inner >= 52 || header_inner <= 57) && check == '010101') {
+			} else if ((header_inner >= 52 || header_inner <= 59) && check == '010101') {
 				div.style = 'top: 8%; left: 550px;';
 			} else if ( header_inner == 7 && check == 0 ) {
 				div.style = 'top: 12%; left: 900px;';
@@ -498,11 +582,11 @@ document.addEventListener('mousemove',function(e){
 				div.style = 'bottom:300px; left:280px;';
 			} else if ( header_inner == 50 && check == 27 ) {
 				div.style = 'bottom:260px; left: 1425px;';
-			} else if (header_inner == 58 && check == 1) {
-				div.style = 'top: 100px; left: 125px;';
-			} else if (header_inner == 59 && check == 1) {
-				div.style = 'top: 100px; left: 125px;';
 			} else if (header_inner == 60 && check == 1) {
+				div.style = 'top: 100px; left: 125px;';
+			} else if (header_inner == 61 && check == 1) {
+				div.style = 'top: 100px; left: 125px;';
+			} else if (header_inner == 62 && check == 1) {
 				div.style = 'top: 100px; left: 125px;';
 			}
 
@@ -694,7 +778,7 @@ document.addEventListener('mousemove',function(e){
 				close_btn.style = 'top:105%;left:50%';
 			} else if ( header_inner == 49 && check == '010101' ) {
 				close_btn.style = 'top:105%;left:50%';
-			} else if ((header_inner >= 52 || header_inner <= 57) && check == '010101') {
+			} else if ((header_inner >= 52 || header_inner <= 59) && check == '010101') {
 				close_btn.style = 'top:105%;left:50%';
 			} else {
 				close_btn.style = 'top:100%;left:50%';
@@ -712,7 +796,7 @@ document.addEventListener('mousemove',function(e){
 				header.className = 'inner_header_big';
 			} else if ( header_inner == 49 && check == '010101' ) {
 				header.className = 'inner_header_big';
-			} else if ((header_inner >= 52 || header_inner <= 57) && check == '010101') {
+			} else if ((header_inner >= 52 || header_inner <= 59) && check == '010101') {
 				header.className = 'inner_header_big';
 			} else {
 				header.className = 'inner_header';
@@ -800,7 +884,7 @@ document.addEventListener('mousemove',function(e){
 				inner_text.className = 'inner_text_big';
 			} else if ( header_inner == 49 && check == '010101' ) {
 				inner_text.className = 'inner_text_big';
-			} else if ((header_inner >= 52 || header_inner <= 57) && check == '010101') {
+			} else if ((header_inner >= 52 || header_inner <= 59) && check == '010101') {
 				inner_text.className = 'inner_text_big';
 			} else {
 				inner_text.className = 'inner_text';
@@ -963,7 +1047,7 @@ document.addEventListener('mousemove',function(e){
 				div.appendChild(close_btn);
 				div.appendChild(header);
 			div.appendChild(inner_text);
-		} else if ((header_inner >= 52 || header_inner <= 57) && check == '010101') {
+		} else if ((header_inner >= 52 || header_inner <= 59) && check == '010101') {
 			div.classList.add('qwerty');
 			div.appendChild(close_btn);
 			div.appendChild(header);
