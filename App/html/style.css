@@ -2717,13 +2717,46 @@ body {
 }
 
 /*#region Иконки Цельный Сургут*/
-.ss_6_1 {
+
+.ss_58 {
 	position: absolute;
-	left: 25%;
-	top: 45%;
-	width: 99px;
-	height: 71px;
-	background-image: url(img/icons/layer_6/инфра01.png);
+	left: 2%;
+	top: 9%;
+	width: 96px;
+	height: 25px;
+	background-image: url(img/icons/рус_слово.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	/*animation: golding 3s ease infinite;*/
+	opacity: 0;
+	/*cursor: none;*/
+	z-index: 1;
+	/*border: 1px solid red;*/
+}
+
+.ss_59 {
+	position: absolute;
+	left: 2%;
+	top: 1%;
+	width: 42px;
+	height: 94px;
+	background-image: url(img/icons/рус_муж.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	/*animation: golding 3s ease infinite;*/
+	opacity: 0;
+	/*cursor: none;*/
+	z-index: 1;
+	/*border: 1px solid red;*/
+}
+
+.ss_60 {
+	position: absolute;
+	left: 5%;
+	top: 0%;
+	width: 49px;
+	height: 106px;
+	background-image: url(img/icons/рус_жен.png);
 	background-size: 100%;
 	background-repeat: no-repeat;
 	/*animation: golding 3s ease infinite;*/

@@ -498,6 +498,12 @@ document.addEventListener('mousemove',function(e){
 				div.style = 'bottom:300px; left:280px;';
 			} else if ( header_inner == 50 && check == 27 ) {
 				div.style = 'bottom:260px; left: 1425px;';
+			} else if (header_inner == 58 && check == 1) {
+				div.style = 'top: 100px; left: 125px;';
+			} else if (header_inner == 59 && check == 1) {
+				div.style = 'top: 100px; left: 125px;';
+			} else if (header_inner == 60 && check == 1) {
+				div.style = 'top: 100px; left: 125px;';
 			}
 
 
