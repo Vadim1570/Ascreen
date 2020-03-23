@@ -413,7 +413,10 @@ document.addEventListener('mousemove',function(e){
 	let posY = e.clientY;
 
 	for ( let icon of icons ) {
-		icon.onclick = function() {
+		icon.onclick = function () {
+
+			//модно-молодёжно
+			var cs = getComputedStyle(this);		
 
 			greyBg.classList.add('greyActive');
 
@@ -422,6 +425,9 @@ document.addEventListener('mousemove',function(e){
 			let check = this.getAttribute('data-check');
 
 			let div = document.createElement('div');
+
+			//модно-молодёжно
+			div.style = 'top: ' + cs.getPropertyValue('--form-top') + '; left: ' + cs.getPropertyValue('--form-left') + ';';
 
 			if ( header_inner == 46 && check == '010101' ) {
 				div.className = 'table_info';
@@ -458,7 +464,7 @@ document.addEventListener('mousemove',function(e){
 			} else if ( header_inner == 2 && check == '01' ) {
 				div.style = 'top: 60px; left: 120px;';
 			} else if ( header_inner == 2 && check == '02' ) {
-				div.style = 'top: 100px; left: 800px;';
+			//	div.style = 'top: 100px; left: 800px;';
 			} else if ( header_inner == 2 && check == '03' ) {
 				div.style = 'bottom:200px; left: 1350px;';
 			} else if ( header_inner == 15 && check == '04' ) {
@@ -750,7 +756,7 @@ document.addEventListener('mousemove',function(e){
 			} else if ( header_inner == 11 ) {
 				div.style = 'top:' + ( posY - 500 ) + 'px; left: ' + ( posX - 200 ) + 'px;';
 			} else if ( header_inner == 3 ) {
-				div.style = 'top:' + ( posY - 300 ) + 'px; left: ' + ( posX - 200 ) + 'px;';
+				//div.style = 'top:' + ( posY - 300 ) + 'px; left: ' + ( posX - 200 ) + 'px;';
 			} else if ( header_inner == 9 ) {
 				div.style = 'top:' + ( posY - 540 ) + 'px; left: ' + ( posX - 200 ) + 'px;';
 			} else if ( header_inner == 14 ) {
@@ -801,8 +807,12 @@ document.addEventListener('mousemove',function(e){
 			} else {
 				header.className = 'inner_header';
 			}
+
+			//модно-молодёжно
+			header.innerText = cs.getPropertyValue('--form-header-text');
+			if (header.innerText === undefined || header.innerText === '')
+				header.innerText = название_окна[header_inner];			
 			
-			header.innerText= название_окна[header_inner];
 
 			if ( header_inner == 8 && check == 0 ) {
 				header.style.top = '13%';
@@ -890,8 +900,14 @@ document.addEventListener('mousemove',function(e){
 				inner_text.className = 'inner_text';
 			}
 
+
+
+			//модно-молодёжно
+			inner_text.innerText = cs.getPropertyValue('--form-descr-text');
+			if (inner_text.innerText === undefined || inner_text.innerText === '')
+				inner_text.innerText = текст_внутри_окна[header_inner];
+
 			
-			inner_text.innerText = текст_внутри_окна[header_inner];
 
 			let inner_images = document.createElement('div');
 			inner_images.className = 'inner_image';
