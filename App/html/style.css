@@ -20,7 +20,7 @@
 }
 
 body {
-	overflow: hidden;
+	/*overflow: hidden;*/
 	user-select: none;
 	/*cursor: none;*/
 	width: 1920px;
@@ -2885,13 +2885,13 @@ body {
 	--form-urls: url(img/icons/cel_surgut/nations/русские_ж.png);
 }
 
-.ukr_5679 {
+.bash_5679 {
 	position: absolute;
 	left: 7px;
-	top: 1008px;
+	top: 430px;
 	width: 132px;
 	height: 26px;
-	background-image: url(img/icons/cel_surgut/nations/украинцы_табличка.png);
+	background-image: url(img/icons/cel_surgut/nations/башкиры_табличка.png);
 	background-size: 100%;
 	background-repeat: no-repeat;
 	/*animation: golding 3s ease infinite;*/
@@ -2899,20 +2899,20 @@ body {
 	/*cursor: none;*/
 	z-index: 1;
 	/*border: 1px solid red;*/
-	--form-top: 300px;
+	--form-top: 100px;
 	--form-left: 140px;
-	--form-header-text: 'Украинцы 56-79';
-	--form-descr-text: 'Пойду я в охородик, наimмся червячкiв';
-	--form-urls: url(img/icons/cel_surgut/nations/украинцы_табличка.png);
+	--form-header-text: 'Башкиры';
+	--form-descr-text: 'Уфа';
+	--form-urls: url(img/icons/cel_surgut/nations/башкиры_табличка.png);
 }
 
-.ukrm_5679 {
+.bashm_5679 {
 	position: absolute;
-	left: 68px;
-	top: 900px;
-	width: 57px;
-	height: 111px;
-	background-image: url(img/icons/cel_surgut/nations/украинцы_м.png);
+	left: 62px;
+	top: 310px;
+	width: 63px;
+	height: 119px;
+	background-image: url(img/icons/cel_surgut/nations/башкиры_м.png);
 	background-size: 100%;
 	background-repeat: no-repeat;
 	/*animation: golding 3s ease infinite;*/
@@ -2920,20 +2920,20 @@ body {
 	/*cursor: none;*/
 	z-index: 1;
 	/*border: 1px solid red;*/
-	--form-top: 300px;
+	--form-top: 10px;
 	--form-left: 140px;
-	--form-header-text: 'Хлопцы';
-	--form-descr-text: 'Парень молодой. Весь такой крутой.';
-	--form-urls: url(img/icons/cel_surgut/nations/украинцы_м.png);
+	--form-header-text: 'Егет';
+	--form-descr-text: 'Егет';
+	--form-urls: url(img/icons/cel_surgut/nations/башкиры_м.png);
 }
 
-.ukrw_5679 {
+.bashw_5679 {
 	position: absolute;
-	left: 15px;
-	top: 907px;
-	width: 66px;
-	height: 103px;
-	background-image: url(img/icons/cel_surgut/nations/украинцы_ж.png);
+	left: 23px;
+	top: 328px;
+	width: 51px;
+	height: 100px;
+	background-image: url(img/icons/cel_surgut/nations/башкиры_ж.png);
 	background-size: 100%;
 	background-repeat: no-repeat;
 	/*animation: golding 3s ease infinite;*/
@@ -2941,11 +2941,11 @@ body {
 	/*cursor: none;*/
 	z-index: 1;
 	/*border: 1px solid red;*/
-	--form-top: 300px;
+	--form-top: 100px;
 	--form-left: 140px;
-	--form-header-text: 'Дивчины';
-	--form-descr-text: 'Хгарна дiвчина';
-	--form-urls: url(img/icons/cel_surgut/nations/украинцы_ж.png);
+	--form-header-text: 'Кыз';
+	--form-descr-text: 'Кыз';
+	--form-urls: url(img/icons/cel_surgut/nations/башкиры_ж.png);
 }
 
 .tat_5679 {
@@ -3009,6 +3009,258 @@ body {
 	--form-header-text: 'Кыз';
 	--form-descr-text: 'Кыз';
 	--form-urls: url(img/icons/cel_surgut/nations/татары_ж.png);
+}
+
+.azer_5679 {
+	position: absolute;
+	left: 7px;
+	top: 716px;
+	width: 132px;
+	height: 26px;
+	background-image: url(img/icons/cel_surgut/nations/азербайджанцы_табличка.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	/*animation: golding 3s ease infinite;*/
+	opacity: 0;
+	/*cursor: none;*/
+	z-index: 1;
+	/*border: 1px solid red;*/
+	--form-top: 100px;
+	--form-left: 140px;
+	--form-header-text: 'Азербайджанцы';
+	--form-descr-text: 'Баку';
+	--form-urls: url(img/icons/cel_surgut/nations/азербайджанцы_табличка.png);
+}
+
+.azerm_5679 {
+	position: absolute;
+	left: 68px;
+	top: 600px;
+	width: 50px;
+	height: 104px;
+	background-image: url(img/icons/cel_surgut/nations/азербайджанцы_м.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	/*animation: golding 3s ease infinite;*/
+	opacity: 0;
+	/*cursor: none;*/
+	z-index: 1;
+	/*border: 1px solid red;*/
+	--form-top: 10px;
+	--form-left: 140px;
+	--form-header-text: 'Оглы';
+	--form-descr-text: 'Оглы';
+	--form-urls: url(img/icons/cel_surgut/nations/азербайджанцы_м.png);
+}
+
+.azerw_5679 {
+	position: absolute;
+	left: 23px;
+	top: 608px;
+	width: 53px;
+	height: 101px;
+	background-image: url(img/icons/cel_surgut/nations/азербайджанцы_ж.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	/*animation: golding 3s ease infinite;*/
+	opacity: 0;
+	/*cursor: none;*/
+	z-index: 1;
+	/*border: 1px solid red;*/
+	--form-top: 100px;
+	--form-left: 140px;
+	--form-header-text: 'Кыз';
+	--form-descr-text: 'Кыз';
+	--form-urls: url(img/icons/cel_surgut/nations/азербайджанцы_ж.png);
+}
+
+.che_5679 {
+	position: absolute;
+	left: 7px;
+	top: 864px;
+	width: 132px;
+	height: 26px;
+	background-image: url(img/icons/cel_surgut/nations/чеченцы_табличка.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	/*animation: golding 3s ease infinite;*/
+	opacity: 0;
+	/*cursor: none;*/
+	z-index: 1;
+	/*border: 1px solid red;*/
+	--form-top: 200px;
+	--form-left: 140px;
+	--form-header-text: 'Чеченцы';
+	--form-descr-text: 'Грозный';
+	--form-urls: url(img/icons/cel_surgut/nations/чеченцы_табличка.png);
+}
+
+.chem_5679 {
+	position: absolute;
+	left: 68px;
+	top: 744px;
+	width: 56px;
+	height: 112px;
+	background-image: url(img/icons/cel_surgut/nations/чеченцы_м.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	/*animation: golding 3s ease infinite;*/
+	opacity: 0;
+	/*cursor: none;*/
+	z-index: 1;
+	/*border: 1px solid red;*/
+	--form-top: 200px;
+	--form-left: 140px;
+	--form-header-text: 'Стаг';
+	--form-descr-text: 'Стаг';
+	--form-urls: url(img/icons/cel_surgut/nations/чеченцы_м.png);
+}
+
+.chew_5679 {
+	position: absolute;
+	left: 23px;
+	top: 764px;
+	width: 53px;
+	height: 101px;
+	background-image: url(img/icons/cel_surgut/nations/чеченцы_ж.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	/*animation: golding 3s ease infinite;*/
+	opacity: 0;
+	/*cursor: none;*/
+	z-index: 1;
+	/*border: 1px solid red;*/
+	--form-top: 200px;
+	--form-left: 140px;
+	--form-header-text: 'Зуда';
+	--form-descr-text: 'Зуда';
+	--form-urls: url(img/icons/cel_surgut/nations/чеченцы_ж.png);
+}
+
+.ukr_5679 {
+	position: absolute;
+	left: 7px;
+	top: 1008px;
+	width: 132px;
+	height: 26px;
+	background-image: url(img/icons/cel_surgut/nations/украинцы_табличка.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	/*animation: golding 3s ease infinite;*/
+	opacity: 0;
+	/*cursor: none;*/
+	z-index: 1;
+	/*border: 1px solid red;*/
+	--form-top: 300px;
+	--form-left: 140px;
+	--form-header-text: 'Украинцы 56-79';
+	--form-descr-text: 'Пойду я в охородик, наimмся червячкiв';
+	--form-urls: url(img/icons/cel_surgut/nations/украинцы_табличка.png);
+}
+
+.ukrm_5679 {
+	position: absolute;
+	left: 68px;
+	top: 900px;
+	width: 57px;
+	height: 111px;
+	background-image: url(img/icons/cel_surgut/nations/украинцы_м.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	/*animation: golding 3s ease infinite;*/
+	opacity: 0;
+	/*cursor: none;*/
+	z-index: 1;
+	/*border: 1px solid red;*/
+	--form-top: 300px;
+	--form-left: 140px;
+	--form-header-text: 'Хлопцы';
+	--form-descr-text: 'Парень молодой. Весь такой крутой.';
+	--form-urls: url(img/icons/cel_surgut/nations/украинцы_м.png);
+}
+
+.ukrw_5679 {
+	position: absolute;
+	left: 15px;
+	top: 907px;
+	width: 66px;
+	height: 103px;
+	background-image: url(img/icons/cel_surgut/nations/украинцы_ж.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	/*animation: golding 3s ease infinite;*/
+	opacity: 0;
+	/*cursor: none;*/
+	z-index: 1;
+	/*border: 1px solid red;*/
+	--form-top: 300px;
+	--form-left: 140px;
+	--form-header-text: 'Дивчины';
+	--form-descr-text: 'Хгарна дiвчина';
+	--form-urls: url(img/icons/cel_surgut/nations/украинцы_ж.png);
+}
+
+.bel_5679 {
+	position: absolute;
+	left: 7px;
+	top: 1152px;
+	width: 132px;
+	height: 26px;
+	background-image: url(img/icons/cel_surgut/nations/белорусы_табличка.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	/*animation: golding 3s ease infinite;*/
+	opacity: 0;
+	/*cursor: none;*/
+	z-index: 1;
+	/*border: 1px solid red;*/
+	--form-top: 300px;
+	--form-left: 140px;
+	--form-header-text: 'Белорусы';
+	--form-descr-text: 'Белый аист летит, Над белёсым полесьем летит. Белорусский мотив В песне вереска, в песне ракит. Все земля приняла И заботу, и ласку, и пламя, Полыхал над землёй Небосвод, как багровое знамя. Молодость моя, Белоруссия, Песня партизан, сосны да туман. Песня партизан, алая заря, Молодость моя, Белоруссия. Наша память идёт По лесной партизанской тропе, Не смогли зарасти Эти тропы в народной судьбе. Боль тех давних годин В каждом сердце живёт и поныне, В каждой нашей семье С нами малые дети Хатыни. Молодость моя, Белоруссия, Источник teksty-pesenok.ru Песня партизан, сосны да туман. Песня партизан, алая заря, Молодость моя, Белоруссия. Белый аист летит, Над полесьем, над тихим жнивьём, Где-то в топи болот Погребён остывающий гром. Белый аист летит, Всё летит над родными полями, Землю нашей любви Осеняя большими крылами.';
+	--form-urls: url(img/icons/cel_surgut/nations/белорусы_табличка.png);
+}
+
+.belm_5679 {
+	position: absolute;
+	left: 68px;
+	top: 1048px;
+	width: 57px;
+	height: 111px;
+	background-image: url(img/icons/cel_surgut/nations/белорусы_м.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	/*animation: golding 3s ease infinite;*/
+	opacity: 0;
+	/*cursor: none;*/
+	z-index: 1;
+	/*border: 1px solid red;*/
+	--form-top: 300px;
+	--form-left: 140px;
+	--form-header-text: 'Хлопцы';
+	--form-descr-text: 'Казунов и Шкредов.';
+	--form-urls: url(img/icons/cel_surgut/nations/белорусы_м.png);
+}
+
+.belw_5679 {
+	position: absolute;
+	left: 15px;
+	top: 1048px;
+	width: 66px;
+	height: 103px;
+	background-image: url(img/icons/cel_surgut/nations/белорусы_ж.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	/*animation: golding 3s ease infinite;*/
+	opacity: 0;
+	/*cursor: none;*/
+	z-index: 1;
+	/*border: 1px solid red;*/
+	--form-top: 300px;
+	--form-left: 140px;
+	--form-header-text: 'Дзяўчына';
+	--form-descr-text: 'Дзяўчына';
+	--form-urls: url(img/icons/cel_surgut/nations/белорусы_ж.png);
 }
 
 /*#endregion*/
