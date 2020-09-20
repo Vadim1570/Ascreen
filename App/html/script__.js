@@ -12,7 +12,7 @@ let fish3 = document.querySelectorAll('.fan_3');
 // let fish4 = document.querySelectorAll('.fan_4');
 let btns_hide = document.querySelector('.btns_hide');
 let inac = document.querySelector('.swap_inactive');
-let tab5 = document.querySelector('.ta_5');
+let tabBlack = document.querySelector('.ta_black');
 let main_btns = document.querySelectorAll('.btn_1_i');
 let greyBg = document.querySelector('.greyBg');
 
@@ -106,8 +106,8 @@ let cloudsInterval;
 
         	
 
-        	if (!tab5.classList.contains('showTabs')) {
-        		tab5.classList.add('showTabs');
+        	if (!tabBlack.classList.contains('showTabs')) {
+        		tabBlack.classList.add('showTabs');
         	}
         }
     }, interval);
@@ -145,7 +145,7 @@ setInterval(function(){
 	},1000)
 },2000);
 
-tab5.addEventListener('click',()=>{
+tabBlack.addEventListener('click',()=>{
 
 	// click block
 
@@ -184,9 +184,9 @@ tab5.addEventListener('click',()=>{
 		tab[0].classList.remove('showTabs');
 	})
 
-	tab5.classList.add('hideTabs');
-	tab5.addEventListener('animationend',()=>{
-		tab5.style.display = 'none';
+	tabBlack.classList.add('hideTabs');
+	tabBlack.addEventListener('animationend',()=>{
+		tabBlack.style.display = 'none';
 
 	})
 
@@ -210,9 +210,9 @@ tab5.addEventListener('click',()=>{
 	},500);
 
 	setTimeout(function(){
-		tab5.classList.remove('hideTabs');
-		tab5.classList.remove('showTabs');
-		tab5.style.display = 'none';
+		tabBlack.classList.remove('hideTabs');
+		tabBlack.classList.remove('showTabs');
+		tabBlack.style.display = 'none';
 	},1000);
 })
 

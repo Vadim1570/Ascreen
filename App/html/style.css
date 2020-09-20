@@ -310,7 +310,7 @@ body {
 	z-index: -1;
 }
 
-.ta_5 {
+.ta_black {
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -322,7 +322,7 @@ body {
 	opacity: 1;
 }
 
-.ta_5_show {
+.ta_black_show {
 	animation: tabFiveShow 1s ease forwards;
 }
 
