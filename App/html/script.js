@@ -115,14 +115,16 @@ let inner_text = document.createElement('div');
 	}, interval);
 	
 
-	//ВРЕМЕННО
+	//ВРЕМЕННО, перейти на нужную вкладку
+	/*
 	//скрыть черное окно
 	tabBlackClick();
 	//нажать на кнопку
-	//var btn = document.getElementById('surgut_1956_1979');
-	//var evt = new Event('click');
-	//btn.dispatchEvent(evt); // evt.target = btn;
-	//menuButtonClick(evt);
+	var btn = document.getElementById('surgut_1956_1979');
+	var evt = new Event('click');
+	btn.dispatchEvent(evt); // evt.target = btn;
+	menuButtonClick(evt);
+	*/
 
 }());
 
@@ -956,97 +958,103 @@ function iconClick (e) {
 	imageGroup.appendChild(innerImageGroup);
 
 	
-	if (imagesArray.length > 0) {
-
-		// arrows left and right
-
-		let arrowLeft = document.createElement('div');
-		let arrowRight = document.createElement('div');
-
-		arrowLeft.className = 'arrowLeft';
-		arrowRight.className = 'arrowRight';
-
-		imageGroup.appendChild(arrowLeft);
-		imageGroup.appendChild(arrowRight);
-
-		let left = document.createElement('div');
-		let right = document.createElement('div');
-
-		left.classList.add('left');
-		right.classList.add('right');
-
-		imageGroup.appendChild(left);
-		imageGroup.appendChild(right);
-
-		let count = 0;
-
-		right.onclick = function rightMove(){
-			right.onclick = null;
-			left.style.display = 'none';
-			count++;
-			innerImageGroup.style = 'transition: all 1s ease;';
-			innerImageGroup.style.left = count * (-245) + 'px';
-
-			let items = document.querySelectorAll('.imgItem');
-
-
-			if ( count === items.length - 1 || count > items.length - 1 ) {
-				setTimeout(function(){
-					innerImageGroup.style = 'transition: none 1s ease;';
-					count = 0;
-					innerImageGroup.style.left = '0px;';
-				},1000);
-			}
-
-			setTimeout(function(){
-				right.onclick = rightMove;
-				left.style.display = 'block';
-			},1000);	
+	if (imagesArray.length > 0) 
+	{
+		//Добавляем картинки
+		for (var i = 0; i < imagesArray.length; i++) 
+		{
+			let img = document.createElement('img');
+			img.src = imagesArray[i];
+			img.className = 'imgItem';
+		  
+			innerImageGroup.appendChild(img);
+		}
+		  
+		//Костыль - добавим первую картинку вконец, чтобы было плавное зацикливание
+		if(imagesArray.length > 1)
+		{
+			let img = document.createElement('img');
+			img.className = 'imgItem';
+			img.src = imagesArray[0];
+			  
+			innerImageGroup.appendChild(img);
 		}
 
-		left.onclick = function leftMove(){
-			left.onclick = null;
-			right.style.display = 'none';
+		// arrows left and right
+		if(imagesArray.length > 1)
+		{
+			let arrowLeft = document.createElement('div');
+			let arrowRight = document.createElement('div');
 
-			let items = document.querySelectorAll('.imgItem');
+			arrowLeft.className = 'arrowLeft';
+			arrowRight.className = 'arrowRight';
 
-			if ( count === 0 ) {
-				innerImageGroup.style = 'transition: none 1s ease';
-				count = items.length - 1;
+			imageGroup.appendChild(arrowLeft);
+			imageGroup.appendChild(arrowRight);
+
+			let left = document.createElement('div');
+			let right = document.createElement('div');
+
+			left.classList.add('left');
+			right.classList.add('right');
+
+			imageGroup.appendChild(left);
+			imageGroup.appendChild(right);
+
+			let count = 0;
+
+			right.onclick = function rightMove(){
+				right.onclick = null;
+				left.style.display = 'none';
+				count++;
+				innerImageGroup.style = 'transition: all 1s ease;';
 				innerImageGroup.style.left = count * (-245) + 'px';
+
+				let items = document.querySelectorAll('.imgItem');
+
+
+				if ( count === items.length - 1 || count > items.length - 1 ) {
+					setTimeout(function(){
+						innerImageGroup.style = 'transition: none 1s ease;';
+						count = 0;
+						innerImageGroup.style.left = '0px;';
+					},1000);
+				}
+
 				setTimeout(function(){
+					right.onclick = rightMove;
+					left.style.display = 'block';
+				},1000);	
+			}
+
+			left.onclick = function leftMove(){
+				left.onclick = null;
+				right.style.display = 'none';
+
+				let items = document.querySelectorAll('.imgItem');
+
+				if ( count === 0 ) {
+					innerImageGroup.style = 'transition: none 1s ease';
+					count = items.length - 1;
+					innerImageGroup.style.left = count * (-245) + 'px';
+					setTimeout(function(){
+						count--;
+						innerImageGroup.style = 'transition: all 1s ease;';
+						innerImageGroup.style.left = count * (-245) + 'px';
+						},10)
+				} 
+				else {
 					count--;
 					innerImageGroup.style = 'transition: all 1s ease;';
 					innerImageGroup.style.left = count * (-245) + 'px';
-					},10)
-			} 
-			else {
-				count--;
-				innerImageGroup.style = 'transition: all 1s ease;';
-				innerImageGroup.style.left = count * (-245) + 'px';
+				}
+
+				setTimeout(function(){
+					left.onclick = leftMove;
+					right.style.display = 'block';
+				},1000);
 			}
-
-			setTimeout(function(){
-				left.onclick = leftMove;
-				right.style.display = 'block';
-			},1000);
 		}
-
-		//Картинки внизу диалога
-		for (var i = 0; i < imagesArray.length; i++) {
-		  let img = document.createElement('img');
-		  img.src = imagesArray[i];
-		  img.className = 'imgItem';
-
-		  innerImageGroup.appendChild(img);
-		}
-
-		//Костыль
-		let img = document.createElement('img');
-		img.className = 'imgItem';
-		img.src = imagesArray[0];
-
-		innerImageGroup.appendChild(img);
 	}
 
 
