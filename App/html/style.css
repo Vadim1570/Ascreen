@@ -2885,6 +2885,69 @@ body {
 	--form-urls: url(img/icons/рус_слово.png);
 }
 
+.tat_5679 {
+	position: absolute;
+	left: 2%;
+	top: 33%;
+	width: 96px;
+	height: 25px;
+	background-image: url(img/icons/рус_слово.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	/*animation: golding 3s ease infinite;*/
+	opacity: 0;
+	/*cursor: none;*/
+	z-index: 1;
+	/*border: 1px solid red;*/
+	--form-top: 100px;
+	--form-left: 125px;
+	--form-header-text: 'Татары 56-79';
+	--form-descr-text: '';
+	--form-urls: url(img/icons/рус_слово.png);
+}
+
+.tatm_5679 {
+	position: absolute;
+	left: 2%;
+	top: 25%;
+	width: 42px;
+	height: 94px;
+	background-image: url(img/icons/рус_муж.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	/*animation: golding 3s ease infinite;*/
+	opacity: 0;
+	/*cursor: none;*/
+	z-index: 1;
+	/*border: 1px solid red;*/
+	--form-top: 10px;
+	--form-left: 20px;
+	--form-header-text: 'Егет';
+	--form-descr-text: 'Парень молодой. Весь такой крутой.';
+	/*--form-urls: url(img/icons/рус_слово.png);*/
+}
+
+.tatw_5679 {
+	position: absolute;
+	left: 5%;
+	top: 24%;
+	width: 49px;
+	height: 106px;
+	background-image: url(img/icons/рус_жен.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	/*animation: golding 3s ease infinite;*/
+	opacity: 0;
+	/*cursor: none;*/
+	z-index: 1;
+	/*border: 1px solid red;*/
+	--form-top: 100px;
+	--form-left: 125px;
+	--form-header-text: 'Кыз';
+	--form-descr-text: 'Хгарна дiвчина';
+	--form-urls: url(img/icons/рус_слово.png);
+}
+
 /*#endregion*/
 
 
