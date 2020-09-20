@@ -2761,11 +2761,11 @@ body {
 
 .rus_5679 {
 	position: absolute;
-	left: 2%;
-	top: 9%;
-	width: 96px;
-	height: 25px;
-	background-image: url(img/icons/рус_слово.png);
+	left: 7px;
+	top: 280px;
+	width: 132px;
+	height: 26px;
+	background-image: url(img/icons/cel_surgut/nations/русские_табличка.png);
 	background-size: 100%;
 	background-repeat: no-repeat;
 	/*animation: golding 3s ease infinite;*/
@@ -2774,19 +2774,19 @@ body {
 	z-index: 1;
 	/*border: 1px solid red;*/
 	--form-top: 100px;
-	--form-left: 125px;
+	--form-left: 140px;
 	--form-header-text: 'Русские 56-79';
-	--form-descr-text: '';
-	--form-urls: url(img/icons/рус_слово.png);
+	--form-descr-text: 'Русские – титульный народ Российской Федерации. Составляет 80% населения страны. Это самый многочисленный славянский народ и самый крупный в Европе - около 133 мил. человек. В России проживает 111 миллионов. Из всех русских в мире 86 % живёт в России, 11,5 % в странах бывшего СССР и 2,5 % в остальных странах. В Сургуте - 197 876 человек русские (по данным переписи населения 2010 г.). Русский язык вместе с украинским и белорусским образует группу восточных славян в составе славянской группы индоевропейской языковой семьи. Традиционной религией является православное христианство.';
+	--form-urls: url(img/icons/cel_surgut/nations/русские_табличка.png);
 }
 
 .rusm_5679 {
 	position: absolute;
-	left: 2%;
-	top: 1%;
-	width: 42px;
-	height: 94px;
-	background-image: url(img/icons/рус_муж.png);
+	left: 73px;
+	top: 178px;
+	width: 51px;
+	height: 104px;
+	background-image: url(img/icons/cel_surgut/nations/русские_м.png);
 	background-size: 100%;
 	background-repeat: no-repeat;
 	/*animation: golding 3s ease infinite;*/
@@ -2795,19 +2795,19 @@ body {
 	z-index: 1;
 	/*border: 1px solid red;*/
 	--form-top: 10px;
-	--form-left: 20px;
+	--form-left: 140px;
 	--form-header-text: 'Русские муж';
-	--form-descr-text: 'Русский парень от пуль не бежит, Русский парень от боли не стонет, Русский парень в огне не горит, Русский парень в воде не тонет.';
-	--form-urls: url(img/icons/рус_слово.png);
+	--form-descr-text: 'Основными традиционными занятиями русских являлось земледелие и животноводство. Главным направлением было возделывание зерновых культур. Из скота держали в основном коров, лошадей, овец, коз, а также свиней и домашнюю птицу. Наряду с сельским хозяйством русские занимались охотой, рыболовством и собирательством. Традиционные ремесла включали в себя кузнечное, ювелирное, оружейное, гончарное дело, обработку древесины, кож и меха, косторезное искусство и резьбу по дереву, ткачество, стеклоделие, художественные промыслы. Основными деталями мужского национального костюма являются рубаха, штаны, пояс, лапти. Классическим видом русской рубашки считается косоворотка. В русском костюме присутствует большое разнообразие головных уборов.';
+	--form-urls: url(img/icons/cel_surgut/nations/русские_м.png);
 }
 
 .rusw_5679 {
 	position: absolute;
-	left: 5%;
-	top: 0%;
-	width: 49px;
-	height: 106px;
-	background-image: url(img/icons/рус_жен.png);
+	left: 21px;
+	top: 166px;
+	width: 57px;
+	height: 116px;
+	background-image: url(img/icons/cel_surgut/nations/русские_ж.png);
 	background-size: 100%;
 	background-repeat: no-repeat;
 	/*animation: golding 3s ease infinite;*/
@@ -2816,19 +2816,19 @@ body {
 	z-index: 1;
 	/*border: 1px solid red;*/
 	--form-top: 100px;
-	--form-left: 125px;
+	--form-left: 140px;
 	--form-header-text: 'Русские жен';
-	--form-descr-text: 'Есть женщины в русских селеньях С спокойною важностью лиц, С красивою силой в движеньях, С походкой, со взглядом цариц,-  х разве слепой не заметит, А зрячий о них говорит: «Пройдет — словно солнце осветит! Посмотрит — рублем подарит!»';
-	--form-urls: url(img/icons/рус_слово.png);
+	--form-descr-text: 'Русская народная одежда различалась по назначению: будничная, праздничная, свадебная, траурная. Отличительная особенность русского национального костюма — большое количество верхней одежды. Символическим женским головным убором является кокошник. Также на голове носили платки, волосники, повязки, шапки с высокими тульями. Русское гостеприимство - неотъемлемая часть культурных традиций. Гостей всегда встречали хлебом и солью. Особенностью традиционной русской кухни является разнообразие горячих супов и каш, квашений, мочений и солений, грибных блюд и дичи. Важнее значение до настоящего времени играет хлеб, пироги, блины.';
+	--form-urls: url(img/icons/cel_surgut/nations/русские_ж.png);
 }
 
 .ukr_5679 {
 	position: absolute;
-	left: 2%;
-	top: 250px;
-	width: 96px;
-	height: 25px;
-	background-image: url(img/icons/рус_слово.png);
+	left: 7px;
+	top: 1008px;
+	width: 132px;
+	height: 26px;
+	background-image: url(img/icons/cel_surgut/nations/украинцы_табличка.png);
 	background-size: 100%;
 	background-repeat: no-repeat;
 	/*animation: golding 3s ease infinite;*/
@@ -2836,20 +2836,20 @@ body {
 	/*cursor: none;*/
 	z-index: 1;
 	/*border: 1px solid red;*/
-	--form-top: 100px;
-	--form-left: 125px;
+	--form-top: 300px;
+	--form-left: 140px;
 	--form-header-text: 'Украинцы 56-79';
-	--form-descr-text: '';
-	--form-urls: url(img/icons/рус_слово.png);
+	--form-descr-text: 'Пойду я в охородик, наimмся червячкiв';
+	--form-urls: url(img/icons/cel_surgut/nations/украинцы_табличка.png);
 }
 
 .ukrm_5679 {
 	position: absolute;
-	left: 2%;
-	top: 13%;
-	width: 42px;
-	height: 94px;
-	background-image: url(img/icons/рус_муж.png);
+	left: 68px;
+	top: 900px;
+	width: 57px;
+	height: 111px;
+	background-image: url(img/icons/cel_surgut/nations/украинцы_м.png);
 	background-size: 100%;
 	background-repeat: no-repeat;
 	/*animation: golding 3s ease infinite;*/
@@ -2857,20 +2857,20 @@ body {
 	/*cursor: none;*/
 	z-index: 1;
 	/*border: 1px solid red;*/
-	--form-top: 10px;
-	--form-left: 20px;
+	--form-top: 300px;
+	--form-left: 140px;
 	--form-header-text: 'Хлопцы';
 	--form-descr-text: 'Парень молодой. Весь такой крутой.';
-	--form-urls: url(img/icons/рус_слово.png);
+	--form-urls: url(img/icons/cel_surgut/nations/украинцы_м.png);
 }
 
 .ukrw_5679 {
 	position: absolute;
-	left: 5%;
-	top: 12%;
-	width: 49px;
-	height: 106px;
-	background-image: url(img/icons/рус_жен.png);
+	left: 15px;
+	top: 907px;
+	width: 66px;
+	height: 103px;
+	background-image: url(img/icons/cel_surgut/nations/украинцы_ж.png);
 	background-size: 100%;
 	background-repeat: no-repeat;
 	/*animation: golding 3s ease infinite;*/
@@ -2878,20 +2878,20 @@ body {
 	/*cursor: none;*/
 	z-index: 1;
 	/*border: 1px solid red;*/
-	--form-top: 100px;
-	--form-left: 125px;
+	--form-top: 300px;
+	--form-left: 140px;
 	--form-header-text: 'Дивчины';
 	--form-descr-text: 'Хгарна дiвчина';
-	--form-urls: url(img/icons/рус_слово.png);
+	--form-urls: url(img/icons/cel_surgut/nations/украинцы_ж.png);
 }
 
 .tat_5679 {
 	position: absolute;
-	left: 2%;
-	top: 33%;
-	width: 96px;
-	height: 25px;
-	background-image: url(img/icons/рус_слово.png);
+	left: 7px;
+	top: 572px;
+	width: 132px;
+	height: 26px;
+	background-image: url(img/icons/cel_surgut/nations/татары_табличка.png);
 	background-size: 100%;
 	background-repeat: no-repeat;
 	/*animation: golding 3s ease infinite;*/
@@ -2900,19 +2900,19 @@ body {
 	z-index: 1;
 	/*border: 1px solid red;*/
 	--form-top: 100px;
-	--form-left: 125px;
-	--form-header-text: 'Татары 56-79';
-	--form-descr-text: '';
-	--form-urls: url(img/icons/рус_слово.png);
+	--form-left: 140px;
+	--form-header-text: 'Татары';
+	--form-descr-text: 'Казань';
+	--form-urls: url(img/icons/cel_surgut/nations/татары_табличка.png);
 }
 
 .tatm_5679 {
 	position: absolute;
-	left: 2%;
-	top: 25%;
-	width: 42px;
-	height: 94px;
-	background-image: url(img/icons/рус_муж.png);
+	left: 68px;
+	top: 464px;
+	width: 50px;
+	height: 104px;
+	background-image: url(img/icons/cel_surgut/nations/татары_м.png);
 	background-size: 100%;
 	background-repeat: no-repeat;
 	/*animation: golding 3s ease infinite;*/
@@ -2921,19 +2921,19 @@ body {
 	z-index: 1;
 	/*border: 1px solid red;*/
 	--form-top: 10px;
-	--form-left: 20px;
+	--form-left: 140px;
 	--form-header-text: 'Егет';
-	--form-descr-text: 'Парень молодой. Весь такой крутой.';
-	/*--form-urls: url(img/icons/рус_слово.png);*/
+	--form-descr-text: 'Егет';
+	--form-urls: url(img/icons/cel_surgut/nations/татары_м.png);
 }
 
 .tatw_5679 {
 	position: absolute;
-	left: 5%;
-	top: 24%;
-	width: 49px;
-	height: 106px;
-	background-image: url(img/icons/рус_жен.png);
+	left: 23px;
+	top: 468px;
+	width: 53px;
+	height: 101px;
+	background-image: url(img/icons/cel_surgut/nations/татары_ж.png);
 	background-size: 100%;
 	background-repeat: no-repeat;
 	/*animation: golding 3s ease infinite;*/
@@ -2942,10 +2942,10 @@ body {
 	z-index: 1;
 	/*border: 1px solid red;*/
 	--form-top: 100px;
-	--form-left: 125px;
+	--form-left: 140px;
 	--form-header-text: 'Кыз';
-	--form-descr-text: 'Хгарна дiвчина';
-	--form-urls: url(img/icons/рус_слово.png);
+	--form-descr-text: 'Кыз';
+	--form-urls: url(img/icons/cel_surgut/nations/татары_ж.png);
 }
 
 /*#endregion*/
