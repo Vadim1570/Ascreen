@@ -2759,6 +2759,69 @@ body {
 
 /*#region Иконки Цельный Сургут*/
 
+.hant_5679 {
+	position: absolute;
+	left: 7px;
+	top: 133px;
+	width: 132px;
+	height: 26px;
+	background-image: url(img/icons/cel_surgut/nations/ханты_табличка.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	/*animation: golding 3s ease infinite;*/
+	opacity: 0;
+	/*cursor: none;*/
+	z-index: 1;
+	/*border: 1px solid red;*/
+	--form-top: 100px;
+	--form-left: 140px;
+	--form-header-text: 'Ханты 56-79';
+	--form-descr-text: 'Самоназвание хантэ означает человек. В русском языке для обозначения представителей народа существуют слова: во мн. ч. ханты (склоняемое); в ед. ч. хантыйка (ж.род), а также ханты (несклоняемое) для обозначения мужчины или женщины. Прилагательные хантыйский и (неизменяемое) ханты';
+	--form-urls: url(images/cel_surgut_5679/Khanty_family.jpg);
+}
+
+.hantm_5679 {
+	position: absolute;
+	left: 56px;
+	top: 24px;
+	width: 72px;
+	height: 111px;
+	background-image: url(img/icons/cel_surgut/nations/ханты_м.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	/*animation: golding 3s ease infinite;*/
+	opacity: 0;
+	/*cursor: none;*/
+	z-index: 1;
+	/*border: 1px solid red;*/
+	--form-top: 10px;
+	--form-left: 140px;
+	--form-header-text: 'Ханты';
+	--form-descr-text: 'Традиционные промыслы — рыболовство, охота и оленеводство. Традиционная религия — шаманизм и православие (с XVI века)';
+	--form-urls: url(images/cel_surgut_5679/Khanti_kmns.jpg);
+}
+
+.hantw_5679 {
+	position: absolute;
+	left: 21px;
+	top: 24px;
+	width: 57px;
+	height: 116px;
+	background-image: url(img/icons/cel_surgut/nations/ханты_ж.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	/*animation: golding 3s ease infinite;*/
+	opacity: 0;
+	/*cursor: none;*/
+	z-index: 1;
+	/*border: 1px solid red;*/
+	--form-top: 100px;
+	--form-left: 140px;
+	--form-header-text: 'Хантыйки';
+	--form-descr-text: 'Хантыйский язык (устаревшее название остяцкий язык) вместе с мансийским и венгерским составляет так называемую угорскую группу уральской семьи языков. Хантыйский язык известен своей необычайной диалектной раздробленностью, в связи с чем выделяется западная группа — обдорское, приобское и прииртышское наречия и восточная группа — сургутское и вах-васюганское наречия, членящиеся, в свою очередь, на 13 диалектов.';
+	--form-urls: url(images/cel_surgut_5679/Khanty_beauty.jpg) url(images/cel_surgut_5679/Khanty_old_women.jpg);
+}
+
 .rus_5679 {
 	position: absolute;
 	left: 7px;
