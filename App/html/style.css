@@ -540,11 +540,11 @@ body {
 	opacity: 0;
 	/*cursor: none;*/
 	z-index: 1;
-	/*--form-top: 100px;
-	--form-left: 800px;*/
+	--form-top: 100px;
+	--form-left: 800px;
 	--form-header-text: var(--chum-form-header-text);
 	--form-descr-text: var(--chum-form-descr-text);
-	--form-urls: form-urls: url(images/layer_1/Chum/chum.jpg) url(images/layer_1/Chum/chum1.jpg) url(images/layer_1/Chum/chum2.jpg) url(images/layer_1/Chum/chum3.jpg);
+	--form-urls: url(images/layer_1/Chum/chum.jpg) url(images/layer_1/Chum/chum1.jpg) url(images/layer_1/Chum/chum2.jpg) url(images/layer_1/Chum/chum3.jpg);
 }
 
 .i_3_1 {
@@ -597,7 +597,7 @@ body {
 	--form-left: 800px;
 	--form-header-text: var(--chum-form-header-text);
 	--form-descr-text: var(--chum-form-descr-text);
-	--form-urls: form-urls: url(images/layer_1/Chum/chum.jpg) url(images/layer_1/Chum/chum1.jpg) url(images/layer_1/Chum/chum2.jpg) url(images/layer_1/Chum/chum3.jpg);
+	--form-urls: url(images/layer_1/Chum/chum.jpg) url(images/layer_1/Chum/chum1.jpg) url(images/layer_1/Chum/chum2.jpg) url(images/layer_1/Chum/chum3.jpg);
 }
 
 @keyframes golding {
@@ -2759,7 +2759,7 @@ body {
 
 /*#region Иконки Цельный Сургут*/
 
-.ss_60 {
+.rus_5679 {
 	position: absolute;
 	left: 2%;
 	top: 9%;
@@ -2773,9 +2773,14 @@ body {
 	/*cursor: none;*/
 	z-index: 1;
 	/*border: 1px solid red;*/
+	--form-top: 100px;
+	--form-left: 125px;
+	--form-header-text: 'Русские 56-79';
+	--form-descr-text: '';
+	--form-urls: url(img/icons/рус_слово.png);
 }
 
-.ss_61 {
+.rusm_5679 {
 	position: absolute;
 	left: 2%;
 	top: 1%;
@@ -2789,9 +2794,14 @@ body {
 	/*cursor: none;*/
 	z-index: 1;
 	/*border: 1px solid red;*/
+	--form-top: 10px;
+	--form-left: 20px;
+	--form-header-text: 'Русские муж';
+	--form-descr-text: 'Русский парень от пуль не бежит, Русский парень от боли не стонет, Русский парень в огне не горит, Русский парень в воде не тонет.';
+	--form-urls: url(img/icons/рус_слово.png);
 }
 
-.ss_62 {
+.rusw_5679 {
 	position: absolute;
 	left: 5%;
 	top: 0%;
@@ -2805,6 +2815,74 @@ body {
 	/*cursor: none;*/
 	z-index: 1;
 	/*border: 1px solid red;*/
+	--form-top: 100px;
+	--form-left: 125px;
+	--form-header-text: 'Русские жен';
+	--form-descr-text: 'Есть женщины в русских селеньях С спокойною важностью лиц, С красивою силой в движеньях, С походкой, со взглядом цариц,-  х разве слепой не заметит, А зрячий о них говорит: «Пройдет — словно солнце осветит! Посмотрит — рублем подарит!»';
+	--form-urls: url(img/icons/рус_слово.png);
+}
+
+.ukr_5679 {
+	position: absolute;
+	left: 2%;
+	top: 250px;
+	width: 96px;
+	height: 25px;
+	background-image: url(img/icons/рус_слово.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	/*animation: golding 3s ease infinite;*/
+	opacity: 0;
+	/*cursor: none;*/
+	z-index: 1;
+	/*border: 1px solid red;*/
+	--form-top: 100px;
+	--form-left: 125px;
+	--form-header-text: 'Украинцы 56-79';
+	--form-descr-text: '';
+	--form-urls: url(img/icons/рус_слово.png);
+}
+
+.ukrm_5679 {
+	position: absolute;
+	left: 2%;
+	top: 13%;
+	width: 42px;
+	height: 94px;
+	background-image: url(img/icons/рус_муж.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	/*animation: golding 3s ease infinite;*/
+	opacity: 0;
+	/*cursor: none;*/
+	z-index: 1;
+	/*border: 1px solid red;*/
+	--form-top: 10px;
+	--form-left: 20px;
+	--form-header-text: 'Хлопцы';
+	--form-descr-text: 'Парень молодой. Весь такой крутой.';
+	--form-urls: url(img/icons/рус_слово.png);
+}
+
+.ukrw_5679 {
+	position: absolute;
+	left: 5%;
+	top: 12%;
+	width: 49px;
+	height: 106px;
+	background-image: url(img/icons/рус_жен.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	/*animation: golding 3s ease infinite;*/
+	opacity: 0;
+	/*cursor: none;*/
+	z-index: 1;
+	/*border: 1px solid red;*/
+	--form-top: 100px;
+	--form-left: 125px;
+	--form-header-text: 'Дивчины';
+	--form-descr-text: 'Хгарна дiвчина';
+	--form-urls: url(img/icons/рус_слово.png);
 }
 
 /*#endregion*/

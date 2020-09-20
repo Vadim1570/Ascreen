@@ -17,6 +17,8 @@ let tabBlack = document.querySelector('.ta_black');
 let main_btns = document.querySelectorAll('.btn_1_i');
 let greyBg = document.querySelector('.greyBg');
 
+let enableFishes = false;
+
 //body.addEventListener('contextmenu',function(e){
 //	e.preventDefault();
 //	return false;
@@ -114,9 +116,9 @@ let inner_text = document.createElement('div');
 	
 
 	//ВРЕМЕННО
-	////скрыть черное окно
-	//tabBlackClick();
-	////нажать на кнопку
+	//скрыть черное окно
+	tabBlackClick();
+	//нажать на кнопку
 	//var btn = document.getElementById('surgut_1956_1979');
 	//var evt = new Event('click');
 	//btn.dispatchEvent(evt); // evt.target = btn;
@@ -124,34 +126,37 @@ let inner_text = document.createElement('div');
 
 }());
 
-setInterval(function(){
-	let random_fish = Math.floor(Math.random()*(15 - 1) + 1);
-
-	fish[random_fish].classList.add('fish_jump');
-	fish1[random_fish].classList.add('fish_jump');
-	fish2[random_fish].classList.add('fish_jump');
-	fish3[random_fish].classList.add('fish_jump');
-	// fish4[random_fish].classList.add('fish_jump');
-
-
-	setTimeout(function(){
-		for ( let i = 0; i < fish.length; i++ ) {
-			fish[i].classList.remove('fish_jump');
-		}
-		for ( let i = 0; i < fish1.length; i++ ) {
-			fish1[i].classList.remove('fish_jump');
-		}
-		for ( let i = 0; i < fish2.length; i++ ) {
-			fish2[i].classList.remove('fish_jump');
-		}
-		for ( let i = 0; i < fish3.length; i++ ) {
-			fish3[i].classList.remove('fish_jump');
-		}
-		// for ( let i = 0; i < fish4.length; i++ ) {
-		// 	fish4[i].classList.remove('fish_jump');
-		// }
-	},1000)
-},2000);
+if(enableFishes)
+{
+	setInterval(function(){
+		let random_fish = Math.floor(Math.random()*(15 - 1) + 1);
+	
+		fish[random_fish].classList.add('fish_jump');
+		fish1[random_fish].classList.add('fish_jump');
+		fish2[random_fish].classList.add('fish_jump');
+		fish3[random_fish].classList.add('fish_jump');
+		// fish4[random_fish].classList.add('fish_jump');
+	
+	
+		setTimeout(function(){
+			for ( let i = 0; i < fish.length; i++ ) {
+				fish[i].classList.remove('fish_jump');
+			}
+			for ( let i = 0; i < fish1.length; i++ ) {
+				fish1[i].classList.remove('fish_jump');
+			}
+			for ( let i = 0; i < fish2.length; i++ ) {
+				fish2[i].classList.remove('fish_jump');
+			}
+			for ( let i = 0; i < fish3.length; i++ ) {
+				fish3[i].classList.remove('fish_jump');
+			}
+			// for ( let i = 0; i < fish4.length; i++ ) {
+			// 	fish4[i].classList.remove('fish_jump');
+			// }
+		},1000)
+	},2000);
+}
 
 tabBlack.addEventListener('click', tabBlackClick);
 
@@ -597,12 +602,6 @@ function iconClick (e) {
 		div.style = 'bottom:300px; left:280px;';
 	} else if ( header_inner == 50 && check == 27 ) {
 		div.style = 'bottom:260px; left: 1425px;';
-	} else if (header_inner == 60 && check == 1) {
-		div.style = 'top: 100px; left: 125px;';
-	} else if (header_inner == 61 && check == 1) {
-		div.style = 'top: 100px; left: 125px;';
-	} else if (header_inner == 62 && check == 1) {
-		div.style = 'top: 100px; left: 125px;';
 	}
 
 
@@ -777,7 +776,14 @@ function iconClick (e) {
 	} else if ( header_inner == 16 ) {
 		div.style = 'top:' + ( posY - 680 ) + 'px; left: ' + ( posX - 290 ) + 'px;';
 	} else {
-		div.style = 'top:' + ( posY - 340 ) + 'px; left: ' + ( posX - 200 ) + 'px;';
+		if(div.style.top === null || div.style.top === undefined)
+			{
+				div.style = 'left: ' + ( posX - 200 ) + 'px;';
+			}
+			if(div.style.left === null || div.style.left === undefined)
+			{
+				div.style = 'top:' + ( posY - 340 ) + 'px;';
+			}		
 	}
 
 	div.classList.add('table_in');
@@ -818,7 +824,7 @@ function iconClick (e) {
 	}
 
 	//модно-молодёжно
-	header.innerText = cs.getPropertyValue('--form-header-text');
+	header.innerText = trimStringProperty(cs.getPropertyValue('--form-header-text'));
 	if (header.innerText === undefined || header.innerText === '')
 		header.innerText = название_окна[header_inner];			
 	
@@ -912,18 +918,35 @@ function iconClick (e) {
 
 
 	//модно-молодёжно
-	inner_text.innerText = cs.getPropertyValue('--form-descr-text');
+	inner_text.innerText = trimStringProperty(cs.getPropertyValue('--form-descr-text'));
 	if (inner_text.innerText === undefined || inner_text.innerText === '')
 		inner_text.innerText = текст_внутри_окна[header_inner];
 
 	
-
-	let inner_images = document.createElement('div');
-	inner_images.className = 'inner_image';
-	if ( typeof изображения[header_inner] != 'object' ) {
-		inner_images.innerHTML = '<img src="'+ изображения[header_inner] + '">';
+	let imagesArray = new Array(0);
+	if(изображения[header_inner] !== undefined)
+	{
+		for (key in изображения[header_inner])
+		{
+			imagesArray.push(изображения[header_inner][key]);
+		}		
 	}
 
+	if(cs.getPropertyValue('--form-urls') !== undefined)
+	{
+		let str = cs.getPropertyValue('--form-urls');
+		let regexp = /url\((.*?)\)/ig;
+
+		while (result = regexp.exec(str)) {
+			let imgUrl = result.pop().replace(/\\/g, '');
+			imagesArray.push(imgUrl);
+		  }
+
+		for (key in изображения[header_inner])
+		{
+			imagesArray.push(изображения[header_inner][key]);
+		}		
+	}
 
 	let imageGroup = document.createElement('div');
 	imageGroup.classList.add('flexGroup');
@@ -933,121 +956,98 @@ function iconClick (e) {
 	imageGroup.appendChild(innerImageGroup);
 
 	
-	if ( typeof изображения[header_inner] === 'object' ) {
+	if (imagesArray.length > 0) {
 
 		// arrows left and right
 
-		if ( 1 in изображения[header_inner]) {
-			let arrowLeft = document.createElement('div');
-			let arrowRight = document.createElement('div');
+		let arrowLeft = document.createElement('div');
+		let arrowRight = document.createElement('div');
 
-			arrowLeft.className = 'arrowLeft';
-			arrowRight.className = 'arrowRight';
+		arrowLeft.className = 'arrowLeft';
+		arrowRight.className = 'arrowRight';
 
-			imageGroup.appendChild(arrowLeft);
-			imageGroup.appendChild(arrowRight);
+		imageGroup.appendChild(arrowLeft);
+		imageGroup.appendChild(arrowRight);
 
-			let left = document.createElement('div');
-			let right = document.createElement('div');
+		let left = document.createElement('div');
+		let right = document.createElement('div');
 
-			left.classList.add('left');
-			right.classList.add('right');
+		left.classList.add('left');
+		right.classList.add('right');
 
-			imageGroup.appendChild(left);
-			imageGroup.appendChild(right);
+		imageGroup.appendChild(left);
+		imageGroup.appendChild(right);
 
-			let count = 0;
+		let count = 0;
 
-			right.onclick = function rightMove(){
-				right.onclick = null;
-				left.style.display = 'none';
-				count++;
-				innerImageGroup.style = 'transition: all 1s ease;';
-				innerImageGroup.style.left = count * (-245) + 'px';
+		right.onclick = function rightMove(){
+			right.onclick = null;
+			left.style.display = 'none';
+			count++;
+			innerImageGroup.style = 'transition: all 1s ease;';
+			innerImageGroup.style.left = count * (-245) + 'px';
 
-				let items = document.querySelectorAll('.imgItem');
+			let items = document.querySelectorAll('.imgItem');
 
 
-				if ( count === items.length - 1 || count > items.length - 1 ) {
-					setTimeout(function(){
-						innerImageGroup.style = 'transition: none 1s ease;';
-						count = 0;
-						innerImageGroup.style.left = '0px;';
-					},1000);
-				}
-
+			if ( count === items.length - 1 || count > items.length - 1 ) {
 				setTimeout(function(){
-					right.onclick = rightMove;
-					left.style.display = 'block';
-				},1000);	
+					innerImageGroup.style = 'transition: none 1s ease;';
+					count = 0;
+					innerImageGroup.style.left = '0px;';
+				},1000);
 			}
 
-			left.onclick = function leftMove(){
-				left.onclick = null;
-				right.style.display = 'none';
+			setTimeout(function(){
+				right.onclick = rightMove;
+				left.style.display = 'block';
+			},1000);	
+		}
 
-				let items = document.querySelectorAll('.imgItem');
+		left.onclick = function leftMove(){
+			left.onclick = null;
+			right.style.display = 'none';
 
-				if ( count === 0 ) {
-					innerImageGroup.style = 'transition: none 1s ease';
-					count = items.length - 1;
-					innerImageGroup.style.left = count * (-245) + 'px';
-					setTimeout(function(){
-						count--;
-						innerImageGroup.style = 'transition: all 1s ease;';
-						innerImageGroup.style.left = count * (-245) + 'px';
-					},10)
+			let items = document.querySelectorAll('.imgItem');
 
-				} 
-				else {
+			if ( count === 0 ) {
+				innerImageGroup.style = 'transition: none 1s ease';
+				count = items.length - 1;
+				innerImageGroup.style.left = count * (-245) + 'px';
+				setTimeout(function(){
 					count--;
 					innerImageGroup.style = 'transition: all 1s ease;';
 					innerImageGroup.style.left = count * (-245) + 'px';
-				}
-
-				setTimeout(function(){
-					left.onclick = leftMove;
-					right.style.display = 'block';
-				},1000);
+					},10)
+			} 
+			else {
+				count--;
+				innerImageGroup.style = 'transition: all 1s ease;';
+				innerImageGroup.style.left = count * (-245) + 'px';
 			}
+
+			setTimeout(function(){
+				left.onclick = leftMove;
+				right.style.display = 'block';
+			},1000);
 		}
 
-		
+		//Картинки внизу диалога
+		for (var i = 0; i < imagesArray.length; i++) {
+		  let img = document.createElement('img');
+		  img.src = imagesArray[i];
+		  img.className = 'imgItem';
 
-
-		// end arrows left and right
-
-		for ( key in изображения[header_inner] ) {
-			let img = document.createElement('img');
-			img.src = изображения[header_inner][key];
-			img.className = 'imgItem';
-
-			innerImageGroup.appendChild(img);
+		  innerImageGroup.appendChild(img);
 		}
 
+		//Костыль
 		let img = document.createElement('img');
 		img.className = 'imgItem';
-		img.src = изображения[header_inner][0];
+		img.src = imagesArray[0];
 
 		innerImageGroup.appendChild(img);
-
-		
-
-		
-
-		
 	}
-
-	
-
-	
-			
-
-	
-	
-
-	
-
 
 
 body.appendChild(div);
@@ -1082,13 +1082,9 @@ if ( header_inner == 46 && check == '010101' ) {
 	div.appendChild(close_btn);
 	div.appendChild(header);
 	div.appendChild(inner_text);
-	if ( typeof изображения[header_inner] === 'object' ) {
+	if (imagesArray.length > 0) {
 		div.appendChild(imageGroup);
-
-	} else {
-		div.appendChild(inner_images);
-	}
-	
+	} 
 }
 
 
@@ -1127,8 +1123,17 @@ for ( let i = 0; i < active_window.length; i++ ) {
 	body.appendChild(div);
 }
 
+function trimStringProperty(str)
+{
+	return trimChar(str.trim(), '"').trim();
+}
 
-
+function trimChar(str, delimiter) {
+	const pattern = `[^\\${delimiter}]`;
+	const start = str.search(pattern);
+	const stop = str.length - str.split('').reverse().join('').search(pattern);
+	return str.substring(start, stop);
+  }
 
 
 
