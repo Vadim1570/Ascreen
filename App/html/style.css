@@ -2757,7 +2757,24 @@ body {
 	/*border: 1px solid red;*/
 }
 
+@-webkit-keyframes morganieGreen {
+	100% { text-shadow:0 0 20px rgb(0, 255, 0); }
+  }
+  @keyframes morganieGreen {
+	100% { text-shadow:0 0 20px rgb(0, 255, 0); }
+}
+
 /*#region Иконки Цельный Сургут*/
+.hanto_5679 {
+	position: absolute;
+	left: -11px;
+	top: -36px;
+	color: transparent;
+	font-size: 218px;
+
+	-webkit-animation: morganieGreen 1s linear infinite;
+	animation: morganieGreen 1s linear infinite;
+}
 
 .hant_5679 {
 	position: absolute;
