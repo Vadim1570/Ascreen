@@ -2757,23 +2757,25 @@ body {
 	/*border: 1px solid red;*/
 }
 
-@-webkit-keyframes morganieGreen {
-	100% { text-shadow:0 0 20px rgb(0, 255, 0); }
+@-webkit-keyframes blinkGreen {
+	100% { text-shadow:0 0 20px rgb(0, 255, 255); }
   }
-  @keyframes morganieGreen {
-	100% { text-shadow:0 0 20px rgb(0, 255, 0); }
+  @keyframes blinkGreen {
+	100% { text-shadow:0 0 20px rgb(0, 255, 255); }
+}
+
+.blink150 {
+	color: transparent;
+	font-size: 150px;
+	-webkit-animation: blinkGreen 6s linear infinite;
+	animation: blinkGreen 6s linear infinite;
 }
 
 /*#region Иконки Цельный Сургут*/
-.hanto_5679 {
+.hantback_5679 {
 	position: absolute;
-	left: -11px;
-	top: -36px;
-	color: transparent;
-	font-size: 218px;
-
-	-webkit-animation: morganieGreen 1s linear infinite;
-	animation: morganieGreen 1s linear infinite;
+	left: 15px;
+	top: 0px;
 }
 
 .hant_5679 {
@@ -2839,6 +2841,12 @@ body {
 	--form-urls: url(images/cel_surgut_5679/Khanty_beauty.jpg) url(images/cel_surgut_5679/Khanty_old_women.jpg);
 }
 
+.rusback_5679 {
+	position: absolute;
+	left: 15px;
+	top: 133px;
+}
+
 .rus_5679 {
 	position: absolute;
 	left: 7px;
@@ -2900,6 +2908,12 @@ body {
 	--form-header-text: 'Русские жен';
 	--form-descr-text: 'Русская народная одежда различалась по назначению: будничная, праздничная, свадебная, траурная. Отличительная особенность русского национального костюма — большое количество верхней одежды. Символическим женским головным убором является кокошник. Также на голове носили платки, волосники, повязки, шапки с высокими тульями. Русское гостеприимство - неотъемлемая часть культурных традиций. Гостей всегда встречали хлебом и солью. Особенностью традиционной русской кухни является разнообразие горячих супов и каш, квашений, мочений и солений, грибных блюд и дичи. Важнее значение до настоящего времени играет хлеб, пироги, блины.';
 	--form-urls: url(img/icons/cel_surgut/nations/русские_ж.png);
+}
+
+.bashback_5679 {
+	position: absolute;
+	left: 15px;
+	top: 280px;
 }
 
 .bash_5679 {
@@ -2965,6 +2979,12 @@ body {
 	--form-urls: url(img/icons/cel_surgut/nations/башкиры_ж.png);
 }
 
+.tatback_5679 {
+	position: absolute;
+	left: 15px;
+	top: 430px;
+}
+
 .tat_5679 {
 	position: absolute;
 	left: 7px;
@@ -3026,6 +3046,12 @@ body {
 	--form-header-text: 'Кыз';
 	--form-descr-text: 'Кыз';
 	--form-urls: url(img/icons/cel_surgut/nations/татары_ж.png);
+}
+
+.azerback_5679 {
+	position: absolute;
+	left: 15px;
+	top: 572px;
 }
 
 .azer_5679 {
@@ -3091,6 +3117,12 @@ body {
 	--form-urls: url(img/icons/cel_surgut/nations/азербайджанцы_ж.png);
 }
 
+.cheback_5679 {
+	position: absolute;
+	left: 15px;
+	top: 716px;
+}
+
 .che_5679 {
 	position: absolute;
 	left: 7px;
@@ -3154,6 +3186,12 @@ body {
 	--form-urls: url(img/icons/cel_surgut/nations/чеченцы_ж.png);
 }
 
+.ukrback_5679 {
+	position: absolute;
+	left: 15px;
+	top: 864px;
+}
+
 .ukr_5679 {
 	position: absolute;
 	left: 7px;
@@ -3215,6 +3253,12 @@ body {
 	--form-header-text: 'Дивчины';
 	--form-descr-text: 'Хгарна дiвчина';
 	--form-urls: url(img/icons/cel_surgut/nations/украинцы_ж.png);
+}
+
+.belback_5679 {
+	position: absolute;
+	left: 15px;
+	top: 1008px;
 }
 
 .bel_5679 {
