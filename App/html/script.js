@@ -116,15 +116,15 @@ let inner_text = document.createElement('div');
 	
 
 	//ВРЕМЕННО, перейти на нужную вкладку
-	
 	//скрыть черное окно
-	tabBlackClick();
+//	tabBlackClick();
+/*
 	//нажать на кнопку
 	var btn = document.getElementById('surgut_1956_1979');
 	var evt = new Event('click');
 	btn.dispatchEvent(evt); // evt.target = btn;
 	menuButtonClick(evt);
-	
+*/
 
 }());
 
@@ -253,6 +253,9 @@ function menuButtonClick (e) {
 
 	let senderId = sender.getAttribute('id');
 
+	//Костыль
+	if (senderId == 'btn_info_main' ) return;
+
 	// change main_info_btn attribute
 
 	let mbf = document.querySelector('.btn_info_main');
@@ -261,13 +264,6 @@ function menuButtonClick (e) {
 
 	mbf.removeAttribute('data-number');
 	mbf.setAttribute('data-number', atr);
-
-	// end change main_info_btn attribute
-
-	for ( let i = 0; i < buttons.length ; i++ ) {
-		buttons[i].classList.remove('active');
-	}
-	sender.classList.add('active');
 
 	//let num = sender.getAttribute('data-number');
 
@@ -280,109 +276,43 @@ function menuButtonClick (e) {
 	// Плавно скрыть кнопки
 	setTimeout(function () {
 
-		// Если нажали на кнопки VI_XVI,XVI_XIX,1_XX то скроем кнопку Цельный Сургут
-		if (senderId == 'surgut_VI_XVI' || senderId == 'surgut_XVI_XIX' || senderId == 'surgut_1_XX' ) {
-			for (let i = 0; i < buttons.length; i++) {
-				let buttonId = buttons[i].getAttribute('id');
-				if (buttonId == 'surgut_celnyy') {
-					buttons[i].style.display = 'none'
-				}
-			}
-		}
-		// Если нажали на кнопку 2_XX то отобразим кнопку Цельный Сургут
-		if (senderId == 'surgut_2_XX') {
-			for (let i = 0; i < buttons.length; i++) {
-				let buttonId = buttons[i].getAttribute('id');
-				if (buttonId == 'surgut_celnyy') {
-					buttons[i].style.display = ''
-				}
-			}
-		}
+		let arr = [
+			{senderId:'surgut_VI_XVI', activeId: 'surgut_VI_XVI', visibleId:['btn_info_main','surgut_VI_XVI','surgut_XVI_XIX','surgut_1_XX','surgut_2_XX',] },
+			{senderId:'surgut_XVI_XIX', activeId: 'surgut_XVI_XIX', visibleId:['btn_info_main','surgut_VI_XVI','surgut_XVI_XIX','surgut_1_XX','surgut_2_XX',]},
+			{senderId:'surgut_1_XX', activeId: 'surgut_1_XX', visibleId:['btn_info_main','surgut_VI_XVI','surgut_XVI_XIX','surgut_1_XX','surgut_2_XX',]},
+			{senderId:'surgut_2_XX', activeId: 'surgut_2_XX', visibleId:['btn_info_main','surgut_VI_XVI','surgut_XVI_XIX','surgut_1_XX','surgut_2_XX','surgut_celnyy',]},
+			{senderId:'surgut_celnyy', activeId: 'surgut_1956_1979', visibleId:['surgut_person_1956_1979','surgut_1956_1979','surgut_1980_1991','surgut_1992_2020','back_surgut_2_XX',]},
+			{senderId:'surgut_1956_1979', activeId: 'surgut_1956_1979', visibleId:['surgut_person_1956_1979','surgut_1956_1979','surgut_1980_1991','surgut_1992_2020','back_surgut_2_XX',]},
+			{senderId:'surgut_1980_1991', activeId: 'surgut_1980_1991', visibleId:['surgut_person_1980_1991','surgut_1956_1979','surgut_1980_1991','surgut_1992_2020','back_surgut_2_XX',]},
+			{senderId:'surgut_1992_2020', activeId: 'surgut_1992_2020', visibleId:['surgut_person_1992_2020','surgut_1956_1979','surgut_1980_1991','surgut_1992_2020','back_surgut_2_XX',]},
+			{senderId:'back_surgut_2_XX', activeId: 'surgut_2_XX', visibleId:['btn_info_main','surgut_VI_XVI','surgut_XVI_XIX','surgut_1_XX','surgut_2_XX','surgut_celnyy',]},
+		];
 
-		// Если нажали на кнопку Цельный Сургут, то скроем одни кнопки и отобразим другие
-		if (senderId == 'surgut_celnyy') {
-			for (let i = 0; i < buttons.length; i++) {
-				let buttonId = buttons[i].getAttribute('id');
-				if (buttonId == 'surgut_VI_XVI' || buttonId == 'surgut_XVI_XIX' || buttonId == 'surgut_1_XX' || buttonId == 'surgut_2_XX' || buttonId == 'surgut_celnyy' || buttonId == 'btn_info_main') {
-					buttons[i].style.display = 'none'
-				}
-				if (buttonId == 'surgut_1956_1979' || buttonId == 'surgut_1980_1991' || buttonId == 'surgut_1992_2020' || buttonId == 'back_surgut_2_XX') {
-					buttons[i].style.display = ''
-				}
-			}
-		}
-		// Если нажали на кнопку Назад, то скроем одни кнопки и отобразим другие
-		if (senderId == 'back_surgut_2_XX') {
-			for (let i = 0; i < buttons.length; i++) {
-				let buttonId = buttons[i].getAttribute('id');
-				if (buttonId == 'surgut_VI_XVI' || buttonId == 'surgut_XVI_XIX' || buttonId == 'surgut_1_XX' || buttonId == 'surgut_2_XX' || buttonId == 'surgut_celnyy') {
-					buttons[i].style.display = ''
-				}
-				if (buttonId == 'btn_info_main') {
-					buttons[i].style.display = 'block'
-				}
-				if (buttonId == 'surgut_1956_1979' || buttonId == 'surgut_1980_1991' || buttonId == 'surgut_1992_2020' || buttonId == 'back_surgut_2_XX') {
-					buttons[i].style.display = 'none'
+		for (let k = 0; k < arr.length; k++) {
+			if(arr[k].senderId == senderId)
+			{
+				for (let i = 0; i < buttons.length; i++) {
+					let buttonId = buttons[i].getAttribute('id');
+					if(arr[k].visibleId.indexOf(buttonId) != -1)
+					{
+						buttons[i].style.display = '';
+						if(buttonId == 'btn_info_main') buttons[i].style.display = 'block';
+					}
+					else
+					{
+						buttons[i].style.display = 'none';
+					}
+					if(arr[k].activeId == buttonId)
+					{
+						buttons[i].classList.add('active');
+					}
+					else
+					{
+						buttons[i].classList.remove('active');
+					}
 				}
 			}
 		}
-
-		//Отбразить кнопку Персоналии выбранного периода 1956_1979
-		if (senderId == 'surgut_1956_1979') {
-			for (let i = 0; i < buttons.length; i++) {
-				let buttonId = buttons[i].getAttribute('id');
-				if (buttonId == 'surgut_person_1956_1979') {
-					buttons[i].style.display = ''
-				}
-				if (buttonId == 'surgut_person_1980_1991' || buttonId == 'surgut_person_1992_2020') {
-					buttons[i].style.display = 'none'
-				}
-			}
-		}
-		//Отбразить кнопку Персоналии выбранного периода 1980_1991
-		if (senderId == 'surgut_1980_1991') {
-			for (let i = 0; i < buttons.length; i++) {
-				let buttonId = buttons[i].getAttribute('id');
-				if (buttonId == 'surgut_person_1980_1991') {
-					buttons[i].style.display = ''
-				}
-				if (buttonId == 'surgut_person_1956_1979' || buttonId == 'surgut_person_1992_2020') {
-					buttons[i].style.display = 'none'
-				}
-			}
-		}
-		//Отбразить кнопку Персоналии выбранного периода 1992_2020
-		if (senderId == 'surgut_1992_2020') {
-			for (let i = 0; i < buttons.length; i++) {
-				let buttonId = buttons[i].getAttribute('id');
-				if (buttonId == 'surgut_person_1992_2020') {
-					buttons[i].style.display = ''
-				}
-				if (buttonId == 'surgut_person_1956_1979' || buttonId == 'surgut_person_1980_1991') {
-					buttons[i].style.display = 'none'
-				}
-			}
-		}
-
-		//Нажали кнопку Персоналии
-		if (senderId == 'surgut_person_1956_1979' || senderId == 'surgut_person_1980_1991' || senderId == 'surgut_person_1992_2020') {
-			for (let i = 0; i < buttons.length; i++) {
-				let buttonId = buttons[i].getAttribute('id');
-				if (buttonId == 'surgut_person_1956_1979' || buttonId == 'surgut_person_1980_1991' || buttonId == 'surgut_person_1992_2020' ||
-					buttonId == 'surgut_1956_1979' || buttonId == 'surgut_1980_1991' || buttonId == 'surgut_1992_2020' ||
-					buttonId == 'back_surgut_2_XX'
-				) {
-					buttons[i].style.display = 'none'
-				}
-
-				if ((senderId == 'surgut_person_1956_1979' && buttonId == 'back_surgut_1956_1979') ||
-					(senderId == 'surgut_person_1980_1991' && buttonId == 'back_surgut_1980_1991') ||
-					(senderId == 'surgut_person_1992_2020' && buttonId == 'back_surgut_1992_2020')) {
-					buttons[i].style.display = ''
-				}
-			}
-		}
-
 	}, 200)
 
 	// Плавно скрыть старый фон
