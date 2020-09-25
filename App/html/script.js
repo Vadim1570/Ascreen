@@ -69,6 +69,7 @@ let inner_text = document.createElement('div');
 	
 
 	//ВРЕМЕННО, перейти на нужную вкладку
+	/*
 	//скрыть черное окно
 	tabBlackClick();
 
@@ -77,7 +78,7 @@ let inner_text = document.createElement('div');
 	var evt = new Event('click');
 	btn.dispatchEvent(evt); // evt.target = btn;
 	menuButtonClick(evt);
-
+	*/
 
 }());
 
@@ -97,7 +98,7 @@ for ( let icon of icons ) {
 // Скрывает черный экран, инициализирует презентацию
 function tabBlackClick(e) {
 
-	setMenuButtons('surgut_VI_XVI');
+	placeMenuButtons(document.getElementById('surgut_VI_XVI'));
 
 	// click block
 
@@ -129,8 +130,6 @@ function tabBlackClick(e) {
 		tab[i].style = 'opacity: 0; display: none;'
 	}
 
-	buttons[0].classList.add('active');
-
 	for (let i = 0; i < icons.length; i++ ) {
 		icons[i].style = 'opacity: 1; display: block;';
 	}
@@ -158,8 +157,12 @@ function tabBlackClick(e) {
 	}
 }
 
-function setMenuButtons (clickButtonId) {
-	let arr = [
+// расставить кнопки
+function placeMenuButtons (clickButton) {
+
+	let clickButtonId = clickButton.getAttribute('id');
+
+	let rule = [
 		{clickId:'surgut_VI_XVI', activeId: 'surgut_VI_XVI', visibleId:['btn_info_main','surgut_VI_XVI','surgut_XVI_XIX','surgut_1_XX','surgut_2_XX',] },
 		{clickId:'surgut_XVI_XIX', activeId: 'surgut_XVI_XIX', visibleId:['btn_info_main','surgut_VI_XVI','surgut_XVI_XIX','surgut_1_XX','surgut_2_XX',]},
 		{clickId:'surgut_1_XX', activeId: 'surgut_1_XX', visibleId:['btn_info_main','surgut_VI_XVI','surgut_XVI_XIX','surgut_1_XX','surgut_2_XX',]},
@@ -171,12 +174,12 @@ function setMenuButtons (clickButtonId) {
 		{clickId:'back_surgut_2_XX', activeId: 'surgut_2_XX', visibleId:['btn_info_main','surgut_VI_XVI','surgut_XVI_XIX','surgut_1_XX','surgut_2_XX','surgut_celnyy',]},
 	];
 
-	for (let k = 0; k < arr.length; k++) {
-		if(arr[k].clickId == clickButtonId)
+	for (let k = 0; k < rule.length; k++) {
+		if(rule[k].clickId == clickButtonId)
 		{
 			for (let i = 0; i < buttons.length; i++) {
 				let buttonId = buttons[i].getAttribute('id');
-				if(arr[k].visibleId.indexOf(buttonId) != -1)
+				if(rule[k].visibleId.indexOf(buttonId) != -1)
 				{
 					buttons[i].style.display = '';
 					if(buttonId == 'btn_info_main') buttons[i].style.display = 'block';
@@ -185,13 +188,20 @@ function setMenuButtons (clickButtonId) {
 				{
 					buttons[i].style.display = 'none';
 				}
-				if(arr[k].activeId == buttonId)
+
+				var cs = getComputedStyle(buttons[i]); 
+				let activeButtonClass = trimStringProperty(cs.getPropertyValue('--active'));
+				if(activeButtonClass != '')
 				{
-					buttons[i].classList.add('active');
-				}
-				else
-				{
-					buttons[i].classList.remove('active');
+					if(rule[k].activeId == buttonId)
+					{
+
+							buttons[i].classList.add(activeButtonClass);
+					}
+					else
+					{
+						buttons[i].classList.remove(activeButtonClass);
+					}
 				}
 			}
 		}
@@ -227,7 +237,7 @@ function menuButtonClick (e) {
 
 	// Плавно скрыть кнопки
 	setTimeout(function () {
-		setMenuButtons(clickButtonId);
+		placeMenuButtons(sender);
 	}, 200)
 
 	// Плавно скрыть старый фон
