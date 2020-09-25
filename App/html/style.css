@@ -401,7 +401,6 @@ body {
 	width: 200px;
 	height: 100px;
 	background: url(img/BUNGALO.png) no-repeat;
-	--background-active: url(img/btn_active.png);
 	background-size: 190px 90px;
 	color: #555657;
 	display: flex;
@@ -423,7 +422,7 @@ body {
 	width: 200px;
 	height: 100px;
 	background: url(img/icons/cel_surgut/btn_inactive_1956.png) no-repeat;
-	background-size: 144px 90px;
+	background-size: 190px 90px;
 	color: #555657;
 	display: flex;
 	justify-content: center;
@@ -433,14 +432,14 @@ body {
 
 .btn_sc_active_56 {
 	background: url(img/icons/cel_surgut/btn_active_1956.png) no-repeat;
-	background-size: 144px 90px;
+	background-size: 190px 90px;
 }
 
 .btn_sc_80 {
 	width: 200px;
 	height: 100px;
 	background: url(img/icons/cel_surgut/btn_inactive_1980.png) no-repeat;
-	background-size: 144px 90px;
+	background-size: 190px 90px;
 	color: #555657;
 	display: flex;
 	justify-content: center;
@@ -450,14 +449,14 @@ body {
 
 .btn_sc_active_80 {
 	background: url(img/icons/cel_surgut/btn_active_1980.png) no-repeat;
-	background-size: 144px 90px;
+	background-size: 190px 90px;
 }
 
 .btn_sc_92 {
 	width: 200px;
 	height: 100px;
 	background: url(img/icons/cel_surgut/btn_inactive_1992.png) no-repeat;
-	background-size: 144px 90px;
+	background-size: 190px 90px;
 	color: #555657;
 	display: flex;
 	justify-content: center;
@@ -467,7 +466,7 @@ body {
 
 .btn_sc_active_92 {
 	background: url(img/icons/cel_surgut/btn_active_1992.png) no-repeat;
-	background-size: 144px 90px;
+	background-size: 190px 90px;
 }
 
 .btn_sc_person {
