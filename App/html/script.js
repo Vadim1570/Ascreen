@@ -17,7 +17,10 @@ let tabBlack = document.querySelector('.ta_black');
 let main_btns = document.querySelectorAll('.btn_1_i');
 let greyBg = document.querySelector('.greyBg');
 
-let enableFishes = false;
+let enableFishes = true;
+let fishesInterval;
+let enableClouds = true;
+let cloudsInterval;
 
 //body.addEventListener('contextmenu',function(e){
 //	e.preventDefault();
@@ -34,7 +37,7 @@ document.addEventListener('keypress', (event) => {
 
 // end hide and show cursor
 
-let cloudsInterval;
+
 let inner_text = document.createElement('div');
 
 (function () { 
@@ -57,113 +60,30 @@ let inner_text = document.createElement('div');
 
     window.setInterval(function () {
         if (++idleCounter >= IDLE_TIMEOUT) {
-        	for ( let i = 0; i < buttons.length; i++ ) {
-        		buttons[i].classList.remove('active');
-        	}
-        	for ( let i = 0; i < icons.length; i++ ) {
-        		// icons[i].style.display = 'none';
-        	}
-
-        	let active_window = document.querySelectorAll('.table');
-
-			for (let i = 0; i < active_window.length; i++ ) {
-
-				active_window[i].classList.add('table_out');
-				active_window[i].addEventListener('animationend',function(){
-					body.removeChild(active_window[i]);
-				})
-			}
-
-			let active_info_window = document.querySelectorAll('.table_info');
-
-			// if (!active_info_window.classList.contains('table_out')) {
-			// 	active_info_window.classList.add('table_out');
-			// 	active_info_window.addEventListener('animationend',function(){
-			// 		active_info_window.remove();
-			// 	})
-			// }
-
-			for (let i = 0; i < active_info_window.length; i++ ) {
-
-				active_info_window[i].classList.add('table_out');
-				active_info_window[i].addEventListener('animationend',function(){
-					body.removeChild(active_info_window[i]);
-				})
-			}
-
-        	// remove clouds
-
-    		let cloudsCount = document.querySelectorAll('.cloudsCount');
-
-        	if (body.querySelectorAll('.cloudsCount')) {
-        		if( body.children.length > 2) {
-        			for ( let i = 0; i < cloudsCount.length; i++ ) {
-        				body.removeChild(body.lastChild);
-        			}
-        			
-        		}
-        		
-        	}
-
-        	clearInterval(cloudsInterval);
-
-        	// end remove clouds
-        	if (!tabBlack.classList.contains('showTabs')) {
-        		tabBlack.classList.add('showTabs');
-        	}
+			stopFishes();
+			stopClouds();
+			hideAllTabs();
+			showTabBlack();
         }
 	}, interval);
 	
 
 	//ВРЕМЕННО, перейти на нужную вкладку
 	//скрыть черное окно
-//	tabBlackClick();
-/*
+	tabBlackClick();
+
 	//нажать на кнопку
 	var btn = document.getElementById('surgut_1956_1979');
 	var evt = new Event('click');
 	btn.dispatchEvent(evt); // evt.target = btn;
 	menuButtonClick(evt);
-*/
+
 
 }());
 
-if(enableFishes)
-{
-	setInterval(function(){
-		let random_fish = Math.floor(Math.random()*(15 - 1) + 1);
-	
-		fish[random_fish].classList.add('fish_jump');
-		fish1[random_fish].classList.add('fish_jump');
-		fish2[random_fish].classList.add('fish_jump');
-		fish3[random_fish].classList.add('fish_jump');
-		// fish4[random_fish].classList.add('fish_jump');
-	
-	
-		setTimeout(function(){
-			for ( let i = 0; i < fish.length; i++ ) {
-				fish[i].classList.remove('fish_jump');
-			}
-			for ( let i = 0; i < fish1.length; i++ ) {
-				fish1[i].classList.remove('fish_jump');
-			}
-			for ( let i = 0; i < fish2.length; i++ ) {
-				fish2[i].classList.remove('fish_jump');
-			}
-			for ( let i = 0; i < fish3.length; i++ ) {
-				fish3[i].classList.remove('fish_jump');
-			}
-			// for ( let i = 0; i < fish4.length; i++ ) {
-			// 	fish4[i].classList.remove('fish_jump');
-			// }
-		},1000)
-	},2000);
-}
-
 tabBlack.addEventListener('click', tabBlackClick);
+showTabBlack();
 
-
-tab[4].style.display = 'block';
 btns_hide.style.display = 'none';
 
 for (let btn of buttons) {
@@ -177,6 +97,8 @@ for ( let icon of icons ) {
 // Скрывает черный экран, инициализирует презентацию
 function tabBlackClick(e) {
 
+	setMenuButtons('surgut_VI_XVI');
+
 	// click block
 
 	let blocker = document.querySelector('.blocker');
@@ -184,26 +106,6 @@ function tabBlackClick(e) {
 	blocker.style.display = 'block';
 
 	// end click block
-
-	cloudsInterval = setInterval(function(){
-
-		let random_cloud = Math.floor(Math.random()*(7 - 1) + 1);
-		let height = 1200;
-		let random = Math.floor(Math.random()*height);
-
-		let cloud = document.createElement('div');
-		cloud.className = 'cloud_' + random_cloud;
-		cloud.classList.add('cloudsCount');
-		cloud.style = 'top:' + random + 'px;';
-		cloud.style.zIndex = '0';
-
-		body.appendChild(cloud);
-
-		setTimeout(function(){
-			cloud.remove();
-		}, 90000)
-
-	},5000)
 
 	let changeSlide = document.querySelector('.changeSlide');
 
@@ -244,6 +146,56 @@ function tabBlackClick(e) {
 		tabBlack.classList.remove('showTabs');
 		tabBlack.style.display = 'none';
 	},1000);
+
+	if(enableFishes)
+	{
+		startFishes();
+	}
+
+	if(enableClouds)
+	{
+		startClouds();
+	}
+}
+
+function setMenuButtons (clickButtonId) {
+	let arr = [
+		{clickId:'surgut_VI_XVI', activeId: 'surgut_VI_XVI', visibleId:['btn_info_main','surgut_VI_XVI','surgut_XVI_XIX','surgut_1_XX','surgut_2_XX',] },
+		{clickId:'surgut_XVI_XIX', activeId: 'surgut_XVI_XIX', visibleId:['btn_info_main','surgut_VI_XVI','surgut_XVI_XIX','surgut_1_XX','surgut_2_XX',]},
+		{clickId:'surgut_1_XX', activeId: 'surgut_1_XX', visibleId:['btn_info_main','surgut_VI_XVI','surgut_XVI_XIX','surgut_1_XX','surgut_2_XX',]},
+		{clickId:'surgut_2_XX', activeId: 'surgut_2_XX', visibleId:['btn_info_main','surgut_VI_XVI','surgut_XVI_XIX','surgut_1_XX','surgut_2_XX','surgut_celnyy',]},
+		{clickId:'surgut_celnyy', activeId: 'surgut_1956_1979', visibleId:['surgut_person_1956_1979','surgut_1956_1979','surgut_1980_1991','surgut_1992_2020','back_surgut_2_XX',]},
+		{clickId:'surgut_1956_1979', activeId: 'surgut_1956_1979', visibleId:['surgut_person_1956_1979','surgut_1956_1979','surgut_1980_1991','surgut_1992_2020','back_surgut_2_XX',]},
+		{clickId:'surgut_1980_1991', activeId: 'surgut_1980_1991', visibleId:['surgut_person_1980_1991','surgut_1956_1979','surgut_1980_1991','surgut_1992_2020','back_surgut_2_XX',]},
+		{clickId:'surgut_1992_2020', activeId: 'surgut_1992_2020', visibleId:['surgut_person_1992_2020','surgut_1956_1979','surgut_1980_1991','surgut_1992_2020','back_surgut_2_XX',]},
+		{clickId:'back_surgut_2_XX', activeId: 'surgut_2_XX', visibleId:['btn_info_main','surgut_VI_XVI','surgut_XVI_XIX','surgut_1_XX','surgut_2_XX','surgut_celnyy',]},
+	];
+
+	for (let k = 0; k < arr.length; k++) {
+		if(arr[k].clickId == clickButtonId)
+		{
+			for (let i = 0; i < buttons.length; i++) {
+				let buttonId = buttons[i].getAttribute('id');
+				if(arr[k].visibleId.indexOf(buttonId) != -1)
+				{
+					buttons[i].style.display = '';
+					if(buttonId == 'btn_info_main') buttons[i].style.display = 'block';
+				}
+				else
+				{
+					buttons[i].style.display = 'none';
+				}
+				if(arr[k].activeId == buttonId)
+				{
+					buttons[i].classList.add('active');
+				}
+				else
+				{
+					buttons[i].classList.remove('active');
+				}
+			}
+		}
+	}
 }
 
 // Нажатие на нижние кнопки меню
@@ -251,10 +203,10 @@ function menuButtonClick (e) {
 	// e: MouseEvent
 	let sender = e.currentTarget ?? e.target; 
 
-	let senderId = sender.getAttribute('id');
+	let clickButtonId = sender.getAttribute('id');
 
 	//Костыль
-	if (senderId == 'btn_info_main' ) return;
+	if (clickButtonId == 'btn_info_main' ) return;
 
 	// change main_info_btn attribute
 
@@ -275,44 +227,7 @@ function menuButtonClick (e) {
 
 	// Плавно скрыть кнопки
 	setTimeout(function () {
-
-		let arr = [
-			{senderId:'surgut_VI_XVI', activeId: 'surgut_VI_XVI', visibleId:['btn_info_main','surgut_VI_XVI','surgut_XVI_XIX','surgut_1_XX','surgut_2_XX',] },
-			{senderId:'surgut_XVI_XIX', activeId: 'surgut_XVI_XIX', visibleId:['btn_info_main','surgut_VI_XVI','surgut_XVI_XIX','surgut_1_XX','surgut_2_XX',]},
-			{senderId:'surgut_1_XX', activeId: 'surgut_1_XX', visibleId:['btn_info_main','surgut_VI_XVI','surgut_XVI_XIX','surgut_1_XX','surgut_2_XX',]},
-			{senderId:'surgut_2_XX', activeId: 'surgut_2_XX', visibleId:['btn_info_main','surgut_VI_XVI','surgut_XVI_XIX','surgut_1_XX','surgut_2_XX','surgut_celnyy',]},
-			{senderId:'surgut_celnyy', activeId: 'surgut_1956_1979', visibleId:['surgut_person_1956_1979','surgut_1956_1979','surgut_1980_1991','surgut_1992_2020','back_surgut_2_XX',]},
-			{senderId:'surgut_1956_1979', activeId: 'surgut_1956_1979', visibleId:['surgut_person_1956_1979','surgut_1956_1979','surgut_1980_1991','surgut_1992_2020','back_surgut_2_XX',]},
-			{senderId:'surgut_1980_1991', activeId: 'surgut_1980_1991', visibleId:['surgut_person_1980_1991','surgut_1956_1979','surgut_1980_1991','surgut_1992_2020','back_surgut_2_XX',]},
-			{senderId:'surgut_1992_2020', activeId: 'surgut_1992_2020', visibleId:['surgut_person_1992_2020','surgut_1956_1979','surgut_1980_1991','surgut_1992_2020','back_surgut_2_XX',]},
-			{senderId:'back_surgut_2_XX', activeId: 'surgut_2_XX', visibleId:['btn_info_main','surgut_VI_XVI','surgut_XVI_XIX','surgut_1_XX','surgut_2_XX','surgut_celnyy',]},
-		];
-
-		for (let k = 0; k < arr.length; k++) {
-			if(arr[k].senderId == senderId)
-			{
-				for (let i = 0; i < buttons.length; i++) {
-					let buttonId = buttons[i].getAttribute('id');
-					if(arr[k].visibleId.indexOf(buttonId) != -1)
-					{
-						buttons[i].style.display = '';
-						if(buttonId == 'btn_info_main') buttons[i].style.display = 'block';
-					}
-					else
-					{
-						buttons[i].style.display = 'none';
-					}
-					if(arr[k].activeId == buttonId)
-					{
-						buttons[i].classList.add('active');
-					}
-					else
-					{
-						buttons[i].classList.remove('active');
-					}
-				}
-			}
-		}
+		setMenuButtons(clickButtonId);
 	}, 200)
 
 	// Плавно скрыть старый фон
@@ -322,12 +237,12 @@ function menuButtonClick (e) {
 			tab[i].style = 'opacity: 0; display: none;';
 
 
-			if (tab[i].classList.contains('ta_' + senderId) ||
-				(senderId == 'back_surgut_2_XX' && tab[i].classList.contains("ta_surgut_2_XX")) ||
-				(senderId == 'surgut_celnyy' && tab[i].classList.contains("ta_surgut_1956_1979")) ||
-				(senderId == 'back_surgut_1956_1979' && tab[i].classList.contains("ta_surgut_1956_1979")) ||
-				(senderId == 'back_surgut_1980_1991' && tab[i].classList.contains("ta_surgut_1980_1991")) ||
-				(senderId == 'back_surgut_1992_2020' && tab[i].classList.contains("ta_surgut_1992_2020"))
+			if (tab[i].classList.contains('ta_' + clickButtonId) ||
+				(clickButtonId == 'back_surgut_2_XX' && tab[i].classList.contains("ta_surgut_2_XX")) ||
+				(clickButtonId == 'surgut_celnyy' && tab[i].classList.contains("ta_surgut_1956_1979")) ||
+				(clickButtonId == 'back_surgut_1956_1979' && tab[i].classList.contains("ta_surgut_1956_1979")) ||
+				(clickButtonId == 'back_surgut_1980_1991' && tab[i].classList.contains("ta_surgut_1980_1991")) ||
+				(clickButtonId == 'back_surgut_1992_2020' && tab[i].classList.contains("ta_surgut_1992_2020"))
 			) {
 				tab[i].classList.add('showTabs');
 			}	
@@ -351,6 +266,77 @@ function menuButtonClick (e) {
 		btns_hide.style.display = 'none';
 	}, 1000)
 
+}
+
+function startFishes(e) {
+	fishesInterval = setInterval(function(){
+		let random_fish = Math.floor(Math.random()*(15 - 1) + 1);
+	
+		fish[random_fish].classList.add('fish_jump');
+		fish1[random_fish].classList.add('fish_jump');
+		fish2[random_fish].classList.add('fish_jump');
+		fish3[random_fish].classList.add('fish_jump');
+		// fish4[random_fish].classList.add('fish_jump');
+	
+	
+		setTimeout(function(){
+			for ( let i = 0; i < fish.length; i++ ) {
+				fish[i].classList.remove('fish_jump');
+			}
+			for ( let i = 0; i < fish1.length; i++ ) {
+				fish1[i].classList.remove('fish_jump');
+			}
+			for ( let i = 0; i < fish2.length; i++ ) {
+				fish2[i].classList.remove('fish_jump');
+			}
+			for ( let i = 0; i < fish3.length; i++ ) {
+				fish3[i].classList.remove('fish_jump');
+			}
+			// for ( let i = 0; i < fish4.length; i++ ) {
+			// 	fish4[i].classList.remove('fish_jump');
+			// }
+		},1000)
+	},2000);
+}
+
+function stopFishes(e) {
+	fishesInterval = 0;
+}
+
+function startClouds(e) {
+	cloudsInterval = setInterval(function(){
+
+		let random_cloud = Math.floor(Math.random()*(7 - 1) + 1);
+		let height = 1200;
+		let random = Math.floor(Math.random()*height);
+
+		let cloud = document.createElement('div');
+		cloud.className = 'cloud_' + random_cloud;
+		cloud.classList.add('cloudsCount');
+		cloud.style = 'top:' + random + 'px;';
+		cloud.style.zIndex = '0';
+
+		body.appendChild(cloud);
+
+		setTimeout(function(){
+			cloud.remove();
+		}, 90000)
+
+	},5000);
+}
+
+function stopClouds(e) {
+	cloudsInterval = 0;
+}
+
+function hideAllTabs(e) {
+	for ( let i = 0; i < tab.length; i++ ) {
+		tab[i].style = ''
+	}
+}
+
+function showTabBlack(e) {
+	tabBlack.style.display = 'block';
 }
 
 // Нажатие на иконки по всему экрану
