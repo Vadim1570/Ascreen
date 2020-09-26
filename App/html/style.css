@@ -3377,6 +3377,132 @@ body {
 	--form-urls: url(img/icons/cel_surgut/nations/белорусы_м.png);
 }
 
+.firetruck_5679 {
+	position: absolute;
+	left: 433px;
+	top: 696px;
+	width: 171px;
+	height: 93px;
+	background-image: url(img/icons/cel_surgut/пожарная_машина.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	/*animation: golding 3s ease infinite;*/
+	opacity: 0;
+	/*cursor: none;*/
+	z-index: 1;
+	/*border: 1px solid red;*/
+	--form-top: 300px;
+	--form-left: 600px;
+	--form-header-text: 'пожарная';
+	--form-descr-text: 'противопожарная';
+	--form-urls: url(img/icons/cel_surgut/пожарная_машина.png);
+}
+
+.ambulance_5679 {
+	position: absolute;
+	left: 819px;
+	top: 613px;
+	width: 162px;
+	height: 96px;
+	background-image: url(img/icons/cel_surgut/скорая.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	/*animation: golding 3s ease infinite;*/
+	opacity: 0;
+	/*cursor: none;*/
+	z-index: 1;
+	/*border: 1px solid red;*/
+	--form-top: 300px;
+	--form-left: 1000px;
+	--form-header-text: 'скорая';
+	--form-descr-text: 'прескорая помощь препомощь';
+	--form-urls: url(img/icons/cel_surgut/скорая.png);
+}
+
+.gres_5679 {
+	position: absolute;
+	left: 1542px;
+	top: 235px;
+	width: 178px;
+	height: 175px;
+	background-image: url(img/icons/cel_surgut/ГРЭС.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	/*animation: golding 3s ease infinite;*/
+	opacity: 0;
+	/*cursor: none;*/
+	z-index: 1;
+	/*border: 1px solid red;*/
+	--form-top: 100px;
+	--form-left: 1130px;
+	--form-header-text: 'ГРЭС';
+	--form-descr-text: 'вода + нефть + проволка + магнит = колебание электронов';
+	--form-urls: url(img/icons/cel_surgut/ГРЭС.png);
+}
+
+.grest_5679 {
+	position: absolute;
+	left: 1564px;
+	top: 400px;
+	width: 121px;
+	height: 41px;
+	background-image: url(img/icons/cel_surgut/ГРЭС_табличка.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	/*animation: golding 3s ease infinite;*/
+	opacity: 0;
+	/*cursor: none;*/
+	z-index: 1;
+	/*border: 1px solid red;*/
+	--form-top: 100px;
+	--form-left: 1130px;
+	--form-header-text: 'ГРЭС';
+	--form-descr-text: 'вода + нефть + проволка + магнит = колебание электронов';
+	--form-urls: url(img/icons/cel_surgut/ГРЭС_табличка.png);
+}
+
+.clinic_5679 {
+	position: absolute;
+	left: 1014px;
+	top: 638px;
+	width: 176px;
+	height: 121px;
+	background-image: url(img/icons/cel_surgut/поликлиника.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	/*animation: golding 3s ease infinite;*/
+	opacity: 0;
+	/*cursor: none;*/
+	z-index: 1;
+	/*border: 1px solid red;*/
+	--form-top: 300px;
+	--form-left: 1200px;
+	--form-header-text: 'Поликлиника';
+	--form-descr-text: 'Много разных видов врачей приехало в Сургут';
+	--form-urls: url(img/icons/cel_surgut/поликлиника.png);
+}
+
+.clinict_5679 {
+	position: absolute;
+	left: 1030px;
+	top: 748px;
+	width: 146px;
+	height: 45px;
+	background-image: url(img/icons/cel_surgut/поликлиника_табличка.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	/*animation: golding 3s ease infinite;*/
+	opacity: 0;
+	/*cursor: none;*/
+	z-index: 1;
+	/*border: 1px solid red;*/
+	--form-top: 300px;
+	--form-left: 1200px;
+	--form-header-text: 'Поликлиника';
+	--form-descr-text: 'Много разных видов врачей приехало в Сургут';
+	--form-urls: url(img/icons/cel_surgut/поликлиника_табличка.png);
+}
+
 .belw_5679 {
 	position: absolute;
 	left: 15px;
