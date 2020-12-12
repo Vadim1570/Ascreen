@@ -108,7 +108,7 @@ function tabBlackClick(e) {
 
 	// end click block
 
-	let changeSlide = document.querySelector('.changeSlide');
+	let backgroundDiv = document.getElementById('backgroundDiv');
 
 	tab[0].style.display = 'block';
 
@@ -136,7 +136,7 @@ function tabBlackClick(e) {
 
 	setTimeout(()=>{
 		blocker.style.display = 'none';
-		changeSlide.style.display = 'block';
+		backgroundDiv.style.display = 'block';
 		tab[0].style = 'opacity: 1; display: block;'
 	},500);
 
@@ -163,20 +163,23 @@ function placeMenuButtons (clickButton) {
 	let clickButtonId = clickButton.getAttribute('id');
 
 	let rule = [
-		{clickId:'surgut_VI_XVI', activeId: 'surgut_VI_XVI', visibleId:['btn_info_main','surgut_VI_XVI','surgut_XVI_XIX','surgut_1_XX','surgut_2_XX',] },
-		{clickId:'surgut_XVI_XIX', activeId: 'surgut_XVI_XIX', visibleId:['btn_info_main','surgut_VI_XVI','surgut_XVI_XIX','surgut_1_XX','surgut_2_XX',]},
-		{clickId:'surgut_1_XX', activeId: 'surgut_1_XX', visibleId:['btn_info_main','surgut_VI_XVI','surgut_XVI_XIX','surgut_1_XX','surgut_2_XX',]},
-		{clickId:'surgut_2_XX', activeId: 'surgut_2_XX', visibleId:['btn_info_main','surgut_VI_XVI','surgut_XVI_XIX','surgut_1_XX','surgut_2_XX','surgut_celnyy',]},
-		{clickId:'surgut_celnyy', activeId: 'surgut_1956_1979', visibleId:['surgut_person_1956_1979','surgut_1956_1979','surgut_1980_1991','surgut_1992_2020','back_surgut_2_XX',]},
-		{clickId:'surgut_1956_1979', activeId: 'surgut_1956_1979', visibleId:['surgut_person_1956_1979','surgut_1956_1979','surgut_1980_1991','surgut_1992_2020','back_surgut_2_XX',]},
-		{clickId:'surgut_1980_1991', activeId: 'surgut_1980_1991', visibleId:['surgut_person_1980_1991','surgut_1956_1979','surgut_1980_1991','surgut_1992_2020','back_surgut_2_XX',]},
-		{clickId:'surgut_1992_2020', activeId: 'surgut_1992_2020', visibleId:['surgut_person_1992_2020','surgut_1956_1979','surgut_1980_1991','surgut_1992_2020','back_surgut_2_XX',]},
-		{clickId:'back_surgut_2_XX', activeId: 'surgut_2_XX', visibleId:['btn_info_main','surgut_VI_XVI','surgut_XVI_XIX','surgut_1_XX','surgut_2_XX','surgut_celnyy',]},
+		{clickId:'surgut_VI_XVI', activeId: 'surgut_VI_XVI', visibleId:['btn_info_main','surgut_VI_XVI','surgut_XVI_XIX','surgut_1_XX','surgut_2_XX',], backgroundDivClass: 'backgroundOldSurgut'  },
+		{clickId:'surgut_XVI_XIX', activeId: 'surgut_XVI_XIX', visibleId:['btn_info_main','surgut_VI_XVI','surgut_XVI_XIX','surgut_1_XX','surgut_2_XX',], backgroundDivClass: 'backgroundOldSurgut'},
+		{clickId:'surgut_1_XX', activeId: 'surgut_1_XX', visibleId:['btn_info_main','surgut_VI_XVI','surgut_XVI_XIX','surgut_1_XX','surgut_2_XX',], backgroundDivClass: 'backgroundOldSurgut'},
+		{clickId:'surgut_2_XX', activeId: 'surgut_2_XX', visibleId:['btn_info_main','surgut_VI_XVI','surgut_XVI_XIX','surgut_1_XX','surgut_2_XX','surgut_celnyy',], backgroundDivClass: 'backgroundOldSurgut'},
+		{clickId:'surgut_celnyy', activeId: 'surgut_1956_1979', visibleId:['surgut_person_1956_1979','surgut_1956_1979','surgut_1980_1991','surgut_1992_2020','back_surgut_2_XX',], backgroundDivClass: 'backgroundCelSurgut'},
+		{clickId:'surgut_1956_1979', activeId: 'surgut_1956_1979', visibleId:['surgut_person_1956_1979','surgut_1956_1979','surgut_1980_1991','surgut_1992_2020','back_surgut_2_XX',], backgroundDivClass: 'backgroundCelSurgut'},
+		{clickId:'surgut_1980_1991', activeId: 'surgut_1980_1991', visibleId:['surgut_person_1980_1991','surgut_1956_1979','surgut_1980_1991','surgut_1992_2020','back_surgut_2_XX',], backgroundDivClass: 'backgroundCelSurgut'},
+		{clickId:'surgut_1992_2020', activeId: 'surgut_1992_2020', visibleId:['surgut_person_1992_2020','surgut_1956_1979','surgut_1980_1991','surgut_1992_2020','back_surgut_2_XX',], backgroundDivClass: 'backgroundCelSurgut'},
+		{clickId:'back_surgut_2_XX', activeId: 'surgut_2_XX', visibleId:['btn_info_main','surgut_VI_XVI','surgut_XVI_XIX','surgut_1_XX','surgut_2_XX','surgut_celnyy',], backgroundDivClass: 'backgroundCelSurgut'},
 	];
-
+	
 	for (let k = 0; k < rule.length; k++) {
 		if(rule[k].clickId == clickButtonId)
 		{
+			//Меняю фон
+			document.getElementById("backgroundDiv").className = rule[k].backgroundDivClass;
+			
 			for (let i = 0; i < buttons.length; i++) {
 				let buttonId = buttons[i].getAttribute('id');
 				if(rule[k].visibleId.indexOf(buttonId) != -1)
