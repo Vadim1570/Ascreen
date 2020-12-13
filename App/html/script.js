@@ -223,7 +223,7 @@ function menuButtonClick (e) {
 
 	// change main_info_btn attribute
 
-	let mbf = document.querySelector('.btn_info_main');
+	let mbf = document.getElementById("btn_info_main");
 
 	let atr = sender.getAttribute('data-info');
 
