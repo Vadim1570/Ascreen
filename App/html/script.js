@@ -69,7 +69,7 @@ let inner_text = document.createElement('div');
 	
 
 	//ВРЕМЕННО, перейти на нужную вкладку
-	/*
+	
 	//скрыть черное окно
 	tabBlackClick();
 
@@ -78,7 +78,7 @@ let inner_text = document.createElement('div');
 	var evt = new Event('click');
 	btn.dispatchEvent(evt); // evt.target = btn;
 	menuButtonClick(evt);
-	*/
+	
 
 }());
 
