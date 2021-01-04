@@ -3415,6 +3415,75 @@ div#surgut_person_1992_2020 {
 	--form-urls: url(img/icons/cel_surgut/nations/белорусы_м.png);
 }
 
+.mariback_8091 {
+	position: absolute;
+	left: 15px;
+	top: 1008px;
+}
+
+.mari_8091 {
+	position: absolute;
+	left: 7px;
+	top: 1152px;
+	width: 132px;
+	height: 26px;
+	background-image: url(img/icons/cel_surgut/nations/марийцы_табличка.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	/*animation: golding 3s ease infinite;*/
+	opacity: 0;
+	/*cursor: none;*/
+	z-index: 1;
+	/*border: 1px solid red;*/
+	--form-top: 300px;
+	--form-left: 140px;
+	--form-header-text: 'Марийцы';
+	--form-descr-text: 'Белый аист летит, Над белёсым полесьем летит. Белорусский мотив В песне вереска, в песне ракит. Все земля приняла И заботу, и ласку, и пламя, Полыхал над землёй Небосвод, как багровое знамя. Молодость моя, Белоруссия, Песня партизан, сосны да туман. Песня партизан, алая заря, Молодость моя, Белоруссия. Наша память идёт По лесной партизанской тропе, Не смогли зарасти Эти тропы в народной судьбе. Боль тех давних годин В каждом сердце живёт и поныне, В каждой нашей семье С нами малые дети Хатыни. Молодость моя, Белоруссия, Источник teksty-pesenok.ru Песня партизан, сосны да туман. Песня партизан, алая заря, Молодость моя, Белоруссия. Белый аист летит, Над полесьем, над тихим жнивьём, Где-то в топи болот Погребён остывающий гром. Белый аист летит, Всё летит над родными полями, Землю нашей любви Осеняя большими крылами.';
+	--form-urls: url(img/icons/cel_surgut/nations/марийцы_табличка.png);
+}
+
+.marim_8091 {
+	position: absolute;
+	left: 250px;
+	top: 1048px;
+	width: 57px;
+	height: 111px;
+	background-image: url(img/icons/cel_surgut/nations/мирийцы_м.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	/*animation: golding 3s ease infinite;*/
+	opacity: 0;
+	/*cursor: none;*/
+	z-index: 1;
+	/*border: 1px solid red;*/
+	--form-top: 300px;
+	--form-left: 140px;
+	--form-header-text: 'Марийцы';
+	--form-descr-text: 'Леха.';
+	--form-urls: url(img/icons/cel_surgut/nations/мирийцы_м.png);
+}
+
+.mariw_8091 {
+	position: absolute;
+	left: 203px;
+	top: 1048px;
+	width: 65px;
+	height: 100px;
+	background-image: url(img/icons/cel_surgut/nations/мирийцы_ж.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	/*animation: golding 3s ease infinite;*/
+	opacity: 0;
+	/*cursor: none;*/
+	z-index: 1;
+	/*border: 1px solid red;*/
+	--form-top: 300px;
+	--form-left: 140px;
+	--form-header-text: 'Марийцы';
+	--form-descr-text: 'Ну и Таня.';
+	--form-urls: url(img/icons/cel_surgut/nations/мирийцы_ж.png);
+}
+
 .firetruck_5679 {
 	position: absolute;
 	left: 433px;
