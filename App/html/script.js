@@ -41,9 +41,11 @@ document.addEventListener('keypress', (event) => {
 let inner_text = document.createElement('div');
 
 (function () { 
-    let minutes = true;
-    let interval = minutes ? время_до_появления_заставки : 1000;  //35000
-    let IDLE_TIMEOUT = 3; 
+    // let minutes = true;
+    // let interval = minutes ? время_до_появления_заставки : 1000;  //35000
+	//Проверка на простой производится 3 раза, с учетом интервала из конфига
+	let IDLE_TIMEOUT = 3; 
+	let interval = время_до_появления_заставки_сек*1000/IDLE_TIMEOUT
     let idleCounter = 0;
 
     document.onmousemove = document.onkeypress = function () {
@@ -59,7 +61,13 @@ let inner_text = document.createElement('div');
     };
 
     window.setInterval(function () {
-        if (++idleCounter >= IDLE_TIMEOUT) {
+        // if (++idleCounter >= IDLE_TIMEOUT) {
+			// stopFishes();
+			// stopClouds();
+			// hideAllTabs();
+			// showTabBlack();
+        // }
+		if (++idleCounter == IDLE_TIMEOUT) {
 			stopFishes();
 			stopClouds();
 			hideAllTabs();
@@ -78,7 +86,7 @@ let inner_text = document.createElement('div');
 	var evt = new Event('click');
 	btn.dispatchEvent(evt); // evt.target = btn;
 	menuButtonClick(evt);
-		
+	
 
 }());
 
@@ -317,8 +325,9 @@ function stopFishes(e) {
 }
 
 function startClouds(e) {
-	cloudsInterval = setInterval(function(){
-
+		
+		cloudsInterval = setInterval(function(){
+	
 		let random_cloud = Math.floor(Math.random()*(7 - 1) + 1);
 		let height = 1200;
 		let random = Math.floor(Math.random()*height);
@@ -335,11 +344,12 @@ function startClouds(e) {
 			cloud.remove();
 		}, 90000)
 
-	},5000);
+	}, частота_появления_облаков_сек*1000);
 }
 
 function stopClouds(e) {
-	cloudsInterval = 0;
+	
+	clearInterval(cloudsInterval)
 }
 
 function hideAllTabs(e) {
