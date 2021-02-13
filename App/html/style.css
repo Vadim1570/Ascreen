@@ -656,7 +656,7 @@ div#surgut_person_1992_2020 {
 	--form-left: 800px;
 	--form-header-text: var(--chum-form-header-text);
 	--form-descr-text: var(--chum-form-descr-text);
-	--form-urls: url(images/layer_1/Chum/chum.jpg) url(images/layer_1/Chum/chum1.jpg) url(images/layer_1/Chum/chum2.jpg) url(images/layer_1/Chum/chum3.jpg);
+	--form-images: url(images/layer_1/Chum/chum.jpg) url(images/layer_1/Chum/chum1.jpg) url(images/layer_1/Chum/chum2.jpg) url(images/layer_1/Chum/chum3.jpg);
 }
 
 .i_3_1 {
@@ -709,7 +709,7 @@ div#surgut_person_1992_2020 {
 	--form-left: 800px;
 	--form-header-text: var(--chum-form-header-text);
 	--form-descr-text: var(--chum-form-descr-text);
-	--form-urls: url(images/layer_1/Chum/chum.jpg) url(images/layer_1/Chum/chum1.jpg) url(images/layer_1/Chum/chum2.jpg) url(images/layer_1/Chum/chum3.jpg);
+	--form-images: url(images/layer_1/Chum/chum.jpg) url(images/layer_1/Chum/chum1.jpg) url(images/layer_1/Chum/chum2.jpg) url(images/layer_1/Chum/chum3.jpg);
 }
 
 @keyframes golding {
@@ -738,7 +738,7 @@ div#surgut_person_1992_2020 {
 	--form-left: 580px;
 	--form-header-text: 'Утка';
 	--form-descr-text: 'Фигурки водоплавающих птиц – один из самых распространённых сюжетов в культуре средневекового населения. Подобные плоские отливки бытовали на обширной территории от Прибалтики до Западной Сибири.  Фигурки были деталью костюма в качестве нашивок и подвесок на одежде, в ожерельях и причёске. В Сургутском Приобье большое количество «птичек» получено в ходе археологических исследований в урочище Барсова Гора, близ д. Сайгатино, д. Русскинская, г. Покачи и др.Образ птицы, запечатлённый в металле, изменял свою форму в течение нескольких столетий. Для Х в. н.э. были характерны двусторонние отливки фигурок с чёткой прорисовкой деталей: клюв, глаза, хвост, оперение. К концу XII в. начинается упрощение и схематизация сюжетов бронзовой пластики, наиболее популярными становятся лапчатые подвески, где перепончатая лапка птицы символизирует всё тот же образ. Водоплавающая птица не случайна в украшениях эпохи средневековья Югры. Этот образ имеет важное мифологическое наполнение. Согласно древним сказаниям именно птица достала из вод океана крупицы первой земли, из которых разрослась настоящая суша – место обитания среднего мира, мира людей и животных. В современной культуре обских угров сохранилось особое отношение к водоплавающим птицам, многие из них выступают ипостасями божеств-покровителей. Так же, этим птицам, как перелётным, приписывается способность переносить души людей на небо, к Небесному отцу - Торуму.';
-	--form-urls: url(images/layer_1/podveska/podveska.jpg);
+	--form-images: url(images/layer_1/podveska/podveska.jpg);
 }
 
 .i_5 {
@@ -2908,7 +2908,7 @@ div#surgut_person_1992_2020 {
 	--form-left: 140px;
 	--form-header-text: 'Ханты 56-79';
 	--form-descr-text: 'Самоназвание хантэ означает человек. В русском языке для обозначения представителей народа существуют слова: во мн. ч. ханты (склоняемое); в ед. ч. хантыйка (ж.род), а также ханты (несклоняемое) для обозначения мужчины или женщины. Прилагательные хантыйский и (неизменяемое) ханты';
-	--form-urls: url(images/cel_surgut_5679/Khanty_family.jpg);
+	--form-images: url(images/cel_surgut_5679/Khanty_family.jpg);
 }
 
 .hantm_5679 {
@@ -2929,7 +2929,7 @@ div#surgut_person_1992_2020 {
 	--form-left: 140px;
 	--form-header-text: 'Ханты';
 	--form-descr-text: 'Традиционные промыслы — рыболовство, охота и оленеводство. Традиционная религия — шаманизм и православие (с XVI века)';
-	--form-urls: url(images/cel_surgut_5679/Khanti_kmns.jpg);
+	--form-images: url(images/cel_surgut_5679/Khanti_kmns.jpg);
 }
 
 .hantw_5679 {
@@ -2950,7 +2950,7 @@ div#surgut_person_1992_2020 {
 	--form-left: 140px;
 	--form-header-text: 'Хантыйки';
 	--form-descr-text: 'Хантыйский язык (устаревшее название остяцкий язык) вместе с мансийским и венгерским составляет так называемую угорскую группу уральской семьи языков. Хантыйский язык известен своей необычайной диалектной раздробленностью, в связи с чем выделяется западная группа — обдорское, приобское и прииртышское наречия и восточная группа — сургутское и вах-васюганское наречия, членящиеся, в свою очередь, на 13 диалектов.';
-	--form-urls: url(images/cel_surgut_5679/Khanty_beauty.jpg) url(images/cel_surgut_5679/Khanty_old_women.jpg);
+	--form-images: url(images/cel_surgut_5679/Khanty_beauty.jpg) url(images/cel_surgut_5679/Khanty_old_women.jpg);
 }
 
 .rusback_5679 {
@@ -2977,7 +2977,7 @@ div#surgut_person_1992_2020 {
 	--form-left: 140px;
 	--form-header-text: 'Русские 56-79';
 	--form-descr-text: 'Русские – титульный народ Российской Федерации. Составляет 80% населения страны. Это самый многочисленный славянский народ и самый крупный в Европе - около 133 мил. человек. В России проживает 111 миллионов. Из всех русских в мире 86 % живёт в России, 11,5 % в странах бывшего СССР и 2,5 % в остальных странах. В Сургуте - 197 876 человек русские (по данным переписи населения 2010 г.). Русский язык вместе с украинским и белорусским образует группу восточных славян в составе славянской группы индоевропейской языковой семьи. Традиционной религией является православное христианство.';
-	--form-urls: url(img/icons/cel_surgut/nations/русские_табличка.png);
+	--form-images: url(img/icons/cel_surgut/nations/русские_табличка.png);
 }
 
 .rusm_5679 {
@@ -2998,7 +2998,7 @@ div#surgut_person_1992_2020 {
 	--form-left: 140px;
 	--form-header-text: 'Русские муж';
 	--form-descr-text: 'Основными традиционными занятиями русских являлось земледелие и животноводство. Главным направлением было возделывание зерновых культур. Из скота держали в основном коров, лошадей, овец, коз, а также свиней и домашнюю птицу. Наряду с сельским хозяйством русские занимались охотой, рыболовством и собирательством. Традиционные ремесла включали в себя кузнечное, ювелирное, оружейное, гончарное дело, обработку древесины, кож и меха, косторезное искусство и резьбу по дереву, ткачество, стеклоделие, художественные промыслы. Основными деталями мужского национального костюма являются рубаха, штаны, пояс, лапти. Классическим видом русской рубашки считается косоворотка. В русском костюме присутствует большое разнообразие головных уборов.';
-	--form-urls: url(img/icons/cel_surgut/nations/русские_м.png);
+	--form-images: url(img/icons/cel_surgut/nations/русские_м.png);
 }
 
 .rusw_5679 {
@@ -3019,7 +3019,7 @@ div#surgut_person_1992_2020 {
 	--form-left: 140px;
 	--form-header-text: 'Русские жен';
 	--form-descr-text: 'Русская народная одежда различалась по назначению: будничная, праздничная, свадебная, траурная. Отличительная особенность русского национального костюма — большое количество верхней одежды. Символическим женским головным убором является кокошник. Также на голове носили платки, волосники, повязки, шапки с высокими тульями. Русское гостеприимство - неотъемлемая часть культурных традиций. Гостей всегда встречали хлебом и солью. Особенностью традиционной русской кухни является разнообразие горячих супов и каш, квашений, мочений и солений, грибных блюд и дичи. Важнее значение до настоящего времени играет хлеб, пироги, блины.';
-	--form-urls: url(img/icons/cel_surgut/nations/русские_ж.png);
+	--form-images: url(img/icons/cel_surgut/nations/русские_ж.png);
 }
 
 .bashback_5679 {
@@ -3046,7 +3046,7 @@ div#surgut_person_1992_2020 {
 	--form-left: 140px;
 	--form-header-text: 'Башкиры';
 	--form-descr-text: 'Уфа';
-	--form-urls: url(img/icons/cel_surgut/nations/башкиры_табличка.png);
+	--form-images: url(img/icons/cel_surgut/nations/башкиры_табличка.png);
 }
 
 .bashm_5679 {
@@ -3067,7 +3067,7 @@ div#surgut_person_1992_2020 {
 	--form-left: 140px;
 	--form-header-text: 'Егет';
 	--form-descr-text: 'Егет';
-	--form-urls: url(img/icons/cel_surgut/nations/башкиры_м.png);
+	--form-images: url(img/icons/cel_surgut/nations/башкиры_м.png);
 }
 
 .bashw_5679 {
@@ -3088,7 +3088,7 @@ div#surgut_person_1992_2020 {
 	--form-left: 140px;
 	--form-header-text: 'Кыз';
 	--form-descr-text: 'Кыз';
-	--form-urls: url(img/icons/cel_surgut/nations/башкиры_ж.png);
+	--form-images: url(img/icons/cel_surgut/nations/башкиры_ж.png);
 }
 
 .tatback_5679 {
@@ -3115,7 +3115,7 @@ div#surgut_person_1992_2020 {
 	--form-left: 140px;
 	--form-header-text: 'Татары';
 	--form-descr-text: 'Казань';
-	--form-urls: url(img/icons/cel_surgut/nations/татары_табличка.png);
+	--form-images: url(img/icons/cel_surgut/nations/татары_табличка.png);
 }
 
 .tatm_5679 {
@@ -3136,7 +3136,7 @@ div#surgut_person_1992_2020 {
 	--form-left: 140px;
 	--form-header-text: 'Егет';
 	--form-descr-text: 'Егет';
-	--form-urls: url(img/icons/cel_surgut/nations/татары_м.png);
+	--form-images: url(img/icons/cel_surgut/nations/татары_м.png);
 }
 
 .tatw_5679 {
@@ -3157,7 +3157,7 @@ div#surgut_person_1992_2020 {
 	--form-left: 140px;
 	--form-header-text: 'Кыз';
 	--form-descr-text: 'Кыз';
-	--form-urls: url(img/icons/cel_surgut/nations/татары_ж.png);
+	--form-images: url(img/icons/cel_surgut/nations/татары_ж.png);
 }
 
 .azerback_5679 {
@@ -3184,7 +3184,7 @@ div#surgut_person_1992_2020 {
 	--form-left: 140px;
 	--form-header-text: 'Азербайджанцы';
 	--form-descr-text: 'Баку';
-	--form-urls: url(img/icons/cel_surgut/nations/азербайджанцы_табличка.png);
+	--form-images: url(img/icons/cel_surgut/nations/азербайджанцы_табличка.png);
 }
 
 .azerm_5679 {
@@ -3205,7 +3205,7 @@ div#surgut_person_1992_2020 {
 	--form-left: 140px;
 	--form-header-text: 'Оглы';
 	--form-descr-text: 'Оглы';
-	--form-urls: url(img/icons/cel_surgut/nations/азербайджанцы_м.png);
+	--form-images: url(img/icons/cel_surgut/nations/азербайджанцы_м.png);
 }
 
 .azerw_5679 {
@@ -3226,7 +3226,7 @@ div#surgut_person_1992_2020 {
 	--form-left: 140px;
 	--form-header-text: 'Кыз';
 	--form-descr-text: 'Кыз';
-	--form-urls: url(img/icons/cel_surgut/nations/азербайджанцы_ж.png);
+	--form-images: url(img/icons/cel_surgut/nations/азербайджанцы_ж.png);
 }
 
 .cheback_5679 {
@@ -3253,7 +3253,7 @@ div#surgut_person_1992_2020 {
 	--form-left: 140px;
 	--form-header-text: 'Чеченцы';
 	--form-descr-text: 'Грозный';
-	--form-urls: url(img/icons/cel_surgut/nations/чеченцы_табличка.png);
+	--form-images: url(img/icons/cel_surgut/nations/чеченцы_табличка.png);
 }
 
 .chem_5679 {
@@ -3274,7 +3274,7 @@ div#surgut_person_1992_2020 {
 	--form-left: 140px;
 	--form-header-text: 'Стаг';
 	--form-descr-text: 'Стаг';
-	--form-urls: url(img/icons/cel_surgut/nations/чеченцы_м.png);
+	--form-images: url(img/icons/cel_surgut/nations/чеченцы_м.png);
 }
 
 .chew_5679 {
@@ -3295,7 +3295,7 @@ div#surgut_person_1992_2020 {
 	--form-left: 140px;
 	--form-header-text: 'Зуда';
 	--form-descr-text: 'Зуда';
-	--form-urls: url(img/icons/cel_surgut/nations/чеченцы_ж.png);
+	--form-images: url(img/icons/cel_surgut/nations/чеченцы_ж.png);
 }
 
 .ukrback_5679 {
@@ -3322,7 +3322,7 @@ div#surgut_person_1992_2020 {
 	--form-left: 140px;
 	--form-header-text: 'Украинцы 56-79';
 	--form-descr-text: 'Пойду я в охородик, наimмся червячкiв';
-	--form-urls: url(img/icons/cel_surgut/nations/украинцы_табличка.png);
+	--form-images: url(img/icons/cel_surgut/nations/украинцы_табличка.png);
 }
 
 .ukrm_5679 {
@@ -3343,7 +3343,7 @@ div#surgut_person_1992_2020 {
 	--form-left: 140px;
 	--form-header-text: 'Хлопцы';
 	--form-descr-text: 'Парень молодой. Весь такой крутой.';
-	--form-urls: url(img/icons/cel_surgut/nations/украинцы_м.png);
+	--form-images: url(img/icons/cel_surgut/nations/украинцы_м.png);
 }
 
 .ukrw_5679 {
@@ -3364,7 +3364,7 @@ div#surgut_person_1992_2020 {
 	--form-left: 140px;
 	--form-header-text: 'Дивчины';
 	--form-descr-text: 'Хгарна дiвчина';
-	--form-urls: url(img/icons/cel_surgut/nations/украинцы_ж.png);
+	--form-images: url(img/icons/cel_surgut/nations/украинцы_ж.png);
 }
 
 .belback_5679 {
@@ -3391,7 +3391,7 @@ div#surgut_person_1992_2020 {
 	--form-left: 140px;
 	--form-header-text: 'Белорусы';
 	--form-descr-text: 'Белый аист летит, Над белёсым полесьем летит. Белорусский мотив В песне вереска, в песне ракит. Все земля приняла И заботу, и ласку, и пламя, Полыхал над землёй Небосвод, как багровое знамя. Молодость моя, Белоруссия, Песня партизан, сосны да туман. Песня партизан, алая заря, Молодость моя, Белоруссия. Наша память идёт По лесной партизанской тропе, Не смогли зарасти Эти тропы в народной судьбе. Боль тех давних годин В каждом сердце живёт и поныне, В каждой нашей семье С нами малые дети Хатыни. Молодость моя, Белоруссия, Источник teksty-pesenok.ru Песня партизан, сосны да туман. Песня партизан, алая заря, Молодость моя, Белоруссия. Белый аист летит, Над полесьем, над тихим жнивьём, Где-то в топи болот Погребён остывающий гром. Белый аист летит, Всё летит над родными полями, Землю нашей любви Осеняя большими крылами.';
-	--form-urls: url(img/icons/cel_surgut/nations/белорусы_табличка.png);
+	--form-images: url(img/icons/cel_surgut/nations/белорусы_табличка.png);
 }
 
 .belm_5679 {
@@ -3412,7 +3412,7 @@ div#surgut_person_1992_2020 {
 	--form-left: 140px;
 	--form-header-text: 'Хлопцы';
 	--form-descr-text: 'Казунов и Шкредов.';
-	--form-urls: url(img/icons/cel_surgut/nations/белорусы_м.png);
+	--form-images: url(img/icons/cel_surgut/nations/белорусы_м.png);
 }
 
 .mariback_8091 {
@@ -3439,7 +3439,7 @@ div#surgut_person_1992_2020 {
 	--form-left: 140px;
 	--form-header-text: 'Марийцы';
 	--form-descr-text: 'Белый аист летит, Над белёсым полесьем летит. Белорусский мотив В песне вереска, в песне ракит. Все земля приняла И заботу, и ласку, и пламя, Полыхал над землёй Небосвод, как багровое знамя. Молодость моя, Белоруссия, Песня партизан, сосны да туман. Песня партизан, алая заря, Молодость моя, Белоруссия. Наша память идёт По лесной партизанской тропе, Не смогли зарасти Эти тропы в народной судьбе. Боль тех давних годин В каждом сердце живёт и поныне, В каждой нашей семье С нами малые дети Хатыни. Молодость моя, Белоруссия, Источник teksty-pesenok.ru Песня партизан, сосны да туман. Песня партизан, алая заря, Молодость моя, Белоруссия. Белый аист летит, Над полесьем, над тихим жнивьём, Где-то в топи болот Погребён остывающий гром. Белый аист летит, Всё летит над родными полями, Землю нашей любви Осеняя большими крылами.';
-	--form-urls: url(img/icons/cel_surgut/nations/марийцы_табличка.png);
+	--form-images: url(img/icons/cel_surgut/nations/марийцы_табличка.png);
 }
 
 .marim_8091 {
@@ -3460,7 +3460,7 @@ div#surgut_person_1992_2020 {
 	--form-left: 140px;
 	--form-header-text: 'Марийцы';
 	--form-descr-text: 'Леха.';
-	--form-urls: url(img/icons/cel_surgut/nations/мирийцы_м.png);
+	--form-images: url(img/icons/cel_surgut/nations/мирийцы_м.png);
 }
 
 .mariw_8091 {
@@ -3481,7 +3481,7 @@ div#surgut_person_1992_2020 {
 	--form-left: 140px;
 	--form-header-text: 'Марийцы';
 	--form-descr-text: 'Ну и Таня.';
-	--form-urls: url(img/icons/cel_surgut/nations/мирийцы_ж.png);
+	--form-images: url(img/icons/cel_surgut/nations/мирийцы_ж.png);
 }
 
 .mordback_8091 {
@@ -3508,7 +3508,7 @@ div#surgut_person_1992_2020 {
 	--form-left: 230px;
 	--form-header-text: 'Мордва';
 	--form-descr-text: 'Пакся кучкаса калунясь.';
-	--form-urls: url(img/icons/cel_surgut/nations/мордва_табличка.png);
+	--form-images: url(img/icons/cel_surgut/nations/мордва_табличка.png);
 }
 
 .mordm_8091 {
@@ -3529,7 +3529,7 @@ div#surgut_person_1992_2020 {
 	--form-left: 230px;
 	--form-header-text: 'Мордва';
 	--form-descr-text: 'Мельседей.';
-	--form-urls: url(img/icons/cel_surgut/nations/мордва_м.png);
+	--form-images: url(img/icons/cel_surgut/nations/мордва_м.png);
 }
 
 .mordw_8091 {
@@ -3550,7 +3550,7 @@ div#surgut_person_1992_2020 {
 	--form-left: 230px;
 	--form-header-text: 'Мордва';
 	--form-descr-text: 'Аргума.';
-	--form-urls: url(img/icons/cel_surgut/nations/мордва_ж.png);
+	--form-images: url(img/icons/cel_surgut/nations/мордва_ж.png);
 }
 
 .chuvback_8091 {
@@ -3577,7 +3577,7 @@ div#surgut_person_1992_2020 {
 	--form-left: 1280px;
 	--form-header-text: 'Чуваши';
 	--form-descr-text: 'Чуваши Чуваши Чуваши.';
-	--form-urls: url(img/icons/cel_surgut/nations/чуваши_табличка.png);
+	--form-images: url(img/icons/cel_surgut/nations/чуваши_табличка.png);
 }
 
 .chuvm_8091 {
@@ -3598,7 +3598,7 @@ div#surgut_person_1992_2020 {
 	--form-left: 1280px;
 	--form-header-text: 'Чуваши';
 	--form-descr-text: 'Абакъ.';
-	--form-urls: url(img/icons/cel_surgut/nations/чуваши_м.png);
+	--form-images: url(img/icons/cel_surgut/nations/чуваши_м.png);
 }
 
 .chuvw_8091 {
@@ -3619,7 +3619,7 @@ div#surgut_person_1992_2020 {
 	--form-left: 1280px;
 	--form-header-text: 'Чуваши';
 	--form-descr-text: 'Айдинка.';
-	--form-urls: url(img/icons/cel_surgut/nations/чуваши_ж.png);
+	--form-images: url(img/icons/cel_surgut/nations/чуваши_ж.png);
 }
 
 .moldback_8091 {
@@ -3646,7 +3646,7 @@ div#surgut_person_1992_2020 {
 	--form-left: 1370px;
 	--form-header-text: 'Молдоване';
 	--form-descr-text: 'Молдоване Молдоване Молдоване.';
-	--form-urls: url(img/icons/cel_surgut/nations/молдоване_табличка.png);
+	--form-images: url(img/icons/cel_surgut/nations/молдоване_табличка.png);
 }
 
 .moldm_8091 {
@@ -3667,7 +3667,7 @@ div#surgut_person_1992_2020 {
 	--form-left: 1370px;
 	--form-header-text: 'Молдоване';
 	--form-descr-text: 'Кемаль.';
-	--form-urls: url(img/icons/cel_surgut/nations/молдоване_м.png);
+	--form-images: url(img/icons/cel_surgut/nations/молдоване_м.png);
 }
 
 .moldw_8091 {
@@ -3688,7 +3688,7 @@ div#surgut_person_1992_2020 {
 	--form-left: 1370px;
 	--form-header-text: 'Молдоване';
 	--form-descr-text: 'Диана.';
-	--form-urls: url(img/icons/cel_surgut/nations/молдоване_ж.png);
+	--form-images: url(img/icons/cel_surgut/nations/молдоване_ж.png);
 }
 
 .estback_8091 {
@@ -3715,7 +3715,7 @@ div#surgut_person_1992_2020 {
 	--form-left: 1370px;
 	--form-header-text: 'Эстонцы';
 	--form-descr-text: 'Эстонцы Эстонцы Эстонцы.';
-	--form-urls: url(img/icons/cel_surgut/nations/эстонцы_табличка.png);
+	--form-images: url(img/icons/cel_surgut/nations/эстонцы_табличка.png);
 }
 
 .estm_8091 {
@@ -3736,7 +3736,7 @@ div#surgut_person_1992_2020 {
 	--form-left: 1370px;
 	--form-header-text: 'Эстонцы';
 	--form-descr-text: 'Маттиас.';
-	--form-urls: url(img/icons/cel_surgut/nations/эстонцы_м.png);
+	--form-images: url(img/icons/cel_surgut/nations/эстонцы_м.png);
 }
 
 .estw_8091 {
@@ -3757,7 +3757,7 @@ div#surgut_person_1992_2020 {
 	--form-left: 1370px;
 	--form-header-text: 'Эстонцы';
 	--form-descr-text: 'Ёханес.';
-	--form-urls: url(img/icons/cel_surgut/nations/эстонцы_ж.png);
+	--form-images: url(img/icons/cel_surgut/nations/эстонцы_ж.png);
 }
 
 .bolgback_8091 {
@@ -3784,7 +3784,7 @@ div#surgut_person_1992_2020 {
 	--form-left: 1370px;
 	--form-header-text: 'Болгары';
 	--form-descr-text: 'БолгарыБолгарыБолгары.';
-	--form-urls: url(img/icons/cel_surgut/nations/болгары_табличка.png);
+	--form-images: url(img/icons/cel_surgut/nations/болгары_табличка.png);
 }
 
 .bolgm_8091 {
@@ -3805,7 +3805,7 @@ div#surgut_person_1992_2020 {
 	--form-left: 1370px;
 	--form-header-text: 'Болгары';
 	--form-descr-text: 'Перец.';
-	--form-urls: url(img/icons/cel_surgut/nations/болгары_м.png);
+	--form-images: url(img/icons/cel_surgut/nations/болгары_м.png);
 }
 
 .bolgw_8091 {
@@ -3826,7 +3826,7 @@ div#surgut_person_1992_2020 {
 	--form-left: 1370px;
 	--form-header-text: 'Болгары';
 	--form-descr-text: 'Пила.';
-	--form-urls: url(img/icons/cel_surgut/nations/болгары_ж.png);
+	--form-images: url(img/icons/cel_surgut/nations/болгары_ж.png);
 }
 
 .ndagback_9220 {
@@ -3851,9 +3851,9 @@ div#surgut_person_1992_2020 {
 	/*border: 1px solid red;*/
 	--form-top: 300px;
 	--form-left: 1370px;
-	--form-header-text: 'Народы Дагестана';
-	--form-descr-text: 'андалальцы, анцухцы, батлухцы, гидатлинцы, карахцы, андийцы, ахвахцы, каратинцы, ботлихцы, годоберинцы, багулалы, тиндинцы, чамалинцы, дидойцы, хваршины, гинухцы, бежтинцы, гунзибцы, лакцы, даргинцы, кайтагцы, кубачинцы, агулы, арчинцы, будухи, крызы, лезгины, рутульцы, табасараны, удины, цахуры, хиналугцы.';
-	--form-urls: url(img/icons/cel_surgut/nations/дагестанцы_табличка.png);
+	--form-header-text: 'НародыДагестана';
+	--form-descr-text: 'андалальцы,<br>анцухцы, батлухцы, гидатлинцы, карахцы, андийцы, ахвахцы, каратинцы, ботлихцы, годоберинцы, багулалы, тиндинцы, чамалинцы, дидойцы, хваршины, гинухцы, бежтинцы, гунзибцы, лакцы, даргинцы, кайтагцы, кубачинцы, агулы, арчинцы, будухи, крызы, лезгины, рутульцы, табасараны, удины, цахуры, хиналугцы.';
+	--form-images: url(img/icons/cel_surgut/nations/дагестанцы_табличка.png);
 }
 
 .ndagm_9220 {
@@ -3874,7 +3874,7 @@ div#surgut_person_1992_2020 {
 	--form-left: 1370px;
 	--form-header-text: 'Народы Дагестана';
 	--form-descr-text: 'Караджан.';
-	--form-urls: url(img/icons/cel_surgut/nations/дагестан_м.png);
+	--form-images: url(img/icons/cel_surgut/nations/дагестан_м.png);
 }
 
 .ndagw_9220 {
@@ -3895,7 +3895,7 @@ div#surgut_person_1992_2020 {
 	--form-left: 1370px;
 	--form-header-text: 'Народы Дагестана';
 	--form-descr-text: 'Клава.';
-	--form-urls: url(img/icons/cel_surgut/nations/дагестан_ж.png);
+	--form-images: url(img/icons/cel_surgut/nations/дагестан_ж.png);
 }
 
 .armnback_9220 {
@@ -3922,7 +3922,7 @@ div#surgut_person_1992_2020 {
 	--form-left: 1370px;
 	--form-header-text: 'Армяне';
 	--form-descr-text: 'Армяне.';
-	--form-urls: url(img/icons/cel_surgut/nations/армяне_табличка.png);
+	--form-images: url(img/icons/cel_surgut/nations/армяне_табличка.png);
 }
 
 .armnm_9220 {
@@ -3943,7 +3943,7 @@ div#surgut_person_1992_2020 {
 	--form-left: 1370px;
 	--form-header-text: 'Армяне';
 	--form-descr-text: 'Фрунзик.';
-	--form-urls: url(img/icons/cel_surgut/nations/армяне_м.png);
+	--form-images: url(img/icons/cel_surgut/nations/армяне_м.png);
 }
 
 .armnw_9220 {
@@ -3964,7 +3964,7 @@ div#surgut_person_1992_2020 {
 	--form-left: 1370px;
 	--form-header-text: 'Армяне';
 	--form-descr-text: 'Санам.';
-	--form-urls: url(img/icons/cel_surgut/nations/армяне_ж.png);
+	--form-images: url(img/icons/cel_surgut/nations/армяне_ж.png);
 }
 
 .kazhback_9220 {
@@ -3991,7 +3991,7 @@ div#surgut_person_1992_2020 {
 	--form-left: 1370px;
 	--form-header-text: 'Казахи';
 	--form-descr-text: 'Казахи.';
-	--form-urls: url(img/icons/cel_surgut/nations/казахи_табличка.png);
+	--form-images: url(img/icons/cel_surgut/nations/казахи_табличка.png);
 }
 
 .kazhm_9220 {
@@ -4012,7 +4012,7 @@ div#surgut_person_1992_2020 {
 	--form-left: 1370px;
 	--form-header-text: 'Казахи';
 	--form-descr-text: 'Альфа';
-	--form-urls: url(img/icons/cel_surgut/nations/казахи_м.png);
+	--form-images: url(img/icons/cel_surgut/nations/казахи_м.png);
 }
 
 .kazhw_9220 {
@@ -4033,7 +4033,7 @@ div#surgut_person_1992_2020 {
 	--form-left: 1370px;
 	--form-header-text: 'Казахи';
 	--form-descr-text: 'Альфия';
-	--form-urls: url(img/icons/cel_surgut/nations/казахи_ж.png);
+	--form-images: url(img/icons/cel_surgut/nations/казахи_ж.png);
 }
 
 .tazjback_9220 {
@@ -4060,7 +4060,7 @@ div#surgut_person_1992_2020 {
 	--form-left: 1370px;
 	--form-header-text: 'таджики';
 	--form-descr-text: 'таджики.';
-	--form-urls: url(img/icons/cel_surgut/nations/таджики_табличка.png);
+	--form-images: url(img/icons/cel_surgut/nations/таджики_табличка.png);
 }
 
 .tazjm_9220 {
@@ -4081,7 +4081,7 @@ div#surgut_person_1992_2020 {
 	--form-left: 1370px;
 	--form-header-text: 'таджики';
 	--form-descr-text: 'Альфа';
-	--form-urls: url(img/icons/cel_surgut/nations/таджики_м.png);
+	--form-images: url(img/icons/cel_surgut/nations/таджики_м.png);
 }
 
 .tazjw_9220 {
@@ -4102,7 +4102,7 @@ div#surgut_person_1992_2020 {
 	--form-left: 1370px;
 	--form-header-text: 'таджики';
 	--form-descr-text: 'Альфия';
-	--form-urls: url(img/icons/cel_surgut/nations/таджики_ж.png);
+	--form-images: url(img/icons/cel_surgut/nations/таджики_ж.png);
 }
 
 .uzbback_9220 {
@@ -4129,7 +4129,7 @@ div#surgut_person_1992_2020 {
 	--form-left: 1370px;
 	--form-header-text: 'узбеки';
 	--form-descr-text: 'узбеки.';
-	--form-urls: url(img/icons/cel_surgut/nations/узбеки_табличка.png);
+	--form-images: url(img/icons/cel_surgut/nations/узбеки_табличка.png);
 }
 
 .uzbm_9220 {
@@ -4150,7 +4150,7 @@ div#surgut_person_1992_2020 {
 	--form-left: 1370px;
 	--form-header-text: 'узбеки';
 	--form-descr-text: 'Альфа';
-	--form-urls: url(img/icons/cel_surgut/nations/узбеки_м.png);
+	--form-images: url(img/icons/cel_surgut/nations/узбеки_м.png);
 }
 
 .uzbw_9220 {
@@ -4171,7 +4171,7 @@ div#surgut_person_1992_2020 {
 	--form-left: 1370px;
 	--form-header-text: 'узбеки';
 	--form-descr-text: 'Альфия';
-	--form-urls: url(img/icons/cel_surgut/nations/узбеки_ж.png);
+	--form-images: url(img/icons/cel_surgut/nations/узбеки_ж.png);
 }
 
 .krgzback_9220 {
@@ -4198,7 +4198,7 @@ div#surgut_person_1992_2020 {
 	--form-left: 1370px;
 	--form-header-text: 'киргизы';
 	--form-descr-text: 'киргизы.';
-	--form-urls: url(img/icons/cel_surgut/nations/киргизы_табличка.png);
+	--form-images: url(img/icons/cel_surgut/nations/киргизы_табличка.png);
 }
 
 .krgzm_9220 {
@@ -4219,7 +4219,7 @@ div#surgut_person_1992_2020 {
 	--form-left: 1370px;
 	--form-header-text: 'киргизы';
 	--form-descr-text: 'Альфа';
-	--form-urls: url(img/icons/cel_surgut/nations/киргизы_м.png);
+	--form-images: url(img/icons/cel_surgut/nations/киргизы_м.png);
 }
 
 .krgzw_9220 {
@@ -4240,7 +4240,7 @@ div#surgut_person_1992_2020 {
 	--form-left: 1370px;
 	--form-header-text: 'киргизы';
 	--form-descr-text: 'Альфия';
-	--form-urls: url(img/icons/cel_surgut/nations/киргизы_ж.png);
+	--form-images: url(img/icons/cel_surgut/nations/киргизы_ж.png);
 }
 
 .firetruck_5679 {
@@ -4261,7 +4261,7 @@ div#surgut_person_1992_2020 {
 	--form-left: 600px;
 	--form-header-text: 'пожарная';
 	--form-descr-text: 'противопожарная';
-	--form-urls: url(img/icons/cel_surgut/пожарная_машина.png);
+	--form-images: url(img/icons/cel_surgut/пожарная_машина.png);
 }
 
 .ambulance_5679 {
@@ -4282,7 +4282,7 @@ div#surgut_person_1992_2020 {
 	--form-left: 1000px;
 	--form-header-text: 'скорая';
 	--form-descr-text: 'прескорая помощь препомощь';
-	--form-urls: url(img/icons/cel_surgut/скорая.png);
+	--form-images: url(img/icons/cel_surgut/скорая.png);
 }
 
 .bus_5679 {
@@ -4303,7 +4303,7 @@ div#surgut_person_1992_2020 {
 	--form-left: 1200px;
 	--form-header-text: 'Автобус';
 	--form-descr-text: 'Личный транспорт - зло - пробки и плохая экология.';
-	--form-urls: url(img/icons/cel_surgut/автобус.png);
+	--form-images: url(img/icons/cel_surgut/автобус.png);
 }
 
 .train_5679 {
@@ -4324,7 +4324,7 @@ div#surgut_person_1992_2020 {
 	--form-left: 330px;
 	--form-header-text: 'Поезд';
 	--form-descr-text: 'Чючух.';
-	--form-urls: url(img/icons/cel_surgut/поезд.png);
+	--form-images: url(img/icons/cel_surgut/поезд.png);
 }
 
 .plane_5679 {
@@ -4345,7 +4345,7 @@ div#surgut_person_1992_2020 {
 	--form-left: 1200px;
 	--form-header-text: 'Самолет';
 	--form-descr-text: 'Уиииии.';
-	--form-urls: url(img/icons/cel_surgut/самолет.png);
+	--form-images: url(img/icons/cel_surgut/самолет.png);
 }
 
 .barge_5679 {
@@ -4366,7 +4366,7 @@ div#surgut_person_1992_2020 {
 	--form-left: 1200px;
 	--form-header-text: 'баржа';
 	--form-descr-text: 'баржа.';
-	--form-urls: url(img/icons/cel_surgut/баржа.png);
+	--form-images: url(img/icons/cel_surgut/баржа.png);
 }
 
 .gres_5679 {
@@ -4387,7 +4387,7 @@ div#surgut_person_1992_2020 {
 	--form-left: 1130px;
 	--form-header-text: 'ГРЭС';
 	--form-descr-text: 'вода + нефть + проволка + магнит = колебание электронов';
-	--form-urls: url(img/icons/cel_surgut/ГРЭС.png);
+	--form-images: url(img/icons/cel_surgut/ГРЭС.png);
 }
 
 .grest_5679 {
@@ -4408,7 +4408,7 @@ div#surgut_person_1992_2020 {
 	--form-left: 1130px;
 	--form-header-text: 'ГРЭС';
 	--form-descr-text: 'вода + нефть + проволка + магнит = колебание электронов';
-	--form-urls: url(img/icons/cel_surgut/ГРЭС_табличка.png);
+	--form-images: url(img/icons/cel_surgut/ГРЭС_табличка.png);
 }
 
 .lep_5679 {
@@ -4429,7 +4429,7 @@ div#surgut_person_1992_2020 {
 	--form-left: 1130px;
 	--form-header-text: 'ЛЭП';
 	--form-descr-text: 'ЛЭП';
-	--form-urls: url(img/icons/cel_surgut/ЛЭП.png);
+	--form-images: url(img/icons/cel_surgut/ЛЭП.png);
 }
 
 .hse_5679 {
@@ -4450,7 +4450,7 @@ div#surgut_person_1992_2020 {
 	--form-left: 1130px;
 	--form-header-text: 'вышка';
 	--form-descr-text: 'вышка';
-	--form-urls: url(img/icons/cel_surgut/вышка.png);
+	--form-images: url(img/icons/cel_surgut/вышка.png);
 }
 
 .clinic_5679 {
@@ -4471,7 +4471,7 @@ div#surgut_person_1992_2020 {
 	--form-left: 1200px;
 	--form-header-text: 'Поликлиника';
 	--form-descr-text: 'Много разных видов врачей приехало в Сургут';
-	--form-urls: url(img/icons/cel_surgut/поликлиника.png);
+	--form-images: url(img/icons/cel_surgut/поликлиника.png);
 }
 
 .clinict_5679 {
@@ -4492,7 +4492,7 @@ div#surgut_person_1992_2020 {
 	--form-left: 1200px;
 	--form-header-text: 'Поликлиника';
 	--form-descr-text: 'Много разных видов врачей приехало в Сургут';
-	--form-urls: url(img/icons/cel_surgut/поликлиника_табличка.png);
+	--form-images: url(img/icons/cel_surgut/поликлиника_табличка.png);
 }
 
 .school_5679 {
@@ -4513,7 +4513,7 @@ div#surgut_person_1992_2020 {
 	--form-left: 1200px;
 	--form-header-text: 'Школа';
 	--form-descr-text: 'Учиться, учиться, и ещё раз учиться.';
-	--form-urls: url(img/icons/cel_surgut/школа.png);
+	--form-images: url(img/icons/cel_surgut/школа.png);
 }
 
 .schoolt_5679 {
@@ -4534,7 +4534,7 @@ div#surgut_person_1992_2020 {
 	--form-left: 1200px;
 	--form-header-text: 'Школа';
 	--form-descr-text: 'Учиться, учиться, и ещё раз учиться.';
-	--form-urls: url(img/icons/cel_surgut/Школа_1_табличка.png);
+	--form-images: url(img/icons/cel_surgut/Школа_1_табличка.png);
 }
 
 .panelhouse_5679 {
@@ -4555,7 +4555,7 @@ div#surgut_person_1992_2020 {
 	--form-left: 780px;
 	--form-header-text: 'первый панельный дом';
 	--form-descr-text: 'первый панельный дом';
-	--form-urls: url(img/icons/cel_surgut/первый_панельный_дом.png);
+	--form-images: url(img/icons/cel_surgut/первый_панельный_дом.png);
 }
 
 .panelhouset_5679 {
@@ -4576,7 +4576,7 @@ div#surgut_person_1992_2020 {
 	--form-left: 780px;
 	--form-header-text: 'первый панельный дом';
 	--form-descr-text: 'первый панельный дом';
-	--form-urls: url(img/icons/cel_surgut/первый_панельный_дом_табличка.png);
+	--form-images: url(img/icons/cel_surgut/первый_панельный_дом_табличка.png);
 }
 
 .house1_5679 {
@@ -4597,7 +4597,7 @@ div#surgut_person_1992_2020 {
 	--form-left: 700px;
 	--form-header-text: 'двухэтажный дом 1';
 	--form-descr-text: 'двухэтажный дом 1';
-	--form-urls: url(img/icons/cel_surgut/двухэтажный_дом.png);
+	--form-images: url(img/icons/cel_surgut/двухэтажный_дом.png);
 }
 
 .house2_5679 {
@@ -4618,7 +4618,7 @@ div#surgut_person_1992_2020 {
 	--form-left: 760px;
 	--form-header-text: 'дом 2';
 	--form-descr-text: 'двухэтажный дом 2';
-	--form-urls: url(img/icons/cel_surgut/двухэтажный_дом.png);
+	--form-images: url(img/icons/cel_surgut/двухэтажный_дом.png);
 }
 
 .house3_5679 {
@@ -4639,7 +4639,7 @@ div#surgut_person_1992_2020 {
 	--form-left: 1100px;
 	--form-header-text: 'дом 3';
 	--form-descr-text: 'двухэтажный дом 3';
-	--form-urls: url(img/icons/cel_surgut/двухэтажный_дом.png);
+	--form-images: url(img/icons/cel_surgut/двухэтажный_дом.png);
 }
 
 .house4_5679 {
@@ -4660,7 +4660,7 @@ div#surgut_person_1992_2020 {
 	--form-left: 1320px;
 	--form-header-text: 'дом 4';
 	--form-descr-text: 'двухэтажный дом 4';
-	--form-urls: url(img/icons/cel_surgut/двухэтажный_дом.png);
+	--form-images: url(img/icons/cel_surgut/двухэтажный_дом.png);
 }
 
 .oilpipe_5679 {
@@ -4681,7 +4681,7 @@ div#surgut_person_1992_2020 {
 	--form-left: 350px;
 	--form-header-text: 'нефть';
 	--form-descr-text: 'труба зовёт';
-	--form-urls: url(img/icons/cel_surgut/труба.png);
+	--form-images: url(img/icons/cel_surgut/труба.png);
 }
 
 .museum_5679 {
@@ -4702,7 +4702,7 @@ div#surgut_person_1992_2020 {
 	--form-left: 840px;
 	--form-header-text: 'Музей';
 	--form-descr-text: 'Культура.';
-	--form-urls: url(img/icons/cel_surgut/музей.png);
+	--form-images: url(img/icons/cel_surgut/музей.png);
 }
 
 .museumt_5679 {
@@ -4723,7 +4723,7 @@ div#surgut_person_1992_2020 {
 	--form-left: 840px;
 	--form-header-text: 'Музей';
 	--form-descr-text: 'Культура.';
-	--form-urls: url(img/icons/cel_surgut/музей_табличка.png);
+	--form-images: url(img/icons/cel_surgut/музей_табличка.png);
 }
 
 .oilcollege_5679 {
@@ -4744,7 +4744,7 @@ div#surgut_person_1992_2020 {
 	--form-left: 560px;
 	--form-header-text: 'техникум';
 	--form-descr-text: 'нефтяной_техникум.';
-	--form-urls: url(img/icons/cel_surgut/нефтяной_техникум.png);
+	--form-images: url(img/icons/cel_surgut/нефтяной_техникум.png);
 }
 
 .oilcolleget_5679 {
@@ -4765,7 +4765,7 @@ div#surgut_person_1992_2020 {
 	--form-left: 560px;
 	--form-header-text: 'нефтяной';
 	--form-descr-text: 'нефтяной_техникум.';
-	--form-urls: url(img/icons/cel_surgut/нефтяной_техникум_табличка.png);
+	--form-images: url(img/icons/cel_surgut/нефтяной_техникум_табличка.png);
 }
 
 .port_5679 {
@@ -4786,7 +4786,7 @@ div#surgut_person_1992_2020 {
 	--form-left: 1200px;
 	--form-header-text: 'речной порт';
 	--form-descr-text: 'речной порт.';
-	--form-urls: url(img/icons/cel_surgut/речной_порт.png);
+	--form-images: url(img/icons/cel_surgut/речной_порт.png);
 }
 
 .portt_5679 {
@@ -4807,7 +4807,7 @@ div#surgut_person_1992_2020 {
 	--form-left: 1200px;
 	--form-header-text: 'речной порт';
 	--form-descr-text: 'речной порт.';
-	--form-urls: url(img/icons/cel_surgut/речной_порт_табличка.png);
+	--form-images: url(img/icons/cel_surgut/речной_порт_табличка.png);
 }
 
 .belw_5679 {
@@ -4828,7 +4828,7 @@ div#surgut_person_1992_2020 {
 	--form-left: 140px;
 	--form-header-text: 'Дзяўчына';
 	--form-descr-text: 'Дзяўчына';
-	--form-urls: url(img/icons/cel_surgut/nations/белорусы_ж.png);
+	--form-images: url(img/icons/cel_surgut/nations/белорусы_ж.png);
 }
 
 /*#endregion*/

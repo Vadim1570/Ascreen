@@ -873,9 +873,9 @@ function iconClick (e) {
 		}		
 	}
 
-	if(cs.getPropertyValue('--form-urls') !== undefined)
+	if(cs.getPropertyValue('--form-images') !== undefined)
 	{
-		let str = cs.getPropertyValue('--form-urls');
+		let str = cs.getPropertyValue('--form-images');
 		let regexp = /url\((.*?)\)/ig;
 
 		while (result = regexp.exec(str)) {
