@@ -1869,7 +1869,7 @@ div#surgut_person_1992_2020 {
 	opacity: 0;
 	/*cursor: none;*/
 	z-index: 1;
-	/*border: 1px solid red;*/р
+	/*border: 1px solid red;*/
 }
 
 .t_3_1 {
@@ -3258,10 +3258,10 @@ div#surgut_person_1992_2020 {
 
 .chem_5679 {
 	position: absolute;
-	left: 47px;
-	top: 744px;
-	width: 74px;
-	height: 112px;
+	left: 63px;
+	top: 746px;
+	width: 58px;
+	height: 114px;
 	background-image: url(img/icons/cel_surgut/nations/чеченцы_м.png);
 	background-size: 100%;
 	background-repeat: no-repeat;
@@ -3279,10 +3279,10 @@ div#surgut_person_1992_2020 {
 
 .chew_5679 {
 	position: absolute;
-	left: 22px;
+	left: 20px;
 	top: 764px;
-	width: 70px;
-	height: 101px;
+	width: 53px;
+	height: 95px;
 	background-image: url(img/icons/cel_surgut/nations/чеченцы_ж.png);
 	background-size: 100%;
 	background-repeat: no-repeat;
@@ -4833,8 +4833,299 @@ div#surgut_person_1992_2020 {
 	--form-images: url(img/icons/cel_surgut/речной_порт_табличка.png);
 }
 
+.univer_8091 {
+	position: absolute;
+	left: 334px;
+	top: 267px;
+	width: 161px;
+	height: 161px;
+	background-image: url(img/icons/cel_surgut/СУРГУ.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	/*animation: golding 3s ease infinite;*/
+	opacity: 0;
+	/*cursor: none;*/
+	z-index: 1;
+	/*border: 1px solid red;*/
+	--form-top: 230px;
+	--form-left: 600px;
+	--form-header-text: 'СУРГУ';
+	--form-descr-text: 'СУРГУ';
+	--form-images: url(img/icons/cel_surgut/СУРГУ.png);
+}
 
+.gazpipe_8091 {
+	position: absolute;
+    left: 214px;
+    top: 685px;
+	width: 165px;
+	height: 125px;
+	background-image: url(img/icons/cel_surgut/Газопровод.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	/*animation: golding 3s ease infinite;*/
+	opacity: 0;
+	/*cursor: none;*/
+	z-index: 1;
+	/*border: 1px solid red;*/
+	--form-top: 230px;
+	--form-left: 350px;
+	--form-header-text: 'газ';
+	--form-descr-text: 'труба зовёт';
+	--form-images: url(img/icons/cel_surgut/Газопровод.png);
+}
 
+.house1_8091 {
+	position: absolute;
+    left: 446px;
+    top: 562px;
+	width: 124px;
+	height: 74px;
+	background-image: url(img/icons/cel_surgut/двухэтажный_дом.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	/*animation: golding 3s ease infinite;*/
+	opacity: 0;
+	/*cursor: none;*/
+	z-index: 1;
+	/*border: 1px solid red;*/
+	--form-top: 0px;
+	--form-left: 700px;
+	--form-header-text: 'двухэтажный дом 1';
+	--form-descr-text: 'двухэтажный дом 1';
+	--form-images: url(img/icons/cel_surgut/двухэтажный_дом.png);
+}
+
+.house2_8091 {
+	position: absolute;
+    left: 1349px;
+    top: 200px;
+	width: 124px;
+	height: 74px;
+	background-image: url(img/icons/cel_surgut/двухэтажный_дом.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	/*animation: golding 3s ease infinite;*/
+	opacity: 0;
+	/*cursor: none;*/
+	z-index: 1;
+	/*border: 1px solid red;*/
+	--form-top: 0px;
+	--form-left: 700px;
+	--form-header-text: 'двухэтажный дом 2';
+	--form-descr-text: 'двухэтажный дом 2';
+	--form-images: url(img/icons/cel_surgut/двухэтажный_дом.png);
+}
+
+.house3_8091 {
+	position: absolute;
+    left: 1586px;
+    top: 520px;
+	width: 124px;
+	height: 74px;
+	background-image: url(img/icons/cel_surgut/двухэтажный_дом.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	/*animation: golding 3s ease infinite;*/
+	opacity: 0;
+	/*cursor: none;*/
+	z-index: 1;
+	/*border: 1px solid red;*/
+	--form-top: 0px;
+	--form-left: 700px;
+	--form-header-text: 'двухэтажный дом 3';
+	--form-descr-text: 'двухэтажный дом 3';
+	--form-images: url(img/icons/cel_surgut/двухэтажный_дом.png);
+}
+
+.house4_8091 {
+	position: absolute;
+    left: 1613px;
+    top: 642px;
+	width: 124px;
+	height: 74px;
+	background-image: url(img/icons/cel_surgut/двухэтажный_дом.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	/*animation: golding 3s ease infinite;*/
+	opacity: 0;
+	/*cursor: none;*/
+	z-index: 1;
+	/*border: 1px solid red;*/
+	--form-top: 0px;
+	--form-left: 700px;
+	--form-header-text: 'двухэтажный дом 4';
+	--form-descr-text: 'двухэтажный дом 4';
+	--form-images: url(img/icons/cel_surgut/двухэтажный_дом.png);
+}
+
+.aurora_8091 {
+	position: absolute;
+    left: 531px;
+    top: 405px;
+	width: 219px;
+	height: 131px;
+	background-image: url(img/icons/cel_surgut/Аврора.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	/*animation: golding 3s ease infinite;*/
+	opacity: 0;
+	/*cursor: none;*/
+	z-index: 1;
+	/*border: 1px solid red;*/
+	--form-top: 0px;
+	--form-left: 700px;
+	--form-header-text: 'Аврора';
+	--form-descr-text: 'Аврора';
+	--form-images: url(img/icons/cel_surgut/Аврора.png);
+}
+
+.uvd_8091 {
+	position: absolute;
+	left: 704px;
+    top: 537px;
+	width: 177px;
+	height: 159px;
+	background-image: url(img/icons/cel_surgut/УВД.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	/*animation: golding 3s ease infinite;*/
+	opacity: 0;
+	/*cursor: none;*/
+	z-index: 1;
+	/*border: 1px solid red;*/
+	--form-top: 0px;
+	--form-left: 700px;
+	--form-header-text: 'УВД';
+	--form-descr-text: 'УВД';
+	--form-images: url(img/icons/cel_surgut/УВД.png);
+}
+
+.dkenerg_8091 {
+	position: absolute;
+    left: 678px;
+    top: 729px;
+	width: 171px;
+	height: 110px;
+	background-image: url(img/icons/cel_surgut/Энергетик.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	/*animation: golding 3s ease infinite;*/
+	opacity: 0;
+	/*cursor: none;*/
+	z-index: 1;
+	/*border: 1px solid red;*/
+	--form-top: 0px;
+	--form-left: 700px;
+	--form-header-text: 'Энергетик';
+	--form-descr-text: 'Энергетик';
+	--form-images: url(img/icons/cel_surgut/Энергетик.png);
+}
+
+.panelhouse1_8091 {
+	position: absolute;
+    left: 951px;
+    top: 598px;
+	width: 153px;
+	height: 117px;
+	background-image: url(img/icons/cel_surgut/первый_панельный_дом.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	/*animation: golding 3s ease infinite;*/
+	opacity: 0;
+	/*cursor: none;*/
+	z-index: 1;
+	/*border: 1px solid red;*/
+	--form-top: 240px;
+	--form-left: 780px;
+	--form-header-text: 'Улица Ленина';
+	--form-descr-text: ' панельный дом';
+	--form-images: url(img/icons/cel_surgut/первый_панельный_дом.png);
+}
+
+.panelhouse2_8091 {
+	position: absolute;
+    left: 1174px;
+    top: 444px;
+	width: 153px;
+	height: 117px;
+	background-image: url(img/icons/cel_surgut/первый_панельный_дом.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	/*animation: golding 3s ease infinite;*/
+	opacity: 0;
+	/*cursor: none;*/
+	z-index: 1;
+	/*border: 1px solid red;*/
+	--form-top: 240px;
+	--form-left: 780px;
+	--form-header-text: 'Улица Мира';
+	--form-descr-text: ' панельный дом';
+	--form-images: url(img/icons/cel_surgut/первый_панельный_дом.png);
+}
+
+.panelhouse3_8091 {
+	position: absolute;
+	left: 1189px;
+    top: 839px;
+	width: 153px;
+	height: 117px;
+	background-image: url(img/icons/cel_surgut/первый_панельный_дом.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	/*animation: golding 3s ease infinite;*/
+	opacity: 0;
+	/*cursor: none;*/
+	z-index: 1;
+	/*border: 1px solid red;*/
+	--form-top: 240px;
+	--form-left: 780px;
+	--form-header-text: 'Улица Пушкина';
+	--form-descr-text: ' панельный дом';
+	--form-images: url(img/icons/cel_surgut/первый_панельный_дом.png);
+}
+
+.travma_8091 {
+	position: absolute;
+    left: 1056px;
+    top: 293px;
+	width: 224px;
+	height: 162px;
+	background-image: url(img/icons/cel_surgut/Травма.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	/*animation: golding 3s ease infinite;*/
+	opacity: 0;
+	/*cursor: none;*/
+	z-index: 1;
+	/*border: 1px solid red;*/
+	--form-top: 240px;
+	--form-left: 780px;
+	--form-header-text: 'Травма';
+	--form-descr-text: 'Травма';
+	--form-images: url(img/icons/cel_surgut/Травма.png);
+}
+
+.geolog_8091 {
+	position: absolute;
+    left: 1247px;
+    top: 717px;
+	width: 227px;
+	height: 120px;
+	background-image: url(img/icons/cel_surgut/Геолог.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	/*animation: golding 3s ease infinite;*/
+	opacity: 0;
+	/*cursor: none;*/
+	z-index: 1;
+	/*border: 1px solid red;*/
+	--form-top: 240px;
+	--form-left: 780px;
+	--form-header-text: 'Геолог';
+	--form-descr-text: ' Геолог дом';
+	--form-images: url(img/icons/cel_surgut/Геолог.png);
+}
 /*#endregion*/
 
 
