@@ -859,9 +859,9 @@ function iconClick (e) {
 
 
 	//модно-молодёжно
-	inner_text.innerText = trimStringProperty(cs.getPropertyValue('--form-descr-text'));
-	if (inner_text.innerText === undefined || inner_text.innerText === '')
-		inner_text.innerText = текст_внутри_окна[header_inner];
+	inner_text.innerHTML = trimStringProperty(cs.getPropertyValue('--form-descr-text'));
+	if (inner_text.innerHTML === undefined || inner_text.innerHTML === '')
+		inner_text.innerHTML = текст_внутри_окна[header_inner];
 
 	
 	let imagesArray = new Array(0);
