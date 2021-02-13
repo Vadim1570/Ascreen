@@ -5384,7 +5384,7 @@ div#surgut_person_1992_2020 {
     left: 1053px;
     top: 695px;
 	width: 224px;
-	height: 220px;
+	height: 240px;
 	background-image: url(img/icons/cel_surgut/Собор.png);
 	background-size: 100%;
 	background-repeat: no-repeat;
@@ -5440,6 +5440,27 @@ div#surgut_person_1992_2020 {
 	--form-header-text: 'Соцветие';
 	--form-descr-text: 'Соцветие';
 	--form-images: url(img/icons/cel_surgut/Соцветие.png);
+}
+
+.theatre_9220 {
+	position: absolute;
+    left: 291px;
+    top: 257px;
+	width: 148px;
+	height: 134px;
+	background-image: url(img/icons/cel_surgut/Сургутский_театр.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	/*animation: golding 3s ease infinite;*/
+	opacity: 0;
+	/*cursor: none;*/
+	z-index: 1;
+	/*border: 1px solid red;*/
+	--form-top: 240px;
+	--form-left: 780px;
+	--form-header-text: 'Сургутский_театр';
+	--form-descr-text: 'Сургутский_театр';
+	--form-images: url(img/icons/cel_surgut/Сургутский_театр.png);
 }
 
 
