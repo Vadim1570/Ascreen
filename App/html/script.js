@@ -717,13 +717,15 @@ function iconClick (e) {
 	} else if ( header_inner == 16 ) {
 		div.style = 'top:' + ( posY - 680 ) + 'px; left: ' + ( posX - 290 ) + 'px;';
 	} else {
-		if(div.style.top === null || div.style.top === undefined)
+		if(div.style.top === null || div.style.top === '' || div.style.top === undefined)
 			{
-				div.style = 'left: ' + ( posX - 200 ) + 'px;';
+				let divPosY = posY - 200;
+				div.style.top = (divPosY > 0 ? divPosY : 0) + 'px';
 			}
-			if(div.style.left === null || div.style.left === undefined)
+			if(div.style.left === null  || div.style.left === '' || div.style.left === undefined)
 			{
-				div.style = 'top:' + ( posY - 340 ) + 'px;';
+				let divPosX = posX - 340;
+				div.style.left = (divPosX > 0 ? divPosX : 0) + 'px';
 			}		
 	}
 
