@@ -3505,7 +3505,7 @@ div#surgut_person_1992_2020 {
 	z-index: 1;
 	/*border: 1px solid red;*/
 	--form-top: 300px;
-	--form-left: 140px;
+	--form-left: 230px;
 	--form-header-text: 'Мордва';
 	--form-descr-text: 'Пакся кучкаса калунясь.';
 	--form-urls: url(img/icons/cel_surgut/nations/мордва_табличка.png);
@@ -3526,7 +3526,7 @@ div#surgut_person_1992_2020 {
 	z-index: 1;
 	/*border: 1px solid red;*/
 	--form-top: 300px;
-	--form-left: 140px;
+	--form-left: 230px;
 	--form-header-text: 'Мордва';
 	--form-descr-text: 'Мельседей.';
 	--form-urls: url(img/icons/cel_surgut/nations/мордва_м.png);
@@ -3547,10 +3547,700 @@ div#surgut_person_1992_2020 {
 	z-index: 1;
 	/*border: 1px solid red;*/
 	--form-top: 300px;
-	--form-left: 140px;
+	--form-left: 230px;
 	--form-header-text: 'Мордва';
 	--form-descr-text: 'Аргума.';
 	--form-urls: url(img/icons/cel_surgut/nations/мордва_ж.png);
+}
+
+.chuvback_8091 {
+	position: absolute;
+	left: 1426px;
+	top: 1008px;
+}
+
+.chuv_8091 {
+	position: absolute;
+	left: 1422px;
+	top: 1152px;
+	width: 132px;
+	height: 26px;
+	background-image: url(img/icons/cel_surgut/nations/чуваши_табличка.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	/*animation: golding 3s ease infinite;*/
+	opacity: 0;
+	/*cursor: none;*/
+	z-index: 1;
+	/*border: 1px solid red;*/
+	--form-top: 300px;
+	--form-left: 1280px;
+	--form-header-text: 'Чуваши';
+	--form-descr-text: 'Чуваши Чуваши Чуваши.';
+	--form-urls: url(img/icons/cel_surgut/nations/чуваши_табличка.png);
+}
+
+.chuvm_8091 {
+	position: absolute;
+	left: 1484px;
+	top: 1036px;
+	width: 52px;
+	height: 115px;
+	background-image: url(img/icons/cel_surgut/nations/чуваши_м.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	/*animation: golding 3s ease infinite;*/
+	opacity: 0;
+	/*cursor: none;*/
+	z-index: 1;
+	/*border: 1px solid red;*/
+	--form-top: 300px;
+	--form-left: 1280px;
+	--form-header-text: 'Чуваши';
+	--form-descr-text: 'Абакъ.';
+	--form-urls: url(img/icons/cel_surgut/nations/чуваши_м.png);
+}
+
+.chuvw_8091 {
+	position: absolute;
+	left: 1438px;
+	top: 1043px;
+	width: 51px;
+	height: 105px;
+	background-image: url(img/icons/cel_surgut/nations/чуваши_ж.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	/*animation: golding 3s ease infinite;*/
+	opacity: 0;
+	/*cursor: none;*/
+	z-index: 1;
+	/*border: 1px solid red;*/
+	--form-top: 300px;
+	--form-left: 1280px;
+	--form-header-text: 'Чуваши';
+	--form-descr-text: 'Айдинка.';
+	--form-urls: url(img/icons/cel_surgut/nations/чуваши_ж.png);
+}
+
+.moldback_8091 {
+	position: absolute;
+	left: 1611px;
+	top: 1008px;
+}
+
+.mold_8091 {
+	position: absolute;
+	left: 1602px;
+	top: 1152px;
+	width: 132px;
+	height: 26px;
+	background-image: url(img/icons/cel_surgut/nations/молдоване_табличка.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	/*animation: golding 3s ease infinite;*/
+	opacity: 0;
+	/*cursor: none;*/
+	z-index: 1;
+	/*border: 1px solid red;*/
+	--form-top: 300px;
+	--form-left: 1370px;
+	--form-header-text: 'Молдоване';
+	--form-descr-text: 'Молдоване Молдоване Молдоване.';
+	--form-urls: url(img/icons/cel_surgut/nations/молдоване_табличка.png);
+}
+
+.moldm_8091 {
+	position: absolute;
+	left: 1670px;
+	top: 1029px;
+	width: 54px;
+	height: 121px;
+	background-image: url(img/icons/cel_surgut/nations/молдоване_м.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	/*animation: golding 3s ease infinite;*/
+	opacity: 0;
+	/*cursor: none;*/
+	z-index: 1;
+	/*border: 1px solid red;*/
+	--form-top: 300px;
+	--form-left: 1370px;
+	--form-header-text: 'Молдоване';
+	--form-descr-text: 'Кемаль.';
+	--form-urls: url(img/icons/cel_surgut/nations/молдоване_м.png);
+}
+
+.moldw_8091 {
+	position: absolute;
+	left: 1622px;
+	top: 1045px;
+	width: 53px;
+	height: 105px;
+	background-image: url(img/icons/cel_surgut/nations/молдоване_ж.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	/*animation: golding 3s ease infinite;*/
+	opacity: 0;
+	/*cursor: none;*/
+	z-index: 1;
+	/*border: 1px solid red;*/
+	--form-top: 300px;
+	--form-left: 1370px;
+	--form-header-text: 'Молдоване';
+	--form-descr-text: 'Диана.';
+	--form-urls: url(img/icons/cel_surgut/nations/молдоване_ж.png);
+}
+
+.estback_8091 {
+	position: absolute;
+	left: 1779px;
+	top: 1008px;
+}
+
+.est_8091 {
+	position: absolute;
+	left: 1779px;
+	top: 1152px;
+	width: 132px;
+	height: 26px;
+	background-image: url(img/icons/cel_surgut/nations/эстонцы_табличка.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	/*animation: golding 3s ease infinite;*/
+	opacity: 0;
+	/*cursor: none;*/
+	z-index: 1;
+	/*border: 1px solid red;*/
+	--form-top: 300px;
+	--form-left: 1370px;
+	--form-header-text: 'Эстонцы';
+	--form-descr-text: 'Эстонцы Эстонцы Эстонцы.';
+	--form-urls: url(img/icons/cel_surgut/nations/эстонцы_табличка.png);
+}
+
+.estm_8091 {
+	position: absolute;
+	left: 1832px;
+	top: 1039px;
+	width: 60px;
+	height: 113px;
+	background-image: url(img/icons/cel_surgut/nations/эстонцы_м.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	/*animation: golding 3s ease infinite;*/
+	opacity: 0;
+	/*cursor: none;*/
+	z-index: 1;
+	/*border: 1px solid red;*/
+	--form-top: 300px;
+	--form-left: 1370px;
+	--form-header-text: 'Эстонцы';
+	--form-descr-text: 'Маттиас.';
+	--form-urls: url(img/icons/cel_surgut/nations/эстонцы_м.png);
+}
+
+.estw_8091 {
+	position: absolute;
+	left: 1785px;
+	top: 1049px;
+	width: 61px;
+	height: 102px;
+	background-image: url(img/icons/cel_surgut/nations/эстонцы_ж.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	/*animation: golding 3s ease infinite;*/
+	opacity: 0;
+	/*cursor: none;*/
+	z-index: 1;
+	/*border: 1px solid red;*/
+	--form-top: 300px;
+	--form-left: 1370px;
+	--form-header-text: 'Эстонцы';
+	--form-descr-text: 'Ёханес.';
+	--form-urls: url(img/icons/cel_surgut/nations/эстонцы_ж.png);
+}
+
+.bolgback_8091 {
+	position: absolute;
+	left: 1784px;
+	top: 869px;
+}
+
+.bolg_8091 {
+	position: absolute;
+	left: 1782px;
+	top: 1010px;
+	width: 132px;
+	height: 26px;
+	background-image: url(img/icons/cel_surgut/nations/болгары_табличка.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	/*animation: golding 3s ease infinite;*/
+	opacity: 0;
+	/*cursor: none;*/
+	z-index: 1;
+	/*border: 1px solid red;*/
+	--form-top: 300px;
+	--form-left: 1370px;
+	--form-header-text: 'Болгары';
+	--form-descr-text: 'БолгарыБолгарыБолгары.';
+	--form-urls: url(img/icons/cel_surgut/nations/болгары_табличка.png);
+}
+
+.bolgm_8091 {
+	position: absolute;
+	left: 1841px;
+	top: 891px;
+	width: 55px;
+	height: 118px;
+	background-image: url(img/icons/cel_surgut/nations/болгары_м.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	/*animation: golding 3s ease infinite;*/
+	opacity: 0;
+	/*cursor: none;*/
+	z-index: 1;
+	/*border: 1px solid red;*/
+	--form-top: 300px;
+	--form-left: 1370px;
+	--form-header-text: 'Болгары';
+	--form-descr-text: 'Перец.';
+	--form-urls: url(img/icons/cel_surgut/nations/болгары_м.png);
+}
+
+.bolgw_8091 {
+	position: absolute;
+	left: 1796px;
+	top: 898px;
+	width: 54px;
+	height: 109px;
+	background-image: url(img/icons/cel_surgut/nations/болгары_ж.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	/*animation: golding 3s ease infinite;*/
+	opacity: 0;
+	/*cursor: none;*/
+	z-index: 1;
+	/*border: 1px solid red;*/
+	--form-top: 300px;
+	--form-left: 1370px;
+	--form-header-text: 'Болгары';
+	--form-descr-text: 'Пила.';
+	--form-urls: url(img/icons/cel_surgut/nations/болгары_ж.png);
+}
+
+.ndagback_9220 {
+	position: absolute;
+	left: 1784px;
+	top: 739px;
+}
+
+.ndag_9220 {
+	position: absolute;
+	left: 1782px;
+	top: 860px;
+	width: 132px;
+	height: 26px;
+	background-image: url(img/icons/cel_surgut/nations/дагестанцы_табличка.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	/*animation: golding 3s ease infinite;*/
+	opacity: 0;
+	/*cursor: none;*/
+	z-index: 1;
+	/*border: 1px solid red;*/
+	--form-top: 300px;
+	--form-left: 1370px;
+	--form-header-text: 'Народы Дагестана';
+	--form-descr-text: 'андалальцы, анцухцы, батлухцы, гидатлинцы, карахцы, андийцы, ахвахцы, каратинцы, ботлихцы, годоберинцы, багулалы, тиндинцы, чамалинцы, дидойцы, хваршины, гинухцы, бежтинцы, гунзибцы, лакцы, даргинцы, кайтагцы, кубачинцы, агулы, арчинцы, будухи, крызы, лезгины, рутульцы, табасараны, удины, цахуры, хиналугцы.';
+	--form-urls: url(img/icons/cel_surgut/nations/дагестанцы_табличка.png);
+}
+
+.ndagm_9220 {
+	position: absolute;
+	left: 1841px;
+	top: 761px;
+	width: 55px;
+	height: 118px;
+	background-image: url(img/icons/cel_surgut/nations/дагестан_м.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	/*animation: golding 3s ease infinite;*/
+	opacity: 0;
+	/*cursor: none;*/
+	z-index: 1;
+	/*border: 1px solid red;*/
+	--form-top: 300px;
+	--form-left: 1370px;
+	--form-header-text: 'Народы Дагестана';
+	--form-descr-text: 'Караджан.';
+	--form-urls: url(img/icons/cel_surgut/nations/дагестан_м.png);
+}
+
+.ndagw_9220 {
+	position: absolute;
+	left: 1796px;
+	top: 768px;
+	width: 54px;
+	height: 109px;
+	background-image: url(img/icons/cel_surgut/nations/дагестан_ж.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	/*animation: golding 3s ease infinite;*/
+	opacity: 0;
+	/*cursor: none;*/
+	z-index: 1;
+	/*border: 1px solid red;*/
+	--form-top: 300px;
+	--form-left: 1370px;
+	--form-header-text: 'Народы Дагестана';
+	--form-descr-text: 'Клава.';
+	--form-urls: url(img/icons/cel_surgut/nations/дагестан_ж.png);
+}
+
+.armnback_9220 {
+	position: absolute;
+	left: 1784px;
+	top: 596px;
+}
+
+.armn_9220 {
+	position: absolute;
+	left: 1782px;
+	top: 715px;
+	width: 132px;
+	height: 26px;
+	background-image: url(img/icons/cel_surgut/nations/армяне_табличка.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	/*animation: golding 3s ease infinite;*/
+	opacity: 0;
+	/*cursor: none;*/
+	z-index: 1;
+	/*border: 1px solid red;*/
+	--form-top: 300px;
+	--form-left: 1370px;
+	--form-header-text: 'Армяне';
+	--form-descr-text: 'Армяне.';
+	--form-urls: url(img/icons/cel_surgut/nations/армяне_табличка.png);
+}
+
+.armnm_9220 {
+	position: absolute;
+	left: 1841px;
+	top: 616px;
+	width: 55px;
+	height: 118px;
+	background-image: url(img/icons/cel_surgut/nations/армяне_м.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	/*animation: golding 3s ease infinite;*/
+	opacity: 0;
+	/*cursor: none;*/
+	z-index: 1;
+	/*border: 1px solid red;*/
+	--form-top: 300px;
+	--form-left: 1370px;
+	--form-header-text: 'Армяне';
+	--form-descr-text: 'Фрунзик.';
+	--form-urls: url(img/icons/cel_surgut/nations/армяне_м.png);
+}
+
+.armnw_9220 {
+	position: absolute;
+	left: 1796px;
+	top: 619px;
+	width: 54px;
+	height: 109px;
+	background-image: url(img/icons/cel_surgut/nations/армяне_ж.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	/*animation: golding 3s ease infinite;*/
+	opacity: 0;
+	/*cursor: none;*/
+	z-index: 1;
+	/*border: 1px solid red;*/
+	--form-top: 300px;
+	--form-left: 1370px;
+	--form-header-text: 'Армяне';
+	--form-descr-text: 'Санам.';
+	--form-urls: url(img/icons/cel_surgut/nations/армяне_ж.png);
+}
+
+.kazhback_9220 {
+	position: absolute;
+	left: 1784px;
+	top: 456px;
+}
+
+.kazh_9220 {
+	position: absolute;
+	left: 1782px;
+	top: 575px;
+	width: 132px;
+	height: 26px;
+	background-image: url(img/icons/cel_surgut/nations/казахи_табличка.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	/*animation: golding 3s ease infinite;*/
+	opacity: 0;
+	/*cursor: none;*/
+	z-index: 1;
+	/*border: 1px solid red;*/
+	--form-top: 300px;
+	--form-left: 1370px;
+	--form-header-text: 'Казахи';
+	--form-descr-text: 'Казахи.';
+	--form-urls: url(img/icons/cel_surgut/nations/казахи_табличка.png);
+}
+
+.kazhm_9220 {
+	position: absolute;
+	left: 1841px;
+	top: 480px;
+	width: 55px;
+	height: 118px;
+	background-image: url(img/icons/cel_surgut/nations/казахи_м.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	/*animation: golding 3s ease infinite;*/
+	opacity: 0;
+	/*cursor: none;*/
+	z-index: 1;
+	/*border: 1px solid red;*/
+	--form-top: 300px;
+	--form-left: 1370px;
+	--form-header-text: 'Казахи';
+	--form-descr-text: 'Альфа';
+	--form-urls: url(img/icons/cel_surgut/nations/казахи_м.png);
+}
+
+.kazhw_9220 {
+	position: absolute;
+	left: 1796px;
+	top: 480px;
+	width: 54px;
+	height: 109px;
+	background-image: url(img/icons/cel_surgut/nations/казахи_ж.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	/*animation: golding 3s ease infinite;*/
+	opacity: 0;
+	/*cursor: none;*/
+	z-index: 1;
+	/*border: 1px solid red;*/
+	--form-top: 300px;
+	--form-left: 1370px;
+	--form-header-text: 'Казахи';
+	--form-descr-text: 'Альфия';
+	--form-urls: url(img/icons/cel_surgut/nations/казахи_ж.png);
+}
+
+.tazjback_9220 {
+	position: absolute;
+	left: 1784px;
+	top: 316px;
+}
+
+.tazj_9220 {
+	position: absolute;
+	left: 1782px;
+	top: 435px;
+	width: 132px;
+	height: 26px;
+	background-image: url(img/icons/cel_surgut/nations/таджики_табличка.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	/*animation: golding 3s ease infinite;*/
+	opacity: 0;
+	/*cursor: none;*/
+	z-index: 1;
+	/*border: 1px solid red;*/
+	--form-top: 300px;
+	--form-left: 1370px;
+	--form-header-text: 'таджики';
+	--form-descr-text: 'таджики.';
+	--form-urls: url(img/icons/cel_surgut/nations/таджики_табличка.png);
+}
+
+.tazjm_9220 {
+	position: absolute;
+	left: 1841px;
+	top: 340px;
+	width: 55px;
+	height: 118px;
+	background-image: url(img/icons/cel_surgut/nations/таджики_м.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	/*animation: golding 3s ease infinite;*/
+	opacity: 0;
+	/*cursor: none;*/
+	z-index: 1;
+	/*border: 1px solid red;*/
+	--form-top: 300px;
+	--form-left: 1370px;
+	--form-header-text: 'таджики';
+	--form-descr-text: 'Альфа';
+	--form-urls: url(img/icons/cel_surgut/nations/таджики_м.png);
+}
+
+.tazjw_9220 {
+	position: absolute;
+	left: 1796px;
+	top: 340px;
+	width: 54px;
+	height: 109px;
+	background-image: url(img/icons/cel_surgut/nations/таджики_ж.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	/*animation: golding 3s ease infinite;*/
+	opacity: 0;
+	/*cursor: none;*/
+	z-index: 1;
+	/*border: 1px solid red;*/
+	--form-top: 300px;
+	--form-left: 1370px;
+	--form-header-text: 'таджики';
+	--form-descr-text: 'Альфия';
+	--form-urls: url(img/icons/cel_surgut/nations/таджики_ж.png);
+}
+
+.uzbback_9220 {
+	position: absolute;
+	left: 1784px;
+	top: 166px;
+}
+
+.uzb_9220 {
+	position: absolute;
+	left: 1782px;
+	top: 285px;
+	width: 132px;
+	height: 26px;
+	background-image: url(img/icons/cel_surgut/nations/узбеки_табличка.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	/*animation: golding 3s ease infinite;*/
+	opacity: 0;
+	/*cursor: none;*/
+	z-index: 1;
+	/*border: 1px solid red;*/
+	--form-top: 300px;
+	--form-left: 1370px;
+	--form-header-text: 'узбеки';
+	--form-descr-text: 'узбеки.';
+	--form-urls: url(img/icons/cel_surgut/nations/узбеки_табличка.png);
+}
+
+.uzbm_9220 {
+	position: absolute;
+	left: 1841px;
+	top: 190px;
+	width: 55px;
+	height: 118px;
+	background-image: url(img/icons/cel_surgut/nations/узбеки_м.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	/*animation: golding 3s ease infinite;*/
+	opacity: 0;
+	/*cursor: none;*/
+	z-index: 1;
+	/*border: 1px solid red;*/
+	--form-top: 300px;
+	--form-left: 1370px;
+	--form-header-text: 'узбеки';
+	--form-descr-text: 'Альфа';
+	--form-urls: url(img/icons/cel_surgut/nations/узбеки_м.png);
+}
+
+.uzbw_9220 {
+	position: absolute;
+	left: 1796px;
+	top: 190px;
+	width: 54px;
+	height: 109px;
+	background-image: url(img/icons/cel_surgut/nations/узбеки_ж.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	/*animation: golding 3s ease infinite;*/
+	opacity: 0;
+	/*cursor: none;*/
+	z-index: 1;
+	/*border: 1px solid red;*/
+	--form-top: 300px;
+	--form-left: 1370px;
+	--form-header-text: 'узбеки';
+	--form-descr-text: 'Альфия';
+	--form-urls: url(img/icons/cel_surgut/nations/узбеки_ж.png);
+}
+
+.krgzback_9220 {
+	position: absolute;
+	left: 1784px;
+	top: 36px;
+}
+
+.krgz_9220 {
+	position: absolute;
+	left: 1782px;
+	top: 135px;
+	width: 132px;
+	height: 26px;
+	background-image: url(img/icons/cel_surgut/nations/киргизы_табличка.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	/*animation: golding 3s ease infinite;*/
+	opacity: 0;
+	/*cursor: none;*/
+	z-index: 1;
+	/*border: 1px solid red;*/
+	--form-top: 300px;
+	--form-left: 1370px;
+	--form-header-text: 'киргизы';
+	--form-descr-text: 'киргизы.';
+	--form-urls: url(img/icons/cel_surgut/nations/киргизы_табличка.png);
+}
+
+.krgzm_9220 {
+	position: absolute;
+	left: 1841px;
+	top: 40px;
+	width: 55px;
+	height: 118px;
+	background-image: url(img/icons/cel_surgut/nations/киргизы_м.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	/*animation: golding 3s ease infinite;*/
+	opacity: 0;
+	/*cursor: none;*/
+	z-index: 1;
+	/*border: 1px solid red;*/
+	--form-top: 300px;
+	--form-left: 1370px;
+	--form-header-text: 'киргизы';
+	--form-descr-text: 'Альфа';
+	--form-urls: url(img/icons/cel_surgut/nations/киргизы_м.png);
+}
+
+.krgzw_9220 {
+	position: absolute;
+	left: 1796px;
+	top: 40px;
+	width: 54px;
+	height: 109px;
+	background-image: url(img/icons/cel_surgut/nations/киргизы_ж.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	/*animation: golding 3s ease infinite;*/
+	opacity: 0;
+	/*cursor: none;*/
+	z-index: 1;
+	/*border: 1px solid red;*/
+	--form-top: 300px;
+	--form-left: 1370px;
+	--form-header-text: 'киргизы';
+	--form-descr-text: 'Альфия';
+	--form-urls: url(img/icons/cel_surgut/nations/киргизы_ж.png);
 }
 
 .firetruck_5679 {

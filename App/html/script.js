@@ -82,7 +82,7 @@ let inner_text = document.createElement('div');
 	tabBlackClick();
 
 	//нажать на кнопку
-	var btn = document.getElementById('surgut_1980_1991');
+	var btn = document.getElementById('surgut_1992_2020');
 	var evt = new Event('click');
 	btn.dispatchEvent(evt); // evt.target = btn;
 	menuButtonClick(evt);
