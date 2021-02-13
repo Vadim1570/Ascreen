@@ -5022,6 +5022,48 @@ div#surgut_person_1992_2020 {
 	--form-images: url(img/icons/cel_surgut/Энергетик.png);
 }
 
+.tipogra_8091 {
+	position: absolute;
+    left: 946px;
+    top: 543px;
+	width: 203px;
+	height: 53px;
+	background-image: url(img/icons/cel_surgut/Сургутская_типография.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	/*animation: golding 3s ease infinite;*/
+	opacity: 0;
+	/*cursor: none;*/
+	z-index: 1;
+	/*border: 1px solid red;*/
+	--form-top: 240px;
+	--form-left: 780px;
+	--form-header-text: 'Сургутская_типография';
+	--form-descr-text: ' Сургутская_типография дом';
+	--form-images: url(img/icons/cel_surgut/Сургутская_типография.png);
+}
+
+.blood_8091 {
+	position: absolute;
+    left: 1019px;
+    top: 752px;
+	width: 118px;
+	height: 117px;
+	background-image: url(img/icons/cel_surgut/Станция_переливания_крови.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	/*animation: golding 3s ease infinite;*/
+	opacity: 0;
+	/*cursor: none;*/
+	z-index: 1;
+	/*border: 1px solid red;*/
+	--form-top: 240px;
+	--form-left: 780px;
+	--form-header-text: 'Станция_переливания_крови';
+	--form-descr-text: ' Станция_переливания_крови дом';
+	--form-images: url(img/icons/cel_surgut/Станция_переливания_крови.png);
+}
+
 .panelhouse1_8091 {
 	position: absolute;
     left: 951px;
