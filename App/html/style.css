@@ -1082,7 +1082,7 @@ div#surgut_person_1992_2020 {
 	height: 750px;
 	background-image: url(img/newTableLowArrow.png);
 	background-position: center;
-	background-size: 100%;
+	background-size: 100% 100%;
 	background-repeat: no-repeat;
 	z-index: 3;
 }
@@ -1142,7 +1142,7 @@ div#surgut_person_1992_2020 {
 
 .inner_header {
 	position: absolute;
-	top: 15%;
+	top: 10.5%;
 	left: 50%;
 	transform: translate(-50%, -10%);
 	width: 80%;
@@ -1170,11 +1170,11 @@ div#surgut_person_1992_2020 {
 
 .inner_text {
 	position: absolute;
-	top: 180px;
+	top: 145px;
 	left: 50%;
 	transform: translate(-49%);
 	width: 70%;
-	height: 230px;
+	height: 280px;
 	font-family: IskraCYR-Medium;
 	color: #2B311C;
 	overflow: auto;
@@ -3506,6 +3506,8 @@ div#surgut_person_1992_2020 {
 	/*border: 1px solid red;*/
 	--form-top: 300px;
 	--form-left: 230px;
+	--form-height: 750px;
+	--form-width: 700px;
 	--form-header-text: 'Мордва';
 	--form-descr-text: 'Пакся кучкаса калунясь.';
 	--form-images: url(img/icons/cel_surgut/nations/мордва_табличка.png);
@@ -5608,7 +5610,7 @@ div#surgut_person_1992_2020 {
 
 .flexGroup {
 	position: absolute;
-	bottom: 127px;
+	bottom: 100px;
 	left: calc(50% + 1px);
 	transform: translate(-49%);
 	/*width: 60%;*/

@@ -382,7 +382,15 @@ function iconClick (e) {
 	let div = document.createElement('div');
 
 	//модно-молодёжно
-	div.style = 'top: ' + cs.getPropertyValue('--form-top') + '; left: ' + cs.getPropertyValue('--form-left') + ';';
+	formProp = '';
+	formProp = cs.getPropertyValue('--form-top');
+	if(formProp != undefined && formProp != null) div.style.top = formProp;
+	formProp = cs.getPropertyValue('--form-left');
+	if(formProp != undefined && formProp != null) div.style.left = formProp;
+	formProp = cs.getPropertyValue('--form-height');
+	if(formProp != undefined && formProp != null) div.style.height = formProp;
+	formProp = cs.getPropertyValue('--form-width');
+	if(formProp != undefined && formProp != null) div.style.width = formProp;
 
 	if ( header_inner == 46 && check == '010101' ) {
 		div.className = 'table_info';
@@ -745,7 +753,7 @@ function iconClick (e) {
 	} else if ((header_inner >= 52 || header_inner <= 59) && check == '010101') {
 		close_btn.style = 'top:105%;left:50%';
 	} else {
-		close_btn.style = 'top:100%;left:50%';
+		close_btn.style = 'top:105%;left:50%';
 	}
 
 	
@@ -773,7 +781,7 @@ function iconClick (e) {
 	
 
 	if ( header_inner == 8 && check == 0 ) {
-		header.style.top = '13%';
+		header.style.top = '8%';
 		header.style.fontSize = '30px';
 	} else if ( header_inner == 21 && check == 1 ) {
 		header.style.fontSize = '35px';
@@ -787,49 +795,49 @@ function iconClick (e) {
 		header.style.fontSize = '35px';
 	} else if ( header_inner == 42 && check == 3 ) {
 		header.style.fontSize = '35px';
-		header.style.top = '12%';
+		header.style.top = '7%';
 	} else if ( header_inner == 43 && check == 3 ) {
 		header.style.fontSize = '35px';
-		header.style.top = '12%';
+		header.style.top = '7%';
 	} else if ( header_inner == 39 && check == 3 ) {
 		header.style.fontSize = '35px';
-		header.style.top = '12%';
+		header.style.top = '7%';
 	} else if ( header_inner == 41 && check == 3 ) {
 		header.style.fontSize = '35px';
-		header.style.top = '12%';
+		header.style.top = '7%';
 	} else if ( header_inner == 34 && check == 3 ) {
 		header.style.fontSize = '35px';
-		header.style.top = '12%';
+		header.style.top = '7%';
 	} else if ( header_inner == 32 && check == 3 ) {
 		header.style.fontSize = '35px';
-		header.style.top = '12%';
+		header.style.top = '7%';
 	} else if ( header_inner == 37 && check == 38 ) {
 		header.style.fontSize = '35px';
-		// header.style.top = '12%';
+		// header.style.top = '7%';
 	} else if ( header_inner == 37 && check == 37 ) {
 		header.style.fontSize = '35px';
-		// header.style.top = '12%';
+		// header.style.top = '7%';
 	} else if ( header_inner == 37 && check == 341 ) {
 		header.style.fontSize = '35px';
-		// header.style.top = '12%';
+		// header.style.top = '7%';
 	} else if ( header_inner == 37 && check == 340 ) {
 		header.style.fontSize = '35px';
-		// header.style.top = '12%';
+		// header.style.top = '7%';
 	} else if ( header_inner == 37 && check == 39 ) {
 		header.style.fontSize = '35px';
-		// header.style.top = '12%';
+		// header.style.top = '7%';
 	} else if ( header_inner == 43 && check == 342 ) {
 		header.style.fontSize = '35px';
-		header.style.top = '12%';
+		header.style.top = '7%';
 	} else if ( header_inner == 44 && check == 35 ) {
 		header.style.fontSize = '35px';
-		header.style.top = '12%';
+		header.style.top = '7%';
 	} else if ( header_inner == 50 && check == 121 ) {
 		header.style.fontSize = '35px';
-		// header.style.top = '12%';
+		// header.style.top = '7%';
 	} else if ( header_inner == 50 && check == 27 ) {
 		header.style.fontSize = '35px';
-		// header.style.top = '12%';
+		// header.style.top = '7%';
 	}
 
 	
