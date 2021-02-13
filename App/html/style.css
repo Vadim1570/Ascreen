@@ -5395,9 +5395,11 @@ div#surgut_person_1992_2020 {
 	/*border: 1px solid red;*/
 	--form-top: 240px;
 	--form-left: 780px;
-	--form-header-text: 'Собор';
+	--form-header-text: 'Кафедральный собор «Преображения Господня»';
 	--form-descr-text: 'Собор';
 	--form-images: url(img/icons/cel_surgut/Собор.png);
+	--form-header-top: 68px;
+	--form-header-font-size: 24px;
 }
 
 .zags_9220 {

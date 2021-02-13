@@ -779,6 +779,11 @@ function iconClick (e) {
 	if (header.innerText === undefined || header.innerText === '')
 		header.innerText = название_окна[header_inner];			
 	
+	var formHeaderProp = '';
+	formHeaderProp = cs.getPropertyValue('--form-header-top');
+	if(formHeaderProp != undefined && formHeaderProp != null) header.style.top = formHeaderProp;
+	formHeaderProp = cs.getPropertyValue('--form-header-font-size');
+	if(formHeaderProp != undefined && formHeaderProp != null) header.style.fontSize = formHeaderProp;
 
 	if ( header_inner == 8 && check == 0 ) {
 		header.style.top = '8%';
