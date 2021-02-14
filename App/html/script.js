@@ -22,6 +22,13 @@ let fishesInterval;
 let enableClouds = true;
 let cloudsInterval;
 
+var DialogFormType = {
+	InfoOldSurgut: 1,
+	HelpOldSurgut: 2,
+	InfoCelnyySurgut: 3,
+	PersonCelnyySurgut: 4,
+  };
+
 //body.addEventListener('contextmenu',function(e){
 //	e.preventDefault();
 //	return false;
@@ -45,7 +52,7 @@ let inner_text = document.createElement('div');
     // let interval = minutes ? время_до_появления_заставки : 1000;  //35000
 	//Проверка на простой производится 3 раза, с учетом интервала из конфига
 	let IDLE_TIMEOUT = 3; 
-	let interval = время_до_появления_заставки_сек*1000/IDLE_TIMEOUT
+	let interval = время_до_появления_заставки_сек*100000/IDLE_TIMEOUT
     let idleCounter = 0;
 
     document.onmousemove = document.onkeypress = function () {
@@ -220,7 +227,7 @@ function placeMenuButtons (clickButton) {
 }
 
 // Нажатие на нижние кнопки меню
-function menuButtonClick (e) {
+function menuButtonClick(e) {
 	// e: MouseEvent
 	let sender = e.currentTarget ?? e.target; 
 
@@ -363,7 +370,7 @@ function showTabBlack(e) {
 }
 
 // Нажатие на иконки по всему экрану
-function iconClick (e) {
+function iconClick(e) {
 	
 	// e: MouseEvent
 	let sender = e.currentTarget ?? e.target;
@@ -379,18 +386,30 @@ function iconClick (e) {
 
 	let check = sender.getAttribute('data-check');
 
+	//создаю зеленую форму с информацией
 	let div = document.createElement('div');
+	let formType = DialogFormType.HelpOldSurgut;
 
-	//модно-молодёжно
-	formProp = '';
+	//создаю форму с персонами
+	let formId = cs.getPropertyValue('--form-id');
+	if(formId != undefined && formId != null && formId.trim() != '') 
+	{ 
+		formType = DialogFormType.PersonCelnyySurgut;
+		div = document.getElementById(formId.trim());
+		div.style.display = '';
+		return;
+	}
+
+	//вытаскиваю положение и размер формы из css
+	let formProp = '';
 	formProp = cs.getPropertyValue('--form-top');
-	if(formProp != undefined && formProp != null) div.style.top = formProp;
+	if(formProp != undefined && formProp != null && formProp != '') div.style.top = formProp;
 	formProp = cs.getPropertyValue('--form-left');
-	if(formProp != undefined && formProp != null) div.style.left = formProp;
+	if(formProp != undefined && formProp != null && formProp != '') div.style.left = formProp;
 	formProp = cs.getPropertyValue('--form-height');
-	if(formProp != undefined && formProp != null) div.style.height = formProp;
+	if(formProp != undefined && formProp != null && formProp != '') div.style.height = formProp;
 	formProp = cs.getPropertyValue('--form-width');
-	if(formProp != undefined && formProp != null) div.style.width = formProp;
+	if(formProp != undefined && formProp != null && formProp != '') div.style.width = formProp;
 
 	if ( header_inner == 46 && check == '010101' ) {
 		div.className = 'table_info';
@@ -1078,9 +1097,6 @@ for ( let i = 0; i < active_window.length; i++ ) {
 		});
 	}
 
-
-
-
 }
 	body.appendChild(div);
 }
@@ -1095,8 +1111,21 @@ function trimChar(str, delimiter) {
 	const start = str.search(pattern);
 	const stop = str.length - str.split('').reverse().join('').search(pattern);
 	return str.substring(start, stop);
-  }
+}
 
+function hideDivAndGreyBg(divId) {
+	document.getElementById(divId).style.display = 'none'; 
+	greyBg.classList.remove('greyHide');
+    greyBg.classList.remove('greyActive');
+}
+
+function hideDiv(divId) {
+	document.getElementById(divId).style.display = 'none'; 
+}
+
+function showDiv(divId) {
+	document.getElementById(divId).style.display = ''; 
+}
 
 
 
