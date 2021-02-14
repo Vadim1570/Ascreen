@@ -793,11 +793,13 @@ function iconClick(e) {
 		header.className = 'inner_header';
 	}
 
-	//модно-молодёжно
-	header.innerText = trimStringProperty(cs.getPropertyValue('--form-header-text'));
-	if (header.innerText === undefined || header.innerText === '')
-		header.innerText = название_окна[header_inner];			
-	
+	//Заголовок внутри формы
+	let headerText = trimStringProperty(cs.getPropertyValue('--form-header-text')); 
+	if (headerText === undefined || headerText === '')
+		headerText = название_окна[header_inner];			
+	if (headerText != undefined)
+		header.innerText = headerText;
+
 	var formHeaderProp = '';
 	formHeaderProp = cs.getPropertyValue('--form-header-top');
 	if(formHeaderProp != undefined && formHeaderProp != null) header.style.top = formHeaderProp;
@@ -891,12 +893,21 @@ function iconClick(e) {
 	}
 
 
+	let descrText = trimStringProperty(cs.getPropertyValue('--form-descr-text')); 
+	if (descrText === undefined || descrText === '')
+		descrText = текст_внутри_окна[header_inner];			
+	if (descrText != undefined)
+		inner_text.innerHTML = descrText;
 
-	//модно-молодёжно
-	inner_text.innerHTML = trimStringProperty(cs.getPropertyValue('--form-descr-text'));
-	if (inner_text.innerHTML === undefined || inner_text.innerHTML === '')
-		inner_text.innerHTML = текст_внутри_окна[header_inner];
-
+	var descrTextProp = '';
+	descrTextProp = cs.getPropertyValue('--form-descr-top');
+	if(descrTextProp != undefined && descrTextProp != null) inner_text.style.top = descrTextProp;
+	descrTextProp = cs.getPropertyValue('--form-descr-left');
+	if(descrTextProp != undefined && descrTextProp != null) inner_text.style.left = descrTextProp;
+	descrTextProp = cs.getPropertyValue('--form-descr-width');
+	if(descrTextProp != undefined && descrTextProp != null) inner_text.style.width = descrTextProp;
+	descrTextProp = cs.getPropertyValue('--form-descr-height');
+	if(descrTextProp != undefined && descrTextProp != null) inner_text.style.height = descrTextProp;
 	
 	let imagesArray = new Array(0);
 	if(изображения[header_inner] !== undefined)
@@ -922,6 +933,9 @@ function iconClick(e) {
 			imagesArray.push(изображения[header_inner][key]);
 		}		
 	}
+
+	if(imagesArray.length == 0)
+		inner_text.className = 'inner_text_big';
 
 	let imageGroup = document.createElement('div');
 	imageGroup.classList.add('flexGroup');
