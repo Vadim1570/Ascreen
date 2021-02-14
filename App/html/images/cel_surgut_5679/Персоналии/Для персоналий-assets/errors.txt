@@ -1,0 +1,2 @@
+[2021-02-14 19:56:06] layer "fon_person.png копия 2": Expected end of input but "\u043A" found.
+[2021-02-14 19:56:34] layer "fon_person_blue.png копия": Expected end of input but "\u043A" found.
