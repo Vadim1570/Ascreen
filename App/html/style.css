@@ -271,16 +271,32 @@ body {
 	top: -12px;
 	left: 49%;
 	transform: translate(-49%);
-	width: 1656px;
-	height: 1050px;
+	width: 493px;
+	height: 806px;
 	font-family: IskraCYR-Medium;
 	color: #2B311C;
-	overflow: auto;
+	/*overflow: auto;*/
 	font-size: 20px;
 	background-image: url(img/fon_person_card.png);
 	background-size: 100% 100%;
+	background-repeat: no-repeat;
 	z-index: 5;
 }
+
+.close_btn_person_card {
+	position: absolute;
+	width: 85px;
+	height: 85px;
+	top: 846px;
+    left: 252px;
+	background-image: url(img/Close_blue.png);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	z-index: 1;
+	transform: translate(-50%, -120%);
+	/*cursor: none;*/
+}
+
 .ta_surgut_1956_1979 {
 	opacity: 0;
 	display: none;
@@ -3141,7 +3157,7 @@ div#surgut_celnyy {
 	--form-left: 140px;
 	--form-header-text: 'Башкиры';
 	--form-descr-text: '<p>Башкиры – народ России, коренное население Южного Урала.  Доминирующий этнос Республики Башкортостан.  Численность башкир в России составляет более 1,5 мил. человек, из них более 1 мил. проживают в Башкортостане. Сургутянами являются 5432 представителя этого народа (по данным переписи населения 2010 г.). <br><br>Самоназвание народа «башкорт». Слово состоит из двух частей: «баш» - «голова, главный» и «корт» – «волк, вожак». <br><br>Башкирский язык принадлежит к кыпчакской группе тюркских языков. Среди тюркских народов России башкиры занимают второе место по численности после татар. <br><br>Большинство верующих башкир – мусульмане сунниты.</p>';
-	--form-images: url(img/icons/cel_surgut/nations/башкиры_табличка.png);
+	--form-descr-height:68%;
 }
 
 .bashm_5679 {
