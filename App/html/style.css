@@ -285,11 +285,37 @@ body {
 
 .close_btn_person_card {
 	position: absolute;
-	width: 85px;
-	height: 85px;
 	top: 846px;
     left: 252px;
+	width: 85px;
+	height: 85px;
 	background-image: url(img/Close_blue.png);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	z-index: 1;
+	transform: translate(-50%, -120%);
+	/*cursor: none;*/
+}
+
+.close_btn_person_table {
+	position: absolute;
+    top: 1075px;
+    left: 956px;	
+	width: 85px;
+	height: 85px;
+	background-image: url(img/Close_blue.png);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	z-index: 1;
+	transform: translate(-50%, -120%);
+	/*cursor: none;*/
+}
+
+.close_btn___ {
+	position: absolute;
+	width: 85px;
+	height: 85px;
+	background-image: url(img/newClose.png);
 	background-size: 100% 100%;
 	background-repeat: no-repeat;
 	z-index: 1;
@@ -1230,18 +1256,6 @@ div#surgut_celnyy {
 	width: 85px;
 	height: 85px;
 	background-image: url(img/newClose.png);
-	background-size: 100% 100%;
-	background-repeat: no-repeat;
-	z-index: 1;
-	transform: translate(-50%, -120%);
-	/*cursor: none;*/
-}
-
-.close_btn_blue {
-	position: absolute;
-	width: 85px;
-	height: 85px;
-	background-image: url(img/Close_blue.png);
 	background-size: 100% 100%;
 	background-repeat: no-repeat;
 	z-index: 1;

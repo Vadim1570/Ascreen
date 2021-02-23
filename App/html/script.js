@@ -1131,6 +1131,12 @@ function hideDivAndGreyBg(divId) {
 	document.getElementById(divId).style.display = 'none'; 
 	greyBg.classList.remove('greyHide');
     greyBg.classList.remove('greyActive');
+
+	
+	let person_card_forms = document.querySelectorAll('.form_surgut_person_card');
+	for ( let i = 0; i < person_card_forms.length; i++ ) {
+		hideDiv(person_card_forms[i].id);
+	}
 }
 
 function hideDiv(divId) {
