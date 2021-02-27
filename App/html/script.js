@@ -94,7 +94,7 @@ document.addEventListener('keypress', (event) => {
 	tabBlackClick();
 
 	//нажать на кнопку
-	var btn = document.getElementById('surgut_1992_2020');
+	var btn = document.getElementById('surgut_1956_1979');
 	var evt = new Event('click');
 	btn.dispatchEvent(evt); // evt.target = btn;
 	menuButtonClick(evt);
