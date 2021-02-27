@@ -183,15 +183,15 @@ function placeMenuButtons (clickButton) {
 	let clickButtonId = clickButton.getAttribute('id');
 
 	let rule = [
-		{clickId:'surgut_VI_XVI', activeId: 'surgut_VI_XVI', visibleId:['btn_info_main','surgut_VI_XVI','surgut_XVI_XIX','surgut_1_XX','surgut_2_XX',], backgroundDivClass: 'backgroundOldSurgut'  },
-		{clickId:'surgut_XVI_XIX', activeId: 'surgut_XVI_XIX', visibleId:['btn_info_main','surgut_VI_XVI','surgut_XVI_XIX','surgut_1_XX','surgut_2_XX',], backgroundDivClass: 'backgroundOldSurgut'},
-		{clickId:'surgut_1_XX', activeId: 'surgut_1_XX', visibleId:['btn_info_main','surgut_VI_XVI','surgut_XVI_XIX','surgut_1_XX','surgut_2_XX',], backgroundDivClass: 'backgroundOldSurgut'},
-		{clickId:'surgut_2_XX', activeId: 'surgut_2_XX', visibleId:['btn_info_main','surgut_VI_XVI','surgut_XVI_XIX','surgut_1_XX','surgut_2_XX','surgut_celnyy',], backgroundDivClass: 'backgroundOldSurgut'},
+		{clickId:'surgut_VI_XVI', activeId: 'surgut_VI_XVI', visibleId:['surgut_VI_XVI','surgut_XVI_XIX','surgut_1_XX','surgut_2_XX',], backgroundDivClass: 'backgroundOldSurgut'  },
+		{clickId:'surgut_XVI_XIX', activeId: 'surgut_XVI_XIX', visibleId:['surgut_VI_XVI','surgut_XVI_XIX','surgut_1_XX','surgut_2_XX',], backgroundDivClass: 'backgroundOldSurgut'},
+		{clickId:'surgut_1_XX', activeId: 'surgut_1_XX', visibleId:['surgut_VI_XVI','surgut_XVI_XIX','surgut_1_XX','surgut_2_XX',], backgroundDivClass: 'backgroundOldSurgut'},
+		{clickId:'surgut_2_XX', activeId: 'surgut_2_XX', visibleId:['surgut_VI_XVI','surgut_XVI_XIX','surgut_1_XX','surgut_2_XX','surgut_celnyy',], backgroundDivClass: 'backgroundOldSurgut'},
 		{clickId:'surgut_celnyy', activeId: 'surgut_1956_1979', visibleId:['surgut_person_1956_1979','surgut_1956_1979','surgut_1980_1991','surgut_1992_2020','back_surgut_2_XX',], backgroundDivClass: 'backgroundCelSurgut'},
 		{clickId:'surgut_1956_1979', activeId: 'surgut_1956_1979', visibleId:['surgut_person_1956_1979','surgut_1956_1979','surgut_1980_1991','surgut_1992_2020','back_surgut_2_XX',], backgroundDivClass: 'backgroundCelSurgut'},
 		{clickId:'surgut_1980_1991', activeId: 'surgut_1980_1991', visibleId:['surgut_person_1980_1991','surgut_1956_1979','surgut_1980_1991','surgut_1992_2020','back_surgut_2_XX',], backgroundDivClass: 'backgroundCelSurgut'},
 		{clickId:'surgut_1992_2020', activeId: 'surgut_1992_2020', visibleId:['surgut_person_1992_2020','surgut_1956_1979','surgut_1980_1991','surgut_1992_2020','back_surgut_2_XX',], backgroundDivClass: 'backgroundCelSurgut'},
-		{clickId:'back_surgut_2_XX', activeId: 'surgut_2_XX', visibleId:['btn_info_main','surgut_VI_XVI','surgut_XVI_XIX','surgut_1_XX','surgut_2_XX','surgut_celnyy',], backgroundDivClass: 'backgroundCelSurgut'},
+		{clickId:'back_surgut_2_XX', activeId: 'surgut_2_XX', visibleId:['surgut_VI_XVI','surgut_XVI_XIX','surgut_1_XX','surgut_2_XX','surgut_celnyy',], backgroundDivClass: 'backgroundCelSurgut'},
 	];
 	
 	for (let k = 0; k < rule.length; k++) {
@@ -205,7 +205,6 @@ function placeMenuButtons (clickButton) {
 				if(rule[k].visibleId.indexOf(buttonId) != -1)
 				{
 					buttons[i].style.display = '';
-					if(buttonId == 'btn_info_main') buttons[i].style.display = 'block';
 				}
 				else
 				{
@@ -238,17 +237,8 @@ function menuButtonClick(e) {
 
 	let clickButtonId = sender.getAttribute('id');
 
-	//Костыль
-	if (clickButtonId == 'btn_info_main' ) return;
-
 	// change main_info_btn attribute
-
-	let mbf = document.getElementById("btn_info_main");
-
 	let atr = sender.getAttribute('data-info');
-
-	mbf.removeAttribute('data-number');
-	mbf.setAttribute('data-number', atr);
 
 	//let num = sender.getAttribute('data-number');
 
@@ -409,6 +399,7 @@ function iconClick(e) {
 		if(input.id == 'x') header = input;
 		if(input.id == 'y') inner_text = input;
 		if(input.id == 'z') close_btn = input;
+		if(input.id == '' || input.id == undefined) div.removeChild(input);
 	}
 
 	//вытаскиваю положение и размер формы из css
@@ -422,6 +413,7 @@ function iconClick(e) {
 	formProp = cs.getPropertyValue('--form-width');
 	if(formProp != undefined && formProp != null && formProp != '') div.style.width = formProp;
 
+	/*
 	if ( header_inner == 46 && check == '010101' ) {
 		div.className = 'about_form_oldsurgut';
 	} else if ( header_inner == 47 && check == '010101' ) {
@@ -435,7 +427,7 @@ function iconClick(e) {
 	} else {
 		//div.className = 'icon_form_oldsurgut';	
 	}
-
+	*/
 	
 
 	if ( header_inner == 0 ) {
@@ -785,7 +777,7 @@ function iconClick(e) {
 		close_btn.style = 'top:107%;left:50%';
 	}
 	
-
+/*
 	if ( header_inner == 46 && check == '010101' ) {
 		header.className = 'inner_header_big';
 	} else if ( header_inner == 47 && check == '010101' ) {
@@ -799,6 +791,7 @@ function iconClick(e) {
 	} else {
 		//header.className = 'inner_header';	
 	}
+*/
 
 	//Заголовок внутри формы
 	let headerText = trimStringProperty(cs.getPropertyValue('--form-header-text')); 
@@ -874,16 +867,17 @@ function iconClick(e) {
 	}
 
 
-	// inner_text.onscroll = document.onscroll = function () {
- //        idleCounter = 0;
- //        console.log(idleCounter);
- //    };
+ 	//inner_text.onscroll = document.onscroll = function () {
+    //     idleCounter = 0;
+    //     console.log(idleCounter);
+    //};
 
-	// inner_text.addEventListener('scroll',function(){
+	//inner_text.addEventListener('scroll', function () {
 	// 	idleCounter = 0;
 	//     console.log(idleCounter);
-	// })
+	//});
 
+/*	
 	if ( header_inner == 46 && check == '010101' ) {
 		inner_text.className = 'inner_text_big';
 	} else if ( header_inner == 47 && check == '010101' ) {
@@ -897,7 +891,7 @@ function iconClick(e) {
 	} else {
 		//inner_text.className = 'inner_text';	
 	}
-
+*/
 
 	let descrText = trimStringProperty(cs.getPropertyValue('--form-descr-text')); 
 	if (descrText === undefined || descrText === '')
@@ -940,8 +934,8 @@ function iconClick(e) {
 		}		
 	}
 
-	if(imagesArray.length == 0)
-		inner_text.className = 'inner_text_big';
+	//if(imagesArray.length == 0)
+	//	inner_text.className = 'inner_text_big';
 
 	let imageGroup = document.createElement('div');
 	imageGroup.classList.add('flexGroup');
