@@ -198,7 +198,7 @@ body {
 .form_surgut_person_1956_1979 {
 	position: absolute;
 	top: -12px;
-	left: 49%;
+	left: 2%;
 	transform: translate(-49%);
 	width: 1656px;
 	height: 1050px;
@@ -521,7 +521,68 @@ body {
 	text-shadow: 0px 1.5px 0px #555657;
 }
 
+.btn_info_surgut_1956_1979 {
+	position: absolute;
+	left: 39%;
+    top: 14%;
+	width: 80px;
+	height: 81px;
+	background-image: url(img/question.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	/*animation: golding 3s ease infinite;*/
+	opacity: 0;
+	/*cursor: none;*/
+	z-index: 1;
+	/*border: 1px solid red;*/
+	--form-id: about_form_celsurgut;
+	--form-top: 100px;
+	--form-left: 560px;
+	--form-header-text: '1956_1979';
+	--form-descr-text: '1956_1979';		
+}
 
+.btn_info_surgut_1980_1991 {
+	position: absolute;
+	left: 39%;
+    top: 14%;
+	width: 80px;
+	height: 81px;
+	background-image: url(img/question.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	/*animation: golding 3s ease infinite;*/
+	opacity: 0;
+	/*cursor: none;*/
+	z-index: 1;
+	/*border: 1px solid red;*/
+	--form-id: about_form_celsurgut;
+	--form-top: 100px;
+	--form-left: 560px;
+	--form-header-text: '1980_1991';
+	--form-descr-text: '1980_1991';			
+}
+
+.btn_info_surgut_1992_2020 {
+	position: absolute;
+	left: 39%;
+    top: 14%;
+	width: 80px;
+	height: 81px;
+	background-image: url(img/question.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	/*animation: golding 3s ease infinite;*/
+	opacity: 0;
+	/*cursor: none;*/
+	z-index: 1;
+	/*border: 1px solid red;*/
+	--form-id: about_form_celsurgut;
+	--form-top: 100px;
+	--form-left: 560px;
+	--form-header-text: '1992_2020';
+	--form-descr-text: '1992_2020';			
+}
 
 .btn_sc_person_1956_1979 {
 	position: absolute;
@@ -538,8 +599,8 @@ body {
 	z-index: 1;
 	/*border: 1px solid red;*/
 	--form-id: form_surgut_person_1956_1979;
-	--form-top: 100px;
-	--form-left: 800px;
+	--form-top: 0px;
+	--form-left: 100px;
 }
 
 .btn_sc_person_1980_1991 {
@@ -557,8 +618,8 @@ body {
 	z-index: 1;
 	/*border: 1px solid red;*/
 	--form-id: form_surgut_person_1980_1991;
-	--form-top: 100px;
-	--form-left: 800px;
+	--form-top: 0px;
+	--form-left: 100px;
 }
 
 .btn_sc_person_1992_2020 {
@@ -576,8 +637,8 @@ body {
 	z-index: 1;
 	/*border: 1px solid red;*/
 	--form-id: form_surgut_person_1992_2020;
-	--form-top: 100px;
-	--form-left: 800px;
+	--form-top: 0px;
+	--form-left: 100px;
 }
 
 .surgut_menu_btn {
@@ -1365,6 +1426,20 @@ div#surgut_celnyy {
 	--close-btn-class: close_btn_celsurgut;*/
 }
 
+.about_form_celsurgut {
+	position: absolute;
+	width: 900px;
+	height: 850px;
+	background-image: url(img/formBlue.png);
+	background-position: center;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	z-index: 3;
+	/*--header-class: inner_header;
+	--descr-class: inner_text_big;
+	--close-btn-class: close_btn;*/	
+}
+
 @keyframes table_in {
 	0% {
 		opacity: 0;
@@ -1397,6 +1472,8 @@ div#surgut_celnyy {
 	z-index: 1;
 	transform: translate(-50%, -120%);
 	/*cursor: none;*/
+	top: 107%;
+	left: 50%;
 }
 
 .close_btn_celsurgut {
@@ -1409,6 +1486,8 @@ div#surgut_celnyy {
 	z-index: 1;
 	transform: translate(-50%, -120%);
 	/*cursor: none;*/
+	top: 107%;
+	left: 50%;
 }
 
 .inner_header {

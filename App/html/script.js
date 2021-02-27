@@ -760,7 +760,7 @@ function iconClick(e) {
 	}
 
 	div.classList.add('table_in');
-
+/*
 	//close_btn.className = 'close_btn';
 
 	if ( header_inner == 46 && check == '010101' ) {
@@ -774,9 +774,9 @@ function iconClick(e) {
 	} else if ((header_inner >= 52 || header_inner <= 59) && check == '010101') {
 		close_btn.style = 'top:107%;left:50%';
 	} else {
-		close_btn.style = 'top:107%;left:50%';
+		//close_btn.style = 'top:107%;left:50%';
 	}
-	
+*/
 /*
 	if ( header_inner == 46 && check == '010101' ) {
 		header.className = 'inner_header_big';
