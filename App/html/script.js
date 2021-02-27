@@ -798,13 +798,15 @@ function iconClick(e) {
 	if (headerText === undefined || headerText === '')
 		headerText = название_окна[header_inner];			
 	if (headerText != undefined)
-		header.innerText = headerText;
+		header.innerHTML = headerText;
 
 	var formHeaderProp = '';
 	formHeaderProp = cs.getPropertyValue('--form-header-top');
 	if(formHeaderProp != undefined && formHeaderProp != null) header.style.top = formHeaderProp;
 	formHeaderProp = cs.getPropertyValue('--form-header-font-size');
 	if(formHeaderProp != undefined && formHeaderProp != null) header.style.fontSize = formHeaderProp;
+	formHeaderProp = cs.getPropertyValue('--form-header-line-height');
+	if(formHeaderProp != undefined && formHeaderProp != null) header.style.lineHeight = formHeaderProp;	
 
 	if ( header_inner == 8 && check == 0 ) {
 		header.style.top = '8%';
