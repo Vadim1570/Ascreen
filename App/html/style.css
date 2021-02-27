@@ -775,6 +775,7 @@ div#surgut_celnyy {
 	opacity: 0;
 	/*cursor: none;*/
 	z-index: 1;
+	--form-id: icon_form_pic_oldsurgut;
 	--form-top: 100px;
 	--form-left: 800px;
 	--form-header-text: var(--chum-form-header-text);
@@ -828,6 +829,7 @@ div#surgut_celnyy {
 	/*cursor: none;*/
 	z-index: 1;
 	/*border: 1px solid red;*/
+	--form-id: icon_form_pic_oldsurgut;
 	--form-top: 100px;
 	--form-left: 800px;
 	--form-header-text: var(--chum-form-header-text);
@@ -857,6 +859,7 @@ div#surgut_celnyy {
 	opacity: 0;
 	/*cursor: none;*/
 	z-index: 1;
+	--form-id: icon_form_pic_oldsurgut;
 	--form-top: 163px;
 	--form-left: 580px;
 	--form-header-text: 'Утка';
@@ -1199,26 +1202,46 @@ div#surgut_celnyy {
 	/*border: 1px solid red;*/
 }
 
-.table {
+.icon_form_oldsurgut {
 	position: absolute;
 	width: 400px;
-	height: 750px;
-	background-image: url(img/newInfoBlock.png);
+	height: 650px;
+	background-image: url(img/formGreen.png);
 	background-position: center;
 	background-size: 100% 100%;
 	background-repeat: no-repeat;
 	z-index: 3;
+	/*--header-class: inner_header;
+	--descr-class: inner_text_big;
+	--close-btn-class: close_btn;*/
 }
 
-.table_info {
+.icon_form_pic_oldsurgut {
+	position: absolute;
+	width: 400px;
+	height: 650px;
+	background-image: url(img/formPicGreen.png);
+	background-position: center;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	z-index: 3;
+	/*--header-class: inner_header;
+	--descr-class: inner_text_big;
+	--close-btn-class: close_btn;*/
+}
+
+.about_form_oldsurgut {
 	position: absolute;
 	width: 900px;
 	height: 850px;
-	background-image: url(img/newInfoBlock.png);
+	background-image: url(img/formGreen.png);
 	background-position: center;
 	background-size: 100% 100%;
 	background-repeat: no-repeat;
 	z-index: 3;
+	/*--header-class: inner_header;
+	--descr-class: inner_text_big;
+	--close-btn-class: close_btn;*/	
 }
 
 .table_in {
@@ -1227,6 +1250,34 @@ div#surgut_celnyy {
 
 .table_out {
 	animation: table_out .5s ease forwards;
+}
+
+.icon_form_celsurgut {
+	position: absolute;
+	width: 400px;
+	height: 650px;
+	background-image: url(img/formBlue.png);
+	background-position: center;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	z-index: 3;
+	/*--header-class: inner_header_celsurgut;
+	--descr-class: inner_text_celsurgut;
+	--close-btn-class: close_btn_celsurgut;*/	
+}
+
+.icon_form_pic_celsurgut {
+	position: absolute;
+	width: 400px;
+	height: 650px;
+	background-image: url(img/formPicBlue.png);
+	background-position: center;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	z-index: 3;
+	/*--header-class: inner_header_celsurgut;
+	--descr-class: inner_text_celsurgut;
+	--close-btn-class: close_btn_celsurgut;*/
 }
 
 @keyframes table_in {
@@ -1263,6 +1314,18 @@ div#surgut_celnyy {
 	/*cursor: none;*/
 }
 
+.close_btn_celsurgut {
+	position: absolute;
+	width: 85px;
+	height: 85px;
+	background-image: url(img/Close_blue.png);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	z-index: 1;
+	transform: translate(-50%, -120%);
+	/*cursor: none;*/
+}
+
 .inner_header {
 	position: absolute;
 	top: 10.5%;
@@ -1273,6 +1336,20 @@ div#surgut_celnyy {
 	text-align: center;
 	font-size: 40px;
 	color: #5C6D3A;
+	/*text-shadow: -0.5px 2px 0px #2B311C;*/
+	font-family: IskraCYR-Bold;
+}
+
+.inner_header_celsurgut {
+	position: absolute;
+	top: 10.5%;
+	left: 50%;
+	transform: translate(-50%, -10%);
+	width: 80%;
+	height: 50px;
+	text-align: center;
+	font-size: 40px;
+	color: #0501fc;
 	/*text-shadow: -0.5px 2px 0px #2B311C;*/
 	font-family: IskraCYR-Bold;
 }
@@ -1297,7 +1374,7 @@ div#surgut_celnyy {
 	left: 50%;
 	transform: translate(-49%);
 	width: 70%;
-	height: 43%;
+	height: 37%;
 	font-family: IskraCYR-Medium;
 	color: #2B311C;
 	overflow: auto;
@@ -1315,6 +1392,23 @@ div#surgut_celnyy {
 	background-size: auto 100%;
 	background-repeat: no-repeat;
 }*/
+
+.inner_text_celsurgut {
+	position: absolute;
+	top: 20%;
+	left: 50%;
+	transform: translate(-49%);
+	width: 70%;
+	height: 37%;
+	font-family: IskraCYR-Medium;
+	color: #050438;
+	overflow: auto;
+}
+
+.inner_text_celsurgut::-webkit-scrollbar {
+	width: 0px;
+	background-color:transparent;
+}
 
 .inner_text_big {
 	position: absolute;
@@ -2396,11 +2490,6 @@ div#surgut_celnyy {
 }
 
 
-
-
-
-
-
 .n_1 {
 	position: absolute;
 	top: 29.4%;
@@ -3027,6 +3116,7 @@ div#surgut_celnyy {
 	/*cursor: none;*/
 	z-index: 1;
 	/*border: 1px solid red;*/
+	--form-id: icon_form_pic_celsurgut;
 	--form-top: 100px;
 	--form-left: 140px;
 	--form-header-text: 'Ханты';
@@ -3048,6 +3138,7 @@ div#surgut_celnyy {
 	/*cursor: none;*/
 	z-index: 1;
 	/*border: 1px solid red;*/
+	--form-id: icon_form_pic_celsurgut;
 	--form-top: 10px;
 	--form-left: 140px;
 	--form-descr-text: '<p>Основными традиционными промыслами ханты являются рыболовство, охота на крупнокопытного и пушного зверя, водоплавающую и боровую птицу, сбор дикоросов, оленеводство (отгонное и избное). </br></br>Ремеслами являются домашняя обработка животного сырья, обработка дерева и кости, производства традиционных средств передвижения (лыжи, лодки, нарты), орудий труда мебели. </br></br>Костюм сургутских ханты отражает специфику ведения хозяйства таёжного народа. Традиционная обувь ханты шьется с высоким голенищем, у мужчин подвязывается к украшенному металлическими отливками и ажурными костяными пластинами поясу. Для летней обуви используется выделанная кожа, для зимней – камус (шкура с ног оленя). Головными уборами у мужчин является капюшон зимней одежды, иногда - меховая шапка. </p>';
@@ -3070,6 +3161,7 @@ div#surgut_celnyy {
 	/*cursor: none;*/
 	z-index: 1;
 	/*border: 1px solid red;*/
+	--form-id: icon_form_pic_celsurgut;
 	--form-top: 100px;
 	--form-left: 140px;
 	--form-descr-top: 8%;
@@ -3098,6 +3190,7 @@ div#surgut_celnyy {
 	/*cursor: none;*/
 	z-index: 1;
 	/*border: 1px solid red;*/
+	--form-id: icon_form_pic_celsurgut;
 	--form-top: 100px;
 	--form-left: 140px;
 	--form-header-text: 'Русские 56-79';
@@ -3119,6 +3212,7 @@ div#surgut_celnyy {
 	/*cursor: none;*/
 	z-index: 1;
 	/*border: 1px solid red;*/
+	--form-id: icon_form_pic_celsurgut;
 	--form-top: 10px;
 	--form-left: 140px;
 	--form-header-text: 'Русские муж';
@@ -3140,6 +3234,7 @@ div#surgut_celnyy {
 	/*cursor: none;*/
 	z-index: 1;
 	/*border: 1px solid red;*/
+	--form-id: icon_form_pic_celsurgut;
 	--form-top: 100px;
 	--form-left: 140px;
 	--form-header-text: 'Русские жен';
@@ -3167,6 +3262,7 @@ div#surgut_celnyy {
 	/*cursor: none;*/
 	z-index: 1;
 	/*border: 1px solid red;*/
+	--form-id: icon_form_celsurgut;
 	--form-top: 100px;
 	--form-left: 140px;
 	--form-header-text: 'Башкиры';
@@ -3188,6 +3284,7 @@ div#surgut_celnyy {
 	/*cursor: none;*/
 	z-index: 1;
 	/*border: 1px solid red;*/
+	--form-id: icon_form_pic_celsurgut;
 	--form-top: 10px;
 	--form-left: 140px;
 	--form-header-text: 'Башкиры';
@@ -3209,6 +3306,7 @@ div#surgut_celnyy {
 	/*cursor: none;*/
 	z-index: 1;
 	/*border: 1px solid red;*/
+	--form-id: icon_form_pic_celsurgut;
 	--form-top: 100px;
 	--form-left: 140px;
 	--form-header-text: Башкиры;
@@ -3236,6 +3334,7 @@ div#surgut_celnyy {
 	/*cursor: none;*/
 	z-index: 1;
 	/*border: 1px solid red;*/
+	--form-id: icon_form_pic_celsurgut;
 	--form-top: 100px;
 	--form-left: 140px;
 	--form-header-text: 'Татары';
@@ -3257,6 +3356,7 @@ div#surgut_celnyy {
 	/*cursor: none;*/
 	z-index: 1;
 	/*border: 1px solid red;*/
+	--form-id: icon_form_pic_celsurgut;
 	--form-top: 10px;
 	--form-left: 140px;
 	--form-header-text: 'Татары';
@@ -3278,6 +3378,7 @@ div#surgut_celnyy {
 	/*cursor: none;*/
 	z-index: 1;
 	/*border: 1px solid red;*/
+	--form-id: icon_form_pic_celsurgut;
 	--form-top: 100px;
 	--form-left: 140px;
 	--form-header-text: 'Татары';
@@ -3305,6 +3406,7 @@ div#surgut_celnyy {
 	/*cursor: none;*/
 	z-index: 1;
 	/*border: 1px solid red;*/
+	--form-id: icon_form_pic_celsurgut;
 	--form-top: 100px;
 	--form-left: 140px;
 	--form-header-text: 'Азербайджанцы';
@@ -3326,6 +3428,7 @@ div#surgut_celnyy {
 	/*cursor: none;*/
 	z-index: 1;
 	/*border: 1px solid red;*/
+	--form-id: icon_form_pic_celsurgut;
 	--form-top: 10px;
 	--form-left: 140px;
 	--form-header-text: 'Азербайджанцы';
@@ -3347,6 +3450,7 @@ div#surgut_celnyy {
 	/*cursor: none;*/
 	z-index: 1;
 	/*border: 1px solid red;*/
+	--form-id: icon_form_pic_celsurgut;
 	--form-top: 100px;
 	--form-left: 140px;
 	--form-header-text: 'Азербайджанцы';
@@ -3374,6 +3478,7 @@ div#surgut_celnyy {
 	/*cursor: none;*/
 	z-index: 1;
 	/*border: 1px solid red;*/
+	--form-id: icon_form_pic_celsurgut;
 	--form-top: 200px;
 	--form-left: 140px;
 	--form-header-text: 'Чеченцы';
@@ -3395,6 +3500,7 @@ div#surgut_celnyy {
 	/*cursor: none;*/
 	z-index: 1;
 	/*border: 1px solid red;*/
+	--form-id: icon_form_pic_celsurgut;
 	--form-top: 200px;
 	--form-left: 140px;
 	--form-header-text: 'Чеченцы';
@@ -3416,6 +3522,7 @@ div#surgut_celnyy {
 	/*cursor: none;*/
 	z-index: 1;
 	/*border: 1px solid red;*/
+	--form-id: icon_form_pic_celsurgut;
 	--form-top: 200px;
 	--form-left: 140px;
 	--form-header-text: 'Чеченцы';
@@ -3443,6 +3550,7 @@ div#surgut_celnyy {
 	/*cursor: none;*/
 	z-index: 1;
 	/*border: 1px solid red;*/
+	--form-id: icon_form_pic_celsurgut;
 	--form-top: 230px;
 	--form-left: 140px;
 	--form-header-text: 'Украинцы';
@@ -3464,6 +3572,7 @@ div#surgut_celnyy {
 	/*cursor: none;*/
 	z-index: 1;
 	/*border: 1px solid red;*/
+	--form-id: icon_form_pic_celsurgut;
 	--form-top: 230px;
 	--form-left: 140px;
 	--form-header-text: 'Украинцы';
@@ -3485,6 +3594,7 @@ div#surgut_celnyy {
 	/*cursor: none;*/
 	z-index: 1;
 	/*border: 1px solid red;*/
+	--form-id: icon_form_pic_celsurgut;
 	--form-top: 230px;
 	--form-left: 140px;
 	--form-header-text: 'Украинцы';
@@ -3512,6 +3622,7 @@ div#surgut_celnyy {
 	/*cursor: none;*/
 	z-index: 1;
 	/*border: 1px solid red;*/
+	--form-id: icon_form_pic_celsurgut;
 	--form-top: 230px;
 	--form-left: 140px;
 	--form-header-text: 'Белорусы';
@@ -3533,6 +3644,7 @@ div#surgut_celnyy {
 	/*cursor: none;*/
 	z-index: 1;
 	/*border: 1px solid red;*/
+	--form-id: icon_form_celsurgut;
 	--form-top: 230px;
 	--form-left: 140px;
 	--form-header-text: 'Белорусы';
@@ -3553,6 +3665,7 @@ div#surgut_celnyy {
 	/*cursor: none;*/
 	z-index: 1;
 	/*border: 1px solid red;*/
+	--form-id: icon_form_pic_celsurgut;
 	--form-top: 230px;
 	--form-left: 140px;
 	--form-header-text: 'Белорусы';
@@ -3580,6 +3693,7 @@ div#surgut_celnyy {
 	/*cursor: none;*/
 	z-index: 1;
 	/*border: 1px solid red;*/
+	--form-id: icon_form_pic_celsurgut;
 	--form-top: 230px;
 	--form-left: 140px;
 	--form-header-text: 'Марийцы';
@@ -3601,6 +3715,7 @@ div#surgut_celnyy {
 	/*cursor: none;*/
 	z-index: 1;
 	/*border: 1px solid red;*/
+	--form-id: icon_form_pic_celsurgut;
 	--form-top: 230px;
 	--form-left: 140px;
 	--form-header-text: 'Марийцы';
@@ -3622,6 +3737,7 @@ div#surgut_celnyy {
 	/*cursor: none;*/
 	z-index: 1;
 	/*border: 1px solid red;*/
+	--form-id: icon_form_pic_celsurgut;
 	--form-top: 230px;
 	--form-left: 140px;
 	--form-header-text: 'Марийцы';
@@ -3649,6 +3765,7 @@ div#surgut_celnyy {
 	/*cursor: none;*/
 	z-index: 1;
 	/*border: 1px solid red;*/
+	--form-id: icon_form_pic_celsurgut;
 	--form-top: 230px;
 	--form-left: 230px;
 	--form-height: 750px;
@@ -3672,6 +3789,7 @@ div#surgut_celnyy {
 	/*cursor: none;*/
 	z-index: 1;
 	/*border: 1px solid red;*/
+	--form-id: icon_form_pic_celsurgut;
 	--form-top: 230px;
 	--form-left: 230px;
 	--form-header-text: 'Мордва';
@@ -3693,6 +3811,7 @@ div#surgut_celnyy {
 	/*cursor: none;*/
 	z-index: 1;
 	/*border: 1px solid red;*/
+	--form-id: icon_form_pic_celsurgut;
 	--form-top: 230px;
 	--form-left: 230px;
 	--form-header-text: 'Мордва';
@@ -3720,6 +3839,7 @@ div#surgut_celnyy {
 	/*cursor: none;*/
 	z-index: 1;
 	/*border: 1px solid red;*/
+	--form-id: icon_form_pic_celsurgut;
 	--form-top: 230px;
 	--form-left: 1280px;
 	--form-header-text: 'Чуваши';
@@ -3741,6 +3861,7 @@ div#surgut_celnyy {
 	/*cursor: none;*/
 	z-index: 1;
 	/*border: 1px solid red;*/
+	--form-id: icon_form_pic_celsurgut;
 	--form-top: 230px;
 	--form-left: 1280px;
 	--form-header-text: 'Чуваши';
@@ -3762,6 +3883,7 @@ div#surgut_celnyy {
 	/*cursor: none;*/
 	z-index: 1;
 	/*border: 1px solid red;*/
+	--form-id: icon_form_pic_celsurgut;
 	--form-top: 230px;
 	--form-left: 1280px;
 	--form-header-text: 'Чуваши';
@@ -3789,6 +3911,7 @@ div#surgut_celnyy {
 	/*cursor: none;*/
 	z-index: 1;
 	/*border: 1px solid red;*/
+	--form-id: icon_form_pic_celsurgut;
 	--form-top: 230px;
 	--form-left: 1370px;
 	--form-header-text: 'Молдоване';
@@ -3810,6 +3933,7 @@ div#surgut_celnyy {
 	/*cursor: none;*/
 	z-index: 1;
 	/*border: 1px solid red;*/
+	--form-id: icon_form_pic_celsurgut;
 	--form-top: 230px;
 	--form-left: 1370px;
 	--form-header-text: 'Молдоване';
@@ -3831,6 +3955,7 @@ div#surgut_celnyy {
 	/*cursor: none;*/
 	z-index: 1;
 	/*border: 1px solid red;*/
+	--form-id: icon_form_pic_celsurgut;
 	--form-top: 230px;
 	--form-left: 1370px;
 	--form-header-text: 'Молдоване';
@@ -3858,6 +3983,7 @@ div#surgut_celnyy {
 	/*cursor: none;*/
 	z-index: 1;
 	/*border: 1px solid red;*/
+	--form-id: icon_form_pic_celsurgut;
 	--form-top: 230px;
 	--form-left: 1370px;
 	--form-header-text: 'Эстонцы';
@@ -3879,6 +4005,7 @@ div#surgut_celnyy {
 	/*cursor: none;*/
 	z-index: 1;
 	/*border: 1px solid red;*/
+	--form-id: icon_form_pic_celsurgut;
 	--form-top: 230px;
 	--form-left: 1370px;
 	--form-header-text: 'Эстонцы';
@@ -3900,6 +4027,7 @@ div#surgut_celnyy {
 	/*cursor: none;*/
 	z-index: 1;
 	/*border: 1px solid red;*/
+	--form-id: icon_form_pic_celsurgut;
 	--form-top: 230px;
 	--form-left: 1370px;
 	--form-header-text: 'Эстонцы';
@@ -3927,6 +4055,7 @@ div#surgut_celnyy {
 	/*cursor: none;*/
 	z-index: 1;
 	/*border: 1px solid red;*/
+	--form-id: icon_form_pic_celsurgut;
 	--form-top: 230px;
 	--form-left: 1370px;
 	--form-header-text: 'Болгары';
@@ -3948,6 +4077,7 @@ div#surgut_celnyy {
 	/*cursor: none;*/
 	z-index: 1;
 	/*border: 1px solid red;*/
+	--form-id: icon_form_pic_celsurgut;
 	--form-top: 230px;
 	--form-left: 1370px;
 	--form-header-text: 'Болгары';
@@ -3969,6 +4099,7 @@ div#surgut_celnyy {
 	/*cursor: none;*/
 	z-index: 1;
 	/*border: 1px solid red;*/
+	--form-id: icon_form_pic_celsurgut;
 	--form-top: 230px;
 	--form-left: 1370px;
 	--form-header-text: 'Болгары';
@@ -3996,6 +4127,7 @@ div#surgut_celnyy {
 	/*cursor: none;*/
 	z-index: 1;
 	/*border: 1px solid red;*/
+	--form-id: icon_form_pic_celsurgut;
 	--form-top: 200px;
 	--form-left: 1370px;
 	--form-header-text: 'Народы Дагестана';
@@ -4018,6 +4150,7 @@ div#surgut_celnyy {
 	/*cursor: none;*/
 	z-index: 1;
 	/*border: 1px solid red;*/
+	--form-id: icon_form_pic_celsurgut;
 	--form-top: 200px;
 	--form-left: 1370px;
 	--form-header-text: 'Народы Дагестана';
@@ -4040,6 +4173,7 @@ div#surgut_celnyy {
 	/*cursor: none;*/
 	z-index: 1;
 	/*border: 1px solid red;*/
+	--form-id: icon_form_pic_celsurgut;
 	--form-top: 200px;
 	--form-left: 1370px;
 	--form-header-text: 'Народы Дагестана';
@@ -4068,6 +4202,7 @@ div#surgut_celnyy {
 	/*cursor: none;*/
 	z-index: 1;
 	/*border: 1px solid red;*/
+	--form-id: icon_form_pic_celsurgut;
 	--form-top: 200px;
 	--form-left: 1370px;
 	--form-header-text: 'Армяне';
@@ -4089,6 +4224,7 @@ div#surgut_celnyy {
 	/*cursor: none;*/
 	z-index: 1;
 	/*border: 1px solid red;*/
+	--form-id: icon_form_pic_celsurgut;
 	--form-top: 200px;
 	--form-left: 1370px;
 	--form-header-text: 'Армяне';
@@ -4110,6 +4246,7 @@ div#surgut_celnyy {
 	/*cursor: none;*/
 	z-index: 1;
 	/*border: 1px solid red;*/
+	--form-id: icon_form_pic_celsurgut;
 	--form-top: 200px;
 	--form-left: 1370px;
 	--form-header-text: 'Армяне';
@@ -4137,6 +4274,7 @@ div#surgut_celnyy {
 	/*cursor: none;*/
 	z-index: 1;
 	/*border: 1px solid red;*/
+	--form-id: icon_form_pic_celsurgut;
 	--form-top: 140px;
 	--form-left: 1370px;
 	--form-header-text: 'Казахи';
@@ -4158,6 +4296,7 @@ div#surgut_celnyy {
 	/*cursor: none;*/
 	z-index: 1;
 	/*border: 1px solid red;*/
+	--form-id: icon_form_pic_celsurgut;
 	--form-top: 140px;
 	--form-left: 1370px;
 	--form-header-text: 'Казахи';
@@ -4179,6 +4318,7 @@ div#surgut_celnyy {
 	/*cursor: none;*/
 	z-index: 1;
 	/*border: 1px solid red;*/
+	--form-id: icon_form_pic_celsurgut;
 	--form-top: 140px;
 	--form-left: 1370px;
 	--form-header-text: 'Казахи';
@@ -4206,6 +4346,7 @@ div#surgut_celnyy {
 	/*cursor: none;*/
 	z-index: 1;
 	/*border: 1px solid red;*/
+	--form-id: icon_form_pic_celsurgut;
 	--form-top: 100px;
 	--form-left: 1370px;
 	--form-header-text: 'Таджики';
@@ -4227,6 +4368,7 @@ div#surgut_celnyy {
 	/*cursor: none;*/
 	z-index: 1;
 	/*border: 1px solid red;*/
+	--form-id: icon_form_pic_celsurgut;
 	--form-top: 100px;
 	--form-left: 1370px;
 	--form-header-text: 'Таджики';
@@ -4248,6 +4390,7 @@ div#surgut_celnyy {
 	/*cursor: none;*/
 	z-index: 1;
 	/*border: 1px solid red;*/
+	--form-id: icon_form_pic_celsurgut;
 	--form-top: 100px;
 	--form-left: 1370px;
 	--form-header-text: 'Таджики';
@@ -4275,6 +4418,7 @@ div#surgut_celnyy {
 	/*cursor: none;*/
 	z-index: 1;
 	/*border: 1px solid red;*/
+	--form-id: icon_form_pic_celsurgut;
 	--form-top: 50px;
 	--form-left: 1370px;
 	--form-header-text: 'Узбеки';
@@ -4296,6 +4440,7 @@ div#surgut_celnyy {
 	/*cursor: none;*/
 	z-index: 1;
 	/*border: 1px solid red;*/
+	--form-id: icon_form_pic_celsurgut;
 	--form-top: 50px;
 	--form-left: 1370px;
 	--form-header-text: 'Узбеки';
@@ -4317,6 +4462,7 @@ div#surgut_celnyy {
 	/*cursor: none;*/
 	z-index: 1;
 	/*border: 1px solid red;*/
+	--form-id: icon_form_pic_celsurgut;
 	--form-top: 50px;
 	--form-left: 1370px;
 	--form-header-text: 'Узбеки';
@@ -4344,6 +4490,7 @@ div#surgut_celnyy {
 	/*cursor: none;*/
 	z-index: 1;
 	/*border: 1px solid red;*/
+	--form-id: icon_form_pic_celsurgut;
 	--form-top: 10px;
 	--form-left: 1370px;
 	--form-header-text: 'Киргизы';
@@ -4365,6 +4512,7 @@ div#surgut_celnyy {
 	/*cursor: none;*/
 	z-index: 1;
 	/*border: 1px solid red;*/
+	--form-id: icon_form_pic_celsurgut;
 	--form-top: 10px;
 	--form-left: 1370px;
 	--form-header-text: 'Киргизы';
@@ -4386,6 +4534,7 @@ div#surgut_celnyy {
 	/*cursor: none;*/
 	z-index: 1;
 	/*border: 1px solid red;*/
+	--form-id: icon_form_pic_celsurgut;
 	--form-top: 10px;
 	--form-left: 1370px;
 	--form-header-text: 'Киргизы';
@@ -4407,6 +4556,7 @@ div#surgut_celnyy {
 	/*cursor: none;*/
 	z-index: 1;
 	/*border: 1px solid red;*/
+	--form-id: icon_form_pic_celsurgut;
 	--form-top: 230px;
 	--form-left: 600px;
 	--form-header-text: 'Пожарная часть';
@@ -4428,6 +4578,7 @@ div#surgut_celnyy {
 	/*cursor: none;*/
 	z-index: 1;
 	/*border: 1px solid red;*/
+	--form-id: icon_form_pic_celsurgut;
 	--form-top: 230px;
 	--form-left: 1000px;
 	--form-header-text: 'Станция скорой медицинской помощи';
@@ -4449,6 +4600,7 @@ div#surgut_celnyy {
 	/*cursor: none;*/
 	z-index: 1;
 	/*border: 1px solid red;*/
+	--form-id: icon_form_pic_celsurgut;
 	--form-top: 230px;
 	--form-left: 1200px;
 	--form-header-text: 'Сургутское производственное объединение пассажирского автотранспорта';
@@ -4470,6 +4622,7 @@ div#surgut_celnyy {
 	/*cursor: none;*/
 	z-index: 1;
 	/*border: 1px solid red;*/
+	--form-id: icon_form_pic_celsurgut;
 	--form-top: 0px;
 	--form-left: 330px;
 	--form-header-text: 'Строительство ЖД';
@@ -4491,6 +4644,7 @@ div#surgut_celnyy {
 	/*cursor: none;*/
 	z-index: 1;
 	/*border: 1px solid red;*/
+	--form-id: icon_form_pic_celsurgut;
 	--form-top: 230px;
 	--form-left: 1200px;
 	--form-header-text: 'Сургутский аэропорт';
@@ -4512,6 +4666,7 @@ div#surgut_celnyy {
 	/*cursor: none;*/
 	z-index: 1;
 	/*border: 1px solid red;*/
+	--form-id: icon_form_pic_celsurgut;
 	--form-top: 230px;
 	--form-left: 1200px;
 	--form-header-text: 'Первый десант геологоразведчиков';
@@ -4533,6 +4688,7 @@ div#surgut_celnyy {
 	/*cursor: none;*/
 	z-index: 1;
 	/*border: 1px solid red;*/
+	--form-id: icon_form_pic_celsurgut;
 	--form-top: 100px;
 	--form-left: 1130px;
 	--form-header-text: 'ГРЭС-1';
@@ -4554,6 +4710,7 @@ div#surgut_celnyy {
 	/*cursor: none;*/
 	z-index: 1;
 	/*border: 1px solid red;*/
+	--form-id: icon_form_pic_celsurgut;
 	--form-top: 100px;
 	--form-left: 1130px;
 	--form-header-text: 'ГРЭС-1';
@@ -4575,6 +4732,7 @@ div#surgut_celnyy {
 	/*cursor: none;*/
 	z-index: 1;
 	/*border: 1px solid red;*/
+	--form-id: icon_form_pic_celsurgut;
 	--form-top: 100px;
 	--form-left: 1130px;
 	--form-header-text: 'ЛЭП-500 Сургут-Уренгой';
@@ -4596,6 +4754,7 @@ div#surgut_celnyy {
 	/*cursor: none;*/
 	z-index: 1;
 	/*border: 1px solid red;*/
+	--form-id: icon_form_pic_celsurgut;
 	--form-top: 100px;
 	--form-left: 1130px;
 	--form-header-text: 'Обустройство нефтяных месторождений';
@@ -4617,6 +4776,7 @@ div#surgut_celnyy {
 	/*cursor: none;*/
 	z-index: 1;
 	/*border: 1px solid red;*/
+	--form-id: icon_form_pic_celsurgut;
 	--form-top: 230px;
 	--form-left: 1200px;
 	--form-header-text: 'Первая районная поликлиника «Геолог»';
@@ -4638,6 +4798,7 @@ div#surgut_celnyy {
 	/*cursor: none;*/
 	z-index: 1;
 	/*border: 1px solid red;*/
+	--form-id: icon_form_pic_celsurgut;
 	--form-top: 230px;
 	--form-left: 1200px;
 	--form-header-text: 'Первая районная поликлиника «Геолог»';
@@ -4659,6 +4820,7 @@ div#surgut_celnyy {
 	/*cursor: none;*/
 	z-index: 1;
 	/*border: 1px solid red;*/
+	--form-id: icon_form_pic_celsurgut;
 	--form-top: 230px;
 	--form-left: 1200px;
 	--form-header-text: 'Школа №1';
@@ -4680,6 +4842,7 @@ div#surgut_celnyy {
 	/*cursor: none;*/
 	z-index: 1;
 	/*border: 1px solid red;*/
+	--form-id: icon_form_pic_celsurgut;
 	--form-top: 230px;
 	--form-left: 1200px;
 	--form-header-text: 'Школа №1';
@@ -4701,6 +4864,7 @@ div#surgut_celnyy {
 	/*cursor: none;*/
 	z-index: 1;
 	/*border: 1px solid red;*/
+	--form-id: icon_form_pic_celsurgut;
 	--form-top: 240px;
 	--form-left: 780px;
 	--form-header-text: 'Первый панельный дом';
@@ -4722,6 +4886,7 @@ div#surgut_celnyy {
 	/*cursor: none;*/
 	z-index: 1;
 	/*border: 1px solid red;*/
+	--form-id: icon_form_pic_celsurgut;
 	--form-top: 240px;
 	--form-left: 780px;
 	--form-header-text: 'Первый панельный дом';
@@ -4743,6 +4908,7 @@ div#surgut_celnyy {
 	/*cursor: none;*/
 	z-index: 1;
 	/*border: 1px solid red;*/
+	--form-id: icon_form_pic_celsurgut;
 	--form-top: 0px;
 	--form-left: 700px;
 	--form-header-text: 'двухэтажный дом 1';
@@ -4764,6 +4930,7 @@ div#surgut_celnyy {
 	/*cursor: none;*/
 	z-index: 1;
 	/*border: 1px solid red;*/
+	--form-id: icon_form_pic_celsurgut;
 	--form-top: 120px;
 	--form-left: 760px;
 	--form-header-text: 'дом 2';
@@ -4785,6 +4952,7 @@ div#surgut_celnyy {
 	/*cursor: none;*/
 	z-index: 1;
 	/*border: 1px solid red;*/
+	--form-id: icon_form_pic_celsurgut;
 	--form-top: 220px;
 	--form-left: 1100px;
 	--form-header-text: 'дом 3';
@@ -4806,6 +4974,7 @@ div#surgut_celnyy {
 	/*cursor: none;*/
 	z-index: 1;
 	/*border: 1px solid red;*/
+	--form-id: icon_form_pic_celsurgut;
 	--form-top: 155px;
 	--form-left: 1320px;
 	--form-header-text: 'дом 4';
@@ -4827,6 +4996,7 @@ div#surgut_celnyy {
 	/*cursor: none;*/
 	z-index: 1;
 	/*border: 1px solid red;*/
+	--form-id: icon_form_pic_celsurgut;
 	--form-top: 230px;
 	--form-left: 350px;
 	--form-header-text: 'Нефтепровод Сургут-Полоцк';
@@ -4848,6 +5018,7 @@ div#surgut_celnyy {
 	/*cursor: none;*/
 	z-index: 1;
 	/*border: 1px solid red;*/
+	--form-id: icon_form_pic_celsurgut;
 	--form-top: 240px;
 	--form-left: 840px;
 	--form-header-text: 'Сургутский краеведческий музей';
@@ -4869,6 +5040,7 @@ div#surgut_celnyy {
 	/*cursor: none;*/
 	z-index: 1;
 	/*border: 1px solid red;*/
+	--form-id: icon_form_pic_celsurgut;
 	--form-top: 240px;
 	--form-left: 840px;
 	--form-header-text: 'Сургутский краеведческий музей';
@@ -4890,6 +5062,7 @@ div#surgut_celnyy {
 	/*cursor: none;*/
 	z-index: 1;
 	/*border: 1px solid red;*/
+	--form-id: icon_form_pic_celsurgut;
 	--form-top: 20px;
 	--form-left: 560px;
 	--form-header-text: 'Сургутский нефтяной техникум';
@@ -4911,6 +5084,7 @@ div#surgut_celnyy {
 	/*cursor: none;*/
 	z-index: 1;
 	/*border: 1px solid red;*/
+	--form-id: icon_form_pic_celsurgut;
 	--form-top: 20px;
 	--form-left: 560px;
 	--form-header-text: 'Сургутский нефтяной техникум';
@@ -4932,6 +5106,7 @@ div#surgut_celnyy {
 	/*cursor: none;*/
 	z-index: 1;
 	/*border: 1px solid red;*/
+	--form-id: icon_form_pic_celsurgut;
 	--form-top: 230px;
 	--form-left: 1200px;
 	--form-header-text: 'Речной порт';
@@ -4953,6 +5128,7 @@ div#surgut_celnyy {
 	/*cursor: none;*/
 	z-index: 1;
 	/*border: 1px solid red;*/
+	--form-id: icon_form_pic_celsurgut;
 	--form-top: 230px;
 	--form-left: 1200px;
 	--form-header-text: 'Речной порт';
@@ -4974,6 +5150,7 @@ div#surgut_celnyy {
 	/*cursor: none;*/
 	z-index: 1;
 	/*border: 1px solid red;*/
+	--form-id: icon_form_pic_celsurgut;
 	--form-top: 230px;
 	--form-left: 600px;
 	--form-header-text: 'Сургутское педагогическое училище';
@@ -4995,6 +5172,7 @@ div#surgut_celnyy {
 	/*cursor: none;*/
 	z-index: 1;
 	/*border: 1px solid red;*/
+	--form-id: icon_form_pic_celsurgut;
 	--form-top: 230px;
 	--form-left: 350px;
 	--form-header-text: 'Газопровод «Уренгой-Помары-Ужгород»';
@@ -5016,6 +5194,7 @@ div#surgut_celnyy {
 	/*cursor: none;*/
 	z-index: 1;
 	/*border: 1px solid red;*/
+	--form-id: icon_form_pic_celsurgut;
 	--form-top: 0px;
 	--form-left: 700px;
 	--form-header-text: 'двухэтажный дом 1';
@@ -5037,6 +5216,7 @@ div#surgut_celnyy {
 	/*cursor: none;*/
 	z-index: 1;
 	/*border: 1px solid red;*/
+	--form-id: icon_form_pic_celsurgut;
 	--form-top: 0px;
 	--form-left: 700px;
 	--form-header-text: 'двухэтажный дом 2';
@@ -5058,6 +5238,7 @@ div#surgut_celnyy {
 	/*cursor: none;*/
 	z-index: 1;
 	/*border: 1px solid red;*/
+	--form-id: icon_form_pic_celsurgut;
 	--form-top: 0px;
 	--form-left: 700px;
 	--form-header-text: 'двухэтажный дом 3';
@@ -5079,6 +5260,7 @@ div#surgut_celnyy {
 	/*cursor: none;*/
 	z-index: 1;
 	/*border: 1px solid red;*/
+	--form-id: icon_form_pic_celsurgut;
 	--form-top: 0px;
 	--form-left: 700px;
 	--form-header-text: 'двухэтажный дом 4';
@@ -5100,6 +5282,7 @@ div#surgut_celnyy {
 	/*cursor: none;*/
 	z-index: 1;
 	/*border: 1px solid red;*/
+	--form-id: icon_form_pic_celsurgut;
 	--form-top: 0px;
 	--form-left: 700px;
 	--form-header-text: 'Кинотеатр «Аврора»';
@@ -5121,6 +5304,7 @@ div#surgut_celnyy {
 	/*cursor: none;*/
 	z-index: 1;
 	/*border: 1px solid red;*/
+	--form-id: icon_form_pic_celsurgut;
 	--form-top: 0px;
 	--form-left: 700px;
 	--form-header-text: 'УВД';
@@ -5142,6 +5326,7 @@ div#surgut_celnyy {
 	/*cursor: none;*/
 	z-index: 1;
 	/*border: 1px solid red;*/
+	--form-id: icon_form_pic_celsurgut;
 	--form-top: 0px;
 	--form-left: 700px;
 	--form-header-text: 'Дом культуры «Энергетик»';
@@ -5163,6 +5348,7 @@ div#surgut_celnyy {
 	/*cursor: none;*/
 	z-index: 1;
 	/*border: 1px solid red;*/
+	--form-id: icon_form_pic_celsurgut;
 	--form-top: 240px;
 	--form-left: 780px;
 	--form-header-text: 'Сургутская типография';
@@ -5184,6 +5370,7 @@ div#surgut_celnyy {
 	/*cursor: none;*/
 	z-index: 1;
 	/*border: 1px solid red;*/
+	--form-id: icon_form_pic_celsurgut;
 	--form-top: 240px;
 	--form-left: 780px;
 	--form-header-text: 'Станция_переливания_крови';
@@ -5205,6 +5392,7 @@ div#surgut_celnyy {
 	/*cursor: none;*/
 	z-index: 1;
 	/*border: 1px solid red;*/
+	--form-id: icon_form_pic_celsurgut;
 	--form-top: 240px;
 	--form-left: 780px;
 	--form-header-text: 'Улица Ленина';
@@ -5226,6 +5414,7 @@ div#surgut_celnyy {
 	/*cursor: none;*/
 	z-index: 1;
 	/*border: 1px solid red;*/
+	--form-id: icon_form_pic_celsurgut;
 	--form-top: 240px;
 	--form-left: 780px;
 	--form-header-text: 'Улица Мира';
@@ -5247,6 +5436,7 @@ div#surgut_celnyy {
 	/*cursor: none;*/
 	z-index: 1;
 	/*border: 1px solid red;*/
+	--form-id: icon_form_pic_celsurgut;
 	--form-top: 240px;
 	--form-left: 780px;
 	--form-header-text: 'Улица Пушкина';
@@ -5268,6 +5458,7 @@ div#surgut_celnyy {
 	/*cursor: none;*/
 	z-index: 1;
 	/*border: 1px solid red;*/
+	--form-id: icon_form_pic_celsurgut;
 	--form-top: 240px;
 	--form-left: 780px;
 	--form-header-text: 'Травматологический центр';
@@ -5289,6 +5480,7 @@ div#surgut_celnyy {
 	/*cursor: none;*/
 	z-index: 1;
 	/*border: 1px solid red;*/
+	--form-id: icon_form_pic_celsurgut;
 	--form-top: 240px;
 	--form-left: 780px;
 	--form-header-text: 'КСК «Геолог»';
@@ -5310,6 +5502,7 @@ div#surgut_celnyy {
 	/*cursor: none;*/
 	z-index: 1;
 	/*border: 1px solid red;*/
+	--form-id: icon_form_pic_celsurgut;
 	--form-top: 0px;
 	--form-left: 700px;
 	--form-header-text: 'двухэтажный дом 3';
@@ -5331,6 +5524,7 @@ div#surgut_celnyy {
 	/*cursor: none;*/
 	z-index: 1;
 	/*border: 1px solid red;*/
+	--form-id: icon_form_pic_celsurgut;
 	--form-top: 0px;
 	--form-left: 700px;
 	--form-header-text: 'двухэтажный дом 4';
@@ -5352,6 +5546,7 @@ div#surgut_celnyy {
 	/*cursor: none;*/
 	z-index: 1;
 	/*border: 1px solid red;*/
+	--form-id: icon_form_pic_celsurgut;
 	--form-top: 240px;
 	--form-left: 780px;
 	--form-header-text: 'Улица Киртбая';
@@ -5373,6 +5568,7 @@ div#surgut_celnyy {
 	/*cursor: none;*/
 	z-index: 1;
 	/*border: 1px solid red;*/
+	--form-id: icon_form_pic_celsurgut;
 	--form-top: 240px;
 	--form-left: 780px;
 	--form-header-text: 'Улица Мелик-Карамова';
@@ -5394,6 +5590,7 @@ div#surgut_celnyy {
 	/*cursor: none;*/
 	z-index: 1;
 	/*border: 1px solid red;*/
+	--form-id: icon_form_pic_celsurgut;
 	--form-top: 240px;
 	--form-left: 780px;
 	--form-header-text: 'Улица Лермонтова';
@@ -5415,6 +5612,7 @@ div#surgut_celnyy {
 	/*cursor: none;*/
 	z-index: 1;
 	/*border: 1px solid red;*/
+	--form-id: icon_form_pic_celsurgut;
 	--form-top: 240px;
 	--form-left: 780px;
 	--form-header-text: 'Улица Декабристов';
@@ -5436,6 +5634,7 @@ div#surgut_celnyy {
 	/*cursor: none;*/
 	z-index: 1;
 	/*border: 1px solid red;*/
+	--form-id: icon_form_pic_celsurgut;
 	--form-top: 0px;
 	--form-left: 330px;
 	--form-header-text: 'Мост';
@@ -5457,6 +5656,7 @@ div#surgut_celnyy {
 	/*cursor: none;*/
 	z-index: 1;
 	/*border: 1px solid red;*/
+	--form-id: icon_form_pic_celsurgut;
 	--form-top: 240px;
 	--form-left: 780px;
 	--form-header-text: 'Кардиодиспансер';
@@ -5478,6 +5678,7 @@ div#surgut_celnyy {
 	/*cursor: none;*/
 	z-index: 1;
 	/*border: 1px solid red;*/
+	--form-id: icon_form_pic_celsurgut;
 	--form-top: 240px;
 	--form-left: 780px;
 	--form-header-text: 'Мечеть';
@@ -5499,6 +5700,7 @@ div#surgut_celnyy {
 	/*cursor: none;*/
 	z-index: 1;
 	/*border: 1px solid red;*/
+	--form-id: icon_form_pic_celsurgut;
 	--form-top: 240px;
 	--form-left: 780px;
 	--form-header-text: 'Педагогичский';
@@ -5520,6 +5722,7 @@ div#surgut_celnyy {
 	/*cursor: none;*/
 	z-index: 1;
 	/*border: 1px solid red;*/
+	--form-id: icon_form_pic_celsurgut;
 	--form-top: 240px;
 	--form-left: 780px;
 	--form-header-text: 'Перинатальный_центр';
@@ -5541,6 +5744,7 @@ div#surgut_celnyy {
 	/*cursor: none;*/
 	z-index: 1;
 	/*border: 1px solid red;*/
+	--form-id: icon_form_pic_celsurgut;
 	--form-top: 240px;
 	--form-left: 780px;
 	--form-header-text: 'Старый_Сургут';
@@ -5562,6 +5766,7 @@ div#surgut_celnyy {
 	/*cursor: none;*/
 	z-index: 1;
 	/*border: 1px solid red;*/
+	--form-id: icon_form_pic_celsurgut;
 	--form-top: 240px;
 	--form-left: 780px;
 	--form-header-text: 'Кафедральный собор «Преображения Господня»';
@@ -5585,6 +5790,7 @@ div#surgut_celnyy {
 	/*cursor: none;*/
 	z-index: 1;
 	/*border: 1px solid red;*/
+	--form-id: icon_form_pic_celsurgut;
 	--form-top: 240px;
 	--form-left: 780px;
 	--form-header-text: 'ЗАГС';
@@ -5606,6 +5812,7 @@ div#surgut_celnyy {
 	/*cursor: none;*/
 	z-index: 1;
 	/*border: 1px solid red;*/
+	--form-id: icon_form_pic_celsurgut;
 	--form-top: 240px;
 	--form-left: 780px;
 	--form-header-text: 'Соцветие';
@@ -5627,6 +5834,7 @@ div#surgut_celnyy {
 	/*cursor: none;*/
 	z-index: 1;
 	/*border: 1px solid red;*/
+	--form-id: icon_form_pic_celsurgut;
 	--form-top: 240px;
 	--form-left: 780px;
 	--form-header-text: 'Сургутский_театр';
@@ -6412,7 +6620,7 @@ div#surgut_celnyy {
 
 .flexGroup {
 	position: absolute;
-	bottom: 100px;
+	bottom: 77px;
 	left: calc(50% + 1px);
 	transform: translate(-49%);
 	/*width: 60%;*/

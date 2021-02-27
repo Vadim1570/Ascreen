@@ -22,11 +22,11 @@ let fishesInterval;
 let enableClouds = true;
 let cloudsInterval;
 
-var DialogFormType = {
-	InfoOldSurgut: 1,
-	HelpOldSurgut: 2,
-	InfoCelnyySurgut: 3,
-	PersonCelnyySurgut: 4,
+var dialog_form_type = {
+	icon_form_oldsurgut: 1,
+	about_form_oldsurgut: 2,
+	icon_form_celsurgut: 3,
+	person_table_form_celsurgut: 4,
   };
 
 //body.addEventListener('contextmenu',function(e){
@@ -44,9 +44,6 @@ document.addEventListener('keypress', (event) => {
 
 // end hide and show cursor
 
-
-let inner_text = document.createElement('div');
-
 (function () { 
     // let minutes = true;
     // let interval = minutes ? время_до_появления_заставки : 1000;  //35000
@@ -63,9 +60,17 @@ let inner_text = document.createElement('div');
         idleCounter = 0;
     };
 
-    inner_text.onscroll = document.onkeypress = function () {
-        idleCounter = 0;
-    };
+	for (let inner_text of document.querySelectorAll('.inner_text')) {
+		inner_text.onscroll = document.onkeypress = function () {
+			idleCounter = 0;
+		};
+	}
+
+	for (let inner_text of document.querySelectorAll('.inner_text_celsurgut')) {
+		inner_text.onscroll = document.onkeypress = function () {
+			idleCounter = 0;
+		};
+	}
 
     window.setInterval(function () {
         // if (++idleCounter >= IDLE_TIMEOUT) {
@@ -387,17 +392,23 @@ function iconClick(e) {
 	let check = sender.getAttribute('data-check');
 
 	//создаю зеленую форму с информацией
-	let div = document.createElement('div');
-	let formType = DialogFormType.HelpOldSurgut;
+	let div = null;
 
 	//создаю форму с персонами
 	let formId = cs.getPropertyValue('--form-id');
-	if(formId != undefined && formId != null && formId.trim() != '') 
-	{ 
-		formType = DialogFormType.PersonCelnyySurgut;
-		div = document.getElementById(formId.trim());
-		div.style.display = '';
-		return;
+	if(formId == undefined || formId == null || formId == '' || formId.trim() == '') 
+		{ formId = 'icon_form_oldsurgut'; }
+	div = document.getElementById(formId.trim());
+	div.style.display = '';
+	let header = null;
+	let inner_text = null;
+	let close_btn = null;
+	let inputs = div.getElementsByTagName('div');
+	for (let input of inputs) 
+	{
+		if(input.id == 'x') header = input;
+		if(input.id == 'y') inner_text = input;
+		if(input.id == 'z') close_btn = input;
 	}
 
 	//вытаскиваю положение и размер формы из css
@@ -412,17 +423,17 @@ function iconClick(e) {
 	if(formProp != undefined && formProp != null && formProp != '') div.style.width = formProp;
 
 	if ( header_inner == 46 && check == '010101' ) {
-		div.className = 'table_info';
+		div.className = 'about_form_oldsurgut';
 	} else if ( header_inner == 47 && check == '010101' ) {
-		div.className = 'table_info';
+		div.className = 'about_form_oldsurgut';
 	} else if ( header_inner == 48 && check == '010101' ) {
-		div.className = 'table_info';
+		div.className = 'about_form_oldsurgut';
 	} else if ( header_inner == 49 && check == '010101' ) {
-		div.className = 'table_info';
+		div.className = 'about_form_oldsurgut';
 	} else if ((header_inner >= 52 || header_inner <= 59) && check == '010101') {
-		div.className = 'table_info';
+		div.className = 'about_form_oldsurgut';
 	} else {
-		div.className = 'table';
+		//div.className = 'icon_form_oldsurgut';	
 	}
 
 	
@@ -757,27 +768,23 @@ function iconClick(e) {
 	}
 
 	div.classList.add('table_in');
-	
-	let close_btn = document.createElement('div');
-	close_btn.className = 'close_btn';
+
+	//close_btn.className = 'close_btn';
 
 	if ( header_inner == 46 && check == '010101' ) {
-		close_btn.style = 'top:105%;left:50%';
+		close_btn.style = 'top:107%;left:50%';
 	} else if ( header_inner == 47 && check == '010101' ) {
-		close_btn.style = 'top:105%;left:50%';
+		close_btn.style = 'top:107%;left:50%';
 	} else if ( header_inner == 48 && check == '010101' ) {
-		close_btn.style = 'top:105%;left:50%';
+		close_btn.style = 'top:107%;left:50%';
 	} else if ( header_inner == 49 && check == '010101' ) {
-		close_btn.style = 'top:105%;left:50%';
+		close_btn.style = 'top:107%;left:50%';
 	} else if ((header_inner >= 52 || header_inner <= 59) && check == '010101') {
-		close_btn.style = 'top:105%;left:50%';
+		close_btn.style = 'top:107%;left:50%';
 	} else {
-		close_btn.style = 'top:105%;left:50%';
+		close_btn.style = 'top:107%;left:50%';
 	}
-
 	
-
-	let header = document.createElement('div');
 
 	if ( header_inner == 46 && check == '010101' ) {
 		header.className = 'inner_header_big';
@@ -790,7 +797,7 @@ function iconClick(e) {
 	} else if ((header_inner >= 52 || header_inner <= 59) && check == '010101') {
 		header.className = 'inner_header_big';
 	} else {
-		header.className = 'inner_header';
+		//header.className = 'inner_header';	
 	}
 
 	//Заголовок внутри формы
@@ -866,7 +873,6 @@ function iconClick(e) {
 		// header.style.top = '7%';
 	}
 
-	
 
 	// inner_text.onscroll = document.onscroll = function () {
  //        idleCounter = 0;
@@ -889,7 +895,7 @@ function iconClick(e) {
 	} else if ((header_inner >= 52 || header_inner <= 59) && check == '010101') {
 		inner_text.className = 'inner_text_big';
 	} else {
-		inner_text.className = 'inner_text';
+		//inner_text.className = 'inner_text';	
 	}
 
 
@@ -944,9 +950,15 @@ function iconClick(e) {
 	innerImageGroup.classList.add('objectImages');
 	imageGroup.appendChild(innerImageGroup);
 
-	
 	if (imagesArray.length > 0) 
 	{
+		//Меняем фон на тот, что фоторамкой
+		if(div.classList.contains('icon_form_oldsurgut'))
+		{
+			div.classList.remove('icon_form_oldsurgut');
+			div.classList.add('icon_form_pic_oldsurgut');
+		}
+
 		//Добавляем картинки
 		for (var i = 0; i < imagesArray.length; i++) 
 		{
@@ -1045,44 +1057,44 @@ function iconClick(e) {
 	}
 
 
-body.appendChild(div);
+//body.appendChild(div);
 
 if ( header_inner == 46 && check == '010101' ) {
 		div.classList.add('qwerty');
-		div.appendChild(close_btn);
-		div.appendChild(header);
-		div.appendChild(inner_text);
+		//div.appendChild(close_btn);
+		//div.appendChild(header);
+		//div.appendChild(inner_text);
 } else if ( header_inner == 47 && check == '010101' ) {
 		div.classList.add('qwerty');
-		div.appendChild(close_btn);
-		div.appendChild(header);
-		div.appendChild(inner_text);
+		//div.appendChild(close_btn);
+		//div.appendChild(header);
+		//div.appendChild(inner_text);
 } else if ( header_inner == 48 && check == '010101' ) {
 		div.classList.add('qwerty');
-		div.appendChild(close_btn);
-		div.appendChild(header);
-		div.appendChild(inner_text);
+		//div.appendChild(close_btn);
+		//div.appendChild(header);
+		//div.appendChild(inner_text);
 } else if ( header_inner == 49 && check == '010101' ) {
 		div.classList.add('qwerty');
-		div.appendChild(close_btn);
-		div.appendChild(header);
-	div.appendChild(inner_text);
+		//div.appendChild(close_btn);
+		//div.appendChild(header);
+		//div.appendChild(inner_text);
 } else if ((header_inner >= 52 || header_inner <= 59) && check == '010101') {
 	div.classList.add('qwerty');
-	div.appendChild(close_btn);
-	div.appendChild(header);
-	div.appendChild(inner_text);
+	//div.appendChild(close_btn);
+	//div.appendChild(header);
+	//div.appendChild(inner_text);
 } else {
 	div.classList.add('qwerty');
-	div.appendChild(close_btn);
-	div.appendChild(header);
-	div.appendChild(inner_text);
+	//div.appendChild(close_btn);
+	//div.appendChild(header);
+	//div.appendChild(inner_text);
 	if (imagesArray.length > 0) {
 		div.appendChild(imageGroup);
 	} 
 }
 
-
+/*
 let active_window = document.querySelectorAll('.qwerty');
 
 for ( let i = 0; i < active_window.length; i++ ) {
@@ -1095,7 +1107,8 @@ for ( let i = 0; i < active_window.length; i++ ) {
 			greyBg.classList.remove('greyHide');
 		},500);
 		active_window[i].addEventListener('animationend',function(){
-			body.removeChild(active_window[i]);
+			//body.removeChild(active_window[i]);
+			//active_window[i].style.display = "none";
 		});
 
 		for ( let i = 0; i < main_btns.length; i ++ ) {
@@ -1107,12 +1120,14 @@ for ( let i = 0; i < active_window.length; i++ ) {
 		active_window[0].classList.add('table_out');
 		active_window[1].classList.add('table_in');
 		active_window[0].addEventListener('animationend',function(){
-			body.removeChild(active_window[0]);
+			//body.removeChild(active_window[0]);
+			active_window[0].style.display = "none";
 		});
 	}
 
 }
-	body.appendChild(div);
+*/
+	//body.appendChild(div);
 }
 
 function trimStringProperty(str)
