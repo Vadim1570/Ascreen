@@ -10,7 +10,9 @@ let fish = document.querySelectorAll('.fish');
 let fish1 = document.querySelectorAll('.fan_1');
 let fish2 = document.querySelectorAll('.fan_2');
 let fish3 = document.querySelectorAll('.fan_3');
-// let fish4 = document.querySelectorAll('.fan_4');
+let fish4 = document.querySelectorAll('.fan_4');
+let fish5 = document.querySelectorAll('.fan_5');
+let fish6 = document.querySelectorAll('.fan_6');
 let btns_hide = document.querySelector('.btns_hide');
 let inac = document.querySelector('.swap_inactive');
 let tabBlack = document.querySelector('.ta_black');
@@ -18,6 +20,13 @@ let main_btns = document.querySelectorAll('.btn_1_i');
 let greyBg = document.querySelector('.greyBg');
 
 let enableFishes = true;
+let enableFishes0 = true;
+let enableFishes1 = true;
+let enableFishes2 = true;
+let enableFishes3 = true;
+let enableFishes4 = true;
+let enableFishes5 = true;
+let enableFishes6 = true;
 let fishesInterval;
 let enableClouds = true;
 let cloudsInterval;
@@ -287,7 +296,18 @@ function menuButtonClick(e) {
 		}
 
 		btns_hide.style.display = 'none';
+
+		enableFishes0 = (clickButtonId == 'surgut_VI_XVI');
+		enableFishes1 = (clickButtonId == 'surgut_XVI_XIX');
+		enableFishes2 = (clickButtonId == 'surgut_1_XX');
+		enableFishes3 = (clickButtonId == 'surgut_2_XX' || clickButtonId == 'back_surgut_2_XX');
+		enableFishes4 = (clickButtonId == 'surgut_1956_1979' || clickButtonId == 'surgut_celnyy');
+		enableFishes5 = (clickButtonId == 'surgut_1980_1991');
+		enableFishes6 = (clickButtonId == 'surgut_1992_2020');
+
 	}, 1000)
+
+
 
 }
 
@@ -295,29 +315,44 @@ function startFishes(e) {
 	fishesInterval = setInterval(function(){
 		let random_fish = Math.floor(Math.random()*(15 - 1) + 1);
 	
-		fish[random_fish].classList.add('fish_jump');
-		fish1[random_fish].classList.add('fish_jump');
-		fish2[random_fish].classList.add('fish_jump');
-		fish3[random_fish].classList.add('fish_jump');
-		// fish4[random_fish].classList.add('fish_jump');
-	
-	
+		if(enableFishes0) fish[random_fish].classList.add('fish_jump');
+		if(enableFishes1) fish1[random_fish].classList.add('fish_jump');
+		if(enableFishes2) fish2[random_fish].classList.add('fish_jump');
+		if(enableFishes3) fish3[random_fish].classList.add('fish_jump');
+		if(enableFishes4) fish4[random_fish].classList.add('fish_jump');
+		//for ( let i = 0; i < fish4.length; i++ ) { fish4[i].classList.add('fish_jump'); }
+		if(enableFishes5) fish5[random_fish].classList.add('fish_jump');
+		if(enableFishes6) fish6[random_fish].classList.add('fish_jump');
+
 		setTimeout(function(){
+			if(enableFishes0)
 			for ( let i = 0; i < fish.length; i++ ) {
 				fish[i].classList.remove('fish_jump');
 			}
+			if(enableFishes1)
 			for ( let i = 0; i < fish1.length; i++ ) {
 				fish1[i].classList.remove('fish_jump');
 			}
+			if(enableFishes2)
 			for ( let i = 0; i < fish2.length; i++ ) {
 				fish2[i].classList.remove('fish_jump');
 			}
+			if(enableFishes3)
 			for ( let i = 0; i < fish3.length; i++ ) {
 				fish3[i].classList.remove('fish_jump');
 			}
-			// for ( let i = 0; i < fish4.length; i++ ) {
-			// 	fish4[i].classList.remove('fish_jump');
-			// }
+			if(enableFishes4)
+			for ( let i = 0; i < fish4.length; i++ ) {
+				fish4[i].classList.remove('fish_jump');
+			}
+			if(enableFishes5)
+			for ( let i = 0; i < fish5.length; i++ ) {
+				fish5[i].classList.remove('fish_jump');
+			}			
+			if(enableFishes6)
+			for ( let i = 0; i < fish6.length; i++ ) {
+				fish6[i].classList.remove('fish_jump');
+			}				
 		},1000)
 	},2000);
 }

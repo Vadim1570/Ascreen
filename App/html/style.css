@@ -6333,7 +6333,7 @@ div#surgut_celnyy {
 }
 
 .fish_jump {
-	animation: fish 1s cubic-bezier(0.16, 0.67, 0.88, 0.38);
+	animation: fish 1s cubic-bezier(0.16, 0.67, 0.88, 0.38);	
 }
 
 @keyframes fish {
@@ -6447,6 +6447,112 @@ div#surgut_celnyy {
 	left: 46%;
 	transform: rotate(-60deg);
 	/*z-index: 2;*/
+}
+
+.f_16 {
+	position: absolute;
+	top: 37.6%;
+    left: 12.9%;
+	transform: rotate(50deg);
+	z-index: 2;
+}
+
+.f_17 {
+	position: absolute;
+    top: 48.6%;
+    left: 10.9%;
+	transform: rotate(50deg);
+}
+
+.f_18 {
+	position: absolute;
+	top: 66.6%;
+    left: 14.9%;
+	transform: rotate(50deg);
+}
+
+.f_19 {
+	position: absolute;
+	top: 51.6%;
+	left: 26.9%;
+	transform: rotate(40deg);
+}
+
+.f_20 {
+	position: absolute;
+	top: 70.6%;
+	left: 26.9%;
+	transform: rotate(50deg);
+}
+
+.f_21 {
+	position: absolute;
+    top: 70.6%;
+    left: 40.9%;
+	transform: rotate(20deg);
+}
+
+.f_22 {
+	position: absolute;
+	top: 63.6%;
+    left: 47.9%;
+	transform: rotate(10deg);	
+}
+
+.f_23 {
+	position: absolute;
+    top: 77.6%;
+    left: 9.9%;
+	transform: rotate(50deg);
+}
+
+.f_24 {
+	position: absolute;
+	top: 79.6%;
+    left: 57.9%;
+	transform: rotate(0deg);
+}
+
+.f_25 {
+	position: absolute;
+	top: 89.6%;
+    left: 68.9%;
+    transform: rotate(-60deg);
+}
+
+.f_26 {
+	position: absolute;
+	top: 18.1%;
+    left: 65.8%;
+    transform: rotate(20deg);
+}
+
+.f_27 {
+	position: absolute;
+	top: 0.1%;
+    left: 73.8%;
+	transform: rotate(50deg);
+}
+
+.f_28 {
+	position: absolute;
+	top: 3.1%;
+    left: 81.8%;
+	transform: rotate(0deg);
+}
+
+.f_29 {
+	position: absolute;
+	top: 76.6%;
+    left: 78.9%;
+	transform: rotate(50deg);
+}
+
+.f_30 {
+	position: absolute;
+	top: 61.6%;
+    left: 85.9%;
+    transform: rotate(-50deg);
 }
 
 .fan_1_pos1 {
