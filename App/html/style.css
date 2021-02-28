@@ -7167,9 +7167,9 @@ div#surgut_celnyy {
 	transform: rotate(3deg);
 }
 
-.tree_с1 {
-	width: 60px;
-	height:100px;
+.tree_4 {
+	width: 63px;
+	height:98px;
 	background-image: url(img/tree_4.png);
 	background-size: 100%;
 	background-repeat: no-repeat;
@@ -7179,10 +7179,34 @@ div#surgut_celnyy {
 	position: absolute;
 }
 
-.tree_с2 {
+.tree_5 {
 	width: 96px;
 	height:168px;
-	background-image: url(img/tree_4.png);
+	background-image: url(img/tree_5.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	animation: tree_wind 5s ease-in-out infinite;
+	transform-origin: 50% 100%;
+	transform: rotate(3deg);
+	position: absolute;
+}
+
+.tree_6 {
+	width: 41px;
+	height:61px;
+	background-image: url(img/tree_6.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	animation: tree_wind 5s ease-in-out infinite;
+	transform-origin: 50% 100%;
+	transform: rotate(3deg);
+	position: absolute;
+}
+
+.tree_7 {
+	width: 68px;
+	height:101px;
+	background-image: url(img/tree_7.png);
 	background-size: 100%;
 	background-repeat: no-repeat;
 	animation: tree_wind 5s ease-in-out infinite;
