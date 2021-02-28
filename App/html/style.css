@@ -6616,6 +6616,18 @@ div#surgut_celnyy {
 	transform: rotate(3deg);
 }
 
+.tree_с1 {
+	width: 60px;
+	height:100px;
+	background-image: url(img/tree_4.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	animation: tree_wind 5s ease-in-out infinite;
+	transform-origin: 50% 100%;
+	transform: rotate(3deg);
+	position: absolute;
+}
+
 @keyframes tree_wind {
 	0%,100%{
 		transform: rotate(3deg);
