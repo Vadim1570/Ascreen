@@ -197,8 +197,6 @@ body {
 
 .form_surgut_person_1956_1979 {
 	position: absolute;
-	top: -12px;
-	left: 2%;
 	transform: translate(-49%);
 	width: 1656px;
 	height: 1050px;
@@ -207,13 +205,12 @@ body {
 	overflow: auto;
 	font-size: 20px;
 	background-image: url(img/fon_person_5679.png);
-	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	background-size: 100% 99%;
 	z-index: 4;
 }
 .form_surgut_person_1980_1991 {
 	position: absolute;
-	top: -12px;
-	left: 49%;
 	transform: translate(-49%);
 	width: 1656px;
 	height: 1050px;
@@ -222,13 +219,12 @@ body {
 	overflow: auto;
 	font-size: 20px;
 	background-image: url(img/fon_person_8091.png);
-	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	background-size: 100% 99%;
 	z-index: 4;
 }
 .form_surgut_person_1992_2020 {
 	position: absolute;
-	top: -12px;
-	left: 49%;
 	transform: translate(-49%);
 	width: 1656px;
 	height: 1050px;
@@ -237,7 +233,8 @@ body {
 	overflow: auto;
 	font-size: 20px;
 	background-image: url(img/fon_person_9220.png);
-	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	background-size: 100% 99%;
 	z-index: 4;
 }
 
@@ -268,8 +265,8 @@ body {
 
 .form_surgut_person_card {
 	position: absolute;
-	top: -12px;
-	left: 49%;
+	top: 7%;
+    left: 80%;
 	transform: translate(-49%);
 	width: 493px;
 	height: 806px;
@@ -299,7 +296,7 @@ body {
 
 .close_btn_person_table {
 	position: absolute;
-    top: 1075px;
+    top: 101.7%;
     left: 956px;	
 	width: 85px;
 	height: 85px;
@@ -605,8 +602,8 @@ body {
 	z-index: 1;
 	/*border: 1px solid red;*/
 	--form-id: form_surgut_person_1956_1979;
-	--form-top: 0px;
-	--form-left: 100px;
+	--form-top: -1%;
+	--form-left: 7%;
 }
 
 .btn_sc_person_1980_1991 {
@@ -624,8 +621,8 @@ body {
 	z-index: 1;
 	/*border: 1px solid red;*/
 	--form-id: form_surgut_person_1980_1991;
-	--form-top: 0px;
-	--form-left: 100px;
+	--form-top: -1%;
+	--form-left: 7%;
 }
 
 .btn_sc_person_1992_2020 {
@@ -643,8 +640,8 @@ body {
 	z-index: 1;
 	/*border: 1px solid red;*/
 	--form-id: form_surgut_person_1992_2020;
-	--form-top: 0px;
-	--form-left: 100px;
+	--form-top: -1%;
+	--form-left: 7%;
 }
 
 .surgut_menu_btn {
