@@ -296,8 +296,8 @@ body {
 
 .close_btn_person_table {
 	position: absolute;
-    top: 101.7%;
-    left: 956px;	
+    top: 101%;
+    left: 50%;	
 	width: 85px;
 	height: 85px;
 	background-image: url(img/Close_blue.png);
