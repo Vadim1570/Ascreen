@@ -209,6 +209,7 @@ body {
 	background-size: 100% 99%;
 	z-index: 4;
 }
+
 .form_surgut_person_1980_1991 {
 	position: absolute;
 	transform: translate(-49%);
@@ -223,6 +224,7 @@ body {
 	background-size: 100% 99%;
 	z-index: 4;
 }
+
 .form_surgut_person_1992_2020 {
 	position: absolute;
 	transform: translate(-49%);
@@ -238,38 +240,13 @@ body {
 	z-index: 4;
 }
 
-/* The grid: Four equal columns that floats next to each other */
-.person_column {
-	left: 52%;
-	float: left;
-	width: 25%;
-	padding: 10px;
-  }
-  
-  /* Style the images inside the grid */
-  .person_column img {
-	opacity: 0.8; 
-	cursor: pointer; 
-  }
-  
-  .person_column img:hover {
-	opacity: 1;
-  }
-  
-  /* Clear floats after the columns */
-  .person_row:after {
-	content: "";
-	display: table;
-	clear: both;
-  }
-
 .form_surgut_person_card {
 	position: absolute;
 	top: 7%;
     left: 80%;
 	transform: translate(-49%);
-	width: 493px;
-	height: 806px;
+    width: 400px;
+    height: 650px;
 	font-family: IskraCYR-Medium;
 	color: #2B311C;
 	/*overflow: auto;*/
@@ -587,7 +564,7 @@ body {
 	--form-descr-text: 'Распад СССР и образование нового государства – Российская Федерация, способствовали созданию новой миграционной ситуации. Союзные миграционные потоки превратились из внутренних в международные. Прежняя система миграционного обмена разрушилась, а новая легитимная система еще не сложилась.<br><br>В 1990-е гг. миграция со странами СНГ носила черты репатриации и была связана с оттоком из республик русского и русскоязычного населения. В конце 1990-х гг.- начале 2000-х гг.  произошло изменение законодательства, были сняты некоторые административные запреты и ограничения на въезд в Россию. Это привело к резкому увеличению численности иностранцев в Сургуте и продолжило формирование мультикультурной городской среды. В Сургут начали приезжать выходцы из трудоизбыточных районов: Дагестана, Чечни и стран СНГ - Таджикистана, Азербайджана, Молдовы, Узбекистана, Казахстана, а позже из Китая. Взамен культивируемой ранее в СССР интернациональной общности трудового народа к нам пришла самобытность каждой из культур. <br><br>Трудовая миграция стала основным фактором формирования многонациональной структуры населения. Сургут являлся экономически привлекательным местом для иммигрантов как из менее благополучных регионов Российской Федерации, так и из стран СНГ. В 2000 г. население Сургута составляло 274, 9 тыс. чел.';			
 }
 
-.btn_sc_person_1956_1979 {
+.btn_person_1956_1979 {
 	position: absolute;
     left: 612px;
     top: 1084px;
@@ -606,7 +583,7 @@ body {
 	--form-left: 7%;
 }
 
-.btn_sc_person_1980_1991 {
+.btn_person_1980_1991 {
 	position: absolute;
     left: 612px;
     top: 1084px;
@@ -625,7 +602,7 @@ body {
 	--form-left: 7%;
 }
 
-.btn_sc_person_1992_2020 {
+.btn_person_1992_2020 {
 	position: absolute;
     left: 612px;
     top: 1084px;
@@ -6114,6 +6091,580 @@ div#surgut_celnyy {
 	--form-images: url(images/cel_surgut_9220/Драматический_театр/1.jpg);
 }
 
+.agafonov {
+	position: absolute;
+	top: 90px; 
+	left: 236px;
+	width: 99px; 
+	height: 133px; 
+	background-image: url(images/cel_surgut_5679/Персоналии/Агафонов.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	/*animation: golding 3s ease infinite;*/
+	opacity: 0;
+	/*cursor: none;*/
+	z-index: 1;
+	/*border: 1px solid red;*/
+	--form-id: form_surgut_person_card;
+	--form-top: 10%;
+	--form-left: 69%;	
+	--form-header-top: 7.5%;
+	--form-header-font-size: 29px;	
+	--form-header-text: 'Вениамин Максимович Агафонов';
+	--form-descr-text: 'Родился 28 февраля 1930 г. в селе Боровка Сергиевского района Куйбышевской области. В 1968 г. окончил Сызранский нефтяной техникум по специальности «бурение нефтяных и газовых скважин».<br><br>В 1967 – 1974 гг. В.М. Агафонов работал буровым мастером Нефтеюганского УБР-1. В 1974 – 1986 гг. в Сургутском УБР-1. Прибыл Вениамин Максимович вместе со своей бригадой в Сургут по вызову начальника УБР-1 Ю.А. Цареградского. С первых же дней работы бригада Агафонова вошла в напряжённый график бурения, показывая пример чёткой и слаженной работы. Особенно больших успехов бригада достигла при освоении Фёдоровского месторождения нефти.<br><br>В.М. Агафонов избирался депутатом верховного Совета РСФСР, Тюменского областного, Сургутского городского Совета народных депутатов, являлся членом Тюменского областного, Ханты-Мансийского окружного и Нефтеюганского городского комитетов КПСС.<br><br>18 ноября 1980 г. за многолетний героический труд в нефтедобывающей промышленности и активную общественную деятельность Вениамину Максимовичу Агафонову было присвоено звание «Почётный гражданин города Сургута».<br><br>Умер 15 сентября 2015 года.';
+	/*--form-descr-height: 65%;*/
+	--form-images: url(images/cel_surgut_5679/Персоналии/Агафонов.png);
+}
+
+.zavoronkov {
+	position: absolute;
+	top: 90px; 
+	left: 336px;
+	width: 99px; 
+	height: 133px; 
+	background-image: url(images/cel_surgut_5679/Персоналии/Жаворонков.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	/*animation: golding 3s ease infinite;*/
+	opacity: 0;
+	/*cursor: none;*/
+	z-index: 1;
+	/*border: 1px solid red;*/
+	--form-id: form_surgut_person_card;
+	--form-top: 10%;
+	--form-left: 69%;	
+	--form-header-top: 7.5%;
+	--form-header-font-size: 29px;	
+	--form-header-text: 'Жаворонков';
+	--form-descr-text: '<br><br>';
+	/*--form-descr-height: 65%;*/
+	--form-images: url(images/cel_surgut_5679/Персоналии/Жаворонков.png);
+}
+
+.zumazanov {
+	position: absolute;
+	top: 90px; 
+	left: 436px;
+	width: 99px; 
+	height: 133px; 
+	background-image: url(images/cel_surgut_5679/Персоналии/Жумажанов.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	/*animation: golding 3s ease infinite;*/
+	opacity: 0;
+	/*cursor: none;*/
+	z-index: 1;
+	/*border: 1px solid red;*/
+	--form-id: form_surgut_person_card;
+	--form-top: 10%;
+	--form-left: 69%;	
+	--form-header-top: 7.5%;
+	--form-header-font-size: 29px;	
+	--form-header-text: 'Жумажанов';
+	--form-descr-text: '<br><br>';
+	/*--form-descr-height: 65%;*/
+	--form-images: url(images/cel_surgut_5679/Персоналии/Жумажанов.png);
+}
+
+.kirtbaya {
+	position: absolute;
+	top: 90px; 
+	left: 536px;
+	width: 99px; 
+	height: 133px; 
+	background-image: url(images/cel_surgut_5679/Персоналии/Киртбая.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	/*animation: golding 3s ease infinite;*/
+	opacity: 0;
+	/*cursor: none;*/
+	z-index: 1;
+	/*border: 1px solid red;*/
+	--form-id: form_surgut_person_card;
+	--form-top: 10%;
+	--form-left: 69%;	
+	--form-header-top: 7.5%;
+	--form-header-font-size: 29px;	
+	--form-header-text: 'Киртбая';
+	--form-descr-text: '<br><br>';
+	/*--form-descr-height: 65%;*/
+	--form-images: url(images/cel_surgut_5679/Персоналии/Киртбая.png);
+}
+
+.melikaramov {
+	position: absolute;
+	top: 90px; 
+	left: 636px;
+	width: 99px; 
+	height: 133px; 
+	background-image: url(images/cel_surgut_5679/Персоналии/Мелик-Карамов.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	/*animation: golding 3s ease infinite;*/
+	opacity: 0;
+	/*cursor: none;*/
+	z-index: 1;
+	/*border: 1px solid red;*/
+	--form-id: form_surgut_person_card;
+	--form-top: 10%;
+	--form-left: 69%;	
+	--form-header-top: 7.5%;
+	--form-header-font-size: 29px;	
+	--form-header-text: 'Мелик-Карамов';
+	--form-descr-text: '<br><br>';
+	/*--form-descr-height: 65%;*/
+	--form-images: url(images/cel_surgut_5679/Персоналии/Мелик-Карамов.png);
+}
+
+.melihov {
+	position: absolute;
+	top: 90px; 
+	left: 736px;
+	width: 99px; 
+	height: 133px; 
+	background-image: url(images/cel_surgut_5679/Персоналии/Мелихов.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	/*animation: golding 3s ease infinite;*/
+	opacity: 0;
+	/*cursor: none;*/
+	z-index: 1;
+	/*border: 1px solid red;*/
+	--form-id: form_surgut_person_card;
+	--form-top: 10%;
+	--form-left: 69%;	
+	--form-header-top: 7.5%;
+	--form-header-font-size: 29px;	
+	--form-header-text: 'Мелихов';
+	--form-descr-text: '<br><br>';
+	/*--form-descr-height: 65%;*/
+	--form-images: url(images/cel_surgut_5679/Персоналии/Мелихов.png);
+}
+
+.parhomovich {
+	position: absolute;
+	top: 90px; 
+	left: 836px;
+	width: 99px; 
+	height: 133px; 
+	background-image: url(images/cel_surgut_5679/Персоналии/Пархомовия.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	/*animation: golding 3s ease infinite;*/
+	opacity: 0;
+	/*cursor: none;*/
+	z-index: 1;
+	/*border: 1px solid red;*/
+	--form-id: form_surgut_person_card;
+	--form-top: 10%;
+	--form-left: 69%;	
+	--form-header-top: 7.5%;
+	--form-header-font-size: 29px;	
+	--form-header-text: 'Пархомович';
+	--form-descr-text: '<br><br>';
+	/*--form-descr-height: 65%;*/
+	--form-images: url(images/cel_surgut_5679/Персоналии/Пархомовия.png);
+}
+
+.salmanov {
+	position: absolute;
+	top: 90px; 
+	left: 936px;
+	width: 99px; 
+	height: 133px; 
+	background-image: url(images/cel_surgut_5679/Персоналии/Салманов.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	/*animation: golding 3s ease infinite;*/
+	opacity: 0;
+	/*cursor: none;*/
+	z-index: 1;
+	/*border: 1px solid red;*/
+	--form-id: form_surgut_person_card;
+	--form-top: 10%;
+	--form-left: 69%;	
+	--form-header-top: 7.5%;
+	--form-header-font-size: 29px;	
+	--form-header-text: 'Салманов';
+	--form-descr-text: '<br><br>';
+	/*--form-descr-height: 65%;*/
+	--form-images: url(images/cel_surgut_5679/Персоналии/Салманов.png);
+}
+
+.bahilov {
+	position: absolute;
+	top: 243px; 
+	left: 236px;
+	width: 99px; 
+	height: 133px; 
+	background-image: url(images/cel_surgut_5679/Персоналии/Бахилов.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	/*animation: golding 3s ease infinite;*/
+	opacity: 0;
+	/*cursor: none;*/
+	z-index: 1;
+	/*border: 1px solid red;*/
+	--form-id: form_surgut_person_card;
+	--form-top: 10%;
+	--form-left: 69%;	
+	--form-header-top: 7.5%;
+	--form-header-font-size: 29px;	
+	--form-header-text: 'Бахилов';
+	--form-descr-text: '<br><br>';
+	/*--form-descr-height: 65%;*/
+	--form-images: url(images/cel_surgut_5679/Персоналии/Бахилов.png);
+}
+
+.grigoreva {
+	position: absolute;
+	top: 243px; 
+	left: 336px;
+	width: 99px; 
+	height: 133px; 
+	background-image: url(images/cel_surgut_5679/Персоналии/Григорьева.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	/*animation: golding 3s ease infinite;*/
+	opacity: 0;
+	/*cursor: none;*/
+	z-index: 1;
+	/*border: 1px solid red;*/
+	--form-id: form_surgut_person_card;
+	--form-top: 10%;
+	--form-left: 69%;	
+	--form-header-top: 7.5%;
+	--form-header-font-size: 29px;	
+	--form-header-text: 'Григорьева';
+	--form-descr-text: '<br><br>';
+	/*--form-descr-height: 65%;*/
+	--form-images: url(images/cel_surgut_5679/Персоналии/Григорьева.png);
+}
+
+.munarev {
+	position: absolute;
+	top: 243px; 
+	left: 436px;
+	width: 99px; 
+	height: 133px; 
+	background-image: url(images/cel_surgut_5679/Персоналии/Мунарев.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	/*animation: golding 3s ease infinite;*/
+	opacity: 0;
+	/*cursor: none;*/
+	z-index: 1;
+	/*border: 1px solid red;*/
+	--form-id: form_surgut_person_card;
+	--form-top: 10%;
+	--form-left: 69%;	
+	--form-header-top: 7.5%;
+	--form-header-font-size: 29px;	
+	--form-header-text: 'Мунарев';
+	--form-descr-text: '<br><br>';
+	/*--form-descr-height: 65%;*/
+	--form-images: url(images/cel_surgut_5679/Персоналии/Мунарев.png);
+}
+
+.biletskiy {
+	position: absolute;
+	top: 389px; 
+	left: 236px;
+	width: 99px; 
+	height: 133px; 
+	background-image: url(images/cel_surgut_5679/Персоналии/Билецкий.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	/*animation: golding 3s ease infinite;*/
+	opacity: 0;
+	/*cursor: none;*/
+	z-index: 1;
+	/*border: 1px solid red;*/
+	--form-id: form_surgut_person_card;
+	--form-top: 10%;
+	--form-left: 69%;	
+	--form-header-top: 7.5%;
+	--form-header-font-size: 29px;	
+	--form-header-text: 'Билецкий';
+	--form-descr-text: '<br><br>';
+	/*--form-descr-height: 65%;*/
+	--form-images: url(images/cel_surgut_5679/Персоналии/Билецкий.png);
+}
+
+.dzuzoma {
+	position: absolute;
+	top: 389px; 
+	left: 336px;
+	width: 99px; 
+	height: 133px; 
+	background-image: url(images/cel_surgut_5679/Персоналии/Джужома.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	/*animation: golding 3s ease infinite;*/
+	opacity: 0;
+	/*cursor: none;*/
+	z-index: 1;
+	/*border: 1px solid red;*/
+	--form-id: form_surgut_person_card;
+	--form-top: 10%;
+	--form-left: 69%;	
+	--form-header-top: 7.5%;
+	--form-header-font-size: 29px;	
+	--form-header-text: 'Джужома';
+	--form-descr-text: '<br><br>';
+	/*--form-descr-height: 65%;*/
+	--form-images: url(images/cel_surgut_5679/Персоналии/Джужома.png);
+}
+
+.karolinsky {
+	position: absolute;
+	top: 389px; 
+	left: 436px;
+	width: 99px; 
+	height: 133px; 
+	background-image: url(images/cel_surgut_5679/Персоналии/Каролинский.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	/*animation: golding 3s ease infinite;*/
+	opacity: 0;
+	/*cursor: none;*/
+	z-index: 1;
+	/*border: 1px solid red;*/
+	--form-id: form_surgut_person_card;
+	--form-top: 10%;
+	--form-left: 69%;	
+	--form-header-top: 7.5%;
+	--form-header-font-size: 29px;	
+	--form-header-text: 'Каролинский';
+	--form-descr-text: '<br><br>';
+	/*--form-descr-height: 65%;*/
+	--form-images: url(images/cel_surgut_5679/Персоналии/Каролинский.png);
+}
+
+.kukuevitsky {
+	position: absolute;
+	top: 389px; 
+	left: 536px;
+	width: 99px; 
+	height: 133px; 
+	background-image: url(images/cel_surgut_5679/Персоналии/Кукуевицкий.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	/*animation: golding 3s ease infinite;*/
+	opacity: 0;
+	/*cursor: none;*/
+	z-index: 1;
+	/*border: 1px solid red;*/
+	--form-id: form_surgut_person_card;
+	--form-top: 10%;
+	--form-left: 69%;	
+	--form-header-top: 7.5%;
+	--form-header-font-size: 29px;	
+	--form-header-text: 'Кукуевицкий';
+	--form-descr-text: '<br><br>';
+	/*--form-descr-height: 65%;*/
+	--form-images: url(images/cel_surgut_5679/Персоналии/Кукуевицкий.png);
+}
+
+.nechushkin {
+	position: absolute;
+	top: 389px; 
+	left: 636px;
+	width: 99px; 
+	height: 133px; 
+	background-image: url(images/cel_surgut_5679/Персоналии/Нечушкин.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	/*animation: golding 3s ease infinite;*/
+	opacity: 0;
+	/*cursor: none;*/
+	z-index: 1;
+	/*border: 1px solid red;*/
+	--form-id: form_surgut_person_card;
+	--form-top: 10%;
+	--form-left: 69%;	
+	--form-header-top: 7.5%;
+	--form-header-font-size: 29px;	
+	--form-header-text: 'Нечушкин';
+	--form-descr-text: '<br><br>';
+	/*--form-descr-height: 65%;*/
+	--form-images: url(images/cel_surgut_5679/Персоналии/Нечушкин.png);
+}
+
+.panasevich {
+	position: absolute;
+	top: 389px; 
+	left: 736px;
+	width: 99px; 
+	height: 133px; 
+	background-image: url(images/cel_surgut_5679/Персоналии/Панасевич.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	/*animation: golding 3s ease infinite;*/
+	opacity: 0;
+	/*cursor: none;*/
+	z-index: 1;
+	/*border: 1px solid red;*/
+	--form-id: form_surgut_person_card;
+	--form-top: 10%;
+	--form-left: 69%;	
+	--form-header-top: 7.5%;
+	--form-header-font-size: 29px;	
+	--form-header-text: 'Панасевич';
+	--form-descr-text: '<br><br>';
+	/*--form-descr-height: 65%;*/
+	--form-images: url(images/cel_surgut_5679/Персоналии/Панасевич.png);
+}
+
+.mensikova {
+	position: absolute;
+	top: 539px; 
+	left: 236px;
+	width: 99px; 
+	height: 133px; 
+	background-image: url(images/cel_surgut_5679/Персоналии/Менщикова.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	/*animation: golding 3s ease infinite;*/
+	opacity: 0;
+	/*cursor: none;*/
+	z-index: 1;
+	/*border: 1px solid red;*/
+	--form-id: form_surgut_person_card;
+	--form-top: 10%;
+	--form-left: 69%;	
+	--form-header-top: 7.5%;
+	--form-header-font-size: 29px;	
+	--form-header-text: 'Менщикова';
+	--form-descr-text: '<br><br>';
+	/*--form-descr-height: 65%;*/
+	--form-images: url(images/cel_surgut_5679/Персоналии/Менщикова.png);
+}
+
+.zaharov {
+	position: absolute;
+	top: 684px; 
+	left: 236px;
+	width: 99px; 
+	height: 133px; 
+	background-image: url(images/cel_surgut_5679/Персоналии/Захаров.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	/*animation: golding 3s ease infinite;*/
+	opacity: 0;
+	/*cursor: none;*/
+	z-index: 1;
+	/*border: 1px solid red;*/
+	--form-id: form_surgut_person_card;
+	--form-top: 10%;
+	--form-left: 69%;	
+	--form-header-top: 7.5%;
+	--form-header-font-size: 29px;	
+	--form-header-text: 'Захаров';
+	--form-descr-text: '<br><br>';
+	/*--form-descr-height: 65%;*/
+	--form-images: url(images/cel_surgut_5679/Персоналии/Захаров.png);
+}
+
+.zubarev {
+	position: absolute;
+	top: 684px; 
+	left: 336px;
+	width: 99px; 
+	height: 133px; 
+	background-image: url(images/cel_surgut_5679/Персоналии/Зубарев.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	/*animation: golding 3s ease infinite;*/
+	opacity: 0;
+	/*cursor: none;*/
+	z-index: 1;
+	/*border: 1px solid red;*/
+	--form-id: form_surgut_person_card;
+	--form-top: 10%;
+	--form-left: 69%;	
+	--form-header-top: 7.5%;
+	--form-header-font-size: 29px;	
+	--form-header-text: 'Зубарев';
+	--form-descr-text: '<br><br>';
+	/*--form-descr-height: 65%;*/
+	--form-images: url(images/cel_surgut_5679/Персоналии/Зубарев.png);
+}
+
+.lonshakova {
+	position: absolute;
+	top: 684px; 
+	left: 436px;
+	width: 99px; 
+	height: 133px; 
+	background-image: url(images/cel_surgut_5679/Персоналии/Лоншакова.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	/*animation: golding 3s ease infinite;*/
+	opacity: 0;
+	/*cursor: none;*/
+	z-index: 1;
+	/*border: 1px solid red;*/
+	--form-id: form_surgut_person_card;
+	--form-top: 10%;
+	--form-left: 69%;	
+	--form-header-top: 7.5%;
+	--form-header-font-size: 29px;	
+	--form-header-text: 'Лоншакова';
+	--form-descr-text: '<br><br>';
+	/*--form-descr-height: 65%;*/
+	--form-images: url(images/cel_surgut_5679/Персоналии/Лоншакова.png);
+}
+
+.pokazanev {
+	position: absolute;
+	top: 684px; 
+	left: 536px;
+	width: 99px; 
+	height: 133px; 
+	background-image: url(images/cel_surgut_5679/Персоналии/Показаньев.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	/*animation: golding 3s ease infinite;*/
+	opacity: 0;
+	/*cursor: none;*/
+	z-index: 1;
+	/*border: 1px solid red;*/
+	--form-id: form_surgut_person_card;
+	--form-top: 10%;
+	--form-left: 69%;	
+	--form-header-top: 7.5%;
+	--form-header-font-size: 29px;	
+	--form-header-text: 'Показаньев';
+	--form-descr-text: '<br><br>';
+	/*--form-descr-height: 65%;*/
+	--form-images: url(images/cel_surgut_5679/Персоналии/Показаньев.png);
+}
+
+.sibircev {
+	position: absolute;
+	top: 833px; 
+	left: 236px;
+	width: 99px; 
+	height: 133px; 
+	background-image: url(images/cel_surgut_5679/Персоналии/Сибирцев.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	/*animation: golding 3s ease infinite;*/
+	opacity: 0;
+	/*cursor: none;*/
+	z-index: 1;
+	/*border: 1px solid red;*/
+	--form-id: form_surgut_person_card;
+	--form-top: 10%;
+	--form-left: 69%;	
+	--form-header-top: 7.5%;
+	--form-header-font-size: 29px;	
+	--form-header-text: 'Сибирцев';
+	--form-descr-text: '<br><br>';
+	/*--form-descr-height: 65%;*/
+	--form-images: url(images/cel_surgut_5679/Персоналии/Сибирцев.png);
+}
 
 /*#endregion*/
 
