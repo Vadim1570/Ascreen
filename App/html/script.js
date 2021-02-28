@@ -407,6 +407,10 @@ function iconClick(e) {
 	let posX = e.clientX;
 	let posY = e.clientY;
 
+	var senderId = sender.getAttribute('id');
+	if(sender.classList.contains('person'))
+		setGreyBgZIndex(5);
+
 	//модно-молодёжно
 	var cs = getComputedStyle(sender);		
 
@@ -1183,6 +1187,7 @@ function hideDivAndGreyBg(divId) {
 	for ( let i = 0; i < person_card_forms.length; i++ ) {
 		hideDiv(person_card_forms[i].id);
 	}
+	setGreyBgZIndex(3);
 }
 
 function hideDiv(divId) {
@@ -1191,6 +1196,10 @@ function hideDiv(divId) {
 
 function showDiv(divId) {
 	document.getElementById(divId).style.display = ''; 
+}
+
+function setGreyBgZIndex(zIndex) {
+	greyBg.style.zIndex = zIndex;
 }
 
 
