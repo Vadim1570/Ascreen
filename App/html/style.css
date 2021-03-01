@@ -198,15 +198,15 @@ body {
 .form_surgut_person_1956_1979 {
 	position: absolute;
 	transform: translate(-49%);
-	width: 1656px;
+	width: 1200px;
 	height: 1050px;
 	font-family: IskraCYR-Medium;
 	color: #2B311C;
 	overflow: auto;
 	font-size: 20px;
-	background-image: url(img/fon_person_5679.png);
+	background-image: url(img/fon_person_2.png);
 	background-repeat: no-repeat;
-	background-size: 100% 99%;
+	background-size: 100% 97%;
 	z-index: 4;
 }
 
@@ -255,6 +255,38 @@ body {
 	background-size: 100% 100%;
 	background-repeat: no-repeat;
 	z-index: 5;
+}
+
+.person_group {
+	position: absolute;
+	left: 50%;
+	width: 56%;
+	height: 136px;
+	transform: translate(-50%);
+	display: flex;
+	justify-content: space-around;
+	font-family: IskraCYR-Bold;
+	font-size: 17px;
+	text-align: center;
+	z-index: 2;
+	/*border: 4px double black;*/
+	/*cursor: none;*/
+}
+
+.person_group p {
+	padding-bottom: 10px;
+}
+
+.person_group_underline {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    /*width: 80%;*/
+    height: 50px;
+    background: url(img/dots.png) no-repeat center center;
+    background-size: 90%;
+    z-index: -1;
 }
 
 .close_btn_person_card {
@@ -580,7 +612,7 @@ body {
 	/*border: 1px solid red;*/
 	--form-id: form_surgut_person_1956_1979;
 	--form-top: -1%;
-	--form-left: 7%;
+	--form-left: 19%;
 	--form-descr-top: -1%;
 	--form-descr-left: 5%;
 }
@@ -6140,7 +6172,7 @@ div#surgut_celnyy {
 }
 
 .agafonov {
-	position: absolute;
+	/*position: absolute;*/
 	top: 90px; 
 	left: 236px;
 	width: 99px; 
@@ -6165,7 +6197,7 @@ div#surgut_celnyy {
 }
 
 .zavoronkov {
-	position: absolute;
+	/*position: absolute;*/
 	top: 90px; 
 	left: 336px;
 	width: 99px; 
@@ -6190,7 +6222,7 @@ div#surgut_celnyy {
 }
 
 .zumazanov {
-	position: absolute;
+	/*position: absolute;*/
 	top: 90px; 
 	left: 436px;
 	width: 99px; 
@@ -6215,7 +6247,7 @@ div#surgut_celnyy {
 }
 
 .kirtbaya {
-	position: absolute;
+	/*position: absolute;*/
 	top: 90px; 
 	left: 536px;
 	width: 99px; 
@@ -6240,7 +6272,7 @@ div#surgut_celnyy {
 }
 
 .melikaramov {
-	position: absolute;
+	/*position: absolute;*/
 	top: 90px; 
 	left: 636px;
 	width: 99px; 
@@ -6264,8 +6296,8 @@ div#surgut_celnyy {
 	--form-images: url(images/cel_surgut_5679/Персоналии/Мелик-Карамов.png);
 }
 
-.melehov {
-	position: absolute;
+.melihov {
+	/*position: absolute;*/
 	top: 90px; 
 	left: 736px;
 	width: 99px; 
@@ -6290,7 +6322,7 @@ div#surgut_celnyy {
 }
 
 .parhomovich {
-	position: absolute;
+	/*position: absolute;*/
 	top: 90px; 
 	left: 836px;
 	width: 99px; 
@@ -6315,7 +6347,7 @@ div#surgut_celnyy {
 }
 
 .salmanov {
-	position: absolute;
+	/*position: absolute;*/
 	top: 90px; 
 	left: 936px;
 	width: 99px; 
@@ -6364,7 +6396,7 @@ div#surgut_celnyy {
 }
 
 .bahilov {
-	position: absolute;
+	/*position: absolute;*/
 	top: 243px; 
 	left: 236px;
 	width: 99px; 
@@ -6389,7 +6421,7 @@ div#surgut_celnyy {
 }
 
 .grigoreva {
-	position: absolute;
+	/*position: absolute;*/
 	top: 243px; 
 	left: 336px;
 	width: 99px; 
@@ -6414,7 +6446,7 @@ div#surgut_celnyy {
 }
 
 .munarev {
-	position: absolute;
+	/*position: absolute;*/
 	top: 243px; 
 	left: 436px;
 	width: 99px; 
@@ -6439,7 +6471,7 @@ div#surgut_celnyy {
 }
 
 .biletskiy {
-	position: absolute;
+	/*position: absolute;*/
 	top: 389px; 
 	left: 236px;
 	width: 99px; 
@@ -6464,7 +6496,7 @@ div#surgut_celnyy {
 }
 
 .dzuzoma {
-	position: absolute;
+	/*position: absolute;*/
 	top: 389px; 
 	left: 336px;
 	width: 99px; 
@@ -6489,7 +6521,7 @@ div#surgut_celnyy {
 }
 
 .karolinsky {
-	position: absolute;
+	/*position: absolute;*/
 	top: 389px; 
 	left: 436px;
 	width: 99px; 
@@ -6514,7 +6546,7 @@ div#surgut_celnyy {
 }
 
 .kukuevitsky {
-	position: absolute;
+	/*position: absolute;*/
 	top: 389px; 
 	left: 536px;
 	width: 99px; 
@@ -6539,7 +6571,7 @@ div#surgut_celnyy {
 }
 
 .nechushkin {
-	position: absolute;
+	/*position: absolute;*/
 	top: 389px; 
 	left: 636px;
 	width: 99px; 
@@ -6564,7 +6596,7 @@ div#surgut_celnyy {
 }
 
 .panasevich {
-	position: absolute;
+	/*position: absolute;*/
 	top: 389px; 
 	left: 736px;
 	width: 99px; 
@@ -6589,7 +6621,7 @@ div#surgut_celnyy {
 }
 
 .mensikova {
-	position: absolute;
+	/*position: absolute;*/
 	top: 539px; 
 	left: 236px;
 	width: 99px; 
@@ -6614,7 +6646,7 @@ div#surgut_celnyy {
 }
 
 .zaharov {
-	position: absolute;
+	/*position: absolute;*/
 	top: 684px; 
 	left: 236px;
 	width: 99px; 
@@ -6639,7 +6671,7 @@ div#surgut_celnyy {
 }
 
 .zubarev {
-	position: absolute;
+	/*position: absolute;*/
 	top: 684px; 
 	left: 336px;
 	width: 99px; 
@@ -6664,7 +6696,7 @@ div#surgut_celnyy {
 }
 
 .lonshakova {
-	position: absolute;
+	/*position: absolute;*/
 	top: 684px; 
 	left: 436px;
 	width: 99px; 
@@ -6689,7 +6721,7 @@ div#surgut_celnyy {
 }
 
 .pokazanev {
-	position: absolute;
+	/*position: absolute;*/
 	top: 684px; 
 	left: 536px;
 	width: 99px; 
@@ -6714,7 +6746,7 @@ div#surgut_celnyy {
 }
 
 .sibircev {
-	position: absolute;
+	/*position: absolute;*/
 	top: 833px; 
 	left: 236px;
 	width: 99px; 
