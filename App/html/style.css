@@ -579,7 +579,7 @@ body {
 	z-index: 1;
 	/*border: 1px solid red;*/
 	--form-id: form_surgut_person_1956_1979;
-	--form-top: -1%;
+	--form-top: -1.7%;
 	--form-left: 7%;
 	--form-descr-top: -1%;
 	--form-descr-left: 5%;
@@ -600,7 +600,7 @@ body {
 	z-index: 1;
 	/*border: 1px solid red;*/
 	--form-id: form_surgut_person_1980_1991;
-	--form-top: -1%;
+	--form-top: -1.7%;
 	--form-left: 7%;
 }
 
@@ -619,7 +619,7 @@ body {
 	z-index: 1;
 	/*border: 1px solid red;*/
 	--form-id: form_surgut_person_1992_2020;
-	--form-top: -1%;
+	--form-top: -1.7%;
 	--form-left: 7%;
 }
 
