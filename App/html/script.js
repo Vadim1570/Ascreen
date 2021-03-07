@@ -940,6 +940,8 @@ function iconClick(e) {
 	if (descrText != undefined)
 		inner_text.innerHTML = descrText;
 
+	inner_text.scrollTop = 0;
+
 	var descrTextProp = '';
 	descrTextProp = cs.getPropertyValue('--form-descr-top');
 	if(descrTextProp != undefined && descrTextProp != null) inner_text.style.top = descrTextProp;
