@@ -1554,6 +1554,21 @@ div#surgut_celnyy {
 	overflow: auto;
 }
 
+.scroll_arrow {
+	position: absolute;
+	top: 57.5%;
+	left: 49.0%;
+	transform: translate(-49%);
+	width: 8px;
+	height: 12px;
+	font-family: IskraCYR-Medium;
+	color: #050438;
+	overflow: auto;
+	background-image: url(img/arrowRight.png);
+	background-repeat: no-repeat;
+	transform: rotate(90deg);
+}
+
 .inner_text::-webkit-scrollbar {
 	width: 0px;
 	background-color:transparent;
@@ -1577,6 +1592,21 @@ div#surgut_celnyy {
 	font-family: IskraCYR-Medium;
 	color: #050438;
 	overflow: auto;
+}
+
+.scroll_arrow_celsurgut {
+	position: absolute;
+	top: 58.6%;
+	left: 49.0%;
+	transform: translate(-49%);
+	width: 8px;
+	height: 12px;
+	font-family: IskraCYR-Medium;
+	color: #050438;
+	overflow: auto;
+	background-image: url(img/arrowRight.png);
+	background-repeat: no-repeat;
+	transform: rotate(90deg);
 }
 
 .inner_text_celsurgut::-webkit-scrollbar {

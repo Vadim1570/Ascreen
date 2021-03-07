@@ -1192,6 +1192,17 @@ function hideDivAndGreyBg(divId) {
 	setGreyBgZIndex(3);
 }
 
+function scrollDown(formId) {
+	var form = document.getElementById(formId);
+	let inner_text = null;
+	let formDivs = form.getElementsByTagName('div');
+	for (let div of formDivs) 
+	{
+		if(div.id == 'y') inner_text = div;
+	}
+	inner_text.scrollTop += 10;
+}
+
 function hideDiv(divId) {
 	document.getElementById(divId).style.display = 'none'; 
 }
