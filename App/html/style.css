@@ -7278,7 +7278,7 @@ div#surgut_celnyy {
 	transform: rotate(3deg);
 }
 
-.tree_4 {
+.tree_t4 {
 	width: 63px;
 	height:98px;
 	background-image: url(img/tree_4.png);
@@ -7290,7 +7290,19 @@ div#surgut_celnyy {
 	position: absolute;
 }
 
-.tree_5 {
+.tree_t4s {
+	width: 54px;
+	height:84px;
+	background-image: url(img/tree_4.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	animation: tree_wind 5s ease-in-out infinite;
+	transform-origin: 50% 100%;
+	transform: rotate(3deg);
+	position: absolute;
+}
+
+.tree_t5 {
 	width: 96px;
 	height:168px;
 	background-image: url(img/tree_5.png);
@@ -7302,7 +7314,19 @@ div#surgut_celnyy {
 	position: absolute;
 }
 
-.tree_6 {
+.tree_t5s {
+	width: 54px;
+	height:84px;
+	background-image: url(img/tree_4.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	animation: tree_wind 5s ease-in-out infinite;
+	transform-origin: 50% 100%;
+	transform: rotate(3deg);
+	position: absolute;
+}
+
+.tree_t6 {
 	width: 41px;
 	height:61px;
 	background-image: url(img/tree_6.png);
@@ -7314,9 +7338,21 @@ div#surgut_celnyy {
 	position: absolute;
 }
 
-.tree_7 {
+.tree_t7 {
 	width: 68px;
 	height:101px;
+	background-image: url(img/tree_7.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	animation: tree_wind 5s ease-in-out infinite;
+	transform-origin: 50% 100%;
+	transform: rotate(3deg);
+	position: absolute;
+}
+
+.tree_t7s {
+	width: 60px;
+	height:89px;
 	background-image: url(img/tree_7.png);
 	background-size: 100%;
 	background-repeat: no-repeat;
