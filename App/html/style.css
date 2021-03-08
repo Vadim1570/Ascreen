@@ -802,6 +802,15 @@ div#surgut_celnyy {
 	background: url(img/icons/cel_surgut/btn_active_1992.png) no-repeat;
 }
 
+.btn_surgut_celnyy {
+	bottom: 42px;
+	left: 63.7%;
+	width: 80px;
+	height: 81px;
+	background: url(img/вход.png) no-repeat;
+	background-size: 80px 81px;
+}
+
 .btn_back_surgut_2_XX {
 	bottom: 42px;
 	left: 63.7%;
