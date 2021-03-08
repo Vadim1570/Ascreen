@@ -192,15 +192,15 @@ function placeMenuButtons (clickButton) {
 	let clickButtonId = clickButton.getAttribute('id');
 
 	let rule = [
-		{clickId:'surgut_VI_XVI', activeId: 'surgut_VI_XVI', visibleId:['surgut_VI_XVI','surgut_XVI_XIX','surgut_1_XX','surgut_2_XX',], backgroundDivClass: 'backgroundOldSurgut'  },
-		{clickId:'surgut_XVI_XIX', activeId: 'surgut_XVI_XIX', visibleId:['surgut_VI_XVI','surgut_XVI_XIX','surgut_1_XX','surgut_2_XX',], backgroundDivClass: 'backgroundOldSurgut'},
-		{clickId:'surgut_1_XX', activeId: 'surgut_1_XX', visibleId:['surgut_VI_XVI','surgut_XVI_XIX','surgut_1_XX','surgut_2_XX',], backgroundDivClass: 'backgroundOldSurgut'},
-		{clickId:'surgut_2_XX', activeId: 'surgut_2_XX', visibleId:['surgut_VI_XVI','surgut_XVI_XIX','surgut_1_XX','surgut_2_XX','surgut_celnyy',], backgroundDivClass: 'backgroundOldSurgut'},
+		{clickId:'surgut_VI_XVI', activeId: 'surgut_VI_XVI', visibleId:['surgut_VI_XVI','surgut_XVI_XIX','surgut_1_XX','surgut_2_XX','surgut_VI_XX_line_under'], backgroundDivClass: 'backgroundOldSurgut'  },
+		{clickId:'surgut_XVI_XIX', activeId: 'surgut_XVI_XIX', visibleId:['surgut_VI_XVI','surgut_XVI_XIX','surgut_1_XX','surgut_2_XX','surgut_VI_XX_line_under'], backgroundDivClass: 'backgroundOldSurgut'},
+		{clickId:'surgut_1_XX', activeId: 'surgut_1_XX', visibleId:['surgut_VI_XVI','surgut_XVI_XIX','surgut_1_XX','surgut_2_XX','surgut_VI_XX_line_under'], backgroundDivClass: 'backgroundOldSurgut'},
+		{clickId:'surgut_2_XX', activeId: 'surgut_2_XX', visibleId:['surgut_VI_XVI','surgut_XVI_XIX','surgut_1_XX','surgut_2_XX','surgut_celnyy','surgut_VI_XX_line_under'], backgroundDivClass: 'backgroundOldSurgut'},
 		{clickId:'surgut_celnyy', activeId: 'surgut_1956_1979', visibleId:['surgut_person_1956_1979','surgut_1956_1979','surgut_1980_1991','surgut_1992_2020','back_surgut_2_XX',], backgroundDivClass: 'backgroundCelSurgut'},
 		{clickId:'surgut_1956_1979', activeId: 'surgut_1956_1979', visibleId:['surgut_person_1956_1979','surgut_1956_1979','surgut_1980_1991','surgut_1992_2020','back_surgut_2_XX',], backgroundDivClass: 'backgroundCelSurgut'},
 		{clickId:'surgut_1980_1991', activeId: 'surgut_1980_1991', visibleId:['surgut_person_1980_1991','surgut_1956_1979','surgut_1980_1991','surgut_1992_2020','back_surgut_2_XX',], backgroundDivClass: 'backgroundCelSurgut'},
 		{clickId:'surgut_1992_2020', activeId: 'surgut_1992_2020', visibleId:['surgut_person_1992_2020','surgut_1956_1979','surgut_1980_1991','surgut_1992_2020','back_surgut_2_XX',], backgroundDivClass: 'backgroundCelSurgut'},
-		{clickId:'back_surgut_2_XX', activeId: 'surgut_2_XX', visibleId:['surgut_VI_XVI','surgut_XVI_XIX','surgut_1_XX','surgut_2_XX','surgut_celnyy',], backgroundDivClass: 'backgroundCelSurgut'},
+		{clickId:'back_surgut_2_XX', activeId: 'surgut_2_XX', visibleId:['surgut_VI_XVI','surgut_XVI_XIX','surgut_1_XX','surgut_2_XX','surgut_celnyy','surgut_VI_XX_line_under'], backgroundDivClass: 'backgroundCelSurgut'},
 	];
 	
 	for (let k = 0; k < rule.length; k++) {

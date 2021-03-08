@@ -752,7 +752,7 @@ div#surgut_2_XX {
 }
 
 div#surgut_celnyy {
-	bottom: 28px;
+	bottom: 44px;
 	left: 80%;
 	font-family: IskraCYR-Bold;
 }
@@ -823,13 +823,13 @@ div#surgut_celnyy {
 .line_under {
 	position: absolute;
 	left: 50%;
-	top: 50%;
+	top: 93%;
 	transform: translate(-50%, -50%);
-	width: 80%;
+	width: 44%;
 	height: 50px;
 	background: url(img/dots.png) no-repeat center center;
-	background-size: 90%;
-	z-index: -1;
+	background-size: 93%;
+	z-index: 1;
 }
 
 .btn_1_i {
