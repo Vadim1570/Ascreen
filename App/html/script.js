@@ -98,7 +98,7 @@ document.addEventListener('keypress', (event) => {
 	
 
 	//ВРЕМЕННО, перейти на нужную вкладку
-	
+/*	
 	//скрыть черное окно
 	tabBlackClick();
 
@@ -107,7 +107,7 @@ document.addEventListener('keypress', (event) => {
 	var evt = new Event('click');
 	btn.dispatchEvent(evt); // evt.target = btn;
 	menuButtonClick(evt);
-	
+*/	
 
 }());
 
