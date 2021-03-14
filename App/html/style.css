@@ -7360,10 +7360,34 @@ div#surgut_celnyy {
 	position: absolute;
 }
 
+.tree_t5m {
+	width: 82px;
+	height:125px;
+	background-image: url(img/tree_4.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	animation: tree_wind 5s ease-in-out infinite;
+	transform-origin: 50% 100%;
+	transform: rotate(3deg);
+	position: absolute;
+}
+
 .tree_t6 {
 	width: 41px;
 	height:61px;
 	background-image: url(img/tree_6.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	animation: tree_wind 5s ease-in-out infinite;
+	transform-origin: 50% 100%;
+	transform: rotate(3deg);
+	position: absolute;
+}
+
+.tree_t7m {
+	width: 54px;
+	height:84px;
+	background-image: url(img/tree_7.png);
 	background-size: 100%;
 	background-repeat: no-repeat;
 	animation: tree_wind 5s ease-in-out infinite;
