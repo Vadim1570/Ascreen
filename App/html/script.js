@@ -1179,16 +1179,15 @@ function trimChar(str, delimiter) {
 	return str.substring(start, stop);
 }
 
-function hideDivAndGreyBg(divId) {
+function hideDivAndGreyBg(divId, hideGreyBg) {
 	document.getElementById(divId).style.display = 'none'; 
-	greyBg.classList.remove('greyHide');
-    greyBg.classList.remove('greyActive');
 
-	
-	let person_card_forms = document.querySelectorAll('.form_surgut_person_card');
-	for ( let i = 0; i < person_card_forms.length; i++ ) {
-		hideDiv(person_card_forms[i].id);
+	if(hideGreyBg)
+	{
+		greyBg.classList.remove('greyHide');
+		greyBg.classList.remove('greyActive');
 	}
+
 	setGreyBgZIndex(3);
 }
 
