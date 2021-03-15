@@ -98,16 +98,16 @@ document.addEventListener('keypress', (event) => {
 	
 
 	//ВРЕМЕННО, перейти на нужную вкладку
-/*	
+
 	//скрыть черное окно
-	tabBlackClick();
+	//tabBlackClick();
 
 	//нажать на кнопку
-	var btn = document.getElementById('surgut_1956_1979');
-	var evt = new Event('click');
-	btn.dispatchEvent(evt); // evt.target = btn;
-	menuButtonClick(evt);
-*/	
+	//var btn = document.getElementById('surgut_1956_1979');
+	//var evt = new Event('click');
+	//btn.dispatchEvent(evt); // evt.target = btn;
+	//menuButtonClick(evt);
+
 
 }());
 
