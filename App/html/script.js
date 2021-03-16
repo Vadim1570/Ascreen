@@ -984,12 +984,13 @@ function iconClick(e) {
 	imageGroup.classList.add('flexGroup');
 
 	var imagesWidth = cs.getPropertyValue('--form-images-width');
-	if(imagesWidth != undefined && imagesWidth != null) imageGroup.style.width = imagesWidth.trim();
-	var imagesSlideWidth = 245;
-	if(imagesWidth != undefined && imagesWidth != null) imagesSlideWidth = trimChar(imagesWidth.trim(), 'px').trim();
+	imagesWidth = imagesWidth != undefined && imagesWidth != null && imagesWidth.trim() != "" ? imagesWidth.trim() : null;
+	if(imagesWidth) imageGroup.style.width = imagesWidth;
+	var imagesSlideWidth = imagesWidth ? trimChar(imagesWidth.trim(), 'px').trim() * 1 : 245;
 
 	var imagesHeight = cs.getPropertyValue('--form-images-height');
-	if(imagesHeight != undefined && imagesHeight != null) imageGroup.style.height = imagesHeight.trim();
+	imagesHeight = imagesHeight != undefined && imagesHeight != null && imagesHeight.trim() != "" ? imagesHeight.trim() : null;
+	if(imagesHeight) imageGroup.style.height = imagesHeight;
 
 	let innerImageGroup = document.createElement('div');
 	innerImageGroup.classList.add('objectImages');
@@ -1010,7 +1011,7 @@ function iconClick(e) {
 			let img = document.createElement('img');
 			img.src = imagesArray[i];
 			img.className = 'imgItem';
-			if(imagesWidth != undefined && imagesWidth != null) img.style.width = imagesWidth;
+			if(imagesWidth) img.style.width = imagesWidth;
 		  
 			innerImageGroup.appendChild(img);
 		}
@@ -1021,7 +1022,7 @@ function iconClick(e) {
 			let img = document.createElement('img');
 			img.className = 'imgItem';
 			img.src = imagesArray[0];
-			if(imagesWidth != undefined && imagesWidth != null) img.style.width = imagesWidth;
+			if(imagesWidth) img.style.width = imagesWidth;
 			
 			innerImageGroup.appendChild(img);
 		}
