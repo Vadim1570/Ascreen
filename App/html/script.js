@@ -970,11 +970,6 @@ function iconClick(e) {
 			let imgUrl = result.pop().replace(/\\/g, '');
 			imagesArray.push(imgUrl);
 		  }
-
-		for (key in изображения[header_inner])
-		{
-			imagesArray.push(изображения[header_inner][key]);
-		}		
 	}
 
 	//if(imagesArray.length == 0)
@@ -1057,7 +1052,7 @@ function iconClick(e) {
 				innerImageGroup.style = 'transition: all 1s ease;';
 				innerImageGroup.style.left = count * (-1) * imagesSlideWidth + 'px';
 
-				let items = document.querySelectorAll('.imgItem');
+				let items = innerImageGroup.querySelectorAll('.imgItem');
 
 
 				if ( count === items.length - 1 || count > items.length - 1 ) {
@@ -1078,7 +1073,7 @@ function iconClick(e) {
 				left.onclick = null;
 				right.style.display = 'none';
 
-				let items = document.querySelectorAll('.imgItem');
+				let items = innerImageGroup.querySelectorAll('.imgItem');
 
 				if ( count === 0 ) {
 					innerImageGroup.style = 'transition: none 1s ease';
