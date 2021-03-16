@@ -100,13 +100,13 @@ document.addEventListener('keypress', (event) => {
 	//ВРЕМЕННО, перейти на нужную вкладку
 
 	//скрыть черное окно
-	//tabBlackClick();
+	tabBlackClick();
 
 	//нажать на кнопку
-	//var btn = document.getElementById('surgut_1956_1979');
-	//var evt = new Event('click');
-	//btn.dispatchEvent(evt); // evt.target = btn;
-	//menuButtonClick(evt);
+	var btn = document.getElementById('surgut_1956_1979');
+	var evt = new Event('click');
+	btn.dispatchEvent(evt); // evt.target = btn;
+	menuButtonClick(evt);
 
 
 }());
@@ -983,6 +983,14 @@ function iconClick(e) {
 	let imageGroup = document.createElement('div');
 	imageGroup.classList.add('flexGroup');
 
+	var imagesWidth = cs.getPropertyValue('--form-images-width');
+	if(imagesWidth != undefined && imagesWidth != null) imageGroup.style.width = imagesWidth.trim();
+	var imagesSlideWidth = 245;
+	if(imagesWidth != undefined && imagesWidth != null) imagesSlideWidth = trimChar(imagesWidth.trim(), 'px').trim();
+
+	var imagesHeight = cs.getPropertyValue('--form-images-height');
+	if(imagesHeight != undefined && imagesHeight != null) imageGroup.style.height = imagesHeight.trim();
+
 	let innerImageGroup = document.createElement('div');
 	innerImageGroup.classList.add('objectImages');
 	imageGroup.appendChild(innerImageGroup);
@@ -1002,6 +1010,7 @@ function iconClick(e) {
 			let img = document.createElement('img');
 			img.src = imagesArray[i];
 			img.className = 'imgItem';
+			if(imagesWidth != undefined && imagesWidth != null) img.style.width = imagesWidth;
 		  
 			innerImageGroup.appendChild(img);
 		}
@@ -1012,7 +1021,8 @@ function iconClick(e) {
 			let img = document.createElement('img');
 			img.className = 'imgItem';
 			img.src = imagesArray[0];
-			  
+			if(imagesWidth != undefined && imagesWidth != null) img.style.width = imagesWidth;
+			
 			innerImageGroup.appendChild(img);
 		}
 
@@ -1044,7 +1054,7 @@ function iconClick(e) {
 				left.style.display = 'none';
 				count++;
 				innerImageGroup.style = 'transition: all 1s ease;';
-				innerImageGroup.style.left = count * (-245) + 'px';
+				innerImageGroup.style.left = count * (-1) * imagesSlideWidth + 'px';
 
 				let items = document.querySelectorAll('.imgItem');
 
@@ -1072,17 +1082,17 @@ function iconClick(e) {
 				if ( count === 0 ) {
 					innerImageGroup.style = 'transition: none 1s ease';
 					count = items.length - 1;
-					innerImageGroup.style.left = count * (-245) + 'px';
+					innerImageGroup.style.left = count * (-1) * imagesSlideWidth + 'px';
 					setTimeout(function(){
 						count--;
 						innerImageGroup.style = 'transition: all 1s ease;';
-						innerImageGroup.style.left = count * (-245) + 'px';
+						innerImageGroup.style.left = count * (-1) * imagesSlideWidth + 'px';
 						},10)
 				} 
 				else {
 					count--;
 					innerImageGroup.style = 'transition: all 1s ease;';
-					innerImageGroup.style.left = count * (-245) + 'px';
+					innerImageGroup.style.left = count * (-1) * imagesSlideWidth + 'px';
 				}
 
 				setTimeout(function(){
