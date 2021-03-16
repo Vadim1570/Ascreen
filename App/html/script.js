@@ -987,6 +987,10 @@ function iconClick(e) {
 	imagesHeight = imagesHeight != undefined && imagesHeight != null && imagesHeight.trim() != "" ? imagesHeight.trim() : null;
 	if(imagesHeight) imageGroup.style.height = imagesHeight;
 
+	var imagesBottom = cs.getPropertyValue('--form-images-bottom');
+	imagesBottom = imagesBottom != undefined && imagesBottom != null && imagesBottom.trim() != "" ? imagesBottom.trim() : null;
+	if(imagesBottom) imageGroup.style.bottom = imagesBottom;
+
 	let innerImageGroup = document.createElement('div');
 	innerImageGroup.classList.add('objectImages');
 	imageGroup.appendChild(innerImageGroup);
