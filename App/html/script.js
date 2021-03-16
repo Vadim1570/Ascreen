@@ -38,13 +38,14 @@ var dialog_form_type = {
 	person_table_form_celsurgut: 4,
   };
 
-//body.addEventListener('contextmenu',function(e){
-//	e.preventDefault();
-//	return false;
-//});
+//скрыть контексное меню
+body.addEventListener('contextmenu',function(e){
+	e.preventDefault();
+return false;
+});
 
-// hide and show cursor
-	
+// hide and show cursor	
+body.classList.add('hideCursor');
 document.addEventListener('keypress', (event) => {
   	if ( event.keyName = 'h') {
   		body.classList.toggle('hideCursor');
@@ -100,13 +101,13 @@ document.addEventListener('keypress', (event) => {
 	//ВРЕМЕННО, перейти на нужную вкладку
 
 	//скрыть черное окно
-	tabBlackClick();
+	//tabBlackClick();
 
 	//нажать на кнопку
-	var btn = document.getElementById('surgut_1956_1979');
-	var evt = new Event('click');
-	btn.dispatchEvent(evt); // evt.target = btn;
-	menuButtonClick(evt);
+	//var btn = document.getElementById('surgut_1956_1979');
+	//var evt = new Event('click');
+	//btn.dispatchEvent(evt); // evt.target = btn;
+	//menuButtonClick(evt);
 
 
 }());
