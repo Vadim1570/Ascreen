@@ -59,7 +59,7 @@ document.addEventListener('keypress', (event) => {
     // let interval = minutes ? время_до_появления_заставки : 1000;  //35000
 	//Проверка на простой производится 3 раза, с учетом интервала из конфига
 	let IDLE_TIMEOUT = 3; 
-	let interval = время_до_появления_заставки_сек*100000/IDLE_TIMEOUT
+	let interval = время_до_появления_заставки_сек*1000/IDLE_TIMEOUT
     let idleCounter = 0;
 
     document.onmousemove = document.onkeypress = function () {

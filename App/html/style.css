@@ -7215,8 +7215,8 @@ div#surgut_celnyy {
 	--form-left: 300px;	
 	--form-header-top: 7.5%;
 	--form-header-font-size: 29px;	
-	--form-header-text: 'Алпатова';
-	--form-descr-text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam interdum lorem dignissim lorem sodales sagittis. Nulla efficitur enim eget tortor malesuada ornare blandit id ipsum. Praesent porta lectus nec erat venenatis, sed scelerisque elit tincidunt. Proin sed nisi in lacus pulvinar ultrices. Maecenas ante mauris, lobortis ac risus ut, vehicula pellentesque est. Nulla elementum porttitor ex vitae dignissim. Etiam lobortis nisi leo, quis commodo neque ultrices at. Curabitur ante nunc, tempor et arcu nec, finibus egestas ipsum. Etiam est nisi, suscipit at iaculis fringilla, imperdiet interdum metus. Ut tortor metus, tincidunt nec mauris et, fringilla viverra sem. Nunc pulvinar, mi volutpat volutpat faucibus, ligula libero ultricies dui, quis sollicitudin orci dui et sapien.';
+	--form-header-text: 'Лариса Михайловна Алпатова';
+	--form-descr-text: 'Заслуженный врач РФ, Ветеран труда РФ, Главный врач муниципального бюджетного учреждения здравоохранения «Стоматологическая поликлиника № 1» 1984-2013 гг.<br><br>Главный внештатный специалист по стоматологии Комитета по здравоохранению Администрации г. Сургута 1984-2013 гг.<br><br>Врач высшей категории по специальности «Организация здравоохранения и общественное здоровье», кандидат медицинских наук, Президент Окружной общественной организации стоматологов ХМАО-Югры (ОООС ХМАО-Югры) 2008-2013 гг., Президент Местной общественной организации «Сургутское стоматологическое общество» (МОО ССО) 2001-2013 гг., Член правления Стоматологической Ассоциации России (СтАР), Орден I степени Стоматологической Ассоциации России «За заслуги перед стоматологией», Орден II степени Стоматологической Ассоциации России «За заслуги перед стоматологией», Медаль Святого Георгия, Памятная медаль энциклопедии «Лучшие люди России» , Титул «Почётный доктор»<br><br>';
 	/*--form-descr-height: 65%;*/
 	--form-images: url(images/cel_surgut_8091/Персоналии/Алпатова.png);
 } 
@@ -8893,7 +8893,7 @@ div#surgut_celnyy {
 	background-size: 100%;
 	z-index: 0;
 	animation: clouds 90s linear infinite;
-	/*border: 1px solid red;*/
+	pointer-events: none;
 }
 
 .cloud_2 {
@@ -8905,6 +8905,7 @@ div#surgut_celnyy {
 	background-size: 100%;
 	z-index: 0;
 	animation: clouds 90s linear infinite;
+	pointer-events: none;
 }
 
 .cloud_3 {
@@ -8916,6 +8917,7 @@ div#surgut_celnyy {
 	background-size: 100%;
 	z-index: 0;
 	animation: clouds 90s linear infinite;
+	pointer-events: none;
 }
 
 .cloud_4 {
@@ -8927,6 +8929,7 @@ div#surgut_celnyy {
 	background-size: 100%;
 	z-index: 0;
 	animation: clouds 90s linear infinite;
+	pointer-events: none;
 }
 
 .cloud_5 {
@@ -8938,6 +8941,7 @@ div#surgut_celnyy {
 	background-size: 100%;
 	z-index: 0;
 	animation: clouds 90s linear infinite;
+	pointer-events: none;
 }
 
 .cloud_6 {
@@ -8949,6 +8953,7 @@ div#surgut_celnyy {
 	background-size: 100%;
 	z-index: 0;
 	animation: clouds 90s linear infinite;
+	pointer-events: none;
 }
 
 .cloud_7 {
@@ -8960,6 +8965,7 @@ div#surgut_celnyy {
 	background-size: 100%;
 	z-index: 0;
 	animation: clouds 90s linear infinite;
+	pointer-events: none;
 }
 
 @keyframes clouds {
