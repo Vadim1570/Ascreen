@@ -40,8 +40,8 @@ var dialog_form_type = {
 
 //скрыть контексное меню
 body.addEventListener('contextmenu',function(e){
-	//e.preventDefault();
-//return false;
+	e.preventDefault();
+return false;
 });
 
 // hide and show cursor	
