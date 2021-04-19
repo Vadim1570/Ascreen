@@ -163,6 +163,22 @@ function tabBlackClick(e) {
 	for (let i = 0; i < icons.length; i++ ) {
 		icons[i].style = 'opacity: 1; display: block;';
 	}
+	
+	//Закрыть все открытые окна
+	let modalFormSelectors = ['.icon_form_oldsurgut','.icon_form_pic_oldsurgut','.about_form_oldsurgut',
+	'.icon_form_celsurgut','.icon_form_pic_celsurgut','.about_form_celsurgut','.form_surgut_person_card',
+	'.form_surgut_person_1956_1979','.form_surgut_person_1980_1991','.form_surgut_person_1992_2020']
+	for (let k = 0; k < modalFormSelectors.length; k++ ) {
+		let modalForms = document.querySelectorAll(modalFormSelectors[k]);
+		if(modalForms)
+		{
+			for (let i = 0; i < modalForms.length; i++ ) {
+				modalForms[i].style = 'display: none;';
+			}
+		}
+	}
+	//Понизить серый фон
+	setGreyBgZIndex(3);
 
 	setTimeout(()=>{
 		blocker.style.display = 'none';
